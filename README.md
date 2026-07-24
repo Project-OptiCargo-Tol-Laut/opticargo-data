@@ -18,6 +18,17 @@ lokal, mengikuti kebutuhan dataset di Bagian 16 dokumen desain.
     /regulations        → PDF regulasi
     /seed                → script insert ke PostgreSQL + trigger sync ke Neo4j/Qdrant
 
+## Daftar Data Regulasi (RAG Knowledge Base)
+Direktori `/regulations` berisi 9 dokumen PDF resmi (sudah diseleksi dan dibersihkan dari dokumen usang/redundan) yang digunakan sebagai basis data untuk sistem Retrieval-Augmented Generation (RAG). 
+
+Dokumen-dokumen ini meliputi:
+1. **Regulasi Utama Tol Laut**: PM 5 Tahun 2024 (terbaru), Buku Konsep Tol Laut Bappenas (2015-2019), dan SK Jaringan Trayek 2022.
+2. **Regulasi Tarif & Jasa**: PM 121 Tahun 2018 (Tarif Kepelabuhanan), PM 29 Tahun 2018.
+3. **Standar Operasional (SOP)**: SOP UPP Babang (Bongkar Muat & Stuffing/Stripping).
+4. **Hukum Terkait**: UU 21 Tahun 2019 (Karantina), Permenhub 59 Tahun 2021 (Usaha Jasa Angkutan), dan Aturan Angkutan Laut (Bilingual).
+
+*(Catatan: File abstrak dan dokumen lama seperti PM 65/2018 sudah dihapus agar tidak menjadi noise pada proses RAG)*.
+
 ## Dependensi Repo Lain
 - Dikonsumsi oleh `opticargo-knowledge-graph` (seed graph) dan
   `opticargo-rag-pipeline` (index dokumen regulasi).
