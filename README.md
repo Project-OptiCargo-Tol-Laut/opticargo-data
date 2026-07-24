@@ -27,8 +27,6 @@ Dokumen-dokumen ini meliputi:
 3. **Standar Operasional (SOP)**: SOP UPP Babang (Bongkar Muat & Stuffing/Stripping).
 4. **Hukum Terkait**: UU 21 Tahun 2019 (Karantina), Permenhub 59 Tahun 2021 (Usaha Jasa Angkutan), dan Aturan Angkutan Laut (Bilingual).
 
-*(Catatan: File abstrak dan dokumen lama seperti PM 65/2018 sudah dihapus agar tidak menjadi noise pada proses RAG)*.
-
 ## Dependensi Repo Lain
 - Dikonsumsi oleh `opticargo-knowledge-graph` (seed graph) dan
   `opticargo-rag-pipeline` (index dokumen regulasi).
