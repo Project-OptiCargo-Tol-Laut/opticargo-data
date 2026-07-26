@@ -10,7 +10,7 @@ Repositori `opticargo-data` adalah komponen fundamental (blok fondasi) bagi ekos
 
 Repo ini bertugas memproduksi, memvalidasi, dan menyediakan dataset (baik riil maupun sintetis yang logis) untuk di-seed ke dalam tiga database utama kami: **PostgreSQL** (Transaksional), **Neo4j** (Knowledge Graph), dan **Qdrant** (Vector Search).
 
-## 🌟 Keunggulan Arsitektur Data (Jury Highlight)
+## 🌟 Keunggulan Arsitektur Data
 
 1. **Deterministic UUID5 Generation:** 
    Kami tidak menggunakan ID acak (UUIDv4) atau angka *auto-increment*. Seluruh *Primary Key* digenerate menggunakan algoritma *hash* **UUIDv5** berbasis nama entitas (misal: "Tanjung Perak"). Pendekatan *software engineering* tingkat lanjut ini menjamin **Idempotency** dan **Reproducibility**—artinya *database* tidak akan pernah mengalami duplikasi data meskipun proses *seeding* dijalankan ribuan kali.
