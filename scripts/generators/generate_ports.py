@@ -128,7 +128,7 @@ for i, p in enumerate(PORTS):
     }
     result.append(record)
 
-out = Path(__file__).parent.parent / "ports" / "ports.json"
+out = Path(__file__).parent.parent.parent / 'dataset' / "ports" / "ports.json"
 with open(out, "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 

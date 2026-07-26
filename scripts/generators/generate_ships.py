@@ -72,7 +72,7 @@ if __name__ == "__main__":
             "created_at": now
         })
 
-    out = Path(__file__).parent.parent / "ships" / "ships.json"
+    out = Path(__file__).parent.parent.parent / 'dataset' / "ships" / "ships.json"
     with open(out, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 

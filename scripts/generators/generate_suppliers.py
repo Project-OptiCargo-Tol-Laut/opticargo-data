@@ -29,7 +29,7 @@ FEEDER_NAMES = ["Hasil Bumi", "Nelayan", "Laut", "Tani", "Samudera", "Nusantara"
 
 if __name__ == "__main__":
     random.seed(42)
-    base = Path(__file__).parent.parent
+    base = Path(__file__).parent.parent.parent / 'dataset'
     
     ports_path = base / "ports" / "ports.json"
     comms_path = base / "commodities" / "commodities.json"

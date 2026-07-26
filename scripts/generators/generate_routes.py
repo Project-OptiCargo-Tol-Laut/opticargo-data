@@ -67,7 +67,7 @@ def build_route(idx: int, raw: dict) -> dict:
 
 
 if __name__ == "__main__":
-    base = Path(__file__).parent.parent
+    base = Path(__file__).parent.parent.parent / 'dataset'
     raw_path = base / "routes" / "routes.json"
     out_path = base / "routes" / "routes.json"
 
