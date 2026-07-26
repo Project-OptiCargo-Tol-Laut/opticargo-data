@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1f74cf56-83a3-487c-bd8d-71b569502ab8",
+    "name": "KM. Nusantara Prima",
+    "imo_number": "IMO9123456",
+    "ship_type": "General Cargo",
+    "gross_tonnage": 2500.0,
+    "deadweight_tonnage": 3000.0,
+    "cargo_capacity_m3": 4000.0,
+    "operator_id": "87a9b0c1-d2e3-4f56-a7b8-c9d0e1f2a3b4",
+    "flag": "Indonesia",
+    "certifications": {
+      "safety": "SOLAS",
+      "pollution": "MARPOL"
+    },
+    "status": "active",
+    "created_at": "2024-01-01T10:00:00Z"
+  },
+  {
+    "id": "9d8a57e3-54cd-4e9b-81d2-094cf5e28a99",
+    "name": "KM. Bintang Bahari",
+    "imo_number": "IMO9876543",
+    "ship_type": "Container Ship",
+    "gross_tonnage": 4500.0,
+    "deadweight_tonnage": 5500.0,
+    "cargo_capacity_m3": 7500.0,
+    "operator_id": "87a9b0c1-d2e3-4f56-a7b8-c9d0e1f2a3b4",
+    "flag": "Indonesia",
+    "certifications": {
+      "safety": "SOLAS",
+      "pollution": "MARPOL"
+    },
+    "status": "active",
+    "created_at": "2024-01-02T11:30:00Z"
+  },
+  {
+    "id": "a3c98b67-4d1e-45e6-99b3-1f8a7e3d2c10",
+    "name": "KM. Cahaya Timur",
+    "imo_number": "IMO9345678",
+    "ship_type": "General Cargo",
+    "gross_tonnage": 1500.0,
+    "deadweight_tonnage": 2000.0,
+    "cargo_capacity_m3": 2800.0,
+    "operator_id": "87a9b0c1-d2e3-4f56-a7b8-c9d0e1f2a3b4",
+    "flag": "Indonesia",
+    "certifications": {},
+    "status": "maintenance",
+    "created_at": "2024-01-15T09:15:00Z"
+  },
+  {
+    "id": "4f5e6d7c-8b9a-01f2-e3d4-c5b6a7980e12",
+    "name": "KM. Samudra Logistik",
+    "imo_number": "IMO9567890",
+    "ship_type": "Ro-Ro Cargo",
+    "gross_tonnage": 6000.0,
+    "deadweight_tonnage": 7000.0,
+    "cargo_capacity_m3": 9000.0,
+    "operator_id": "87a9b0c1-d2e3-4f56-a7b8-c9d0e1f2a3b4",
+    "flag": "Indonesia",
+    "certifications": {
+      "safety": "SOLAS",
+      "security": "ISPS"
+    },
+    "status": "active",
+    "created_at": "2024-02-10T14:45:00Z"
+  },
+  {
+    "id": "e2d3c4b5-a698-7c89-0d12-3f4e5a6b7c8d",
+    "name": "KM. Pelita Makmur",
+    "imo_number": "IMO9988776",
+    "ship_type": "Bulk Carrier",
+    "gross_tonnage": 8000.0,
+    "deadweight_tonnage": 10000.0,
+    "cargo_capacity_m3": 12000.0,
+    "operator_id": "87a9b0c1-d2e3-4f56-a7b8-c9d0e1f2a3b4",
+    "flag": "Indonesia",
+    "certifications": {
+      "safety": "SOLAS",
+      "pollution": "MARPOL",
+      "security": "ISPS"
+    },
+    "status": "active",
+    "created_at": "2024-03-05T08:20:00Z"
+  }
+]

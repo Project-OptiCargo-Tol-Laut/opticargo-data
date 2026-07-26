@@ -1,0 +1,301 @@
+[
+  {
+    "id": "f1000001-0000-4000-8000-000000000001",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Pangan Sejahtera",
+    "port_id": "1e95e926-d621-4f11-8be5-ebc7f21fa79e",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000006-0000-4000-8000-000000000006",
+      "c0000007-0000-4000-8000-000000000007",
+      "c0000009-0000-4000-8000-000000000009"
+    ],
+    "avg_monthly_volume_ton": 500.5,
+    "rating": 4.8,
+    "verified": true,
+    "address": "Jl. Pelabuhan Perak No. 10, Surabaya",
+    "created_at": "2024-01-01T10:00:00Z"
+  },
+  {
+    "id": "f1000002-0000-4000-8000-000000000002",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "CV. Tani Makmur",
+    "port_id": "1e95e926-d621-4f11-8be5-ebc7f21fa79e",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000010-0000-4000-8000-000000000010"
+    ],
+    "avg_monthly_volume_ton": 250.0,
+    "rating": 4.5,
+    "verified": false,
+    "address": "Jl. Raya Darmo No. 45, Surabaya",
+    "created_at": "2024-01-02T11:00:00Z"
+  },
+  {
+    "id": "f1000003-0000-4000-8000-000000000003",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "UD. Bintang Semen",
+    "port_id": "1e95e926-d621-4f11-8be5-ebc7f21fa79e",
+    "commodity_ids": [
+      "c0000005-0000-4000-8000-000000000005"
+    ],
+    "avg_monthly_volume_ton": 1000.0,
+    "rating": 4.2,
+    "verified": true,
+    "address": "Gresik Industri Blok C",
+    "created_at": "2024-01-03T09:15:00Z"
+  },
+  {
+    "id": "f1000004-0000-4000-8000-000000000004",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "Koperasi Nelayan Mandiri",
+    "port_id": "1e95e926-d621-4f11-8be5-ebc7f21fa79e",
+    "commodity_ids": [
+      "c0000003-0000-4000-8000-000000000003",
+      "c0000008-0000-4000-8000-000000000008"
+    ],
+    "avg_monthly_volume_ton": 150.75,
+    "rating": 4.6,
+    "verified": true,
+    "address": "Pasar Ikan Pabean No. 22",
+    "created_at": "2024-01-04T08:30:00Z"
+  },
+  {
+    "id": "f1000005-0000-4000-8000-000000000005",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Agro Nusantara",
+    "port_id": "9c6a1e50-2d88-4f81-a9c2-5e63be7d4e5f",
+    "commodity_ids": [
+      "c0000002-0000-4000-8000-000000000002",
+      "c0000004-0000-4000-8000-000000000004"
+    ],
+    "avg_monthly_volume_ton": 800.0,
+    "rating": 4.9,
+    "verified": true,
+    "address": "Kawasan Industri Tenau Raya",
+    "created_at": "2024-01-05T10:20:00Z"
+  },
+  {
+    "id": "f1000006-0000-4000-8000-000000000006",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "CV. Berkah Laut",
+    "port_id": "9c6a1e50-2d88-4f81-a9c2-5e63be7d4e5f",
+    "commodity_ids": [
+      "c0000003-0000-4000-8000-000000000003"
+    ],
+    "avg_monthly_volume_ton": 300.0,
+    "rating": 4.4,
+    "verified": false,
+    "address": "Oesapa Barat, Kupang",
+    "created_at": "2024-01-06T11:45:00Z"
+  },
+  {
+    "id": "f1000007-0000-4000-8000-000000000007",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "UD. Maju Bersama",
+    "port_id": "9c6a1e50-2d88-4f81-a9c2-5e63be7d4e5f",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000007-0000-4000-8000-000000000007"
+    ],
+    "avg_monthly_volume_ton": 600.0,
+    "rating": 4.7,
+    "verified": true,
+    "address": "Jl. Jendral Sudirman, Kupang",
+    "created_at": "2024-01-07T09:10:00Z"
+  },
+  {
+    "id": "f1000008-0000-4000-8000-000000000008",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Rempah Jaya",
+    "port_id": "9c6a1e50-2d88-4f81-a9c2-5e63be7d4e5f",
+    "commodity_ids": [
+      "c0000004-0000-4000-8000-000000000004"
+    ],
+    "avg_monthly_volume_ton": 150.0,
+    "rating": 4.1,
+    "verified": false,
+    "address": "Kota Lama, Kupang",
+    "created_at": "2024-01-08T08:50:00Z"
+  },
+  {
+    "id": "f1000009-0000-4000-8000-000000000009",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "CV. Pangan Timur",
+    "port_id": "3b1c6d7a-8f92-41e5-bc0a-42d7f8a9e01b",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000009-0000-4000-8000-000000000009"
+    ],
+    "avg_monthly_volume_ton": 400.0,
+    "rating": 4.5,
+    "verified": true,
+    "address": "Dumar, Kota Tual",
+    "created_at": "2024-01-09T14:30:00Z"
+  },
+  {
+    "id": "f1000010-0000-4000-8000-000000000010",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Bumi Maluku",
+    "port_id": "3b1c6d7a-8f92-41e5-bc0a-42d7f8a9e01b",
+    "commodity_ids": [
+      "c0000002-0000-4000-8000-000000000002",
+      "c0000004-0000-4000-8000-000000000004"
+    ],
+    "avg_monthly_volume_ton": 350.5,
+    "rating": 4.8,
+    "verified": true,
+    "address": "Jl. Pattimura, Maluku Tenggara",
+    "created_at": "2024-01-10T10:00:00Z"
+  },
+  {
+    "id": "f1000011-0000-4000-8000-000000000011",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "Koperasi Tani Harapan",
+    "port_id": "3b1c6d7a-8f92-41e5-bc0a-42d7f8a9e01b",
+    "commodity_ids": [
+      "c0000010-0000-4000-8000-000000000010"
+    ],
+    "avg_monthly_volume_ton": 100.0,
+    "rating": 4.0,
+    "verified": false,
+    "address": "Langgur, Maluku Tenggara",
+    "created_at": "2024-01-11T11:20:00Z"
+  },
+  {
+    "id": "f1000012-0000-4000-8000-000000000012",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "UD. Laut Dalam",
+    "port_id": "3b1c6d7a-8f92-41e5-bc0a-42d7f8a9e01b",
+    "commodity_ids": [
+      "c0000003-0000-4000-8000-000000000003",
+      "c0000008-0000-4000-8000-000000000008"
+    ],
+    "avg_monthly_volume_ton": 280.0,
+    "rating": 4.6,
+    "verified": true,
+    "address": "Pelabuhan Perikanan Tual",
+    "created_at": "2024-01-12T13:45:00Z"
+  },
+  {
+    "id": "f1000013-0000-4000-8000-000000000013",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Papua Makmur",
+    "port_id": "8a7b6c5d-4e3f-21d0-c9b8-a7f6e5d4c3b2",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000005-0000-4000-8000-000000000005",
+      "c0000006-0000-4000-8000-000000000006"
+    ],
+    "avg_monthly_volume_ton": 1200.0,
+    "rating": 4.9,
+    "verified": true,
+    "address": "Aimas, Sorong",
+    "created_at": "2024-01-13T08:15:00Z"
+  },
+  {
+    "id": "f1000014-0000-4000-8000-000000000014",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "CV. Sumber Alam",
+    "port_id": "8a7b6c5d-4e3f-21d0-c9b8-a7f6e5d4c3b2",
+    "commodity_ids": [
+      "c0000002-0000-4000-8000-000000000002",
+      "c0000008-0000-4000-8000-000000000008"
+    ],
+    "avg_monthly_volume_ton": 350.0,
+    "rating": 4.3,
+    "verified": false,
+    "address": "Klademak, Sorong",
+    "created_at": "2024-01-14T09:30:00Z"
+  },
+  {
+    "id": "f1000015-0000-4000-8000-000000000015",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "UD. Sinar Mas",
+    "port_id": "8a7b6c5d-4e3f-21d0-c9b8-a7f6e5d4c3b2",
+    "commodity_ids": [
+      "c0000007-0000-4000-8000-000000000007",
+      "c0000009-0000-4000-8000-000000000009"
+    ],
+    "avg_monthly_volume_ton": 550.0,
+    "rating": 4.7,
+    "verified": true,
+    "address": "Pasar Sentral Remu, Sorong",
+    "created_at": "2024-01-15T11:20:00Z"
+  },
+  {
+    "id": "f1000016-0000-4000-8000-000000000016",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "Koperasi Karya Tani",
+    "port_id": "8a7b6c5d-4e3f-21d0-c9b8-a7f6e5d4c3b2",
+    "commodity_ids": [
+      "c0000004-0000-4000-8000-000000000004",
+      "c0000010-0000-4000-8000-000000000010"
+    ],
+    "avg_monthly_volume_ton": 180.5,
+    "rating": 4.1,
+    "verified": false,
+    "address": "SP3, Kabupaten Sorong",
+    "created_at": "2024-01-16T15:00:00Z"
+  },
+  {
+    "id": "f1000017-0000-4000-8000-000000000017",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Merauke Pangan",
+    "port_id": "5f4e3d2c-1b0a-9988-7766-554433221100",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000009-0000-4000-8000-000000000009"
+    ],
+    "avg_monthly_volume_ton": 1500.0,
+    "rating": 4.9,
+    "verified": true,
+    "address": "Kawasan Pertanian Semangga, Merauke",
+    "created_at": "2024-01-17T09:45:00Z"
+  },
+  {
+    "id": "f1000018-0000-4000-8000-000000000018",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "CV. Agri Timur",
+    "port_id": "5f4e3d2c-1b0a-9988-7766-554433221100",
+    "commodity_ids": [
+      "c0000002-0000-4000-8000-000000000002",
+      "c0000010-0000-4000-8000-000000000010"
+    ],
+    "avg_monthly_volume_ton": 450.0,
+    "rating": 4.5,
+    "verified": true,
+    "address": "Kurik, Merauke",
+    "created_at": "2024-01-18T10:15:00Z"
+  },
+  {
+    "id": "f1000019-0000-4000-8000-000000000019",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "UD. Logistik Selatan",
+    "port_id": "5f4e3d2c-1b0a-9988-7766-554433221100",
+    "commodity_ids": [
+      "c0000005-0000-4000-8000-000000000005",
+      "c0000007-0000-4000-8000-000000000007"
+    ],
+    "avg_monthly_volume_ton": 750.5,
+    "rating": 4.4,
+    "verified": false,
+    "address": "Jl. Raya Mandala, Merauke",
+    "created_at": "2024-01-19T13:00:00Z"
+  },
+  {
+    "id": "f1000020-0000-4000-8000-000000000020",
+    "user_id": "a8e8f855-6f6a-4d37-8894-3d964fcf4f54",
+    "business_name": "PT. Hasil Bumi",
+    "port_id": "5f4e3d2c-1b0a-9988-7766-554433221100",
+    "commodity_ids": [
+      "c0000001-0000-4000-8000-000000000001",
+      "c0000006-0000-4000-8000-000000000006"
+    ],
+    "avg_monthly_volume_ton": 950.0,
+    "rating": 4.8,
+    "verified": true,
+    "address": "Tanah Miring, Merauke",
+    "created_at": "2024-01-20T08:30:00Z"
+  }
+]

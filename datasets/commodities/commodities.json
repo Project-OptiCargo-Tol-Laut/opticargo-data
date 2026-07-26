@@ -1,0 +1,131 @@
+[
+  {
+    "id": "c0000001-0000-4000-8000-000000000001",
+    "name": "Beras Premium",
+    "category": "Kebutuhan Pokok",
+    "hs_code": "1006.30.99",
+    "special_requirements": {
+      "moisture_control": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 10,
+    "certifications_required": ["SNI", "Karantina Pertanian"],
+    "created_at": "2024-01-01T10:00:00Z"
+  },
+  {
+    "id": "c0000002-0000-4000-8000-000000000002",
+    "name": "Kopra",
+    "category": "Hasil Pertanian",
+    "hs_code": "1203.00.00",
+    "special_requirements": {
+      "ventilation": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 5,
+    "certifications_required": [],
+    "created_at": "2024-01-01T10:05:00Z"
+  },
+  {
+    "id": "c0000003-0000-4000-8000-000000000003",
+    "name": "Ikan Tuna Beku",
+    "category": "Hasil Laut",
+    "hs_code": "0303.42.00",
+    "special_requirements": {
+      "temperature_celsius": -18
+    },
+    "is_perishable": true,
+    "max_stack_height": 8,
+    "certifications_required": ["Sertifikat Kesehatan Ikan", "HACCP"],
+    "created_at": "2024-01-02T11:00:00Z"
+  },
+  {
+    "id": "c0000004-0000-4000-8000-000000000004",
+    "name": "Cengkeh",
+    "category": "Rempah-Rempah",
+    "hs_code": "0907.10.00",
+    "special_requirements": {
+      "dry_environment": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 6,
+    "certifications_required": ["Karantina Pertanian"],
+    "created_at": "2024-01-03T09:30:00Z"
+  },
+  {
+    "id": "c0000005-0000-4000-8000-000000000005",
+    "name": "Semen Portland",
+    "category": "Material Bangunan",
+    "hs_code": "2523.29.90",
+    "special_requirements": {
+      "weatherproof": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 15,
+    "certifications_required": ["SNI"],
+    "created_at": "2024-01-04T08:15:00Z"
+  },
+  {
+    "id": "c0000006-0000-4000-8000-000000000006",
+    "name": "Minyak Goreng Sawit",
+    "category": "Kebutuhan Pokok",
+    "hs_code": "1511.90.36",
+    "special_requirements": {},
+    "is_perishable": false,
+    "max_stack_height": 4,
+    "certifications_required": ["SNI", "BPOM"],
+    "created_at": "2024-01-05T14:00:00Z"
+  },
+  {
+    "id": "c0000007-0000-4000-8000-000000000007",
+    "name": "Gula Pasir",
+    "category": "Kebutuhan Pokok",
+    "hs_code": "1701.99.10",
+    "special_requirements": {
+      "pest_control": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 8,
+    "certifications_required": ["SNI", "BPOM"],
+    "created_at": "2024-01-06T10:45:00Z"
+  },
+  {
+    "id": "c0000008-0000-4000-8000-000000000008",
+    "name": "Rumput Laut Kering",
+    "category": "Hasil Laut",
+    "hs_code": "1212.21.90",
+    "special_requirements": {
+      "ventilation": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 5,
+    "certifications_required": ["Karantina Ikan"],
+    "created_at": "2024-01-07T13:20:00Z"
+  },
+  {
+    "id": "c0000009-0000-4000-8000-000000000009",
+    "name": "Tepung Terigu",
+    "category": "Kebutuhan Pokok",
+    "hs_code": "1101.00.11",
+    "special_requirements": {
+      "pest_control": true
+    },
+    "is_perishable": false,
+    "max_stack_height": 10,
+    "certifications_required": ["SNI", "BPOM"],
+    "created_at": "2024-01-08T11:15:00Z"
+  },
+  {
+    "id": "c0000010-0000-4000-8000-000000000010",
+    "name": "Bawang Merah",
+    "category": "Sayur Mayur",
+    "hs_code": "0703.10.19",
+    "special_requirements": {
+      "ventilation": true,
+      "temperature_celsius": 10
+    },
+    "is_perishable": true,
+    "max_stack_height": 3,
+    "certifications_required": ["Karantina Pertanian"],
+    "created_at": "2024-01-09T09:00:00Z"
+  }
+]
