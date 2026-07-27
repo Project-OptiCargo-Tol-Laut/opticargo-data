@@ -1,0 +1,6 @@
+{
+    "extraPaths": [
+        "../opticargo-shared/src"
+    ],
+    "reportMissingModuleSource": "none"
+}

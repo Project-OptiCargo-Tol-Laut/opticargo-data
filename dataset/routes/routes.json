@@ -5309,10 +5309,10 @@
     "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
   },
   {
-    "id": "691d9f0e-f719-5e27-a1cb-a8908349d612",
+    "id": "dd48dc56-4590-5c2d-99e7-84e41f9d60c8",
     "route_id": "route_267",
-    "origin_port_id": "7c4f05fe-f420-5fb7-87ab-9bf0ef89f23f",
-    "origin_port_name": "Sanni",
+    "origin_port_id": "b0610b75-d74e-5f59-bb72-0006f59c5b8c",
+    "origin_port_name": "Sarmi",
     "destination_port_id": "b416f3c8-7309-5b06-8da7-cbfb60d46632",
     "destination_port_name": "Biak",
     "via_ports": [],

@@ -15,11 +15,13 @@ from pathlib import Path
 
 SUPPLIERS_NAMESPACE = uuid.UUID("e0000000-0000-4000-8000-000000000000")
 
-def make_supplier_uuid(name: str) -> str:
-    return str(uuid.uuid5(SUPPLIERS_NAMESPACE, name.lower().strip()))
+def make_supplier_uuid(name: str, port_id: str) -> str:
+    key = f"{name.lower().strip()}|{port_id}"
+    return str(uuid.uuid5(SUPPLIERS_NAMESPACE, key))
 
-def make_user_uuid(name: str) -> str:
-    return str(uuid.uuid5(uuid.NAMESPACE_DNS, name.lower().strip() + ".user"))
+def make_user_uuid(name: str, port_id: str) -> str:
+    key = f"{name.lower().strip()}|{port_id}.user"
+    return str(uuid.uuid5(uuid.NAMESPACE_DNS, key))
 
 now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -61,8 +63,8 @@ if __name__ == "__main__":
         assigned_comms = random.sample(target_comms, num_comms)
         
         result.append({
-            "id": make_supplier_uuid(business_name),
-            "user_id": make_user_uuid(business_name),
+            "id": make_supplier_uuid(business_name, f"{port['id']}_{i}"),
+            "user_id": make_user_uuid(business_name, f"{port['id']}_{i}"),
             "business_name": business_name,
             "port_id": port["id"],
             "commodity_ids": assigned_comms,

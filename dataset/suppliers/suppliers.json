@@ -1,7 +1,7 @@
 [
   {
-    "id": "3ea47c3c-6d46-58e5-b486-a7d39df060f4",
-    "user_id": "b13e4c6b-90c5-52df-a06a-cc186411dc27",
+    "id": "e985241d-877b-5d9d-8b03-206133bb304e",
+    "user_id": "89fd4989-022b-5ceb-8354-957ea70f555b",
     "business_name": "UD. Utara Samudera",
     "port_id": "7b2881fa-4aa1-5817-a3f7-832828132db0",
     "commodity_ids": [
@@ -11,11 +11,11 @@
     "rating": 3.7,
     "verified": true,
     "address": "Jl. Pelabuhan Enggano No. 70, Kabupaten Bengkulu Utara",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "d2c12b0a-b9fe-506e-9cae-e34fda35e1b5",
-    "user_id": "4b56bc9f-284b-5270-9129-a5bddd3ef812",
+    "id": "51d1f9eb-fcb1-5e44-9816-a4905f0f538f",
+    "user_id": "5fa69cfc-f04d-5ec1-b0c0-b99e1377f38e",
     "business_name": "PT. Pangkalpinang Sejahtera",
     "port_id": "413853ba-9e5c-5d7d-9cef-4ce8f4dc26bd",
     "commodity_ids": [
@@ -25,13 +25,13 @@
     "rating": 4.4,
     "verified": true,
     "address": "Jl. Pelabuhan Pangkal Balam No. 92, Kota Pangkalpinang",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "fa5d16bb-ce0b-504d-9aec-95f10b35e461",
-    "user_id": "70831348-06ae-59f7-8bd0-5a5a887fc67e",
+    "id": "47f19733-5b78-5a31-a494-1d305d789250",
+    "user_id": "0a9debb2-05fb-54d1-b005-bba41e72c203",
     "business_name": "CV. Daya Tani",
-    "port_id": "61b791bd-e007-53d6-86d0-bcf80282d727",
+    "port_id": "4448cabd-2f64-5eae-80d3-74e6a98f294e",
     "commodity_ids": [
       "10b18500-6410-526b-b5ee-b6a458a5e992",
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc"
@@ -39,12 +39,12 @@
     "avg_monthly_volume_ton": 82.8,
     "rating": 3.5,
     "verified": false,
-    "address": "Jl. Pelabuhan Kisar (Wonreli) No. 90, Kabupaten Maluku Barat Daya",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Moa No. 90, Kabupaten Maluku Barat Daya",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "d5e36a37-34d9-51c8-9429-111155ec8a42",
-    "user_id": "44fd1974-ea06-58e9-b019-cfef4a5432e7",
+    "id": "d50918ab-dbc7-5a76-b9f2-d311832b211e",
+    "user_id": "fdf82596-582d-5f3a-b5f4-34299fc0b9c0",
     "business_name": "PT. Talaud Tani",
     "port_id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
     "commodity_ids": [
@@ -55,27 +55,27 @@
     "rating": 4.0,
     "verified": true,
     "address": "Jl. Pelabuhan Lirung No. 34, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "a3f47e1b-7cfa-5847-9f7c-bf3453c560d8",
-    "user_id": "cddaf21e-65fe-57b9-9594-b15c14985b93",
-    "business_name": "CV. Timur Maluku",
-    "port_id": "a3659899-fd8e-5737-9e7a-c7c0d04c2dff",
+    "id": "9aed6873-08b9-5921-8284-a30f9a1daa4a",
+    "user_id": "289729cb-9573-50c3-97d9-11694420b00c",
+    "business_name": "CV. Dompu Maluku",
+    "port_id": "36dbd361-6991-50bd-ac33-d3a132c60380",
     "commodity_ids": [
       "6666f5d6-82a9-5d5b-bf4d-19c31757b988"
     ],
     "avg_monthly_volume_ton": 17.1,
     "rating": 3.9,
     "verified": true,
-    "address": "Jl. Pelabuhan Waingapu No. 47, Kabupaten Sumba Timur",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Calabai (Dompu) No. 47, Kabupaten Dompu",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "9d5a60d0-ecae-56bf-8726-2aa24708116a",
-    "user_id": "e7afcd8c-4bfd-59d5-9657-4b068830999a",
-    "business_name": "PT. Raijua Hasil Bumi",
-    "port_id": "ad043dd3-cde0-51bc-a539-497bb0be0539",
+    "id": "e7989843-79e7-5462-b51d-844616f642be",
+    "user_id": "ca3b6c8e-d849-5a1a-bdeb-17c1871978ae",
+    "business_name": "PT. Timur Hasil Bumi",
+    "port_id": "a3659899-fd8e-5737-9e7a-c7c0d04c2dff",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7",
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc",
@@ -84,14 +84,14 @@
     "avg_monthly_volume_ton": 87.0,
     "rating": 4.8,
     "verified": true,
-    "address": "Jl. Pelabuhan Sabu No. 59, Kabupaten Sabu Raijua",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Waingapu No. 59, Kabupaten Sumba Timur",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "12f737f3-9b4c-5155-a8c0-8a1b780be45b",
-    "user_id": "9371cdab-c61f-533d-9bb0-8a1f7d50f9fa",
-    "business_name": "PT. Selayar Nusantara",
-    "port_id": "7c4f05fe-f420-5fb7-87ab-9bf0ef89f23f",
+    "id": "e4721b9d-a9dd-5f0f-86b4-5c393b7d2336",
+    "user_id": "2befc6f2-6526-51a2-9f2f-cb1d448d7596",
+    "business_name": "PT. Baubau Nusantara",
+    "port_id": "043c3644-4a70-5bfe-a486-c9751820c65f",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7",
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc"
@@ -99,12 +99,12 @@
     "avg_monthly_volume_ton": 73.2,
     "rating": 4.5,
     "verified": true,
-    "address": "Jl. Pelabuhan Sanni No. 82, Kabupaten Kepulauan Selayar",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Bau Bau No. 82, Kota Baubau",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "f076df28-d1af-5070-bdd2-c5fa75aab8bb",
-    "user_id": "493ddbac-7ab7-5657-9db3-ff13bc24c4c3",
+    "id": "b447f35d-0ab5-5240-b696-ebefc3413d81",
+    "user_id": "4d5b6a98-ccf2-59a8-b6bf-bee3fd49183f",
     "business_name": "PT. Mamuju Maju",
     "port_id": "430d98f7-56b0-501b-9399-a624e98967d9",
     "commodity_ids": [
@@ -115,13 +115,13 @@
     "rating": 4.8,
     "verified": true,
     "address": "Jl. Pelabuhan Belang Belang No. 30, Kabupaten Mamuju",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "6f315162-ef44-5d37-930e-e8eb90bcf606",
-    "user_id": "50115cd7-dc83-5dbf-8f13-53e4e27fd772",
-    "business_name": "CV. Selatan Timur",
-    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
+    "id": "cef95083-b3ad-53c0-8ec4-f04b45bcb0ba",
+    "user_id": "8671aaab-7f2a-5f0f-bcc8-dd8b3812fe2a",
+    "business_name": "CV. Wondama Timur",
+    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
     "commodity_ids": [
       "d641502d-275c-5bbe-b730-cf77f6bd912a",
       "331aba25-247f-55e6-a8d0-c11e69bb19a7"
@@ -129,28 +129,28 @@
     "avg_monthly_volume_ton": 92.2,
     "rating": 4.4,
     "verified": true,
-    "address": "Jl. Pelabuhan Oransbari No. 28, Kabupaten Manokwari Selatan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Wasior No. 28, Kabupaten Teluk Wondama",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "99ed80fa-915f-5a2c-b35b-b88fa9a8f251",
-    "user_id": "2c6ffe41-4bca-506e-84b4-e9d8d41a77a2",
-    "business_name": "UD. Wakatobi Papua",
-    "port_id": "f78f4e54-73b1-5df0-a07e-6327013dee5d",
+    "id": "eb2b8680-018a-5ee6-8229-972d77275d5b",
+    "user_id": "2ee67ae5-7705-5585-acf4-9408471f5408",
+    "business_name": "UD. Timur Papua",
+    "port_id": "b1f2e734-eab2-56df-a73d-6b5eb732b3ce",
     "commodity_ids": [
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc"
     ],
     "avg_monthly_volume_ton": 22.6,
     "rating": 4.6,
     "verified": true,
-    "address": "Jl. Pelabuhan Wanci No. 96, Kabupaten Wakatobi",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Maba No. 96, Kabupaten Halmahera Timur",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "1f83c780-02a8-5a17-a910-e9460f0870da",
-    "user_id": "39c58438-7056-5cc6-b23f-a4bea768954b",
-    "business_name": "UD. Sarmi Timur",
-    "port_id": "b0610b75-d74e-5f59-bb72-0006f59c5b8c",
+    "id": "58a41e5a-0975-59a0-9cfa-ebc36f5658b9",
+    "user_id": "a6ceba9a-1320-5e49-a9f2-6c8de1e46e64",
+    "business_name": "UD. Yapen Timur",
+    "port_id": "5446e086-0f1c-5c9e-9610-9f6b5cd9656f",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7",
       "7271328c-f68a-545f-a91d-05220058b82f"
@@ -158,12 +158,12 @@
     "avg_monthly_volume_ton": 55.9,
     "rating": 3.6,
     "verified": true,
-    "address": "Jl. Pelabuhan Sarmi No. 15, Kabupaten Sarmi",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Serui No. 15, Kabupaten Kepulauan Yapen",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "ba312d54-035c-524e-9046-59eb7eb76821",
-    "user_id": "0114f35d-f84f-534d-b614-4c9a558af0fb",
+    "id": "0faa99fb-7323-5893-8f28-713cc894ac34",
+    "user_id": "1df9750a-9c0f-515e-ab13-30c63e5f4707",
     "business_name": "UD. Makassar Jaya",
     "port_id": "0c1cc2e1-49c3-5850-a2ff-1efa9d5bd343",
     "commodity_ids": [
@@ -175,11 +175,11 @@
     "rating": 4.2,
     "verified": true,
     "address": "Jl. Pelabuhan Makassar No. 71, Kota Makassar",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "19b2fdd4-b275-5cd1-a3b6-12b6394a0d49",
-    "user_id": "e01add81-c073-5af4-8974-2f79e5adc5a2",
+    "id": "77bd9c7d-13f7-5dad-b7c5-f22ea329b850",
+    "user_id": "5fb4d2c8-0ae4-56ad-93ee-a0c41398bd48",
     "business_name": "UD. Mentawai Nelayan",
     "port_id": "7d6c98d0-b292-546c-a1a3-e03e00fe465e",
     "commodity_ids": [
@@ -191,11 +191,11 @@
     "rating": 4.2,
     "verified": true,
     "address": "Jl. Pelabuhan Mentawai No. 93, Kabupaten Kepulauan Mentawai",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "24cbc3a8-2d90-5375-9a0f-c73237b6f12c",
-    "user_id": "0e22b35d-3b12-55f1-a3d8-237c316d5f18",
+    "id": "83627772-db37-547f-9156-de78adb9c905",
+    "user_id": "39f99512-8655-5131-bb03-f917d39fca24",
     "business_name": "UD. Talaud Laut",
     "port_id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
     "commodity_ids": [
@@ -207,13 +207,13 @@
     "rating": 4.6,
     "verified": true,
     "address": "Jl. Pelabuhan Kakorotan No. 100, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "a15c1f52-adc9-585f-9d91-24da7fcfddd9",
-    "user_id": "18ed8454-98e4-5de6-ac6b-90bd54075ace",
-    "business_name": "PT. Yapen Berkah",
-    "port_id": "5446e086-0f1c-5c9e-9610-9f6b5cd9656f",
+    "id": "8587f946-35c5-5e03-be76-f5dad1ca5c38",
+    "user_id": "8056aee3-8b7c-52d9-a970-33f5660f6560",
+    "business_name": "PT. Raya Berkah",
+    "port_id": "28d28777-9405-5855-959b-d05b46a2800c",
     "commodity_ids": [
       "ad71db8d-90e4-5eb7-a7a4-d7a81ba4e7d3",
       "07e8516b-f6d9-551f-b6ed-a21aef871019"
@@ -221,12 +221,12 @@
     "avg_monthly_volume_ton": 20.1,
     "rating": 4.0,
     "verified": false,
-    "address": "Jl. Pelabuhan Serui No. 40, Kabupaten Kepulauan Yapen",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Teba No. 40, Kabupaten Mamberamo Raya",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "4e99188d-942f-56a3-a911-1b3ee195c002",
-    "user_id": "7ca4fb51-ac66-5994-9530-33ca9f4266b8",
+    "id": "b5a741be-550f-5bd8-a1eb-b36385f5e1a5",
+    "user_id": "4a275c16-2ab3-55c7-b3da-3314a958b281",
     "business_name": "UD. Mamuju Makmur",
     "port_id": "430d98f7-56b0-501b-9399-a624e98967d9",
     "commodity_ids": [
@@ -236,11 +236,11 @@
     "rating": 5.0,
     "verified": true,
     "address": "Jl. Pelabuhan Belang Belang No. 17, Kabupaten Mamuju",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "c98b5265-3e93-5993-ae63-de3b55905682",
-    "user_id": "6711a7f0-42fc-53ef-84da-eb21be49d35c",
+    "id": "24312ad8-00f2-5d33-afa4-f476f0616e0f",
+    "user_id": "aea33966-f8df-5db5-b897-fcd41212acf0",
     "business_name": "UD. Natuna Logistik",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -251,11 +251,11 @@
     "rating": 4.9,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 89, Kabupaten Natuna",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "3ca83ce3-43ad-5cdf-8e88-2366d2063cd2",
-    "user_id": "388a3ef0-abdd-5a6f-a221-83f4d8c94776",
+    "id": "6d0a4c61-54b3-597f-bb6b-966e5e81a38f",
+    "user_id": "be8120b7-f1ca-52ce-8e80-c54ac8bab701",
     "business_name": "CV. Padang Bina",
     "port_id": "ae316328-0ba6-5ea9-b0c5-4126bd0b895a",
     "commodity_ids": [
@@ -266,25 +266,25 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Teluk Bayur No. 76, Kota Padang",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "35b20797-5f8a-518c-90bc-37d63cb70c11",
-    "user_id": "17b8a470-ce35-542d-a775-f6072d1c9405",
-    "business_name": "PT. Selatan Hasil Bumi",
-    "port_id": "92d64983-b4cc-56c3-8d62-ff29a401fbd6",
+    "id": "5f623e8f-6a4a-502c-b653-a5f5ef05b6bd",
+    "user_id": "c92e3317-950a-51f0-8464-fdaae6527e3f",
+    "business_name": "PT. Tanimbar Hasil Bumi",
+    "port_id": "678de520-3f4d-58c1-89a7-582d0abfb0ca",
     "commodity_ids": [
       "07e8516b-f6d9-551f-b6ed-a21aef871019"
     ],
     "avg_monthly_volume_ton": 30.6,
     "rating": 4.9,
     "verified": false,
-    "address": "Jl. Pelabuhan Namrole No. 10, Kabupaten Buru Selatan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Saumlaki No. 10, Kabupaten Kepulauan Tanimbar",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "5ca12985-7cea-57d8-9afd-fb8b3e077d7e",
-    "user_id": "5c5e7e13-c069-5b81-88a2-ebbbdc900df6",
+    "id": "5df59bd8-65bd-5199-b9e4-2e7607254e0e",
+    "user_id": "e633b9f9-5485-5239-81f8-74842d722aa4",
     "business_name": "UD. Talaud Papua",
     "port_id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
     "commodity_ids": [
@@ -294,11 +294,11 @@
     "rating": 4.9,
     "verified": true,
     "address": "Jl. Pelabuhan Lirung No. 61, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "0cd2e7ac-b603-576e-9374-a1662d355925",
-    "user_id": "948b9084-5131-5337-aa94-1c3ca316c5dd",
+    "id": "e3f9542b-990e-5ac8-a439-5919a3f9bd20",
+    "user_id": "851c7987-9fbf-524b-94a6-584a7914e6af",
     "business_name": "CV. Natuna Pangan",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -308,11 +308,11 @@
     "rating": 4.0,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 94, Kabupaten Natuna",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "0374c0c3-61c5-5744-9c2e-e89855d35c8e",
-    "user_id": "18461293-148a-5e58-bd96-f81e6744862f",
+    "id": "3cd153fc-f2b2-58f5-874c-4a3f82cd0101",
+    "user_id": "fe2d47c8-406c-584f-b7fb-4309a79a5db1",
     "business_name": "PT. Utara Jaya",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -324,11 +324,11 @@
     "rating": 4.3,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 24, Kota Jakarta Utara",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "f076df28-d1af-5070-bdd2-c5fa75aab8bb",
-    "user_id": "493ddbac-7ab7-5657-9db3-ff13bc24c4c3",
+    "id": "43d7b157-6c32-5836-8a80-9e0b9aecfffa",
+    "user_id": "39d48920-99ca-5a61-99b9-a6be3cdd0334",
     "business_name": "PT. Mamuju Maju",
     "port_id": "430d98f7-56b0-501b-9399-a624e98967d9",
     "commodity_ids": [
@@ -340,11 +340,11 @@
     "rating": 4.8,
     "verified": false,
     "address": "Jl. Pelabuhan Belang Belang No. 97, Kabupaten Mamuju",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "a505a565-7703-5d5a-9a3b-faff915babdc",
-    "user_id": "97f20abc-3684-5d18-aaf1-180fef44826c",
+    "id": "6df22ebd-9847-5173-961a-d0ef04a7ca47",
+    "user_id": "f98e89c7-7964-5a1e-9501-e4f9dbc5490f",
     "business_name": "CV. Nunukan Papua",
     "port_id": "ecd590a5-76a9-5134-acfe-36a66dc8871c",
     "commodity_ids": [
@@ -355,11 +355,11 @@
     "rating": 3.7,
     "verified": true,
     "address": "Jl. Pelabuhan P. Sebatik No. 50, Kabupaten Nunukan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "3f926485-e927-567a-ad2c-c015d74df1b7",
-    "user_id": "82b4604b-0d5c-53ba-852f-f07b6a42c431",
+    "id": "b5644335-491e-5b68-98f2-e0a19b33d4bf",
+    "user_id": "20dbfd78-976b-53f2-87fc-ea48ce113834",
     "business_name": "CV. Natuna Jaya",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -371,25 +371,25 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 95, Kabupaten Natuna",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "bba389cb-649f-5425-bdca-14878a8cc8ea",
-    "user_id": "03e4c44f-5982-5020-87f2-f74cacdb46a4",
-    "business_name": "CV. Dompu Hasil Bumi",
-    "port_id": "36dbd361-6991-50bd-ac33-d3a132c60380",
+    "id": "30eec3ca-7088-51d6-939d-53ca644d2426",
+    "user_id": "1a99d289-e915-5d95-8e49-82b50c804bf2",
+    "business_name": "CV. Fakfak Hasil Bumi",
+    "port_id": "a07b9c47-0b9f-5175-9159-77312639f91b",
     "commodity_ids": [
       "10b18500-6410-526b-b5ee-b6a458a5e992"
     ],
     "avg_monthly_volume_ton": 52.9,
     "rating": 4.9,
     "verified": true,
-    "address": "Jl. Pelabuhan Calabai (Dompu) No. 8, Kabupaten Dompu",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Fakfak No. 8, Kabupaten Fakfak",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "a1e243d3-deb7-5edb-b8bb-303a247a92ee",
-    "user_id": "80b73cae-e6ef-5e68-ab63-34c60a7dc0d1",
+    "id": "c1645d26-dd0f-5f74-9935-3b66b0c9c007",
+    "user_id": "16374890-2566-5852-9fc0-8638b587855d",
     "business_name": "PT. Natuna Nelayan",
     "port_id": "fd4b5bc3-32a1-5711-b6cb-baeca8d1267f",
     "commodity_ids": [
@@ -401,11 +401,11 @@
     "rating": 4.8,
     "verified": true,
     "address": "Jl. Pelabuhan Serasan No. 77, Kabupaten Natuna",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "653587f6-53d7-5049-9f8f-57f8f349d625",
-    "user_id": "959d1467-bda4-5819-952e-13bc80e3e9a3",
+    "id": "80f3f88e-7fe5-57ae-9c95-d061c96e1824",
+    "user_id": "37f25c76-20a5-566d-8118-559c7ac2b126",
     "business_name": "CV. Utara Industri",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -417,11 +417,11 @@
     "rating": 4.6,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 51, Kota Jakarta Utara",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "3ca83ce3-43ad-5cdf-8e88-2366d2063cd2",
-    "user_id": "388a3ef0-abdd-5a6f-a221-83f4d8c94776",
+    "id": "02bf0199-8883-5e29-a0b8-661e4516a4e6",
+    "user_id": "a6a6a7ef-9a2e-51af-9d0e-109b334bc36a",
     "business_name": "CV. Padang Bina",
     "port_id": "ae316328-0ba6-5ea9-b0c5-4126bd0b895a",
     "commodity_ids": [
@@ -431,13 +431,13 @@
     "rating": 5.0,
     "verified": false,
     "address": "Jl. Pelabuhan Teluk Bayur No. 10, Kota Padang",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "1739e7f8-60e8-5540-9e8f-ed09465bd3a6",
-    "user_id": "d26b7429-6c00-5ad2-8773-58390cd8acc6",
-    "business_name": "CV. Utara Laut",
-    "port_id": "5147488a-1a4e-506a-af53-e7952622a32a",
+    "id": "67e42092-26f3-516a-835a-35308a7b4b03",
+    "user_id": "1ea87ab6-7620-5016-85ad-1e38cd0bceb5",
+    "business_name": "CV. Aru Laut",
+    "port_id": "3056d814-05c6-5b11-a2d6-03cb4a6e7719",
     "commodity_ids": [
       "d641502d-275c-5bbe-b730-cf77f6bd912a",
       "331aba25-247f-55e6-a8d0-c11e69bb19a7"
@@ -445,26 +445,26 @@
     "avg_monthly_volume_ton": 43.3,
     "rating": 3.7,
     "verified": false,
-    "address": "Jl. Pelabuhan Tobelo No. 91, Kabupaten Halmahera Utara",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Dobo No. 91, Kabupaten Kepulauan Aru",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "8158c217-ee24-5625-a2b1-e100549e8fe2",
-    "user_id": "fc1fc94f-d935-58e1-a530-52053aafd856",
-    "business_name": "UD. Selatan Maluku",
-    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
+    "id": "4e9f130a-42db-5149-a00f-e99d16d4cbc5",
+    "user_id": "1c194283-a2b1-5e03-b4fd-0f6bb78fc1c2",
+    "business_name": "UD. Wondama Maluku",
+    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
     "commodity_ids": [
       "f3112d93-5db1-558e-a351-f21064c53bc2"
     ],
     "avg_monthly_volume_ton": 36.9,
     "rating": 4.5,
     "verified": false,
-    "address": "Jl. Pelabuhan Oransbari No. 18, Kabupaten Manokwari Selatan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Wasior No. 18, Kabupaten Teluk Wondama",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "58f10dc0-aa7e-5d17-a5e5-b9d4d1c0bad2",
-    "user_id": "37d8e5f8-051a-55ac-8b03-a8f42ac91bed",
+    "id": "fac35ab5-d6db-58cc-b284-f1e328fe32d2",
+    "user_id": "d37178f4-2a31-543f-828f-a035c85b230f",
     "business_name": "UD. Utara Agro",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -474,11 +474,11 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 88, Kota Jakarta Utara",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "5ca12985-7cea-57d8-9afd-fb8b3e077d7e",
-    "user_id": "5c5e7e13-c069-5b81-88a2-ebbbdc900df6",
+    "id": "a2a7f380-2d77-564e-a316-9b429f14eaa3",
+    "user_id": "06353088-0fd5-5325-bfb8-6f19ea4e757a",
     "business_name": "UD. Talaud Papua",
     "port_id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
     "commodity_ids": [
@@ -489,13 +489,13 @@
     "rating": 4.7,
     "verified": true,
     "address": "Jl. Pelabuhan Kakorotan No. 43, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "3d48d6c8-c5b2-55e8-817e-5bddffa7b710",
-    "user_id": "61494f00-c4e3-5df2-9812-3fa197536ba1",
-    "business_name": "CV. Alor Laut",
-    "port_id": "04f0117e-8c63-549e-b639-678d8ec146a7",
+    "id": "bf38dad0-939e-523c-981f-c786c77e81ed",
+    "user_id": "a1eed94b-70cd-5f48-a9aa-ec0289fafff2",
+    "business_name": "CV. Timur Laut",
+    "port_id": "0bb9f281-857e-584a-8955-930e5f107439",
     "commodity_ids": [
       "ad71db8d-90e4-5eb7-a7a4-d7a81ba4e7d3",
       "f3112d93-5db1-558e-a351-f21064c53bc2",
@@ -504,14 +504,14 @@
     "avg_monthly_volume_ton": 60.5,
     "rating": 3.7,
     "verified": false,
-    "address": "Jl. Pelabuhan Kalabahi No. 89, Kabupaten Alor",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Larantuka No. 89, Kabupaten Flores Timur",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "505f095e-d833-5818-b690-b655fce93afd",
-    "user_id": "852fe6e2-2a10-5b45-9439-e91a61e2ed74",
+    "id": "1a1a5fbe-744f-57a5-b2e5-46decf757ce4",
+    "user_id": "330a3744-b7f6-5db0-a212-72badb4034e5",
     "business_name": "PT. Daya Nusantara",
-    "port_id": "61b791bd-e007-53d6-86d0-bcf80282d727",
+    "port_id": "4448cabd-2f64-5eae-80d3-74e6a98f294e",
     "commodity_ids": [
       "f3112d93-5db1-558e-a351-f21064c53bc2",
       "7271328c-f68a-545f-a91d-05220058b82f",
@@ -520,12 +520,12 @@
     "avg_monthly_volume_ton": 21.5,
     "rating": 4.0,
     "verified": false,
-    "address": "Jl. Pelabuhan Kisar (Wonreli) No. 6, Kabupaten Maluku Barat Daya",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Moa No. 6, Kabupaten Maluku Barat Daya",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "be8dd2c9-d3ec-588c-8806-7cb554191a6e",
-    "user_id": "6b0b74e3-a442-5dd8-990f-4ec6d3d33bb7",
+    "id": "90a1c0aa-8bd5-500e-b10e-9a20d009ebfa",
+    "user_id": "4cae8868-0e3c-5600-820c-9210b4df9e14",
     "business_name": "UD. Biaro Tani",
     "port_id": "9043b0f1-9493-5a3e-9371-8ca890d68d45",
     "commodity_ids": [
@@ -537,53 +537,53 @@
     "rating": 4.6,
     "verified": false,
     "address": "Jl. Pelabuhan Biaro No. 31, Kabupaten Kepulauan Siau Tagulandang Biaro",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "7527a813-761f-574f-bd2d-87c8acecbbe5",
-    "user_id": "7d178953-b534-5b23-a6c6-40b8291a1710",
-    "business_name": "PT. Selatan Timur",
-    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
+    "id": "29ac63cb-94af-5f4d-a19c-e0341f9cb2ca",
+    "user_id": "38806d77-9e4c-5c40-85c7-9ec3e8bc7d4f",
+    "business_name": "PT. Wondama Timur",
+    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
     "commodity_ids": [
       "7271328c-f68a-545f-a91d-05220058b82f"
     ],
     "avg_monthly_volume_ton": 76.3,
     "rating": 4.0,
     "verified": false,
-    "address": "Jl. Pelabuhan Oransbari No. 86, Kabupaten Manokwari Selatan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Wasior No. 86, Kabupaten Teluk Wondama",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "92713a6b-05fb-55db-b6ab-258d44efd7aa",
-    "user_id": "f1821820-c72a-5f7f-a6c3-761a70e7e756",
-    "business_name": "PT. Selatan Samudera",
-    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
+    "id": "a9836b6c-21e8-5584-9f7d-7e3abcb1a124",
+    "user_id": "f6e37c16-6329-502d-8011-f38015455a1f",
+    "business_name": "PT. Wondama Samudera",
+    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
     "commodity_ids": [
       "d641502d-275c-5bbe-b730-cf77f6bd912a"
     ],
     "avg_monthly_volume_ton": 44.4,
     "rating": 3.6,
     "verified": true,
-    "address": "Jl. Pelabuhan Oransbari No. 26, Kabupaten Manokwari Selatan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Wasior No. 26, Kabupaten Teluk Wondama",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "07a465f3-85d8-5f8b-b377-e396b89af285",
-    "user_id": "c36d55e8-6567-5525-8857-a9fc3727bf5a",
-    "business_name": "CV. Tengah Samudera",
-    "port_id": "44c427a8-c555-5ddc-9c69-d3ad3946a748",
+    "id": "bd8d024b-cea8-5737-888a-c0be469b331d",
+    "user_id": "3f831629-e8a8-56aa-8df6-2d455a7c9772",
+    "business_name": "CV. Sula Samudera",
+    "port_id": "8b9e79c6-499a-5933-a3c5-23258e473285",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7"
     ],
     "avg_monthly_volume_ton": 12.1,
     "rating": 3.8,
     "verified": true,
-    "address": "Jl. Pelabuhan Pulau Gebe No. 9, Kabupaten Halmahera Tengah",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Sanana No. 9, Kabupaten Kepulauan Sula",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "16ade3b1-671c-50ab-b9c6-2bb5b78c9aa4",
-    "user_id": "57313850-fb56-5a6f-b59d-c95cd3923f16",
+    "id": "96ef3eb2-2b52-58db-9874-631e445fe45d",
+    "user_id": "b9a4b180-6fba-5d16-bc8c-473f7f74a1b7",
     "business_name": "CV. Talaud Maluku",
     "port_id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
     "commodity_ids": [
@@ -594,11 +594,11 @@
     "rating": 3.7,
     "verified": false,
     "address": "Jl. Pelabuhan Lirung No. 23, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "61272588-f328-50c5-88f7-828ec9b768ed",
-    "user_id": "e8289290-9f3e-577b-a5f9-2f8159a4045f",
+    "id": "c9f7e655-7379-5dad-9cd4-ca1c26e81346",
+    "user_id": "5ea5f272-4319-53e1-8e7c-32de87f55ee3",
     "business_name": "PT. Talaud Nelayan",
     "port_id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
     "commodity_ids": [
@@ -610,11 +610,11 @@
     "rating": 5.0,
     "verified": true,
     "address": "Jl. Pelabuhan Kakorotan No. 74, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "1b691dec-0173-5664-bd53-6ea11ade2f8a",
-    "user_id": "3685a307-40ec-5be2-b206-d3d263fc68f1",
+    "id": "3d81b386-2aef-58b3-8759-d20561099a6a",
+    "user_id": "33b54b87-e636-50d7-96b9-fa48f4a7a63e",
     "business_name": "UD. Surabaya Jaya",
     "port_id": "2eeeaa5b-850c-5d20-9f75-86d3133a33d1",
     "commodity_ids": [
@@ -624,11 +624,11 @@
     "rating": 4.3,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Perak No. 95, Kota Surabaya",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "6f315162-ef44-5d37-930e-e8eb90bcf606",
-    "user_id": "50115cd7-dc83-5dbf-8f13-53e4e27fd772",
+    "id": "1d315ef6-e7b0-5b1b-9492-15ad92180139",
+    "user_id": "8e34e97e-c75f-5624-b781-584a2b38c855",
     "business_name": "CV. Selatan Timur",
     "port_id": "931e7fb5-9acf-5114-8042-579a70801444",
     "commodity_ids": [
@@ -638,13 +638,13 @@
     "rating": 4.5,
     "verified": true,
     "address": "Jl. Pelabuhan Amurang No. 39, Kabupaten Minahasa Selatan",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "610dcab0-a1e3-5d99-81dc-6c8730bcf353",
-    "user_id": "7e2a0942-810d-5235-a864-baa81f424780",
-    "business_name": "CV. Lembata Nusantara",
-    "port_id": "9d11a008-6cdd-514e-838a-0189887669ef",
+    "id": "3cc9f1ad-7cb1-5d0e-a7ed-fee88f52368b",
+    "user_id": "473a0ad7-4270-55e4-884c-36ffe5489a37",
+    "business_name": "CV. Sikka Nusantara",
+    "port_id": "6dad2996-9f37-51f9-9068-ed317c35a0ab",
     "commodity_ids": [
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc",
       "f3112d93-5db1-558e-a351-f21064c53bc2"
@@ -652,12 +652,12 @@
     "avg_monthly_volume_ton": 21.5,
     "rating": 4.1,
     "verified": false,
-    "address": "Jl. Pelabuhan Lewoleba No. 87, Kabupaten Lembata",
-    "created_at": "2026-07-26T12:35:39Z"
+    "address": "Jl. Pelabuhan Maumere No. 87, Kabupaten Sikka",
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "7164e765-5336-5883-ac58-b85ca1884f78",
-    "user_id": "907e0cee-86c5-59d4-90bc-5bc40bda7341",
+    "id": "cb2a6ad0-7b0a-5b76-88e1-2126813116a2",
+    "user_id": "e28c6b48-7773-5483-935f-61602197f2a0",
     "business_name": "UD. Timur Berkah",
     "port_id": "00728062-ca09-5e73-900d-20d5bd6cc24b",
     "commodity_ids": [
@@ -668,11 +668,11 @@
     "rating": 4.0,
     "verified": true,
     "address": "Jl. Pelabuhan Sangatta No. 75, Kabupaten Kutai Timur",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "83209f36-5e1f-5d87-9afc-df34f903075b",
-    "user_id": "2bcf64ba-fbd2-5bae-bc1f-b8643e9e0313",
+    "id": "8a09a298-bab3-5f76-8087-be9dfb967fce",
+    "user_id": "f00cb1de-9e75-58d6-a33d-01ef04971784",
     "business_name": "CV. Talaud Papua",
     "port_id": "78bfd18b-cec0-5b5d-bdf9-28f30a860688",
     "commodity_ids": [
@@ -683,11 +683,11 @@
     "rating": 4.9,
     "verified": true,
     "address": "Jl. Pelabuhan Miangas No. 22, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "15af1e18-944a-5b2b-a841-32d42fe47202",
-    "user_id": "38fd7409-166e-5991-b89b-61da66bd03c6",
+    "id": "278c5b59-0da1-5ae9-9485-46a8619607a6",
+    "user_id": "ed12b329-a501-523d-8c38-690833e7c585",
     "business_name": "UD. Sangihe Berkah",
     "port_id": "61a4aaec-ea9c-5f47-9677-c88320c62188",
     "commodity_ids": [
@@ -698,11 +698,11 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Marore No. 4, Kabupaten Kepulauan Sangihe",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "9f0d978d-3393-5a4f-bde0-495cee1ada81",
-    "user_id": "fe5d196c-4a7e-517d-8614-c97f02b1176c",
+    "id": "1044405a-a3f5-56f0-8c83-314d8c6fd95c",
+    "user_id": "ebdbabcd-c120-5967-a331-e93eead12949",
     "business_name": "UD. Natuna Makmur",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -713,11 +713,11 @@
     "rating": 4.1,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 19, Kabupaten Natuna",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "e59132ed-a7e5-5313-9fd7-ba9255362ec9",
-    "user_id": "a00e1129-ea8f-5ee9-85dd-9eee84197185",
+    "id": "f2a7edb9-54db-515a-93fe-67a341286a09",
+    "user_id": "752a3c6e-bc99-5c4c-b31b-0a6875eac117",
     "business_name": "PT. Mentawai Timur",
     "port_id": "7d6c98d0-b292-546c-a1a3-e03e00fe465e",
     "commodity_ids": [
@@ -727,11 +727,11 @@
     "rating": 4.5,
     "verified": true,
     "address": "Jl. Pelabuhan Mentawai No. 72, Kabupaten Kepulauan Mentawai",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   },
   {
-    "id": "f094eb4e-5792-5a98-a40e-c5855cfbca09",
-    "user_id": "8b018edd-32b8-52f6-be2a-b8934a68df62",
+    "id": "ee3b5056-cb8a-5915-9e54-161c332f2f0a",
+    "user_id": "a5dae6de-2a25-5566-ac40-13ce0f432cd1",
     "business_name": "CV. Utara Logistik",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -742,6 +742,6 @@
     "rating": 4.8,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 93, Kota Jakarta Utara",
-    "created_at": "2026-07-26T12:35:39Z"
+    "created_at": "2026-07-27T05:49:24Z"
   }
 ]

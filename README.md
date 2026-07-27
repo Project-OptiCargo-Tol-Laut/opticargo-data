@@ -1,80 +1,97 @@
-<div align="center">
-  <h1>🚢 OptiCargo Data Factory</h1>
-  <p><em>Pusat Dataset dan Generator Deterministik untuk Ekosistem AI OptiCargo</em></p>
-</div>
+# OptiCargo Data Factory
+
+**Pusat Dataset dan Orkestrasi Seeding untuk Ekosistem AI OptiCargo**
 
 ---
 
-## 📌 Latar Belakang
-Repositori `opticargo-data` adalah komponen fundamental (blok fondasi) bagi ekosistem AI OptiCargo. Kami menyadari bahwa model AI tingkat lanjut (*Cargo Matching, GraphRAG, Route Optimization*) membutuhkan asupan data yang tidak hanya masif, tetapi juga **konsisten, realistis, dan relasional**.
+## Latar Belakang
 
-Repo ini bertugas memproduksi, memvalidasi, dan menyediakan dataset (baik riil maupun sintetis yang logis) untuk di-seed ke dalam tiga database utama kami: **PostgreSQL** (Transaksional), **Neo4j** (Knowledge Graph), dan **Qdrant** (Vector Search).
+Repositori `opticargo-data` merupakan fondasi dari arsitektur ekosistem AI OptiCargo. Mengingat model AI tingkat lanjut (seperti *Cargo Matching, GraphRAG, dan Route Optimization*) membutuhkan asupan data yang masif, konsisten, realistis, dan terstruktur dengan baik, repositori ini bertanggung jawab atas seluruh siklus hidup data. 
 
-## 🌟 Keunggulan Arsitektur Data
+Tugas utama dari repositori ini adalah memproduksi, memvalidasi, dan menyediakan dataset (baik data riil maupun sintetis yang deterministik) untuk dimasukkan (di-seed) secara sistematis ke dalam arsitektur *Polyglot Persistence* OptiCargo.
 
-1. **Deterministic UUID5 Generation:** 
-   Kami tidak menggunakan ID acak (UUIDv4) atau angka *auto-increment*. Seluruh *Primary Key* digenerate menggunakan algoritma *hash* **UUIDv5** berbasis nama entitas (misal: "Tanjung Perak"). Pendekatan *software engineering* tingkat lanjut ini menjamin **Idempotency** dan **Reproducibility**—artinya *database* tidak akan pernah mengalami duplikasi data meskipun proses *seeding* dijalankan ribuan kali.
+## Arsitektur Polyglot Persistence
 
-2. **Real-World Geographic Logic:** 
-   Data sintetis kami tidak di-generate secara asal. *Supplier* yang diletakkan di pelabuhan **Hub** (seperti Surabaya/Makassar) secara otomatis dikonfigurasi untuk menyuplai barang pabrikan (Semen, Beras). Sebaliknya, *supplier* di pelabuhan **Feeder** (seperti Maluku/Papua) menyuplai hasil bumi/laut (Kopra, Ikan Beku). Logika ini sangat krusial agar *engine* AI kami bisa didemokan untuk menyelesaikan masalah *Empty Backhaul* (muatan balik kosong) secara logis dan realistis.
+OptiCargo menggunakan empat jenis database yang saling melengkapi untuk melayani fungsionalitas Multi-Agent:
 
-3. **Hybrid Data Sourcing:**
-   Menggabungkan 100% data riil regulasi pemerintah (untuk presisi RAG) dengan data operasional sintetis yang dikalibrasi sesuai kondisi empiris di lapangan.
+1. **PostgreSQL (Relational Database):** Bertindak sebagai *Source of Truth*. Menyimpan data terstruktur yang bersifat final dan transaksional seperti profil user, pelabuhan, daftar kapal, rute pelayaran, data tarif, dan status pemesanan.
+2. **Neo4j (Graph Database):** Bertindak sebagai *Knowledge Graph*. Menyimpan relasi antar entitas (Rute, Posisi Kapal, Supplier) untuk mendukung pencarian topologi graf dan analisis peluang *Empty Backhaul* yang tidak dapat diselesaikan dengan kueri relasional biasa.
+3. **Qdrant (Vector Database):** Bertindak sebagai *Semantic Engine*. Menyimpan hasil *vector embedding* (berdimensi 3072) dari puluhan dokumen regulasi dan SOP pemerintah. Memungkinkan agen AI melakukan pencarian berbasis makna (Semantic Search) dengan akurasi tinggi.
+4. **Redis (In-Memory Database):** Berfungsi sebagai jembatan komunikasi antar-agen dan sistem penyimpanan memori jangka pendek untuk koordinasi *real-time*.
 
----
+## Rincian Dataset
 
-## 📊 Rincian Dataset
-
-### 1. Data Operasional Riil (Diekstrak dari Dokumen Kemenhub)
-- **⚓ 70 Pelabuhan Tol Laut:** Lengkap dengan klasifikasi *Hub/Feeder* dan titik koordinat *Latitude/Longitude* presisi (hasil riset *geocoding*). *(Sumber Acuan: SK Trayek Tol Laut 2022)*
-- **🗺️ 445 Rute Pelayaran:** Pasangan pelabuhan asal-tujuan lengkap dengan jarak tempuh (*Nautical Miles*) dan besaran tarif kontainer *Dry/Reefer* bersubsidi. *(Sumber Acuan: Lampiran PM 29 Tahun 2018)*
+### 1. Data Operasional Riil
+Data ini diekstrak dari dokumen resmi Kementerian Perhubungan dan telah dikalibrasi.
+- **70 Pelabuhan Tol Laut:** Diklasifikasikan sebagai pelabuhan *Hub* atau *Feeder*, lengkap dengan titik koordinat *Latitude/Longitude* hasil *geocoding*.
+- **445 Rute Pelayaran:** Pasangan pelabuhan asal-tujuan yang dilengkapi dengan jarak tempuh (*Nautical Miles*) serta besaran tarif bersubsidi sesuai ketetapan PM 29 Tahun 2018.
 
 ### 2. Data Dokumen RAG (Knowledge Base)
-Terdapat **9 Dokumen PDF Resmi Pemerintah** yang telah di-standarisasi (*clean naming convention*) beserta *metadata*-nya di `regulations.json`. Dokumen ini mencakup:
-- Aturan Jaringan Trayek & Kewajiban Pelayanan Publik (PSO)
-- Tarif Kepelabuhanan & Jasa Bongkar Muat
-- Standar Operasional Prosedur (SOP) Operasional Pelabuhan (Stuffing/Stripping)
-- Undang-Undang Karantina Hewan, Ikan, & Tumbuhan
+Terdiri dari 9 Dokumen PDF Resmi Pemerintah yang telah distandardisasi. Termasuk di dalamnya:
+- Aturan Jaringan Trayek & Kewajiban Pelayanan Publik (PSO).
+- Tarif Kepelabuhanan & Jasa Bongkar Muat.
+- Standar Operasional Prosedur (SOP) Bongkar Muat.
+- Undang-Undang terkait logistik dan karantina.
 
-### 3. Data Transaksional Sintetis (Logically Generated)
-Dihasilkan secara deterministik melalui *Python script*:
-- **📦 19 Komoditas Unggulan:** Terbagi dalam Kebutuhan Pokok, Material Bangunan, Hasil Laut, dan Rempah. Dilengkapi standar `hs_code` dan syarat penanganan khusus (*cold-storage*).
-- **🛳️ 15 Kapal Pelayaran:** Menggunakan penamaan armada asli (KM Logistik Nusantara, KM Sabuk Nusantara) dengan rentang *Gross Tonnage* (GT) yang dikalibrasi dengan skala pelabuhan.
-- **🏢 50 Supplier Terdistribusi:** Tersebar secara acak namun proporsional di seluruh nusantara. *Foreign key* dijamin 100% terintegrasi dengan tabel pelabuhan dan komoditas.
+### 3. Data Transaksional Sintetis
+Dibuat secara deterministik untuk simulasi yang realistis:
+- **19 Komoditas:** Memuat kode HS dan klasifikasi penanganan khusus.
+- **15 Kapal Pelayaran:** Memiliki spesifikasi *Gross Tonnage* (GT) yang terkalibrasi.
+- **41 Pelayaran (Voyages):** Jadwal pelayaran kapal yang tersebar ke berbagai rute secara acak namun spesifik, lengkap dengan simulasi sisa kapasitas muatan (*remaining capacity*).
+- **50 Supplier:** Didistribusikan ke pelabuhan berdasarkan logika empiris (Supplier di *Hub* menyediakan barang pabrikan; Supplier di *Feeder* menyediakan hasil bumi).
 
----
-
-## 📂 Struktur Direktori
-
-Sesuai prinsip *Separation of Concerns*, kami memisahkan data pasif dengan logika pembuat (kode aktif):
+## Struktur Direktori
 
 ```text
 opticargo-data/
-├── dataset/                  # Murni menampung artefak data pasif (JSON & PDF siap pakai)
-│   ├── commodities/          # -> commodities.json
-│   ├── ports/                # -> ports.json
-│   ├── regulations/          # -> 9 PDF Resmi + regulations.json
-│   ├── routes/               # -> routes.json
-│   ├── ships/                # -> ships.json
-│   └── suppliers/            # -> suppliers.json
-├── scripts/
-│   └── generators/           # Murni menampung kode Python pembuat data sintetis deterministik
-│       ├── generate_commodities.py
-│       ├── generate_ports.py
-│       ├── generate_routes.py
-│       ├── generate_ships.py
-│       └── generate_suppliers.py
+├── dataset/                  # Artefak data JSON & PDF
+│   ├── commodities/          # commodities.json
+│   ├── ports/                # ports.json
+│   ├── regulations/          # Dokumen PDF & regulations.json
+│   ├── routes/               # routes.json
+│   ├── ships/                # ships.json
+│   ├── suppliers/            # suppliers.json
+│   └── voyages/              # voyages.json
+├── seed/                     # Kumpulan skrip seeding & validasi
+│   ├── validate.py           # Validasi skema Pydantic
+│   ├── seed_postgres.py      # Seeding tabel ke PostgreSQL
+│   ├── seed_neo4j.py         # Membangun Knowledge Graph di Neo4j
+│   ├── seed_qdrant.py        # Ekstraksi PDF dan Embedding ke Qdrant
+│   └── seed_all.py           # Orkestrator eksekusi semua skrip di atas
 └── README.md
 ```
 
-## 🚀 Cara Reproduksi Data (Generation)
+## Panduan Penggunaan (Seeding Pipeline)
 
-Jika Anda ingin memperbesar skala dataset (misal: dari 50 *supplier* menjadi 5.000 *supplier* untuk keperluan *Load Testing* arsitektur), Anda cukup mengubah satu angka pada *script* dan menjalankannya:
+1. Pastikan Anda telah menyalin file konfigurasi environment:
+   ```bash
+   cp .env.example .env
+   ```
+   (Isi `GEMINI_API_KEY` dengan API Key milik Anda).
+
+2. Pastikan semua kontainer Docker (PostgreSQL, Neo4j, Qdrant) pada repositori infrastruktur sudah berjalan.
+3. Jalankan perintah berikut dari direktori root `opticargo-data`:
 
 ```bash
-# Contoh untuk me-regenerate data komoditas, kapal, dan supplier
-python scripts/generators/generate_commodities.py
-python scripts/generators/generate_ships.py
-python scripts/generators/generate_suppliers.py
+python -m seed.seed_all
 ```
-> **Catatan:** Seluruh skrip secara otomatis membaca dependensi dari dataset utama (seperti `ports.json`) untuk menjamin integritas relasional (*Foreign Key Constraint*) agar selalu *valid* sebelum masuk ke tahap *database seeding*.
+
+Proses ini bersifat *idempotent*. Anda dapat menjalankannya berulang kali tanpa khawatir menduplikasi data, berkat penggunaan UUID5 (deterministik) pada PostgreSQL dan operasi `MERGE` pada Neo4j.
+
+## Verifikasi Visual (Untuk Keperluan Penjurian)
+
+Untuk memudahkan verifikasi dan audit arsitektur database, sistem ini telah menyediakan akses *dashboard* visual secara lokal yang dapat langsung diakses melalui web browser:
+
+1. **Neo4j (Knowledge Graph)**
+   - **URL:** `http://localhost:7474`
+   - **Login:** Username `neo4j`, Password `opticargo123` (Sesuai `.env`)
+   - **Cara Verifikasi:** Masukkan kueri Cypher `MATCH (n) RETURN n LIMIT 100` pada kotak di bagian atas lalu tekan Enter (atau tombol *Play*) untuk melihat visualisasi graf relasi pelabuhan, rute, kapal, dan *supplier* secara interaktif.
+
+2. **Qdrant (Vector Database)**
+   - **URL:** `http://localhost:16333/dashboard`
+   - **Login:** (Tidak perlu login, akses terbuka di *localhost*)
+   - **Cara Verifikasi:** Pilih menu **Collections** di panel kiri, kemudian klik pada collection `regulations`. Anda akan melihat daftar ribuan vektor berdimensi 3072 hasil *embedding* dokumen beserta dengan metadatanya (judul dokumen, nomor halaman, dan teks aslinya).
+
+3. **PostgreSQL (Relational Database)**
+   - **Kredensial:** Host `localhost`, Port `5432`, DB `opticargo`, User `opticargo`, Password `opticargo`.
+   - **Cara Verifikasi:** Gunakan aplikasi *Database Client* seperti **DBeaver** atau **pgAdmin**. Buka skema `public` dan Anda dapat memeriksa integritas relasional serta keutuhan data pada tabel-tabel transaksional (seperti rute dan tarif subsidi).

@@ -51,7 +51,6 @@ PORTS = [
     {"name": "Tagulandang", "city": "Kabupaten Kepulauan Siau Tagulandang Biaro", "province": "Sulawesi Utara", "latitude": 2.3453, "longitude": 125.3806, "port_type": "feeder", "max_vessel_tonnage": 5000, "tol_laut_role": "Pelabuhan Singgah - Tagulandang"},
     {"name": "Tahuna", "city": "Kabupaten Kepulauan Sangihe", "province": "Sulawesi Utara", "latitude": 3.6364, "longitude": 125.4636, "port_type": "feeder", "max_vessel_tonnage": 10000, "tol_laut_role": "Pelabuhan Singgah - Tahuna/Sangihe"},
     # FEEDER - Sulawesi Selatan & Tenggara
-    {"name": "Sanni", "city": "Kabupaten Kepulauan Selayar", "province": "Sulawesi Selatan", "latitude": -5.7333, "longitude": 120.4500, "port_type": "feeder", "max_vessel_tonnage": 5000, "tol_laut_role": "Pelabuhan Singgah - Sanni/Selayar"},
     {"name": "Bau Bau", "city": "Kota Baubau", "province": "Sulawesi Tenggara", "latitude": -5.4636, "longitude": 122.5972, "port_type": "feeder", "max_vessel_tonnage": 10000, "tol_laut_role": "Pelabuhan Singgah - Bau-Bau"},
     {"name": "Wanci", "city": "Kabupaten Wakatobi", "province": "Sulawesi Tenggara", "latitude": -5.3177, "longitude": 123.5409, "port_type": "feeder", "max_vessel_tonnage": 5000, "tol_laut_role": "Pelabuhan Singgah - Wanci/Wakatobi"},
     # FEEDER - Maluku Utara
@@ -123,7 +122,8 @@ for i, p in enumerate(PORTS):
         "max_vessel_tonnage": p["max_vessel_tonnage"],
         "facilities": build_facilities(p["port_type"]),
         "operating_hours": {"weekday": "07:00-17:00", "weekend": "07:00-14:00"},
-        "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+        "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+        "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
         "created_at": now,
     }
     result.append(record)
