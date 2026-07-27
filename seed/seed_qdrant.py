@@ -100,7 +100,7 @@ def get_gemini_client() -> genai.Client:
 # Ekstraksi Teks dari PDF
 # ---------------------------------------------------------------------------
 
-def extract_text_from_pdf(filepath: str, max_pages: int | None = None) -> str:
+def extract_text_from_pdf(filepath: str, max_pages: int | None = None, is_bilingual: bool = False) -> str:
     """
     Mengekstrak teks dari file PDF menggunakan pdfplumber.
 
@@ -121,7 +121,19 @@ def extract_text_from_pdf(filepath: str, max_pages: int | None = None) -> str:
     with pdfplumber.open(filepath) as pdf:
         pages = pdf.pages if max_pages is None else pdf.pages[:max_pages]
         for page in pages:
-            text = page.extract_text()
+            if is_bilingual:
+                width = page.width
+                height = page.height
+                left_bbox = (0, 0, width / 2, height)
+                right_bbox = (width / 2, 0, width, height)
+                
+                left_text = page.crop(left_bbox).extract_text() or ""
+                right_text = page.crop(right_bbox).extract_text() or ""
+                
+                text = f"{left_text}\n{right_text}"
+            else:
+                text = page.extract_text()
+                
             if text:
                 full_text.append(text)
     return "\n".join(full_text)
@@ -274,12 +286,13 @@ def run_seed() -> None:
 
         status = reg.get("status", "aktif")
         max_pages = reg.get("max_pages")
+        status_text = f"(status: {status}{f', dibatasi {max_pages} halaman' if max_pages else ''})"
 
-        print(f"[INFO] Memproses: {filename} (status: {status}"
-              f"{f', dibatasi {max_pages} halaman' if max_pages else ''})")
+        print(f"[INFO] Memproses: {filename} {status_text}")
 
         # -- Ekstrak dan bersihkan teks --
-        raw_text = extract_text_from_pdf(str(filepath), max_pages=max_pages)
+        is_bilingual = (reg["id"] == "reg_007")
+        raw_text = extract_text_from_pdf(str(filepath), max_pages=max_pages, is_bilingual=is_bilingual)
         if not raw_text.strip():
             print(f"[WARN] Tidak ada teks yang bisa diekstrak dari {filename}.")
             continue
