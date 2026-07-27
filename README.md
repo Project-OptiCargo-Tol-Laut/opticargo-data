@@ -52,46 +52,48 @@ opticargo-data/
 │   ├── ships/                # ships.json
 │   ├── suppliers/            # suppliers.json
 │   └── voyages/              # voyages.json
+├── scripts/
+│   └── generators/           # Skrip generator data sintetis (generate_voyages.py)
 ├── seed/                     # Kumpulan skrip seeding & validasi
 │   ├── validate.py           # Validasi skema Pydantic
 │   ├── seed_postgres.py      # Seeding tabel ke PostgreSQL
 │   ├── seed_neo4j.py         # Membangun Knowledge Graph di Neo4j
 │   ├── seed_qdrant.py        # Ekstraksi PDF dan Embedding ke Qdrant
+│   ├── seed_indexes.py       # Pembuatan index performa untuk DB
 │   └── seed_all.py           # Orkestrator eksekusi semua skrip di atas
 └── README.md
 ```
 
 ## Panduan Penggunaan (Seeding Pipeline)
 
-1. Pastikan Anda telah menyalin file konfigurasi environment:
+1. Pastikan Anda telah menyalin file konfigurasi environment. Sangat disarankan untuk mengubah kredensial default untuk keperluan produksi.
    ```bash
    cp .env.example .env
    ```
-   (Isi `GEMINI_API_KEY` dengan API Key milik Anda).
+   *(Isi `GEMINI_API_KEY` dengan API Key milik Anda. Sesuaikan port dan kredensial database jika menggunakan konfigurasi kustom).*
 
 2. Pastikan semua kontainer Docker (PostgreSQL, Neo4j, Qdrant) pada repositori infrastruktur sudah berjalan.
-3. Jalankan perintah berikut dari direktori root `opticargo-data`:
+3. Jalankan perintah orkestrator berikut dari direktori root `opticargo-data`:
 
 ```bash
 python -m seed.seed_all
 ```
 
-Proses ini bersifat *idempotent*. Anda dapat menjalankannya berulang kali tanpa khawatir menduplikasi data, berkat penggunaan UUID5 (deterministik) pada PostgreSQL dan operasi `MERGE` pada Neo4j.
+Proses ini bersifat *idempotent*. Anda dapat menjalankannya berulang kali tanpa khawatir menduplikasi data, berkat penggunaan UUID5 (deterministik) pada PostgreSQL dan operasi `MERGE` pada Neo4j. Skrip juga telah dibekali penanganan konflik pembaruan harga (*Upsert*).
 
-## Verifikasi Visual (Untuk Keperluan Penjurian)
+## Verifikasi Visual (Untuk Keperluan Penjurian & Audit)
 
 Untuk memudahkan verifikasi dan audit arsitektur database, sistem ini telah menyediakan akses *dashboard* visual secara lokal yang dapat langsung diakses melalui web browser:
 
 1. **Neo4j (Knowledge Graph)**
-   - **URL:** `http://localhost:7474`
-   - **Login:** Username `neo4j`, Password `opticargo123` (Sesuai `.env`)
-   - **Cara Verifikasi:** Masukkan kueri Cypher `MATCH (n) RETURN n LIMIT 100` pada kotak di bagian atas lalu tekan Enter (atau tombol *Play*) untuk melihat visualisasi graf relasi pelabuhan, rute, kapal, dan *supplier* secara interaktif.
+   - **URL:** Akses melalui browser lokal Anda pada port default Neo4j Browser (biasanya `http://localhost:7474`).
+   - **Kredensial:** Gunakan kredensial yang tertera pada file `.env` sistem lokal Anda.
+   - **Cara Verifikasi:** Masukkan kueri Cypher `MATCH (n) RETURN n LIMIT 100` untuk melihat visualisasi graf relasi pelabuhan, rute, kapal, dan *supplier* secara interaktif.
 
 2. **Qdrant (Vector Database)**
-   - **URL:** `http://localhost:16333/dashboard`
-   - **Login:** (Tidak perlu login, akses terbuka di *localhost*)
-   - **Cara Verifikasi:** Pilih menu **Collections** di panel kiri, kemudian klik pada collection `regulations`. Anda akan melihat daftar ribuan vektor berdimensi 3072 hasil *embedding* dokumen beserta dengan metadatanya (judul dokumen, nomor halaman, dan teks aslinya).
+   - **URL:** Akses dashboard melalui port REST Qdrant (biasanya `http://localhost:16333/dashboard`).
+   - **Cara Verifikasi:** Pilih menu **Collections** di panel kiri, kemudian klik pada collection `regulations`. Anda akan melihat daftar vektor berdimensi 3072 hasil *embedding* dokumen beserta dengan metadatanya (judul dokumen, nomor halaman, dan teks aslinya).
 
 3. **PostgreSQL (Relational Database)**
-   - **Kredensial:** Host `localhost`, Port `5432`, DB `opticargo`, User `opticargo`, Password `opticargo`.
+   - **Kredensial:** Konfigurasi koneksi (Host, Port, User, Password) merujuk pada isi dari file `.env`.
    - **Cara Verifikasi:** Gunakan aplikasi *Database Client* seperti **DBeaver** atau **pgAdmin**. Buka skema `public` dan Anda dapat memeriksa integritas relasional serta keutuhan data pada tabel-tabel transaksional (seperti rute dan tarif subsidi).

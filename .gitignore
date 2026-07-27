@@ -12,6 +12,7 @@ __pycache__/
 env/
 venv/
 .venv/
+*.egg-info/
 
 # Database Storage
 qdrant_data/

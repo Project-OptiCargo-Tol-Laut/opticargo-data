@@ -257,7 +257,7 @@ def create_ship_voyage_relationships(neo4j_session, voyages: list[dict]) -> None
         MERGE (ship)-[m:MELAYANI {voyage_id: v.id}]->(origin)
         SET m.route_id = v.route_id,
             m.destination_port_id = dest.id,
-            m.remaining_capacity_ton = v.remaining_capacity_ton
+            m.remaining_capacity_ton = toFloat(v.remaining_capacity_ton)
     """
     neo4j_session.run(query, voyages=voyages)
 
@@ -329,13 +329,22 @@ def run_seed() -> None:
     # -- Tahap 2: Konversi UUID ke string --
     # Neo4j driver Python tidak bisa serialize objek UUID secara langsung.
     # Kita perlu mengonversinya ke string agar bisa dikirim sebagai parameter.
+    from decimal import Decimal
+
     for record_list in [ports, ships, commodities, routes, voyages, suppliers]:
         for record in record_list:
             for key, value in record.items():
-                if hasattr(value, "hex"):  # Ciri objek UUID
+                if hasattr(value, "hex"):  # UUID
                     record[key] = str(value)
+                elif isinstance(value, Decimal):  # Decimal dari psycopg2
+                    record[key] = float(value)
                 elif isinstance(value, list):
-                    record[key] = [str(v) if hasattr(v, "hex") else v for v in value]
+                    record[key] = [
+                        str(v) if hasattr(v, "hex")
+                        else float(v) if isinstance(v, Decimal)
+                        else v
+                        for v in value
+                    ]
 
     # -- Tahap 3: Buat node --
     neo4j_driver = get_neo4j_driver()

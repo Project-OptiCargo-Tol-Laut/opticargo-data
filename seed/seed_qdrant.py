@@ -238,18 +238,25 @@ def run_seed() -> None:
     gemini = get_gemini_client()
 
     # -- Buat collection jika belum ada --
-    existing = [c.name for c in qdrant.get_collections().collections]
-    if COLLECTION_NAME not in existing:
+    existing_names = {c.name for c in qdrant.get_collections().collections}
+    if COLLECTION_NAME not in existing_names:
         qdrant.create_collection(
             collection_name=COLLECTION_NAME,
-            vectors_config=VectorParams(
-                size=EMBEDDING_DIMENSION,
-                distance=Distance.COSINE,
-            ),
+            vectors_config=VectorParams(size=EMBEDDING_DIMENSION, distance=Distance.COSINE),
         )
         print(f"[INFO] Collection '{COLLECTION_NAME}' berhasil dibuat di Qdrant.")
     else:
-        print(f"[INFO] Collection '{COLLECTION_NAME}' sudah ada, melanjutkan upsert.")
+        info = qdrant.get_collection(COLLECTION_NAME)
+        actual_dim = info.config.params.vectors.size
+        if actual_dim != EMBEDDING_DIMENSION:
+            print(f"[WARN] Dimensi lama ({actual_dim}) != baru ({EMBEDDING_DIMENSION}). Recreate...")
+            qdrant.delete_collection(COLLECTION_NAME)
+            qdrant.create_collection(
+                collection_name=COLLECTION_NAME,
+                vectors_config=VectorParams(size=EMBEDDING_DIMENSION, distance=Distance.COSINE),
+            )
+        else:
+            print(f"[INFO] Collection '{COLLECTION_NAME}' sudah ada, dimensi cocok. Melanjutkan upsert.")
 
     # -- Baca metadata regulasi --
     regulations = load_json(BASE_DIR / "regulations" / "regulations.json")

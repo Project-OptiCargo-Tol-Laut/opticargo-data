@@ -218,9 +218,9 @@ def seed_routes(cur) -> None:
 
     query = """
         INSERT INTO routes (id, origin_port_id, destination_port_id, distance_nm,
-                            estimated_days, route_type, is_active, created_at,
+                            estimated_days, route_type, is_active,
                             tarif_dry_container_idr, tarif_reefer_container_idr,
-                            tarif_general_cargo_idr, koefisien_pm29)
+                            tarif_general_cargo_idr, koefisien_pm29, created_at)
         VALUES %s
         ON CONFLICT (id) DO UPDATE SET
             tarif_dry_container_idr = EXCLUDED.tarif_dry_container_idr,
@@ -238,11 +238,11 @@ def seed_routes(cur) -> None:
             r["estimated_days"],
             r["route_type"],
             r.get("is_active", True),
-            r["created_at"],
             r.get("tarif_dry_container_idr"),
             r.get("tarif_reefer_container_idr"),
             r.get("tarif_general_cargo_idr"),
-            r.get("koefisien_pm29")
+            r.get("koefisien_pm29"),
+            r["created_at"]
         )
         for r in routes_data
     ]
