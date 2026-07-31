@@ -25,7 +25,7 @@ import uuid
 import time
 
 import pdfplumber
-from google import genai
+from fastembed import TextEmbedding
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
     Distance,
@@ -49,8 +49,8 @@ load_dotenv()
 # Nama collection di Qdrant untuk menyimpan chunk regulasi.
 COLLECTION_NAME = "regulations"
 
-# Dimensi vektor output dari model text-embedding-004 Gemini.
-EMBEDDING_DIMENSION = 3072
+# Dimensi vektor output dari model FastEmbed BAAI/bge-small-en-v1.5.
+EMBEDDING_DIMENSION = 384
 
 # Jumlah kata per chunk. Disesuaikan agar tidak melebihi batas token model.
 CHUNK_SIZE_WORDS = 500
@@ -58,10 +58,10 @@ CHUNK_SIZE_WORDS = 500
 # Jumlah kata yang tumpang tindih antar chunk, agar konteks tidak terpotong.
 CHUNK_OVERLAP_WORDS = 50
 
-# Jeda antar request ke Gemini API untuk menghindari rate limit (detik).
-API_DELAY_SECONDS = 1.5
+# Jeda antar request ke Gemini API tidak diperlukan untuk FastEmbed lokal.
+API_DELAY_SECONDS = 0
 
-# Jumlah percobaan ulang jika embedding gagal (rate limit/timeout/dsb).
+# Jumlah percobaan ulang jika embedding gagal.
 MAX_EMBEDDING_RETRIES = 3
 
 # Pola baris yang dianggap noise berulang (header/footer khas dokumen
@@ -72,6 +72,10 @@ NOISE_PATTERNS = [
     r"^REPUBLIK INDONESIA\s*$",
     r"^-\s*\d+\s*-\s*$",          # penomoran halaman gaya "- 2 -"
     r"^\d+\s*$",                   # baris cuma berisi angka halaman
+    r"^SK\s+No\s+\d+\s+[A-Z]\s*$", # SK No 019623 A
+    r"^www\.peraturan\.go\.id\s*$", # footer website
+    r"^\d+,\s*No\.\s*\d+\s*-\d+-\s*$", # 2021, No. 778 -6-
+    r"^\d+,\s*No\.\s*\d+\s*$",     # 2021, No. 778
 ]
 NOISE_RE = re.compile("|".join(NOISE_PATTERNS), re.IGNORECASE)
 
@@ -83,17 +87,15 @@ NOISE_RE = re.compile("|".join(NOISE_PATTERNS), re.IGNORECASE)
 def get_qdrant_client() -> QdrantClient:
     """Membuat koneksi ke Qdrant menggunakan QDRANT_URL dari .env."""
     url = os.getenv("QDRANT_URL")
+    api_key = os.getenv("QDRANT_API_KEY")
     if not url:
         raise ValueError("QDRANT_URL tidak ditemukan di file .env")
-    return QdrantClient(url=url)
+    return QdrantClient(url=url, api_key=api_key)
 
 
-def get_gemini_client() -> genai.Client:
-    """Membuat client Gemini API menggunakan GEMINI_API_KEY dari .env."""
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise ValueError("GEMINI_API_KEY tidak ditemukan di file .env")
-    return genai.Client(api_key=api_key)
+def get_embedding_model() -> TextEmbedding:
+    """Meload model FastEmbed (Local)."""
+    return TextEmbedding()
 
 
 # ---------------------------------------------------------------------------
@@ -125,12 +127,11 @@ def extract_text_from_pdf(filepath: str, max_pages: int | None = None, is_biling
                 width = page.width
                 height = page.height
                 left_bbox = (0, 0, width / 2, height)
-                right_bbox = (width / 2, 0, width, height)
                 
                 left_text = page.crop(left_bbox).extract_text() or ""
-                right_text = page.crop(right_bbox).extract_text() or ""
                 
-                text = f"{left_text}\n{right_text}"
+                # Mengabaikan kolom kanan (bahasa Inggris)
+                text = left_text
             else:
                 text = page.extract_text()
                 
@@ -156,22 +157,55 @@ def clean_text(text: str) -> str:
 # Chunking Teks
 # ---------------------------------------------------------------------------
 
-def chunk_text(text: str, chunk_size: int = CHUNK_SIZE_WORDS,
-               overlap: int = CHUNK_OVERLAP_WORDS) -> list[str]:
+def semantic_chunking(text: str, max_chunk_words: int = 800) -> list[str]:
     """
-    Memotong teks panjang menjadi potongan-potongan (chunk) berukuran
-    konsisten, memakai sliding window berbasis jumlah kata dengan overlap.
+    Memotong teks panjang berdasarkan struktur "Pasal".
+    Setiap Pasal akan menjadi 1 chunk. Jika Pasal tersebut terlalu panjang
+    (> max_chunk_words kata), maka akan dipecah lagi per "Ayat" atau penomoran.
     """
-    words = text.split()
+    # 1. Pisahkan teks sebelum kata "Pasal <angka>" (di awal baris)
+    parts = re.split(r'\n(?=\s*Pasal\s+\d+)', text, flags=re.IGNORECASE)
+    
     chunks = []
-    start = 0
-
-    while start < len(words):
-        end = start + chunk_size
-        chunk = " ".join(words[start:end])
-        if chunk.strip():
-            chunks.append(chunk)
-        start += chunk_size - overlap
+    
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+            
+        word_count = len(part.split())
+        
+        # Jika bagian ini terlalu panjang (mis. Pasal 1 Ketentuan Umum)
+        if word_count > max_chunk_words:
+            # Cari judul pasal (biasanya di baris pertama)
+            lines = part.split("\n", 1)
+            pasal_header = lines[0].strip() if re.match(r'^Pasal\s+\d+', lines[0], re.IGNORECASE) else "Lanjutan"
+            
+            # Pecah berdasarkan penomoran ayat (1), (2), atau 1., 2.
+            sub_parts = re.split(r'\n(?=\s*\(\d+\)\s+|\s*\d+\.\s+)', part)
+            
+            current_sub_chunk = ""
+            for sub_part in sub_parts:
+                sub_part = sub_part.strip()
+                if not sub_part:
+                    continue
+                    
+                # Jika sub_part tidak diawali dengan "Pasal", tambahkan header agar konteks jelas
+                prefix = f"[{pasal_header}]\n" if not re.match(r'^Pasal\s+\d+', sub_part, re.IGNORECASE) else ""
+                
+                # Jika digabung masih muat
+                if not current_sub_chunk:
+                    current_sub_chunk = f"{prefix}{sub_part}"
+                elif len(current_sub_chunk.split()) + len(sub_part.split()) <= max_chunk_words:
+                    current_sub_chunk += f"\n\n{sub_part}"
+                else:
+                    chunks.append(current_sub_chunk)
+                    current_sub_chunk = f"[{pasal_header}]\n{sub_part}"
+            
+            if current_sub_chunk:
+                chunks.append(current_sub_chunk)
+        else:
+            chunks.append(part)
 
     return chunks
 
@@ -180,32 +214,18 @@ def chunk_text(text: str, chunk_size: int = CHUNK_SIZE_WORDS,
 # Generate Embedding (dengan retry)
 # ---------------------------------------------------------------------------
 
-def generate_embedding(gemini_client: genai.Client, text: str,
+def generate_embedding(embedding_model: TextEmbedding, text: str,
                        max_retries: int = MAX_EMBEDDING_RETRIES) -> list[float]:
     """
-    Men-generate embedding vektor dari teks menggunakan Gemini API,
-    dengan retry otomatis kalau gagal (rate limit/timeout/dsb) -- supaya
-    1 chunk yang gagal tidak menghentikan seluruh proses seeding 9 dokumen.
+    Men-generate embedding vektor dari teks menggunakan FastEmbed secara lokal.
     """
-    last_error = None
-    for attempt in range(max_retries):
-        try:
-            result = gemini_client.models.embed_content(
-                model="gemini-embedding-2",
-                contents=text,
-            )
-            if not result.embeddings or not result.embeddings[0].values:
-                raise RuntimeError("Empty embedding returned")
-            return result.embeddings[0].values
-        except Exception as e:
-            last_error = e
-            wait = API_DELAY_SECONDS * (attempt + 2)
-            print(f"    [WARN] Embedding gagal (percobaan {attempt + 1}/{max_retries}): {e}"
-                  f" -- retry dalam {wait:.1f}s")
-            time.sleep(wait)
-    raise RuntimeError(
-        f"Gagal generate embedding setelah {max_retries} percobaan"
-    ) from last_error
+    try:
+        embeddings_list = list(embedding_model.embed([text]))
+        if not embeddings_list:
+            raise RuntimeError("Empty embedding returned")
+        return embeddings_list[0].tolist()
+    except Exception as e:
+        raise RuntimeError(f"Gagal generate embedding lokal: {e}")
 
 
 # ---------------------------------------------------------------------------
@@ -247,7 +267,7 @@ def run_seed() -> None:
       - "status": "aktif" / "dicabut" (default "aktif" kalau tidak diisi)
     """
     qdrant = get_qdrant_client()
-    gemini = get_gemini_client()
+    embedding_model = get_embedding_model()
 
     # -- Buat collection jika belum ada --
     existing_names = {c.name for c in qdrant.get_collections().collections}
@@ -298,7 +318,7 @@ def run_seed() -> None:
             continue
 
         cleaned = clean_text(raw_text)
-        chunks = chunk_text(cleaned)
+        chunks = semantic_chunking(cleaned)
         print(f"  Teks diekstrak: {len(cleaned.split())} kata "
               f"(setelah dibersihkan) -> {len(chunks)} chunk")
 
@@ -308,8 +328,9 @@ def run_seed() -> None:
         # -- Generate embedding dan upsert ke Qdrant --
         points = []
         for i, chunk in enumerate(chunks):
-            embedding = generate_embedding(gemini, chunk)
-            time.sleep(API_DELAY_SECONDS)
+            embedding = generate_embedding(embedding_model, chunk)
+            if API_DELAY_SECONDS > 0:
+                time.sleep(API_DELAY_SECONDS)
 
             # ID deterministik menggunakan UUID5 dari kombinasi nama file + index.
             # Ini menjamin idempotensi: re-run menghasilkan ID yang sama.

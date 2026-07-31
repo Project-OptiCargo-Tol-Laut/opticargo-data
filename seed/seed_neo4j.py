@@ -143,7 +143,20 @@ def fetch_suppliers(pg_cur) -> list[dict]:
     """)
     columns = ["id", "business_name", "port_id", "commodity_ids",
                "avg_monthly_volume_ton", "rating", "verified", "address"]
-    return [dict(zip(columns, row)) for row in pg_cur.fetchall()]
+    
+    rows = []
+    for row in pg_cur.fetchall():
+        row_dict = dict(zip(columns, row))
+        
+        # Parse commodity_ids from "{uuid1, uuid2}" to list of strings if necessary
+        c_ids = row_dict["commodity_ids"]
+        if isinstance(c_ids, str) and c_ids.startswith("{") and c_ids.endswith("}"):
+            c_ids = [x.strip() for x in c_ids[1:-1].split(",") if x.strip()]
+            row_dict["commodity_ids"] = c_ids
+            
+        rows.append(row_dict)
+        
+    return rows
 
 
 # ---------------------------------------------------------------------------
@@ -334,8 +347,10 @@ def run_seed() -> None:
     for record_list in [ports, ships, commodities, routes, voyages, suppliers]:
         for record in record_list:
             for key, value in record.items():
-                if hasattr(value, "hex"):  # UUID
+                if hasattr(value, "hex"):  # UUID tunggal
                     record[key] = str(value)
+                elif isinstance(value, list): # List UUID
+                    record[key] = [str(v) if hasattr(v, "hex") else v for v in value]
                 elif isinstance(value, Decimal):  # Decimal dari psycopg2
                     record[key] = float(value)
                 elif isinstance(value, list):
