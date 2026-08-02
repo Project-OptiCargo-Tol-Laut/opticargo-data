@@ -5,3 +5,4 @@ qdrant-client==1.9.1     # Client untuk Qdrant vector database
 python-dotenv==1.0.1     # Untuk membaca file .env
 fastembed
 pdfplumber
+opticargo-shared==1.0.0

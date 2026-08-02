@@ -2,7 +2,7 @@
 seed_qdrant.py - Seeding Dokumen Regulasi ke Qdrant (Vector Database)
 
 Memproses file PDF regulasi pemerintah menjadi chunk teks,
-men-generate embedding vektor menggunakan Gemini API,
+men-generate embedding vektor menggunakan FastEmbed lokal,
 lalu meng-upsert hasilnya ke Qdrant untuk keperluan RAG.
 
 Pipeline:
@@ -11,8 +11,7 @@ Pipeline:
      (dengan opsi membatasi halaman, untuk melewati lampiran tabel).
   3. Bersihkan teks dari header/footer berulang.
   4. Potong teks menjadi chunk berukuran konsisten (~500 kata).
-  5. Generate embedding per chunk menggunakan Gemini text-embedding-004,
-     dengan retry otomatis kalau gagal.
+  5. Generate embedding per chunk menggunakan FastEmbed BAAI/bge-small-en-v1.5.
   6. Hapus chunk lama dokumen tsb (kalau ada), lalu upsert chunk baru
      ke Qdrant collection -- supaya tidak ada chunk basi nyangkut.
 
@@ -23,6 +22,7 @@ import os
 import re
 import uuid
 import time
+import hashlib
 
 import pdfplumber
 from fastembed import TextEmbedding
@@ -38,6 +38,7 @@ from qdrant_client.models import (
 )
 from dotenv import load_dotenv
 
+from opticargo_shared.models.rag_chunk import RagChunkMetadata
 from seed.validate import load_json, BASE_DIR
 
 load_dotenv()
@@ -47,10 +48,11 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 
 # Nama collection di Qdrant untuk menyimpan chunk regulasi.
-COLLECTION_NAME = "regulations"
+COLLECTION_NAME = os.getenv("QDRANT_COLLECTION", "opticargo_documents_v1")
 
 # Dimensi vektor output dari model FastEmbed BAAI/bge-small-en-v1.5.
 EMBEDDING_DIMENSION = 384
+EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 
 # Jumlah kata per chunk. Disesuaikan agar tidak melebihi batas token model.
 CHUNK_SIZE_WORDS = 500
@@ -95,7 +97,21 @@ def get_qdrant_client() -> QdrantClient:
 
 def get_embedding_model() -> TextEmbedding:
     """Meload model FastEmbed (Local)."""
-    return TextEmbedding()
+    return TextEmbedding(model_name=EMBEDDING_MODEL_NAME)
+
+
+def stable_document_uuid(source_id: str) -> str:
+    """Membuat UUID deterministik untuk document_id kontrak shared."""
+    return str(uuid.uuid5(uuid.NAMESPACE_URL, f"opticargo:document:{source_id}"))
+
+
+def file_checksum(filepath: str) -> str:
+    """Menghitung checksum file untuk provenance dan reindexing."""
+    digest = hashlib.sha256()
+    with open(filepath, "rb") as file:
+        for block in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(block)
+    return f"sha256:{digest.hexdigest()}"
 
 
 # ---------------------------------------------------------------------------
@@ -138,6 +154,29 @@ def extract_text_from_pdf(filepath: str, max_pages: int | None = None, is_biling
             if text:
                 full_text.append(text)
     return "\n".join(full_text)
+
+
+def extract_pages_from_pdf(
+    filepath: str,
+    max_pages: int | None = None,
+    is_bilingual: bool = False,
+) -> list[tuple[int, str]]:
+    """Mengekstrak teks per halaman agar setiap chunk punya citation page-aware."""
+    pages_text: list[tuple[int, str]] = []
+    with pdfplumber.open(filepath) as pdf:
+        pages = pdf.pages if max_pages is None else pdf.pages[:max_pages]
+        for page_index, page in enumerate(pages, start=1):
+            if is_bilingual:
+                width = page.width
+                height = page.height
+                left_bbox = (0, 0, width / 2, height)
+                text = page.crop(left_bbox).extract_text() or ""
+            else:
+                text = page.extract_text() or ""
+
+            if text.strip():
+                pages_text.append((page_index, text))
+    return pages_text
 
 
 def clean_text(text: str) -> str:
@@ -310,24 +349,38 @@ def run_seed() -> None:
 
         print(f"[INFO] Memproses: {filename} {status_text}")
 
-        # -- Ekstrak dan bersihkan teks --
+        # -- Ekstrak dan bersihkan teks per halaman untuk citation --
         is_bilingual = (reg["id"] == "reg_007")
-        raw_text = extract_text_from_pdf(str(filepath), max_pages=max_pages, is_bilingual=is_bilingual)
-        if not raw_text.strip():
+        raw_pages = extract_pages_from_pdf(str(filepath), max_pages=max_pages, is_bilingual=is_bilingual)
+        if not raw_pages:
             print(f"[WARN] Tidak ada teks yang bisa diekstrak dari {filename}.")
             continue
 
-        cleaned = clean_text(raw_text)
-        chunks = semantic_chunking(cleaned)
-        print(f"  Teks diekstrak: {len(cleaned.split())} kata "
-              f"(setelah dibersihkan) -> {len(chunks)} chunk")
+        page_chunks = []
+        total_words = 0
+        for page_number, page_text in raw_pages:
+            cleaned_page = clean_text(page_text)
+            if not cleaned_page.strip():
+                continue
+            total_words += len(cleaned_page.split())
+            for chunk in semantic_chunking(cleaned_page):
+                page_chunks.append({"page": page_number, "text": chunk})
+
+        print(f"  Teks diekstrak: {total_words} kata "
+              f"(setelah dibersihkan) -> {len(page_chunks)} chunk")
 
         # -- Hapus chunk lama dokumen ini dulu --
         delete_existing_chunks(qdrant, filename)
 
         # -- Generate embedding dan upsert ke Qdrant --
         points = []
-        for i, chunk in enumerate(chunks):
+        document_id = stable_document_uuid(reg["id"])
+        checksum = file_checksum(str(filepath))
+        document_version = reg.get("document_number") or str(reg.get("year", ""))
+        is_superseded = status.lower() not in {"aktif", "active"}
+
+        for i, page_chunk in enumerate(page_chunks):
+            chunk = page_chunk["text"]
             embedding = generate_embedding(embedding_model, chunk)
             if API_DELAY_SECONDS > 0:
                 time.sleep(API_DELAY_SECONDS)
@@ -335,12 +388,24 @@ def run_seed() -> None:
             # ID deterministik menggunakan UUID5 dari kombinasi nama file + index.
             # Ini menjamin idempotensi: re-run menghasilkan ID yang sama.
             point_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f"{filename}::chunk_{i}"))
+            metadata = RagChunkMetadata(
+                document_version=document_version,
+                title=reg.get("title", filename),
+                issuer=reg.get("issuer"),
+                page=page_chunk["page"],
+                effective_date=reg.get("effective_date"),
+                source_reference=reg.get("source_url"),
+                is_superseded=is_superseded,
+                checksum=checksum,
+            )
 
             points.append(PointStruct(
                 id=point_id,
                 vector=embedding,
                 payload={
-                    "document_id": reg["id"],
+                    "document_id": document_id,
+                    "source_document_id": reg["id"],
+                    "chunk_id": point_id,
                     "filename": filename,
                     "title": reg.get("title", ""),
                     "full_title": reg.get("full_title", ""),
@@ -350,6 +415,14 @@ def run_seed() -> None:
                     "topics": reg.get("topics", []),
                     "rag_priority": reg.get("rag_priority", "low"),
                     "status": status,
+                    "document_version": document_version,
+                    "source_reference": reg.get("source_url"),
+                    "is_superseded": is_superseded,
+                    "checksum": checksum,
+                    "page": page_chunk["page"],
+                    "embedding_model": EMBEDDING_MODEL_NAME,
+                    "embedding_dimension": EMBEDDING_DIMENSION,
+                    "metadata": metadata.model_dump(mode="json"),
                     "chunk_index": i,
                     "chunk_text": chunk,
                     "token_count": len(chunk.split()),

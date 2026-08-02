@@ -25,7 +25,7 @@ def test_search(query: str, top_k: int = 3):
     # 3. Cari di Qdrant
     print(f"Mencari {top_k} chunk paling relevan di Qdrant...\n")
     search_result = qdrant.query_points(
-        collection_name="regulations",
+        collection_name=os.getenv("QDRANT_COLLECTION", "opticargo_documents_v1"),
         query=query_vector,
         limit=top_k,
     )

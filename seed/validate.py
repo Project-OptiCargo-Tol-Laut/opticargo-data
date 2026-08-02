@@ -12,6 +12,7 @@ Referensi PRD: Bagian 4.2 (seed/validate.py)
 import json
 from pathlib import Path
 from datetime import datetime, timezone
+from typing import Any
 
 from opticargo_shared.models.port import Port
 from opticargo_shared.models.ship import Ship
@@ -65,6 +66,21 @@ def inject_created_at(data_list: list[dict]) -> list[dict]:
     return data_list
 
 
+def normalize_for_shared(model: type, item: dict[str, Any]) -> dict[str, Any]:
+    """Ambil hanya field kontrak shared dan lengkapi timestamp read model."""
+    normalized = {key: item[key] for key in model.model_fields if key in item}
+    if "created_at" in model.model_fields and "created_at" not in normalized:
+        normalized["created_at"] = datetime.now(timezone.utc).isoformat()
+    if "updated_at" in model.model_fields and "updated_at" not in normalized:
+        normalized["updated_at"] = normalized.get("created_at", datetime.now(timezone.utc).isoformat())
+    return normalized
+
+
+def validate_records(model: type, data: list[dict]) -> list:
+    """Validasi fail-fast memakai kontrak shared tanpa membuang metadata dataset."""
+    return [model.model_validate(normalize_for_shared(model, item)) for item in data]
+
+
 def validate_all() -> None:
     """
     Menjalankan validasi fail-fast terhadap seluruh file dataset.
@@ -79,27 +95,27 @@ def validate_all() -> None:
 
     try:
         ports_data = inject_created_at(load_json(BASE_DIR / "ports" / "ports.json"))
-        ports = [Port(**item) for item in ports_data]
+        ports = validate_records(Port, ports_data)
         print(f"[OK] Validasi sukses: {len(ports)} Port")
 
         ships_data = inject_created_at(load_json(BASE_DIR / "ships" / "ships.json"))
-        ships = [Ship(**item) for item in ships_data]
+        ships = validate_records(Ship, ships_data)
         print(f"[OK] Validasi sukses: {len(ships)} Ship")
 
         routes_data = inject_created_at(load_json(BASE_DIR / "routes" / "routes.json"))
-        routes = [Route(**item) for item in routes_data]
+        routes = validate_records(Route, routes_data)
         print(f"[OK] Validasi sukses: {len(routes)} Route")
 
         commodities_data = inject_created_at(load_json(BASE_DIR / "commodities" / "commodities.json"))
-        commodities = [Commodity(**item) for item in commodities_data]
+        commodities = validate_records(Commodity, commodities_data)
         print(f"[OK] Validasi sukses: {len(commodities)} Commodity")
 
         suppliers_data = inject_created_at(load_json(BASE_DIR / "suppliers" / "suppliers.json"))
-        suppliers = [Supplier(**item) for item in suppliers_data]
+        suppliers = validate_records(Supplier, suppliers_data)
         print(f"[OK] Validasi sukses: {len(suppliers)} Supplier")
 
         voyages_data = inject_created_at(load_json(BASE_DIR / "voyages" / "voyages.json"))
-        voyages = [Voyage(**item) for item in voyages_data]
+        voyages = validate_records(Voyage, voyages_data)
         print(f"[OK] Validasi sukses: {len(voyages)} Voyage")
 
         print("[INFO] Semua data JSON valid dan siap dimasukkan ke database.")

@@ -48,7 +48,107 @@ def get_pg_connection():
             "DATABASE_URL tidak ditemukan. "
             "Pastikan file .env sudah dikonfigurasi sesuai opticargo-infra."
         )
+    db_url = db_url.replace("postgresql+psycopg://", "postgresql://", 1)
     return psycopg2.connect(db_url)
+
+
+def ensure_schema(cur) -> None:
+    """Membuat schema minimum yang dibutuhkan seed lokal bila migration belum tersedia."""
+    cur.execute(
+        """
+        CREATE TABLE IF NOT EXISTS users (
+            id UUID PRIMARY KEY,
+            username TEXT NOT NULL,
+            email TEXT NOT NULL UNIQUE,
+            password_hash TEXT NOT NULL,
+            role TEXT NOT NULL,
+            is_active BOOLEAN NOT NULL DEFAULT true,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+
+        CREATE TABLE IF NOT EXISTS ports (
+            id UUID PRIMARY KEY,
+            name TEXT NOT NULL,
+            city TEXT,
+            province TEXT,
+            latitude NUMERIC,
+            longitude NUMERIC,
+            facilities JSONB NOT NULL DEFAULT '{}'::jsonb,
+            max_vessel_tonnage NUMERIC,
+            operating_hours JSONB NOT NULL DEFAULT '{}'::jsonb,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+
+        CREATE TABLE IF NOT EXISTS ships (
+            id UUID PRIMARY KEY,
+            name TEXT NOT NULL,
+            imo_number TEXT,
+            ship_type TEXT,
+            gross_tonnage NUMERIC,
+            deadweight_tonnage NUMERIC,
+            cargo_capacity_m3 NUMERIC,
+            operator_id UUID REFERENCES users(id),
+            flag TEXT,
+            certifications JSONB NOT NULL DEFAULT '{}'::jsonb,
+            status TEXT,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+
+        CREATE TABLE IF NOT EXISTS routes (
+            id UUID PRIMARY KEY,
+            origin_port_id UUID NOT NULL REFERENCES ports(id),
+            destination_port_id UUID NOT NULL REFERENCES ports(id),
+            distance_nm NUMERIC,
+            estimated_days INTEGER,
+            route_type TEXT,
+            is_active BOOLEAN NOT NULL DEFAULT true,
+            tarif_dry_container_idr NUMERIC,
+            tarif_reefer_container_idr NUMERIC,
+            tarif_general_cargo_idr NUMERIC,
+            koefisien_pm29 NUMERIC,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+
+        CREATE TABLE IF NOT EXISTS commodities (
+            id UUID PRIMARY KEY,
+            name TEXT NOT NULL,
+            category TEXT,
+            hs_code TEXT,
+            special_requirements JSONB NOT NULL DEFAULT '{}'::jsonb,
+            is_perishable BOOLEAN NOT NULL DEFAULT false,
+            max_stack_height INTEGER,
+            certifications_required TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[],
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+
+        CREATE TABLE IF NOT EXISTS voyages (
+            id UUID PRIMARY KEY,
+            ship_id UUID NOT NULL REFERENCES ships(id),
+            route_id UUID NOT NULL REFERENCES routes(id),
+            departure_date DATE,
+            arrival_date DATE,
+            total_capacity_ton NUMERIC,
+            used_capacity_ton NUMERIC,
+            remaining_capacity_ton NUMERIC,
+            status TEXT,
+            waypoints JSONB NOT NULL DEFAULT '[]'::jsonb,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+
+        CREATE TABLE IF NOT EXISTS suppliers (
+            id UUID PRIMARY KEY,
+            user_id UUID NOT NULL REFERENCES users(id),
+            business_name TEXT NOT NULL,
+            port_id UUID NOT NULL REFERENCES ports(id),
+            commodity_ids UUID[] NOT NULL DEFAULT ARRAY[]::UUID[],
+            avg_monthly_volume_ton NUMERIC,
+            rating NUMERIC,
+            verified BOOLEAN NOT NULL DEFAULT false,
+            address TEXT,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        );
+        """
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -412,6 +512,7 @@ def run_seed() -> None:
     cur = conn.cursor()
 
     try:
+        ensure_schema(cur)
         seed_users(cur)
         seed_ports(cur)
         seed_ships(cur)

@@ -16,14 +16,14 @@ OptiCargo menggunakan empat jenis database yang saling melengkapi untuk melayani
 
 1. **PostgreSQL (Relational Database):** Bertindak sebagai *Source of Truth*. Menyimpan data terstruktur yang bersifat final dan transaksional seperti profil user, pelabuhan, daftar kapal, rute pelayaran, data tarif, dan status pemesanan.
 2. **Neo4j (Graph Database):** Bertindak sebagai *Knowledge Graph*. Menyimpan relasi antar entitas (Rute, Posisi Kapal, Supplier) untuk mendukung pencarian topologi graf dan analisis peluang *Empty Backhaul* yang tidak dapat diselesaikan dengan kueri relasional biasa.
-3. **Qdrant (Vector Database):** Bertindak sebagai *Semantic Engine*. Menyimpan hasil *vector embedding* (berdimensi 3072) dari puluhan dokumen regulasi dan SOP pemerintah. Memungkinkan agen AI melakukan pencarian berbasis makna (Semantic Search) dengan akurasi tinggi.
+3. **Qdrant (Vector Database):** Bertindak sebagai *Semantic Engine*. Menyimpan hasil *vector embedding* berdimensi 384 dari model FastEmbed `BAAI/bge-small-en-v1.5` untuk dokumen regulasi dan SOP pemerintah. Memungkinkan agen AI melakukan pencarian berbasis makna (Semantic Search) dengan citation ke dokumen, chunk, dan halaman sumber.
 4. **Redis (In-Memory Database):** Berfungsi sebagai jembatan komunikasi antar-agen dan sistem penyimpanan memori jangka pendek untuk koordinasi *real-time*.
 
 ## Rincian Dataset
 
 ### 1. Data Operasional Riil
 Data ini diekstrak dari dokumen resmi Kementerian Perhubungan dan telah dikalibrasi.
-- **70 Pelabuhan Tol Laut:** Diklasifikasikan sebagai pelabuhan *Hub* atau *Feeder*, lengkap dengan titik koordinat *Latitude/Longitude* hasil *geocoding*.
+- **69 Pelabuhan Tol Laut:** Diklasifikasikan sebagai pelabuhan *Hub* atau *Feeder*, lengkap dengan titik koordinat *Latitude/Longitude* hasil *geocoding*.
 - **445 Rute Pelayaran:** Pasangan pelabuhan asal-tujuan yang dilengkapi dengan jarak tempuh (*Nautical Miles*) serta besaran tarif bersubsidi sesuai ketetapan PM 29 Tahun 2018.
 
 ### 2. Data Dokumen RAG (Knowledge Base)
@@ -70,7 +70,7 @@ opticargo-data/
    ```bash
    cp .env.example .env
    ```
-   *(Isi `GEMINI_API_KEY` dengan API Key milik Anda. Sesuaikan port dan kredensial database jika menggunakan konfigurasi kustom).*
+   *(Sesuaikan port dan kredensial database jika menggunakan konfigurasi kustom. Embedding regulasi memakai FastEmbed lokal, sehingga tidak membutuhkan `GEMINI_API_KEY`).*
 
 2. Pastikan semua kontainer Docker (PostgreSQL, Neo4j, Qdrant) pada repositori infrastruktur sudah berjalan.
 3. Jalankan perintah orkestrator berikut dari direktori root `opticargo-data`:
@@ -92,7 +92,7 @@ Untuk memudahkan verifikasi dan audit arsitektur database, sistem ini telah meny
 
 2. **Qdrant (Vector Database)**
    - **URL:** Akses dashboard melalui port REST Qdrant (biasanya `http://localhost:16333/dashboard`).
-   - **Cara Verifikasi:** Pilih menu **Collections** di panel kiri, kemudian klik pada collection `regulations`. Anda akan melihat daftar vektor berdimensi 3072 hasil *embedding* dokumen beserta dengan metadatanya (judul dokumen, nomor halaman, dan teks aslinya).
+   - **Cara Verifikasi:** Pilih menu **Collections** di panel kiri, kemudian klik pada collection `opticargo_documents_v1` atau nilai `QDRANT_COLLECTION` di environment. Anda akan melihat daftar vektor berdimensi 384 hasil *embedding* dokumen beserta metadatanya: `document_id`, `chunk_id`, `page`, `checksum`, `document_version`, judul dokumen, dan teks chunk.
 
 3. **PostgreSQL (Relational Database)**
    - **Kredensial:** Konfigurasi koneksi (Host, Port, User, Password) merujuk pada isi dari file `.env`.

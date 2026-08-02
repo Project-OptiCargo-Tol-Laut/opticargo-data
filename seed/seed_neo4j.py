@@ -11,11 +11,12 @@ Prinsip arsitektur (PRD Bagian 4.4):
   - Neo4j adalah representasi graph dari data transaksional yang sama.
 
 Node yang dibangun:
-  Port, Ship, Commodity, Supplier
+  Port, Ship, Commodity, Supplier, Voyage
 
 Relationship yang dibangun:
   (Port)-[:TERHUBUNG_DENGAN]->(Port)       -- dari tabel routes
-  (Ship)-[:BEROPERASI_DI]->(Port)           -- dari rute yang dilayani
+  (Ship)-[:BEROPERASI_DI]->(Voyage)         -- kapal menjalankan voyage aktif
+  (Voyage)-[:SINGGAH_DI]->(Port)            -- origin/destination voyage
   (Supplier)-[:BERLOKASI_DI]->(Port)        -- dari FK port_id
   (Supplier)-[:MENYUPLAI]->(Commodity)      -- dari kolom commodity_ids
 """
@@ -228,6 +229,19 @@ def create_supplier_nodes(neo4j_session, suppliers: list[dict]) -> None:
     neo4j_session.run(query, suppliers=suppliers)
 
 
+def create_voyage_nodes(neo4j_session, voyages: list[dict]) -> None:
+    """Membuat node Voyage agar query Graph Analysis dapat memakai voyage_id."""
+    query = """
+        UNWIND $voyages AS v
+        MERGE (voyage:Voyage {id: v.id})
+        SET voyage.ship_id = v.ship_id,
+            voyage.route_id = v.route_id,
+            voyage.remaining_capacity = toFloat(v.remaining_capacity_ton),
+            voyage.remaining_capacity_ton = toFloat(v.remaining_capacity_ton)
+    """
+    neo4j_session.run(query, voyages=voyages)
+
+
 # ---------------------------------------------------------------------------
 # Pembuatan Relationship di Neo4j
 # ---------------------------------------------------------------------------
@@ -257,16 +271,20 @@ def create_route_relationships(neo4j_session, routes: list[dict]) -> None:
 
 def create_ship_voyage_relationships(neo4j_session, voyages: list[dict]) -> None:
     """
-    Membuat relationship MELAYANI antara Ship dan Port (Origin).
+    Membuat relationship Ship -> Voyage -> Port.
 
-    Menggantikan pola blanket-connect lama. Sekarang kapal hanya
-    terhubung ke pelabuhan asal spesifik berdasarkan data voyage aktif,
-    dan membawa sinyal backhaul (remaining_capacity_ton).
+    Relasi MELAYANI lama tetap dibuat untuk kompatibilitas agents lama.
     """
     query = """
         UNWIND $voyages AS v
         MATCH (ship:Ship {id: v.ship_id})
+        MATCH (voyage:Voyage {id: v.id})
         MATCH (origin:Port)-[r:TERHUBUNG_DENGAN {id: v.route_id}]->(dest:Port)
+        MERGE (ship)-[:BEROPERASI_DI]->(voyage)
+        MERGE (voyage)-[origin_stop:SINGGAH_DI {role: 'origin'}]->(origin)
+        SET origin_stop.sequence = 1
+        MERGE (voyage)-[dest_stop:SINGGAH_DI {role: 'destination'}]->(dest)
+        SET dest_stop.sequence = 2
         MERGE (ship)-[m:MELAYANI {voyage_id: v.id}]->(origin)
         SET m.route_id = v.route_id,
             m.destination_port_id = dest.id,
@@ -380,6 +398,10 @@ def run_seed() -> None:
         print("[INFO] Membuat node Supplier...")
         create_supplier_nodes(session, suppliers)
         print(f"[OK] {len(suppliers)} node Supplier.")
+
+        print("[INFO] Membuat node Voyage...")
+        create_voyage_nodes(session, voyages)
+        print(f"[OK] {len(voyages)} node Voyage.")
 
         # -- Tahap 4: Buat relationship --
         print("[INFO] Membuat relationship TERHUBUNG_DENGAN (rute)...")
