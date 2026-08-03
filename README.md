@@ -40,6 +40,17 @@ Dibuat secara deterministik untuk simulasi yang realistis:
 - **41 Pelayaran (Voyages):** Jadwal pelayaran kapal yang tersebar ke berbagai rute secara acak namun spesifik, lengkap dengan simulasi sisa kapasitas muatan (*remaining capacity*).
 - **50 Supplier:** Didistribusikan ke pelabuhan berdasarkan logika empiris (Supplier di *Hub* menyediakan barang pabrikan; Supplier di *Feeder* menyediakan hasil bumi).
 
+## Kontrak Data Final
+
+Kontrak baseline-final lintas repository tersedia di [`docs/DATA_CONTRACT_FINAL.md`](docs/DATA_CONTRACT_FINAL.md).
+
+Dokumen tersebut menjadi acuan untuk integrasi:
+
+- `opticargo-data` sebagai sumber dataset dan seeding.
+- `opticargo-knowledge-graph` sebagai proyeksi relasi operasional dari PostgreSQL ke Neo4j.
+- `opticargo-rag-pipeline` sebagai indexing dokumen regulasi dari PDF ke Qdrant.
+- `opticargo-agents` sebagai orkestrator yang mengonsumsi konteks KG/RAG/ML melalui dependency interface.
+
 ## Struktur Direktori
 
 ```text
