@@ -126,11 +126,19 @@ def fetch_routes(pg_cur) -> list[dict]:
 def fetch_voyages(pg_cur) -> list[dict]:
     """Mengambil data voyage yang aktif/scheduled untuk graph."""
     pg_cur.execute("""
-        SELECT id, ship_id, route_id, CAST(remaining_capacity_ton AS float)
+        SELECT id, ship_id, route_id,
+               departure_date, arrival_date,
+               CAST(total_capacity_ton AS float),
+               CAST(used_capacity_ton AS float),
+               CAST(remaining_capacity_ton AS float)
         FROM voyages
         WHERE status IN ('scheduled', 'in_transit')
     """)
-    columns = ["id", "ship_id", "route_id", "remaining_capacity_ton"]
+    columns = [
+        "id", "ship_id", "route_id",
+        "departure_date", "arrival_date",
+        "total_capacity_ton", "used_capacity_ton", "remaining_capacity_ton",
+    ]
     return [dict(zip(columns, row)) for row in pg_cur.fetchall()]
 
 
@@ -236,6 +244,10 @@ def create_voyage_nodes(neo4j_session, voyages: list[dict]) -> None:
         MERGE (voyage:Voyage {id: v.id})
         SET voyage.ship_id = v.ship_id,
             voyage.route_id = v.route_id,
+            voyage.departure_date = toString(v.departure_date),
+            voyage.arrival_date = toString(v.arrival_date),
+            voyage.total_capacity_ton = toFloat(v.total_capacity_ton),
+            voyage.used_capacity_ton = toFloat(v.used_capacity_ton),
             voyage.remaining_capacity = toFloat(v.remaining_capacity_ton),
             voyage.remaining_capacity_ton = toFloat(v.remaining_capacity_ton)
     """
