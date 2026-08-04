@@ -1,0 +1,180 @@
+{
+  "assets": [
+    {
+      "generator_seed": null,
+      "is_synthetic": true,
+      "path": "commodities/commodities.json",
+      "record_count": 19,
+      "sha256": "sha256:796845d257854e177dfb71f2c94e38c3447eb80fcdf49d114e493b86950ccde4",
+      "size_bytes": 8306,
+      "source": "OptiCargo curated commodity baseline",
+      "source_type": "curated-synthetic"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "ports/ports.json",
+      "record_count": 69,
+      "sha256": "sha256:d9199e7e086b3a9dc2e574134622447576d01c03e554c4f53fafbdd10192c57e",
+      "size_bytes": 60811,
+      "source": "OptiCargo Tol Laut port reference",
+      "source_type": "curated"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/Bappenas_2015_Konsep_Implementasi_Tol_Laut.pdf",
+      "record_count": null,
+      "sha256": "sha256:6b21a6835fe925f096b8379d873630b42ebd416f22a8d8e905f7f57e4cd69b30",
+      "size_bytes": 5548041,
+      "source": "https://bappenas.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/Instruksi_Dirjen_Hubla_Angkutan_Laut.pdf",
+      "record_count": null,
+      "sha256": "sha256:0bea070fc59875ffda4010f7674bd8fb20d9694c08acf4418da66e3b6dca461a",
+      "size_bytes": 821176,
+      "source": "https://hubla.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/PM_05_2024_PSO_Angkutan_Barang_Laut.pdf",
+      "record_count": null,
+      "sha256": "sha256:e1d83193a83d39ce4fd6dee3622e537e1b1a4a5e2386ab789fb61a343d3a2616",
+      "size_bytes": 3594727,
+      "source": "https://jdih.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/PM_121_2018_Tarif_Jasa_Kepelabuhanan.pdf",
+      "record_count": null,
+      "sha256": "sha256:f20264f74ee47496d0f78f36bfc9060ca09d76ba2eb5f3e662c461569735f703",
+      "size_bytes": 6759531,
+      "source": "https://jdih.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+      "record_count": null,
+      "sha256": "sha256:f2501644238f187d7b59ee01ea3873da7b39228ebae33452a7b64c48f76cf1e8",
+      "size_bytes": 6222318,
+      "source": "https://jdih.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/PM_59_2021_Usaha_Jasa_Angkutan_Perairan.pdf",
+      "record_count": null,
+      "sha256": "sha256:f209cc34ef5a125a47b33ef99a85dfd99b824be13f5b166dc14fe8479db48351",
+      "size_bytes": 619984,
+      "source": "https://jdih.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/SK_Jaringan_Trayek_Tol_Laut_2022.pdf",
+      "record_count": null,
+      "sha256": "sha256:57887a7e7f1fd0695f250cd175a2ec6028e84b8a9df760a6faebb9b51f35fb2b",
+      "size_bytes": 4838478,
+      "source": "https://hubla.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/SOP_Bongkar_Muat_Stuffing_Stripping_UPP_Babang.pdf",
+      "record_count": null,
+      "sha256": "sha256:ce87a1af4a4a32855ec6d9ca92aee8f246452cce14e761204a150b1afe949db8",
+      "size_bytes": 48624,
+      "source": "https://hubla.dephub.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/UU_21_2019_Karantina_Hewan_Ikan_Tumbuhan.pdf",
+      "record_count": null,
+      "sha256": "sha256:371fd829e840cb4eec31cbef9f3c016148aa68ab124daf49b6c2826c1a8fdf54",
+      "size_bytes": 2958913,
+      "source": "https://peraturan.go.id",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "regulations/regulations.json",
+      "record_count": 9,
+      "sha256": "sha256:14fec9f73a1ba012bba2278d246815a6885ceb1e5b3e07d045baf004729d2caf",
+      "size_bytes": 9295,
+      "source": "opticargo regulation metadata",
+      "source_type": "official"
+    },
+    {
+      "generator_seed": null,
+      "is_synthetic": false,
+      "path": "routes/routes.json",
+      "record_count": 445,
+      "sha256": "sha256:e9de5fab00ca4ba72e75e0e84ef1c0ad8ea0334c7fd307c2a8e139df50a56065",
+      "size_bytes": 300947,
+      "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+      "source_type": "official-derived"
+    },
+    {
+      "generator_seed": 42,
+      "is_synthetic": true,
+      "path": "ships/ships.json",
+      "record_count": 15,
+      "sha256": "sha256:e504669322c631f2f0b075192c812cd2d61e25926bd29a3b78f6f5cec578a403",
+      "size_bytes": 7631,
+      "source": "scripts/generators/generate_ships.py",
+      "source_type": "synthetic"
+    },
+    {
+      "generator_seed": 42,
+      "is_synthetic": true,
+      "path": "suppliers/suppliers.json",
+      "record_count": 50,
+      "sha256": "sha256:fecb8daa7b031aabaf7cd4c378e57fe88acab101626364f0f9f6a08c24a3ab7f",
+      "size_bytes": 26601,
+      "source": "scripts/generators/generate_suppliers.py",
+      "source_type": "synthetic"
+    },
+    {
+      "generator_seed": 42,
+      "is_synthetic": true,
+      "path": "voyages/voyages.json",
+      "record_count": 41,
+      "sha256": "sha256:f5d260280f4caab22c1e3f355d478d98efd52e8fe749a4f7a719b98c321989b2",
+      "size_bytes": 20052,
+      "source": "scripts/generators/generate_voyages.py",
+      "source_type": "synthetic"
+    }
+  ],
+  "checksum": "sha256:54d4480ea6ec63ea2b0e68e87644b0e474fbf6aeb2003b900690df40f6b21778",
+  "contains_synthetic_data": true,
+  "created_at": "2026-07-27T00:00:00Z",
+  "dataset_name": "opticargo-operational-and-regulation-baseline",
+  "dataset_version": "opticargo-data-v1",
+  "is_synthetic": true,
+  "manifest_schema_version": 1,
+  "record_count": 648,
+  "schema_package_version": "1.0.0",
+  "source_references": [
+    "https://bappenas.go.id",
+    "https://hubla.dephub.go.id",
+    "https://jdih.dephub.go.id",
+    "https://peraturan.go.id"
+  ],
+  "source_type": "mixed-official-curated-synthetic"
+}
