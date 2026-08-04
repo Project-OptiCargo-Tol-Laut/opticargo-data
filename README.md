@@ -51,6 +51,18 @@ Dokumen tersebut menjadi acuan untuk integrasi:
 - `opticargo-rag-pipeline` sebagai indexing dokumen regulasi dari PDF ke Qdrant.
 - `opticargo-agents` sebagai orkestrator yang mengonsumsi konteks KG/RAG/ML melalui dependency interface.
 
+Setiap aset JSON/PDF dicatat dalam `dataset/manifest.json` dengan checksum SHA-256,
+ukuran, jumlah record, sumber, dan penanda data sintetis. Manifest bersifat
+deterministik dan wajib diperbarui secara eksplisit ketika dataset berubah:
+
+```bash
+python -m seed.manifest
+python -m seed.manifest --check
+python -m seed.validate
+```
+
+Perintah `--check` dan validasi harus lulus sebelum image `data-seed` dibangun.
+
 ## Struktur Direktori
 
 ```text
@@ -90,7 +102,17 @@ opticargo-data/
 python -m seed.seed_all
 ```
 
-Proses ini bersifat *idempotent*. Anda dapat menjalankannya berulang kali tanpa khawatir menduplikasi data, berkat penggunaan UUID5 (deterministik) pada PostgreSQL dan operasi `MERGE` pada Neo4j. Skrip juga telah dibekali penanganan konflik pembaruan harga (*Upsert*).
+Proses ini bersifat *idempotent* dan fail-fast. PostgreSQL memakai advisory lock,
+satu transaksi, serta UPSERT penuh untuk merekonsiliasi record seed. Proyeksi
+Neo4j dijalankan dalam satu managed write transaction. Qdrant menyiapkan seluruh
+embedding terlebih dahulu, menunggu upsert tersimpan, lalu hanya menghapus chunk
+lama yang benar-benar stale. Seeder tidak pernah menghapus collection otomatis
+jika dimensi embedding tidak cocok; perubahan dimensi harus melalui migrasi
+collection/alias yang eksplisit.
+
+Akun operator/supplier yang dibuat oleh seeder selalu nonaktif dan memakai hash
+sentinel yang tidak dapat dipakai untuk login. Kredensial pengguna demo/produksi
+harus disediakan oleh sistem identity, bukan oleh dataset ini.
 
 ## Verifikasi Visual (Untuk Keperluan Penjurian & Audit)
 

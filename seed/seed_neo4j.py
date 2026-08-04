@@ -5,7 +5,7 @@ Membaca data yang sudah ada di PostgreSQL (source of truth),
 lalu membangun node dan relationship di Neo4j untuk keperluan
 Graph Analysis Agent dan Retrieval Agent.
 
-Prinsip arsitektur (PRD Bagian 4.4):
+Prinsip arsitektur :
   - Data DIBACA dari PostgreSQL, BUKAN dari file JSON.
   - Menggunakan MERGE (bukan CREATE) agar idempoten.
   - Neo4j adalah representasi graph dari data transaksional yang sama.
@@ -22,10 +22,14 @@ Relationship yang dibangun:
 """
 
 import os
+from decimal import Decimal
+from uuid import UUID
 
 import psycopg2
-from neo4j import GraphDatabase
 from dotenv import load_dotenv
+from neo4j import GraphDatabase
+
+from seed.database import normalize_postgres_dsn
 
 load_dotenv()
 
@@ -34,12 +38,13 @@ load_dotenv()
 # Koneksi Database
 # ---------------------------------------------------------------------------
 
+
 def get_pg_connection():
     """Membuat koneksi ke PostgreSQL."""
     db_url = os.getenv("DATABASE_URL")
     if not db_url:
         raise ValueError("DATABASE_URL tidak ditemukan di file .env")
-    return psycopg2.connect(db_url)
+    return psycopg2.connect(normalize_postgres_dsn(db_url))
 
 
 def get_neo4j_driver():
@@ -65,6 +70,7 @@ def get_neo4j_driver():
 # Pembacaan Data dari PostgreSQL
 # ---------------------------------------------------------------------------
 
+
 def fetch_ports(pg_cur) -> list[dict]:
     """Mengambil seluruh data pelabuhan dari PostgreSQL."""
     pg_cur.execute("""
@@ -73,8 +79,15 @@ def fetch_ports(pg_cur) -> list[dict]:
                max_vessel_tonnage
         FROM ports
     """)
-    columns = ["id", "name", "city", "province", "latitude", "longitude",
-               "max_vessel_tonnage"]
+    columns = [
+        "id",
+        "name",
+        "city",
+        "province",
+        "latitude",
+        "longitude",
+        "max_vessel_tonnage",
+    ]
     return [dict(zip(columns, row)) for row in pg_cur.fetchall()]
 
 
@@ -88,8 +101,17 @@ def fetch_ships(pg_cur) -> list[dict]:
                flag, status
         FROM ships
     """)
-    columns = ["id", "name", "imo_number", "ship_type", "gross_tonnage",
-               "deadweight_tonnage", "cargo_capacity_m3", "flag", "status"]
+    columns = [
+        "id",
+        "name",
+        "imo_number",
+        "ship_type",
+        "gross_tonnage",
+        "deadweight_tonnage",
+        "cargo_capacity_m3",
+        "flag",
+        "status",
+    ]
     return [dict(zip(columns, row)) for row in pg_cur.fetchall()]
 
 
@@ -116,17 +138,26 @@ def fetch_routes(pg_cur) -> list[dict]:
         FROM routes r
         WHERE r.is_active = true
     """)
-    columns = ["id", "origin_port_id", "destination_port_id",
-               "distance_nm", "estimated_days", "route_type", "is_active",
-               "tarif_dry_container_idr", "tarif_reefer_container_idr",
-               "tarif_general_cargo_idr", "koefisien_pm29"]
+    columns = [
+        "id",
+        "origin_port_id",
+        "destination_port_id",
+        "distance_nm",
+        "estimated_days",
+        "route_type",
+        "is_active",
+        "tarif_dry_container_idr",
+        "tarif_reefer_container_idr",
+        "tarif_general_cargo_idr",
+        "koefisien_pm29",
+    ]
     return [dict(zip(columns, row)) for row in pg_cur.fetchall()]
 
 
 def fetch_voyages(pg_cur) -> list[dict]:
     """Mengambil data voyage yang aktif/scheduled untuk graph."""
     pg_cur.execute("""
-        SELECT id, ship_id, route_id,
+        SELECT id, ship_id, route_id, status,
                departure_date, arrival_date,
                CAST(total_capacity_ton AS float),
                CAST(used_capacity_ton AS float),
@@ -135,9 +166,15 @@ def fetch_voyages(pg_cur) -> list[dict]:
         WHERE status IN ('scheduled', 'in_transit')
     """)
     columns = [
-        "id", "ship_id", "route_id",
-        "departure_date", "arrival_date",
-        "total_capacity_ton", "used_capacity_ton", "remaining_capacity_ton",
+        "id",
+        "ship_id",
+        "route_id",
+        "status",
+        "departure_date",
+        "arrival_date",
+        "total_capacity_ton",
+        "used_capacity_ton",
+        "remaining_capacity_ton",
     ]
     return [dict(zip(columns, row)) for row in pg_cur.fetchall()]
 
@@ -150,27 +187,36 @@ def fetch_suppliers(pg_cur) -> list[dict]:
                CAST(rating AS float), verified, address
         FROM suppliers
     """)
-    columns = ["id", "business_name", "port_id", "commodity_ids",
-               "avg_monthly_volume_ton", "rating", "verified", "address"]
-    
+    columns = [
+        "id",
+        "business_name",
+        "port_id",
+        "commodity_ids",
+        "avg_monthly_volume_ton",
+        "rating",
+        "verified",
+        "address",
+    ]
+
     rows = []
     for row in pg_cur.fetchall():
         row_dict = dict(zip(columns, row))
-        
+
         # Parse commodity_ids from "{uuid1, uuid2}" to list of strings if necessary
         c_ids = row_dict["commodity_ids"]
         if isinstance(c_ids, str) and c_ids.startswith("{") and c_ids.endswith("}"):
             c_ids = [x.strip() for x in c_ids[1:-1].split(",") if x.strip()]
             row_dict["commodity_ids"] = c_ids
-            
+
         rows.append(row_dict)
-        
+
     return rows
 
 
 # ---------------------------------------------------------------------------
 # Pembuatan Node di Neo4j
 # ---------------------------------------------------------------------------
+
 
 def create_port_nodes(neo4j_session, ports: list[dict]) -> None:
     """
@@ -190,7 +236,7 @@ def create_port_nodes(neo4j_session, ports: list[dict]) -> None:
             port.longitude        = p.longitude,
             port.max_vessel_tonnage = p.max_vessel_tonnage
     """
-    neo4j_session.run(query, ports=ports)
+    neo4j_session.run(query, ports=ports).consume()
 
 
 def create_ship_nodes(neo4j_session, ships: list[dict]) -> None:
@@ -207,7 +253,7 @@ def create_ship_nodes(neo4j_session, ships: list[dict]) -> None:
             ship.flag               = s.flag,
             ship.status             = s.status
     """
-    neo4j_session.run(query, ships=ships)
+    neo4j_session.run(query, ships=ships).consume()
 
 
 def create_commodity_nodes(neo4j_session, commodities: list[dict]) -> None:
@@ -220,7 +266,7 @@ def create_commodity_nodes(neo4j_session, commodities: list[dict]) -> None:
             com.hs_code       = c.hs_code,
             com.is_perishable = c.is_perishable
     """
-    neo4j_session.run(query, commodities=commodities)
+    neo4j_session.run(query, commodities=commodities).consume()
 
 
 def create_supplier_nodes(neo4j_session, suppliers: list[dict]) -> None:
@@ -234,7 +280,7 @@ def create_supplier_nodes(neo4j_session, suppliers: list[dict]) -> None:
             sup.verified               = s.verified,
             sup.address                = s.address
     """
-    neo4j_session.run(query, suppliers=suppliers)
+    neo4j_session.run(query, suppliers=suppliers).consume()
 
 
 def create_voyage_nodes(neo4j_session, voyages: list[dict]) -> None:
@@ -244,6 +290,7 @@ def create_voyage_nodes(neo4j_session, voyages: list[dict]) -> None:
         MERGE (voyage:Voyage {id: v.id})
         SET voyage.ship_id = v.ship_id,
             voyage.route_id = v.route_id,
+            voyage.status = v.status,
             voyage.departure_date = toString(v.departure_date),
             voyage.arrival_date = toString(v.arrival_date),
             voyage.total_capacity_ton = toFloat(v.total_capacity_ton),
@@ -251,12 +298,13 @@ def create_voyage_nodes(neo4j_session, voyages: list[dict]) -> None:
             voyage.remaining_capacity = toFloat(v.remaining_capacity_ton),
             voyage.remaining_capacity_ton = toFloat(v.remaining_capacity_ton)
     """
-    neo4j_session.run(query, voyages=voyages)
+    neo4j_session.run(query, voyages=voyages).consume()
 
 
 # ---------------------------------------------------------------------------
 # Pembuatan Relationship di Neo4j
 # ---------------------------------------------------------------------------
+
 
 def create_route_relationships(neo4j_session, routes: list[dict]) -> None:
     """
@@ -278,14 +326,14 @@ def create_route_relationships(neo4j_session, routes: list[dict]) -> None:
             rel.tarif_general_cargo_idr    = r.tarif_general_cargo_idr,
             rel.koefisien_pm29             = r.koefisien_pm29
     """
-    neo4j_session.run(query, routes=routes)
+    neo4j_session.run(query, routes=routes).consume()
 
 
 def create_ship_voyage_relationships(neo4j_session, voyages: list[dict]) -> None:
     """
     Membuat relationship Ship -> Voyage -> Port.
 
-    Relasi MELAYANI lama tetap dibuat untuk kompatibilitas agents lama.
+    Model canonical menggunakan Ship -> Voyage -> Port tanpa relasi duplikat.
     """
     query = """
         UNWIND $voyages AS v
@@ -297,12 +345,8 @@ def create_ship_voyage_relationships(neo4j_session, voyages: list[dict]) -> None
         SET origin_stop.sequence = 1
         MERGE (voyage)-[dest_stop:SINGGAH_DI {role: 'destination'}]->(dest)
         SET dest_stop.sequence = 2
-        MERGE (ship)-[m:MELAYANI {voyage_id: v.id}]->(origin)
-        SET m.route_id = v.route_id,
-            m.destination_port_id = dest.id,
-            m.remaining_capacity_ton = toFloat(v.remaining_capacity_ton)
     """
-    neo4j_session.run(query, voyages=voyages)
+    neo4j_session.run(query, voyages=voyages).consume()
 
 
 def create_supplier_relationships(neo4j_session, suppliers: list[dict]) -> None:
@@ -322,7 +366,7 @@ def create_supplier_relationships(neo4j_session, suppliers: list[dict]) -> None:
         MATCH (port:Port {id: s.port_id})
         MERGE (sup)-[:BERLOKASI_DI]->(port)
     """
-    neo4j_session.run(location_query, suppliers=suppliers)
+    neo4j_session.run(location_query, suppliers=suppliers).consume()
 
     # -- Supplier MENYUPLAI Commodity --
     # Perlu flatten: setiap elemen dalam commodity_ids menjadi 1 relationship.
@@ -333,12 +377,45 @@ def create_supplier_relationships(neo4j_session, suppliers: list[dict]) -> None:
         MATCH (com:Commodity {id: cid})
         MERGE (sup)-[:MENYUPLAI]->(com)
     """
-    neo4j_session.run(supply_query, suppliers=suppliers)
+    neo4j_session.run(supply_query, suppliers=suppliers).consume()
+
+
+def to_neo4j_value(value):
+    """Convert PostgreSQL-specific values without coercing ordinary numbers."""
+    if isinstance(value, UUID):
+        return str(value)
+    if isinstance(value, Decimal):
+        return float(value)
+    if isinstance(value, (list, tuple)):
+        return [to_neo4j_value(item) for item in value]
+    return value
+
+
+def project_graph(
+    transaction,
+    *,
+    ports: list[dict],
+    ships: list[dict],
+    commodities: list[dict],
+    routes: list[dict],
+    voyages: list[dict],
+    suppliers: list[dict],
+) -> None:
+    """Project the complete managed graph inside one retryable transaction."""
+    create_port_nodes(transaction, ports)
+    create_ship_nodes(transaction, ships)
+    create_commodity_nodes(transaction, commodities)
+    create_supplier_nodes(transaction, suppliers)
+    create_voyage_nodes(transaction, voyages)
+    create_route_relationships(transaction, routes)
+    create_ship_voyage_relationships(transaction, voyages)
+    create_supplier_relationships(transaction, suppliers)
 
 
 # ---------------------------------------------------------------------------
 # Orkestrator Utama
 # ---------------------------------------------------------------------------
+
 
 def run_seed() -> None:
     """
@@ -353,82 +430,55 @@ def run_seed() -> None:
     # -- Tahap 1: Baca data dari PostgreSQL --
     print("[INFO] Membaca data dari PostgreSQL...")
     pg_conn = get_pg_connection()
-    pg_cur = pg_conn.cursor()
+    pg_cur = None
+    try:
+        pg_cur = pg_conn.cursor()
+        ports = fetch_ports(pg_cur)
+        ships = fetch_ships(pg_cur)
+        commodities = fetch_commodities(pg_cur)
+        routes = fetch_routes(pg_cur)
+        voyages = fetch_voyages(pg_cur)
+        suppliers = fetch_suppliers(pg_cur)
+    finally:
+        if pg_cur is not None:
+            pg_cur.close()
+        pg_conn.close()
 
-    ports = fetch_ports(pg_cur)
-    ships = fetch_ships(pg_cur)
-    commodities = fetch_commodities(pg_cur)
-    routes = fetch_routes(pg_cur)
-    voyages = fetch_voyages(pg_cur)
-    suppliers = fetch_suppliers(pg_cur)
-
-    pg_cur.close()
-    pg_conn.close()
-
-    print(f"[INFO] Data terbaca: {len(ports)} ports, {len(ships)} ships, "
-          f"{len(commodities)} commodities, {len(routes)} routes, "
-          f"{len(voyages)} voyages, {len(suppliers)} suppliers.")
+    print(
+        f"[INFO] Data terbaca: {len(ports)} ports, {len(ships)} ships, "
+        f"{len(commodities)} commodities, {len(routes)} routes, "
+        f"{len(voyages)} voyages, {len(suppliers)} suppliers."
+    )
 
     # -- Tahap 2: Konversi UUID ke string --
     # Neo4j driver Python tidak bisa serialize objek UUID secara langsung.
     # Kita perlu mengonversinya ke string agar bisa dikirim sebagai parameter.
-    from decimal import Decimal
-
     for record_list in [ports, ships, commodities, routes, voyages, suppliers]:
         for record in record_list:
             for key, value in record.items():
-                if hasattr(value, "hex"):  # UUID tunggal
-                    record[key] = str(value)
-                elif isinstance(value, list): # List UUID
-                    record[key] = [str(v) if hasattr(v, "hex") else v for v in value]
-                elif isinstance(value, Decimal):  # Decimal dari psycopg2
-                    record[key] = float(value)
-                elif isinstance(value, list):
-                    record[key] = [
-                        str(v) if hasattr(v, "hex")
-                        else float(v) if isinstance(v, Decimal)
-                        else v
-                        for v in value
-                    ]
+                record[key] = to_neo4j_value(value)
 
-    # -- Tahap 3: Buat node --
+    # -- Tahap 3: Proyeksikan graph secara atomik --
     neo4j_driver = get_neo4j_driver()
-
-    with neo4j_driver.session() as session:
-        print("[INFO] Membuat node Port...")
-        create_port_nodes(session, ports)
-        print(f"[OK] {len(ports)} node Port.")
-
-        print("[INFO] Membuat node Ship...")
-        create_ship_nodes(session, ships)
-        print(f"[OK] {len(ships)} node Ship.")
-
-        print("[INFO] Membuat node Commodity...")
-        create_commodity_nodes(session, commodities)
-        print(f"[OK] {len(commodities)} node Commodity.")
-
-        print("[INFO] Membuat node Supplier...")
-        create_supplier_nodes(session, suppliers)
-        print(f"[OK] {len(suppliers)} node Supplier.")
-
-        print("[INFO] Membuat node Voyage...")
-        create_voyage_nodes(session, voyages)
-        print(f"[OK] {len(voyages)} node Voyage.")
-
-        # -- Tahap 4: Buat relationship --
-        print("[INFO] Membuat relationship TERHUBUNG_DENGAN (rute)...")
-        create_route_relationships(session, routes)
-        print(f"[OK] {len(routes)} relationship rute.")
-
-        print("[INFO] Membuat relationship MELAYANI (kapal-voyage-pelabuhan)...")
-        create_ship_voyage_relationships(session, voyages)
-        print("[OK] Relationship kapal-pelabuhan selesai.")
-
-        print("[INFO] Membuat relationship BERLOKASI_DI dan MENYUPLAI...")
-        create_supplier_relationships(session, suppliers)
-        print("[OK] Relationship supplier selesai.")
-
-    neo4j_driver.close()
+    try:
+        with neo4j_driver.session() as session:
+            session.execute_write(
+                project_graph,
+                ports=ports,
+                ships=ships,
+                commodities=commodities,
+                routes=routes,
+                voyages=voyages,
+                suppliers=suppliers,
+            )
+        print(
+            "[OK] Proyeksi atomik selesai: "
+            f"{len(ports)} Port, {len(ships)} Ship, "
+            f"{len(commodities)} Commodity, {len(suppliers)} Supplier, "
+            f"{len(voyages)} Voyage, {len(routes)} rute."
+        )
+    finally:
+        neo4j_driver.close()
     print("[INFO] Seeding Neo4j selesai. Knowledge Graph berhasil dibangun.")
 
 

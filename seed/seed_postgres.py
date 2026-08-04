@@ -4,33 +4,37 @@ seed_postgres.py - Seeding Data Transaksional ke PostgreSQL
 Memasukkan data dari file JSON (dataset/) ke tabel-tabel PostgreSQL
 dengan menjaga urutan Foreign Key dan prinsip idempotensi.
 
-Urutan insert (sesuai PRD Bagian 4.3):
+Urutan insert :
   users -> ports -> ships -> routes -> commodities -> suppliers
 
-Idempotensi dijamin oleh klausa ON CONFLICT (id) DO NOTHING pada
-setiap query, sehingga skrip ini aman dijalankan berulang kali
-tanpa menghasilkan data duplikat.
+Idempotensi dan rekonsiliasi dijamin oleh UPSERT berdasarkan ID stabil,
+sehingga rerun tidak menghasilkan duplikat dan perubahan dataset resmi
+diproyeksikan kembali ke record seed yang sudah ada.
 
 Referensi PRD: Bagian 4.3 (seed/seed_postgres.py)
 """
 
-import os
 import json
+import os
 
 import psycopg2
-from psycopg2.extras import execute_values
 from dotenv import load_dotenv
+from psycopg2.extras import execute_values
 
-from seed.validate import load_json, inject_created_at, BASE_DIR
+from seed.database import normalize_postgres_dsn
+from seed.validate import BASE_DIR, inject_created_at, load_json
 
 # Memuat variabel environment dari file .env di root opticargo-data.
 # Nilai koneksi (DATABASE_URL, dll.) mengikuti konfigurasi opticargo-infra.
 load_dotenv()
 
+SEED_LOCK_NAME = "opticargo-data:postgres-seed:v1"
+
 
 # ---------------------------------------------------------------------------
 # Koneksi Database
 # ---------------------------------------------------------------------------
+
 
 def get_pg_connection():
     """
@@ -48,8 +52,7 @@ def get_pg_connection():
             "DATABASE_URL tidak ditemukan. "
             "Pastikan file .env sudah dikonfigurasi sesuai opticargo-infra."
         )
-    db_url = db_url.replace("postgresql+psycopg://", "postgresql://", 1)
-    return psycopg2.connect(db_url)
+    return psycopg2.connect(normalize_postgres_dsn(db_url))
 
 
 def ensure_schema(cur) -> None:
@@ -155,6 +158,7 @@ def ensure_schema(cur) -> None:
 # Fungsi Seeding per Tabel
 # ---------------------------------------------------------------------------
 
+
 def seed_users(cur) -> None:
     """
     Memasukkan user dummy yang dibutuhkan sebagai Foreign Key oleh tabel
@@ -176,8 +180,16 @@ def seed_users(cur) -> None:
 
     operator_query = """
         INSERT INTO users (id, username, email, password_hash, role, is_active, created_at)
-        VALUES (%s, 'operator_kapal', 'operator_seed@opticargo.id', 'hash', 'operator', true, NOW())
-        ON CONFLICT (id) DO NOTHING;
+        VALUES (%s, 'operator_kapal', 'operator_seed@opticargo.id',
+                '!seed-account-disabled!', 'operator_kapal', false,
+                '2026-07-27T00:00:00Z')
+        ON CONFLICT (id) DO UPDATE SET
+            username = EXCLUDED.username,
+            email = EXCLUDED.email,
+            password_hash = EXCLUDED.password_hash,
+            role = EXCLUDED.role,
+            is_active = false,
+            created_at = EXCLUDED.created_at;
     """
     cur.execute(operator_query, (operator_id,))
 
@@ -190,7 +202,13 @@ def seed_users(cur) -> None:
     supplier_query = """
         INSERT INTO users (id, username, email, password_hash, role, is_active, created_at)
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id) DO UPDATE SET
+            username = EXCLUDED.username,
+            email = EXCLUDED.email,
+            password_hash = EXCLUDED.password_hash,
+            role = EXCLUDED.role,
+            is_active = false,
+            created_at = EXCLUDED.created_at;
     """
 
     # Menyiapkan tuple values untuk bulk insert.
@@ -200,18 +218,20 @@ def seed_users(cur) -> None:
             uid,
             f"supplier_{str(uid)[:8]}",
             f"supplier_{str(uid)[:8]}@opticargo.id",
-            "hash",
+            "!seed-account-disabled!",
             "supplier",
-            True,
+            False,
             "2026-07-27T00:00:00Z",
         )
-        for uid in unique_supplier_ids
+        for uid in sorted(unique_supplier_ids)
     ]
 
     if supplier_values:
         execute_values(cur, supplier_query, supplier_values)
 
-    print(f"[OK] Seeding selesai: 1 Operator + {len(unique_supplier_ids)} Supplier Users.")
+    print(
+        f"[OK] Seeding selesai: 1 Operator + {len(unique_supplier_ids)} Supplier Users."
+    )
 
 
 def seed_ports(cur) -> None:
@@ -235,7 +255,16 @@ def seed_ports(cur) -> None:
         INSERT INTO ports (id, name, city, province, latitude, longitude,
                            facilities, max_vessel_tonnage, operating_hours, created_at)
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id) DO UPDATE SET
+            name = EXCLUDED.name,
+            city = EXCLUDED.city,
+            province = EXCLUDED.province,
+            latitude = EXCLUDED.latitude,
+            longitude = EXCLUDED.longitude,
+            facilities = EXCLUDED.facilities,
+            max_vessel_tonnage = EXCLUDED.max_vessel_tonnage,
+            operating_hours = EXCLUDED.operating_hours,
+            created_at = EXCLUDED.created_at;
     """
 
     values = [
@@ -277,7 +306,18 @@ def seed_ships(cur) -> None:
                            deadweight_tonnage, cargo_capacity_m3, operator_id,
                            flag, certifications, status, created_at)
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id) DO UPDATE SET
+            name = EXCLUDED.name,
+            imo_number = EXCLUDED.imo_number,
+            ship_type = EXCLUDED.ship_type,
+            gross_tonnage = EXCLUDED.gross_tonnage,
+            deadweight_tonnage = EXCLUDED.deadweight_tonnage,
+            cargo_capacity_m3 = EXCLUDED.cargo_capacity_m3,
+            operator_id = EXCLUDED.operator_id,
+            flag = EXCLUDED.flag,
+            certifications = EXCLUDED.certifications,
+            status = EXCLUDED.status,
+            created_at = EXCLUDED.created_at;
     """
 
     values = [
@@ -306,7 +346,7 @@ def seed_routes(cur) -> None:
     """
     Memasukkan data rute pelayaran dari routes.json ke tabel routes.
 
-    Termasuk kolom data tarif (PM 29/2018) untuk mendukung fungsi 
+    Termasuk kolom data tarif (PM 29/2018) untuk mendukung fungsi
     perhitungan biaya oleh Optimization Agent.
     """
     print("[INFO] Seeding Routes...")
@@ -323,10 +363,17 @@ def seed_routes(cur) -> None:
                             tarif_general_cargo_idr, koefisien_pm29, created_at)
         VALUES %s
         ON CONFLICT (id) DO UPDATE SET
+            origin_port_id = EXCLUDED.origin_port_id,
+            destination_port_id = EXCLUDED.destination_port_id,
+            distance_nm = EXCLUDED.distance_nm,
+            estimated_days = EXCLUDED.estimated_days,
+            route_type = EXCLUDED.route_type,
+            is_active = EXCLUDED.is_active,
             tarif_dry_container_idr = EXCLUDED.tarif_dry_container_idr,
             tarif_reefer_container_idr = EXCLUDED.tarif_reefer_container_idr,
             tarif_general_cargo_idr = EXCLUDED.tarif_general_cargo_idr,
-            koefisien_pm29 = EXCLUDED.koefisien_pm29;
+            koefisien_pm29 = EXCLUDED.koefisien_pm29,
+            created_at = EXCLUDED.created_at;
     """
 
     values = [
@@ -342,7 +389,7 @@ def seed_routes(cur) -> None:
             r.get("tarif_reefer_container_idr"),
             r.get("tarif_general_cargo_idr"),
             r.get("koefisien_pm29"),
-            r["created_at"]
+            r["created_at"],
         )
         for r in routes_data
     ]
@@ -372,7 +419,15 @@ def seed_commodities(cur) -> None:
                                  is_perishable, max_stack_height,
                                  certifications_required, created_at)
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id) DO UPDATE SET
+            name = EXCLUDED.name,
+            category = EXCLUDED.category,
+            hs_code = EXCLUDED.hs_code,
+            special_requirements = EXCLUDED.special_requirements,
+            is_perishable = EXCLUDED.is_perishable,
+            max_stack_height = EXCLUDED.max_stack_height,
+            certifications_required = EXCLUDED.certifications_required,
+            created_at = EXCLUDED.created_at;
     """
 
     values = [
@@ -419,7 +474,16 @@ def seed_suppliers(cur) -> None:
                                avg_monthly_volume_ton, rating, verified,
                                address, created_at)
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id) DO UPDATE SET
+            user_id = EXCLUDED.user_id,
+            business_name = EXCLUDED.business_name,
+            port_id = EXCLUDED.port_id,
+            commodity_ids = EXCLUDED.commodity_ids,
+            avg_monthly_volume_ton = EXCLUDED.avg_monthly_volume_ton,
+            rating = EXCLUDED.rating,
+            verified = EXCLUDED.verified,
+            address = EXCLUDED.address,
+            created_at = EXCLUDED.created_at;
     """
     row_template = "(%s, %s, %s, %s, %s::uuid[], %s, %s, %s, %s, %s)"
 
@@ -450,9 +514,7 @@ def seed_voyages(cur) -> None:
     Prasyarat: ships dan routes harus sudah di-seed.
     """
     print("[INFO] Seeding Voyages...")
-    voyages_data = inject_created_at(
-        load_json(BASE_DIR / "voyages" / "voyages.json")
-    )
+    voyages_data = inject_created_at(load_json(BASE_DIR / "voyages" / "voyages.json"))
 
     if not voyages_data:
         print("[WARN] Tidak ada data voyages untuk di-seed.")
@@ -463,7 +525,17 @@ def seed_voyages(cur) -> None:
                              total_capacity_ton, used_capacity_ton,
                              remaining_capacity_ton, status, waypoints, created_at)
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id) DO UPDATE SET
+            ship_id = EXCLUDED.ship_id,
+            route_id = EXCLUDED.route_id,
+            departure_date = EXCLUDED.departure_date,
+            arrival_date = EXCLUDED.arrival_date,
+            total_capacity_ton = EXCLUDED.total_capacity_ton,
+            used_capacity_ton = EXCLUDED.used_capacity_ton,
+            remaining_capacity_ton = EXCLUDED.remaining_capacity_ton,
+            status = EXCLUDED.status,
+            waypoints = EXCLUDED.waypoints,
+            created_at = EXCLUDED.created_at;
     """
 
     values = [
@@ -487,10 +559,10 @@ def seed_voyages(cur) -> None:
     print(f"[OK] Seeding selesai: {len(values)} voyage.")
 
 
-
 # ---------------------------------------------------------------------------
 # Orkestrator Utama
 # ---------------------------------------------------------------------------
+
 
 def run_seed() -> None:
     """
@@ -512,6 +584,7 @@ def run_seed() -> None:
     cur = conn.cursor()
 
     try:
+        cur.execute("SELECT pg_advisory_xact_lock(hashtext(%s));", (SEED_LOCK_NAME,))
         ensure_schema(cur)
         seed_users(cur)
         seed_ports(cur)

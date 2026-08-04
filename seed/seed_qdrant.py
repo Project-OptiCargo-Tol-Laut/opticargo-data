@@ -12,34 +12,34 @@ Pipeline:
   3. Bersihkan teks dari header/footer berulang.
   4. Potong teks menjadi chunk berukuran konsisten (~500 kata).
   5. Generate embedding per chunk menggunakan FastEmbed BAAI/bge-small-en-v1.5.
-  6. Hapus chunk lama dokumen tsb (kalau ada), lalu upsert chunk baru
-     ke Qdrant collection -- supaya tidak ada chunk basi nyangkut.
+  6. Siapkan seluruh chunk dan embedding sebelum mutasi Qdrant.
+  7. Upsert chunk baru, lalu hapus hanya ID lama yang sudah tidak dipakai.
 
-Referensi PRD: Bagian 4.5 (seed/seed_qdrant.py)
 """
 
+import hashlib
+import math
 import os
 import re
-import uuid
 import time
-import hashlib
+import uuid
 
 import pdfplumber
+from dotenv import load_dotenv
 from fastembed import TextEmbedding
+from opticargo_shared.models.rag_chunk import RagChunkMetadata
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
     Distance,
+    FieldCondition,
+    Filter,
+    MatchValue,
+    PointIdsList,
     PointStruct,
     VectorParams,
-    Filter,
-    FieldCondition,
-    FilterSelector,
-    MatchValue,
 )
-from dotenv import load_dotenv
 
-from opticargo_shared.models.rag_chunk import RagChunkMetadata
-from seed.validate import load_json, BASE_DIR
+from seed.validate import BASE_DIR, load_json
 
 load_dotenv()
 
@@ -72,12 +72,12 @@ MAX_EMBEDDING_RETRIES = 3
 NOISE_PATTERNS = [
     r"^MENTERI PERHUBUNGAN\s*$",
     r"^REPUBLIK INDONESIA\s*$",
-    r"^-\s*\d+\s*-\s*$",          # penomoran halaman gaya "- 2 -"
-    r"^\d+\s*$",                   # baris cuma berisi angka halaman
-    r"^SK\s+No\s+\d+\s+[A-Z]\s*$", # SK No 019623 A
-    r"^www\.peraturan\.go\.id\s*$", # footer website
-    r"^\d+,\s*No\.\s*\d+\s*-\d+-\s*$", # 2021, No. 778 -6-
-    r"^\d+,\s*No\.\s*\d+\s*$",     # 2021, No. 778
+    r"^-\s*\d+\s*-\s*$",  # penomoran halaman gaya "- 2 -"
+    r"^\d+\s*$",  # baris cuma berisi angka halaman
+    r"^SK\s+No\s+\d+\s+[A-Z]\s*$",  # SK No 019623 A
+    r"^www\.peraturan\.go\.id\s*$",  # footer website
+    r"^\d+,\s*No\.\s*\d+\s*-\d+-\s*$",  # 2021, No. 778 -6-
+    r"^\d+,\s*No\.\s*\d+\s*$",  # 2021, No. 778
 ]
 NOISE_RE = re.compile("|".join(NOISE_PATTERNS), re.IGNORECASE)
 
@@ -85,6 +85,7 @@ NOISE_RE = re.compile("|".join(NOISE_PATTERNS), re.IGNORECASE)
 # ---------------------------------------------------------------------------
 # Koneksi
 # ---------------------------------------------------------------------------
+
 
 def get_qdrant_client() -> QdrantClient:
     """Membuat koneksi ke Qdrant menggunakan QDRANT_URL dari .env."""
@@ -118,7 +119,10 @@ def file_checksum(filepath: str) -> str:
 # Ekstraksi Teks dari PDF
 # ---------------------------------------------------------------------------
 
-def extract_text_from_pdf(filepath: str, max_pages: int | None = None, is_bilingual: bool = False) -> str:
+
+def extract_text_from_pdf(
+    filepath: str, max_pages: int | None = None, is_bilingual: bool = False
+) -> str:
     """
     Mengekstrak teks dari file PDF menggunakan pdfplumber.
 
@@ -143,14 +147,14 @@ def extract_text_from_pdf(filepath: str, max_pages: int | None = None, is_biling
                 width = page.width
                 height = page.height
                 left_bbox = (0, 0, width / 2, height)
-                
+
                 left_text = page.crop(left_bbox).extract_text() or ""
-                
+
                 # Mengabaikan kolom kanan (bahasa Inggris)
                 text = left_text
             else:
                 text = page.extract_text()
-                
+
             if text:
                 full_text.append(text)
     return "\n".join(full_text)
@@ -186,7 +190,8 @@ def clean_text(text: str) -> str:
     padat informasi dan tidak dipenuhi teks yang sama berkali-kali.
     """
     cleaned_lines = [
-        line for line in text.split("\n")
+        line
+        for line in text.split("\n")
         if line.strip() and not NOISE_RE.match(line.strip())
     ]
     return "\n".join(cleaned_lines)
@@ -196,6 +201,7 @@ def clean_text(text: str) -> str:
 # Chunking Teks
 # ---------------------------------------------------------------------------
 
+
 def semantic_chunking(text: str, max_chunk_words: int = 800) -> list[str]:
     """
     Memotong teks panjang berdasarkan struktur "Pasal".
@@ -203,44 +209,55 @@ def semantic_chunking(text: str, max_chunk_words: int = 800) -> list[str]:
     (> max_chunk_words kata), maka akan dipecah lagi per "Ayat" atau penomoran.
     """
     # 1. Pisahkan teks sebelum kata "Pasal <angka>" (di awal baris)
-    parts = re.split(r'\n(?=\s*Pasal\s+\d+)', text, flags=re.IGNORECASE)
-    
+    parts = re.split(r"\n(?=\s*Pasal\s+\d+)", text, flags=re.IGNORECASE)
+
     chunks = []
-    
+
     for part in parts:
         part = part.strip()
         if not part:
             continue
-            
+
         word_count = len(part.split())
-        
+
         # Jika bagian ini terlalu panjang (mis. Pasal 1 Ketentuan Umum)
         if word_count > max_chunk_words:
             # Cari judul pasal (biasanya di baris pertama)
             lines = part.split("\n", 1)
-            pasal_header = lines[0].strip() if re.match(r'^Pasal\s+\d+', lines[0], re.IGNORECASE) else "Lanjutan"
-            
+            pasal_header = (
+                lines[0].strip()
+                if re.match(r"^Pasal\s+\d+", lines[0], re.IGNORECASE)
+                else "Lanjutan"
+            )
+
             # Pecah berdasarkan penomoran ayat (1), (2), atau 1., 2.
-            sub_parts = re.split(r'\n(?=\s*\(\d+\)\s+|\s*\d+\.\s+)', part)
-            
+            sub_parts = re.split(r"\n(?=\s*\(\d+\)\s+|\s*\d+\.\s+)", part)
+
             current_sub_chunk = ""
             for sub_part in sub_parts:
                 sub_part = sub_part.strip()
                 if not sub_part:
                     continue
-                    
+
                 # Jika sub_part tidak diawali dengan "Pasal", tambahkan header agar konteks jelas
-                prefix = f"[{pasal_header}]\n" if not re.match(r'^Pasal\s+\d+', sub_part, re.IGNORECASE) else ""
-                
+                prefix = (
+                    f"[{pasal_header}]\n"
+                    if not re.match(r"^Pasal\s+\d+", sub_part, re.IGNORECASE)
+                    else ""
+                )
+
                 # Jika digabung masih muat
                 if not current_sub_chunk:
                     current_sub_chunk = f"{prefix}{sub_part}"
-                elif len(current_sub_chunk.split()) + len(sub_part.split()) <= max_chunk_words:
+                elif (
+                    len(current_sub_chunk.split()) + len(sub_part.split())
+                    <= max_chunk_words
+                ):
                     current_sub_chunk += f"\n\n{sub_part}"
                 else:
                     chunks.append(current_sub_chunk)
                     current_sub_chunk = f"[{pasal_header}]\n{sub_part}"
-            
+
             if current_sub_chunk:
                 chunks.append(current_sub_chunk)
         else:
@@ -253,49 +270,79 @@ def semantic_chunking(text: str, max_chunk_words: int = 800) -> list[str]:
 # Generate Embedding (dengan retry)
 # ---------------------------------------------------------------------------
 
-def generate_embedding(embedding_model: TextEmbedding, text: str,
-                       max_retries: int = MAX_EMBEDDING_RETRIES) -> list[float]:
+
+def generate_embedding(
+    embedding_model: TextEmbedding, text: str, max_retries: int = MAX_EMBEDDING_RETRIES
+) -> list[float]:
     """
     Men-generate embedding vektor dari teks menggunakan FastEmbed secara lokal.
     """
-    try:
-        embeddings_list = list(embedding_model.embed([text]))
-        if not embeddings_list:
-            raise RuntimeError("Empty embedding returned")
-        return embeddings_list[0].tolist()
-    except Exception as e:
-        raise RuntimeError(f"Gagal generate embedding lokal: {e}")
+    if max_retries < 1:
+        raise ValueError("max_retries minimal 1")
+    last_error: Exception | None = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            embeddings_list = list(embedding_model.embed([text]))
+            if not embeddings_list:
+                raise RuntimeError("embedding kosong")
+            vector = embeddings_list[0].tolist()
+            if len(vector) != EMBEDDING_DIMENSION:
+                raise RuntimeError(
+                    f"dimensi embedding {len(vector)} != {EMBEDDING_DIMENSION}"
+                )
+            if not all(math.isfinite(float(value)) for value in vector):
+                raise RuntimeError("embedding mengandung nilai non-finite")
+            return vector
+        except Exception as error:  # noqa: BLE001 - embedding backends vary
+            last_error = error
+            if attempt < max_retries:
+                time.sleep(0.25 * (2 ** (attempt - 1)))
+    raise RuntimeError(
+        f"Gagal generate embedding lokal setelah {max_retries} percobaan: {last_error}"
+    ) from last_error
 
 
 # ---------------------------------------------------------------------------
-# Hapus chunk lama sebelum insert baru (hindari chunk basi nyangkut)
+# Inventaris dan pembersihan chunk lama setelah upsert berhasil
 # ---------------------------------------------------------------------------
 
-def delete_existing_chunks(qdrant: QdrantClient, filename: str) -> None:
-    """
-    Menghapus semua chunk lama milik satu file regulasi dari Qdrant
-    sebelum meng-upsert versi baru. Ini penting kalau CHUNK_SIZE_WORDS
-    pernah diubah antar-run -- tanpa ini, chunk lama dengan chunk_index
-    yang sudah tidak relevan akan tetap nyangkut selamanya di Qdrant.
-    """
+
+def existing_chunk_ids(qdrant: QdrantClient, filename: str) -> set[str]:
+    """Return every existing point ID for one document, with pagination."""
+    document_filter = Filter(
+        must=[FieldCondition(key="filename", match=MatchValue(value=filename))]
+    )
+    result: set[str] = set()
+    offset = None
+    while True:
+        points, offset = qdrant.scroll(
+            collection_name=COLLECTION_NAME,
+            scroll_filter=document_filter,
+            limit=256,
+            offset=offset,
+            with_payload=False,
+            with_vectors=False,
+        )
+        result.update(str(point.id) for point in points)
+        if offset is None:
+            return result
+
+
+def delete_stale_chunks(qdrant: QdrantClient, stale_ids: set[str]) -> None:
+    """Delete obsolete IDs only after replacement chunks are durable."""
+    if not stale_ids:
+        return
     qdrant.delete(
         collection_name=COLLECTION_NAME,
-        points_selector=FilterSelector(
-            filter=Filter(
-                must=[
-                    FieldCondition(
-                        key="filename",
-                        match=MatchValue(value=filename),
-                    )
-                ]
-            )
-        ),
+        points_selector=PointIdsList(points=sorted(stale_ids)),
+        wait=True,
     )
 
 
 # ---------------------------------------------------------------------------
 # Orkestrator Utama
 # ---------------------------------------------------------------------------
+
 
 def run_seed() -> None:
     """
@@ -313,21 +360,24 @@ def run_seed() -> None:
     if COLLECTION_NAME not in existing_names:
         qdrant.create_collection(
             collection_name=COLLECTION_NAME,
-            vectors_config=VectorParams(size=EMBEDDING_DIMENSION, distance=Distance.COSINE),
+            vectors_config=VectorParams(
+                size=EMBEDDING_DIMENSION, distance=Distance.COSINE
+            ),
         )
         print(f"[INFO] Collection '{COLLECTION_NAME}' berhasil dibuat di Qdrant.")
     else:
         info = qdrant.get_collection(COLLECTION_NAME)
         actual_dim = info.config.params.vectors.size
         if actual_dim != EMBEDDING_DIMENSION:
-            print(f"[WARN] Dimensi lama ({actual_dim}) != baru ({EMBEDDING_DIMENSION}). Recreate...")
-            qdrant.delete_collection(COLLECTION_NAME)
-            qdrant.create_collection(
-                collection_name=COLLECTION_NAME,
-                vectors_config=VectorParams(size=EMBEDDING_DIMENSION, distance=Distance.COSINE),
+            raise RuntimeError(
+                f"Collection '{COLLECTION_NAME}' berdimensi {actual_dim}, tetapi seeder "
+                f"memerlukan {EMBEDDING_DIMENSION}. Gunakan migrasi collection/alias "
+                "eksplisit; seeder tidak akan menghapus data otomatis."
             )
         else:
-            print(f"[INFO] Collection '{COLLECTION_NAME}' sudah ada, dimensi cocok. Melanjutkan upsert.")
+            print(
+                f"[INFO] Collection '{COLLECTION_NAME}' sudah ada, dimensi cocok. Melanjutkan upsert."
+            )
 
     # -- Baca metadata regulasi --
     regulations = load_json(BASE_DIR / "regulations" / "regulations.json")
@@ -340,8 +390,7 @@ def run_seed() -> None:
         filepath = BASE_DIR / "regulations" / filename
 
         if not filepath.exists():
-            print(f"[WARN] File tidak ditemukan, dilewati: {filename}")
-            continue
+            raise FileNotFoundError(f"File regulasi wajib tidak ditemukan: {filepath}")
 
         status = reg.get("status", "aktif")
         max_pages = reg.get("max_pages")
@@ -350,11 +399,12 @@ def run_seed() -> None:
         print(f"[INFO] Memproses: {filename} {status_text}")
 
         # -- Ekstrak dan bersihkan teks per halaman untuk citation --
-        is_bilingual = (reg["id"] == "reg_007")
-        raw_pages = extract_pages_from_pdf(str(filepath), max_pages=max_pages, is_bilingual=is_bilingual)
+        is_bilingual = reg["id"] == "reg_007"
+        raw_pages = extract_pages_from_pdf(
+            str(filepath), max_pages=max_pages, is_bilingual=is_bilingual
+        )
         if not raw_pages:
-            print(f"[WARN] Tidak ada teks yang bisa diekstrak dari {filename}.")
-            continue
+            raise RuntimeError(f"Tidak ada teks yang bisa diekstrak dari {filename}")
 
         page_chunks = []
         total_words = 0
@@ -366,13 +416,15 @@ def run_seed() -> None:
             for chunk in semantic_chunking(cleaned_page):
                 page_chunks.append({"page": page_number, "text": chunk})
 
-        print(f"  Teks diekstrak: {total_words} kata "
-              f"(setelah dibersihkan) -> {len(page_chunks)} chunk")
+        print(
+            f"  Teks diekstrak: {total_words} kata "
+            f"(setelah dibersihkan) -> {len(page_chunks)} chunk"
+        )
+        if not page_chunks:
+            raise RuntimeError(f"Tidak ada chunk valid yang dihasilkan dari {filename}")
 
-        # -- Hapus chunk lama dokumen ini dulu --
-        delete_existing_chunks(qdrant, filename)
-
-        # -- Generate embedding dan upsert ke Qdrant --
+        # -- Inventaris ID lama, lalu siapkan semua embedding sebelum mutasi --
+        previous_ids = existing_chunk_ids(qdrant, filename)
         points = []
         document_id = stable_document_uuid(reg["id"])
         checksum = file_checksum(str(filepath))
@@ -399,44 +451,50 @@ def run_seed() -> None:
                 checksum=checksum,
             )
 
-            points.append(PointStruct(
-                id=point_id,
-                vector=embedding,
-                payload={
-                    "document_id": document_id,
-                    "source_document_id": reg["id"],
-                    "chunk_id": point_id,
-                    "filename": filename,
-                    "title": reg.get("title", ""),
-                    "full_title": reg.get("full_title", ""),
-                    "document_type": reg.get("document_type", ""),
-                    "issuer": reg.get("issuer", ""),
-                    "year": reg.get("year", 0),
-                    "topics": reg.get("topics", []),
-                    "rag_priority": reg.get("rag_priority", "low"),
-                    "status": status,
-                    "document_version": document_version,
-                    "source_reference": reg.get("source_url"),
-                    "is_superseded": is_superseded,
-                    "checksum": checksum,
-                    "page": page_chunk["page"],
-                    "embedding_model": EMBEDDING_MODEL_NAME,
-                    "embedding_dimension": EMBEDDING_DIMENSION,
-                    "metadata": metadata.model_dump(mode="json"),
-                    "chunk_index": i,
-                    "chunk_text": chunk,
-                    "token_count": len(chunk.split()),
-                },
-            ))
+            points.append(
+                PointStruct(
+                    id=point_id,
+                    vector=embedding,
+                    payload={
+                        "document_id": document_id,
+                        "source_document_id": reg["id"],
+                        "chunk_id": point_id,
+                        "filename": filename,
+                        "title": reg.get("title", ""),
+                        "full_title": reg.get("full_title", ""),
+                        "document_type": reg.get("document_type", ""),
+                        "issuer": reg.get("issuer", ""),
+                        "year": reg.get("year", 0),
+                        "topics": reg.get("topics", []),
+                        "rag_priority": reg.get("rag_priority", "low"),
+                        "status": status,
+                        "document_version": document_version,
+                        "source_reference": reg.get("source_url"),
+                        "is_superseded": is_superseded,
+                        "checksum": checksum,
+                        "page": page_chunk["page"],
+                        "embedding_model": EMBEDDING_MODEL_NAME,
+                        "embedding_dimension": EMBEDDING_DIMENSION,
+                        "metadata": metadata.model_dump(mode="json"),
+                        "chunk_index": i,
+                        "chunk_text": chunk,
+                        "token_count": len(chunk.split()),
+                    },
+                )
+            )
 
         # -- Upsert batch per dokumen --
         if points:
-            qdrant.upsert(collection_name=COLLECTION_NAME, points=points)
+            qdrant.upsert(collection_name=COLLECTION_NAME, points=points, wait=True)
+            current_ids = {str(point.id) for point in points}
+            delete_stale_chunks(qdrant, previous_ids - current_ids)
             total_chunks += len(points)
             print(f"  [OK] {len(points)} chunk berhasil di-upsert.")
 
-    print(f"[INFO] Seeding Qdrant selesai. Total: {total_chunks} chunk dari "
-          f"{len(regulations)} dokumen.")
+    print(
+        f"[INFO] Seeding Qdrant selesai. Total: {total_chunks} chunk dari "
+        f"{len(regulations)} dokumen."
+    )
 
 
 if __name__ == "__main__":
