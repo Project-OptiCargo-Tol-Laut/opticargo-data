@@ -1,0 +1,562 @@
+[
+  {
+    "id": "e2f329aa-2c4f-52d2-b4b4-a30e769b61c3",
+    "voyage_id": "778db6b1-696e-5254-9280-97d321213520",
+    "available_weight_ton": "984.0",
+    "available_volume_m3": "9348.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "07f5a578-81ff-5af3-9fc6-b162bf3635f4",
+    "voyage_id": "dbede59c-a407-5dc7-86a8-9283665907fd",
+    "available_weight_ton": "942.0",
+    "available_volume_m3": "8949.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "a22ac0b9-35b3-5dce-bae8-dff4b0d59f85",
+    "voyage_id": "df10d525-ef7e-531b-a5ab-99c3ffce9415",
+    "available_weight_ton": "900.0",
+    "available_volume_m3": "8550.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "14bc412c-9afd-53f1-a542-4e519b97c83a",
+    "voyage_id": "38a858c6-90c7-5160-a43a-0d4c0eb6c611",
+    "available_weight_ton": "858.0",
+    "available_volume_m3": "8151.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "da441b6a-22d6-57bd-b8d9-ddc03a2e8d95",
+    "voyage_id": "cad33618-b1b0-5074-8397-fa74cff1c5dd",
+    "available_weight_ton": "816.0",
+    "available_volume_m3": "7752.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "37df4348-5628-5b13-b8a3-4d10ef979f39",
+    "voyage_id": "544f2037-3fcf-5c6e-b11a-8b68df3c3cd9",
+    "available_weight_ton": "774.0",
+    "available_volume_m3": "7353.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "c94a675a-cc8a-57af-9aa8-3da4deea79a2",
+    "voyage_id": "3dfd2602-4e41-59a0-9dc1-4f73b8e31730",
+    "available_weight_ton": "380.0",
+    "available_volume_m3": "3610.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "d0daa74a-1d7e-5132-a416-209c46ea73f8",
+    "voyage_id": "7291a201-9c42-5be9-99c1-3e6c6fcd3813",
+    "available_weight_ton": "611.6",
+    "available_volume_m3": "5810.2",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "80c6f149-341d-5669-9031-46887167d540",
+    "voyage_id": "058579db-0f4b-59eb-bdb1-69b5e6dc3d86",
+    "available_weight_ton": "487.6",
+    "available_volume_m3": "4632.2",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "a2b4620e-5af3-59fa-9bf5-8dea782f0291",
+    "voyage_id": "acdc16d9-9cfe-503b-a8f3-b81a280b0a10",
+    "available_weight_ton": "778.6",
+    "available_volume_m3": "7396.7",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "d3d7e08a-eda2-591c-b252-4ca83f9cdb54",
+    "voyage_id": "28acf5e4-808a-5973-ba96-f94528ccde19",
+    "available_weight_ton": "668.3",
+    "available_volume_m3": "6348.8",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "88f64cd6-9619-5ac0-8473-c07f059300b5",
+    "voyage_id": "81863785-0466-5ec7-b02a-c0ae68232d6f",
+    "available_weight_ton": "596.2",
+    "available_volume_m3": "5663.9",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "a8ca7eee-72f4-5df1-9107-5b8d2496f3d6",
+    "voyage_id": "e238f6e2-0c26-50d6-ba08-5c7e676669e5",
+    "available_weight_ton": "706.1",
+    "available_volume_m3": "6707.9",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "25458b6d-bb12-564a-8ba6-2a7f37ffc2a8",
+    "voyage_id": "16be672f-f786-52da-851c-f9953bca327a",
+    "available_weight_ton": "649.1",
+    "available_volume_m3": "6166.4",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "b86930b8-7bae-54c3-9306-a97e83570190",
+    "voyage_id": "04e31c67-083b-52bb-8633-ec58f3f870b0",
+    "available_weight_ton": "842.4",
+    "available_volume_m3": "8002.8",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "7ca3bb4b-5c1d-5f16-bf81-366ba4438332",
+    "voyage_id": "2edf835b-4d76-5eb8-b012-894c0a97949e",
+    "available_weight_ton": "942.0",
+    "available_volume_m3": "8949.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "52267594-2aee-5b83-8de8-ce3b1b2410bc",
+    "voyage_id": "6e700de8-4daf-5db0-b377-24895b9113ea",
+    "available_weight_ton": "900.0",
+    "available_volume_m3": "8550.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "820eb41e-bef6-5ce5-8ab4-cdae9eeb6cb6",
+    "voyage_id": "7f29eeac-6ea3-51e7-91ac-f5f6d8fdfff5",
+    "available_weight_ton": "858.0",
+    "available_volume_m3": "8151.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "616bde00-cdd9-5291-9627-4cc60128c4d7",
+    "voyage_id": "a8b9d4bf-3e73-5a29-b69f-1a99e2346bc2",
+    "available_weight_ton": "816.0",
+    "available_volume_m3": "7752.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "e132a3a7-b3ca-5367-9086-eabc299b1416",
+    "voyage_id": "93a70bb4-013c-5588-9ea3-6b91ab82eec3",
+    "available_weight_ton": "774.0",
+    "available_volume_m3": "7353.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "a570c9e1-b3c8-56cd-aeaa-658d7817e641",
+    "voyage_id": "3cc0dac2-941a-5251-be73-69b90c5ad988",
+    "available_weight_ton": "732.0",
+    "available_volume_m3": "6954.0",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "4e39b068-60bd-51d4-a031-8e2688514c03",
+    "voyage_id": "295cc8bd-eacf-5fae-aeef-45cab88223c4",
+    "available_weight_ton": "510.9",
+    "available_volume_m3": "4853.6",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "2a28505e-d517-5c63-8948-019702af487e",
+    "voyage_id": "71401c5c-d1bc-594b-8769-37e80c1ed16c",
+    "available_weight_ton": "585.5",
+    "available_volume_m3": "5562.2",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "222605c9-f52a-5662-bc8a-f02781d35891",
+    "voyage_id": "c17e13a7-64f0-593f-90ae-4a03de36edb1",
+    "available_weight_ton": "465.8",
+    "available_volume_m3": "4425.1",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "9e0229eb-42e4-51d9-ab05-00cc8b29b507",
+    "voyage_id": "571cbffa-16df-5750-92f3-a72b19dc53c7",
+    "available_weight_ton": "742.3",
+    "available_volume_m3": "7051.8",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "86f5294a-fd24-5e27-b3e6-7f87383f874c",
+    "voyage_id": "933b749c-9fa0-5f54-8afe-efba428b4c0c",
+    "available_weight_ton": "635.6",
+    "available_volume_m3": "6038.2",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "589da375-cae2-57fa-b3e5-598dcabaf3a7",
+    "voyage_id": "75ab70d0-4e5f-5a5d-a642-61f9dd50efa8",
+    "available_weight_ton": "565.5",
+    "available_volume_m3": "5372.2",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "52b8dbf0-a68a-58a6-9125-ea33b6917a27",
+    "voyage_id": "0ae8a6b7-f5ba-5957-b108-98e47a7c6547",
+    "available_weight_ton": "667.8",
+    "available_volume_m3": "6344.1",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food"
+    ],
+    "temperature_range": {
+      "min_celsius": "5",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "5affdb5e-f184-54ec-8079-085644f1d2a0",
+    "voyage_id": "acf4ee5f-933c-51a8-86d4-27ddbcb67c88",
+    "available_weight_ton": "872.6",
+    "available_volume_m3": "8289.7",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "1287f539-b888-53ad-a62f-a89faf71f2a3",
+    "voyage_id": "71356bb1-f35b-5ea0-b347-4c806f0a420a",
+    "available_weight_ton": "806.4",
+    "available_volume_m3": "7660.8",
+    "cargo_type_allowed": [
+      "general",
+      "dry_food",
+      "frozen"
+    ],
+    "temperature_range": {
+      "min_celsius": "-20",
+      "max_celsius": "25"
+    },
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:cargo-capacity-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  }
+]
