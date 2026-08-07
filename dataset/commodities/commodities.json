@@ -14,7 +14,9 @@
       "SNI",
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "705c53ad-23a1-5668-b8db-4a57b1da7098",
@@ -31,7 +33,9 @@
       "SNI",
       "BPOM"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "64dc55bb-2028-5620-8804-09afd4a615a3",
@@ -47,7 +51,9 @@
     "certifications_required": [
       "SNI"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "c28face1-44b2-5482-bfe4-89cb1da0b608",
@@ -64,7 +70,9 @@
       "SNI",
       "BPOM"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "15d8b546-26c9-51ba-969e-8fe61ad53078",
@@ -80,7 +88,9 @@
     "certifications_required": [
       "SNI"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "82e09371-e984-59d9-8107-bc88f16cf032",
@@ -96,7 +106,9 @@
     "certifications_required": [
       "SNI"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "fdb90104-2840-5ba6-b98b-760cff3eaffa",
@@ -112,7 +124,9 @@
     "certifications_required": [
       "SNI"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "c0223d69-c291-53e8-aeb3-189c4fadddd7",
@@ -128,7 +142,9 @@
     "certifications_required": [
       "SNI"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "24cacaa3-3478-5efe-9ea6-860887579623",
@@ -145,7 +161,9 @@
       "SNI",
       "BPOM"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "07e8516b-f6d9-551f-b6ed-a21aef871019",
@@ -161,7 +179,9 @@
     "certifications_required": [
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "d641502d-275c-5bbe-b730-cf77f6bd912a",
@@ -177,7 +197,9 @@
     "certifications_required": [
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "7271328c-f68a-545f-a91d-05220058b82f",
@@ -193,7 +215,9 @@
     "certifications_required": [
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "331aba25-247f-55e6-a8d0-c11e69bb19a7",
@@ -209,7 +233,9 @@
     "certifications_required": [
       "Karantina Ikan"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc",
@@ -226,7 +252,9 @@
       "Karantina Ikan",
       "Sertifikat Kelayakan Pengolahan"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "190a5de6-01ce-5cd5-bebe-d3e92ccd003d",
@@ -243,7 +271,9 @@
       "Karantina Ikan",
       "Catch Certificate"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "6666f5d6-82a9-5d5b-bf4d-19c31757b988",
@@ -260,7 +290,9 @@
       "Karantina Hewan",
       "Surat Keterangan Kesehatan Hewan"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "ad71db8d-90e4-5eb7-a7a4-d7a81ba4e7d3",
@@ -276,7 +308,9 @@
     "certifications_required": [
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "f3112d93-5db1-558e-a351-f21064c53bc2",
@@ -293,7 +327,9 @@
       "SVLK",
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   },
   {
     "id": "10b18500-6410-526b-b5ee-b6a458a5e992",
@@ -309,6 +345,8 @@
     "certifications_required": [
       "Karantina Pertanian"
     ],
-    "created_at": "2026-07-26T12:35:21Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:synthetic:commodities"
   }
 ]
