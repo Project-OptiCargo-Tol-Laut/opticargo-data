@@ -1,0 +1,27 @@
+{
+  "dataset_name": "opticargo-competition",
+  "dataset_version": "3.1.0-competition.1",
+  "generated_at": "2026-07-26T00:00:00Z",
+  "profile": "competition",
+  "reproducible": true,
+  "counts": {
+    "users": 58,
+    "ports": 70,
+    "routes": 445,
+    "commodities": 19,
+    "ships": 15,
+    "suppliers": 50,
+    "voyages": 30,
+    "cargo_capacities": 30,
+    "cargo_listings": 80,
+    "bookings": 500,
+    "regulations": 9
+  },
+  "synthetic_policy": "Synthetic operational rows carry is_synthetic=true and provenance where the destination schema exposes those columns.",
+  "notes": [
+    "Public entity seed contracts are validated with opticargo-shared==1.0.0.",
+    "Gateway-only persistence fields such as optimistic-lock version, cargo listing certifications and booking ownership/reference are derived deterministically at seed time.",
+    "Payments/recommendations/audit/outbox/session rows are intentionally not seeded directly; they are produced by Gateway/worker flows."
+  ],
+  "schema_package_version": "1.0.0"
+}
