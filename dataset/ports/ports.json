@@ -20,9 +20,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "5691889c-1195-59b4-8b50-915cc50c78e5",
@@ -45,9 +46,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "0c1cc2e1-49c3-5850-a2ff-1efa9d5bd343",
@@ -70,9 +72,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "430d98f7-56b0-501b-9399-a624e98967d9",
@@ -95,9 +98,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "ae316328-0ba6-5ea9-b0c5-4126bd0b895a",
@@ -120,9 +124,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "03cfb3c8-3e4a-5418-a899-eab35d16556c",
@@ -145,9 +150,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "413853ba-9e5c-5d7d-9cef-4ce8f4dc26bd",
@@ -170,9 +176,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
@@ -195,9 +202,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "7d6c98d0-b292-546c-a1a3-e03e00fe465e",
@@ -220,9 +228,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "7b2881fa-4aa1-5817-a3f7-832828132db0",
@@ -245,9 +254,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "b832ee05-06d7-59f7-ac50-b0ac52931a9e",
@@ -270,9 +280,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "2fa3bf32-afd9-5481-931b-2257fe3495f8",
@@ -295,9 +306,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "70c160e8-e1a1-5efa-9e46-750e463ba492",
@@ -320,9 +332,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "fd4b5bc3-32a1-5711-b6cb-baeca8d1267f",
@@ -345,9 +358,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "f499696a-ff40-5627-ab39-9dd0b052ac08",
@@ -370,9 +384,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "e18b76cc-6590-51ca-8562-3cee498d2780",
@@ -395,9 +410,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "36e59bc5-4032-5e4d-b8d0-0ed5fe3a8ae1",
@@ -420,9 +436,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "c36031c5-9ba3-5a50-8641-f3d5c0823553",
@@ -445,9 +462,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "ecd590a5-76a9-5134-acfe-36a66dc8871c",
@@ -470,9 +488,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "00728062-ca09-5e73-900d-20d5bd6cc24b",
@@ -495,9 +514,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "931e7fb5-9acf-5114-8042-579a70801444",
@@ -520,9 +540,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "9043b0f1-9493-5a3e-9371-8ca890d68d45",
@@ -545,9 +566,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "baa04352-d32f-5401-adad-b8598749237b",
@@ -570,9 +592,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "d2a02a2f-28b6-52da-9dcf-5e53e83475da",
@@ -595,9 +618,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
@@ -620,9 +644,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
@@ -645,9 +670,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "61a4aaec-ea9c-5f47-9677-c88320c62188",
@@ -670,9 +696,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "9c5aecd8-2cad-5497-a580-a8afc95e7ee4",
@@ -695,9 +722,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "78bfd18b-cec0-5b5d-bdf9-28f30a860688",
@@ -720,9 +748,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "996ca37d-3cc1-584f-aace-93b12456209a",
@@ -745,9 +774,10 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "1e6f4783-2961-564e-ba52-53c1c215de7b",
@@ -770,13 +800,40 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
+  },
+  {
+    "id": "7c4f05fe-f420-5fb7-87ab-9bf0ef89f23f",
+    "port_id": "port_032",
+    "name": "Sanni",
+    "city": "Kabupaten Kepulauan Selayar",
+    "province": "Sulawesi Selatan",
+    "latitude": -5.7333,
+    "longitude": 120.45,
+    "port_type": "feeder",
+    "tol_laut_role": "Pelabuhan Singgah - Sanni/Selayar",
+    "max_vessel_tonnage": 5000,
+    "facilities": {
+      "has_crane": false,
+      "has_cold_storage": false,
+      "has_container_yard": false,
+      "fuel_available": true
+    },
+    "operating_hours": {
+      "weekday": "07:00-17:00",
+      "weekend": "07:00-14:00"
+    },
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "043c3644-4a70-5bfe-a486-c9751820c65f",
-    "port_id": "port_032",
+    "port_id": "port_033",
     "name": "Bau Bau",
     "city": "Kota Baubau",
     "province": "Sulawesi Tenggara",
@@ -795,13 +852,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "f78f4e54-73b1-5df0-a07e-6327013dee5d",
-    "port_id": "port_033",
+    "port_id": "port_034",
     "name": "Wanci",
     "city": "Kabupaten Wakatobi",
     "province": "Sulawesi Tenggara",
@@ -820,13 +878,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "b1f2e734-eab2-56df-a73d-6b5eb732b3ce",
-    "port_id": "port_034",
+    "port_id": "port_035",
     "name": "Maba",
     "city": "Kabupaten Halmahera Timur",
     "province": "Maluku Utara",
@@ -845,13 +904,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "4e5a4035-c6b1-5ec9-a6e3-11b80b1c28fb",
-    "port_id": "port_035",
+    "port_id": "port_036",
     "name": "Morotai",
     "city": "Kabupaten Pulau Morotai",
     "province": "Maluku Utara",
@@ -870,13 +930,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "e4604243-68ca-5b35-a828-c19a7efdee8a",
-    "port_id": "port_036",
+    "port_id": "port_037",
     "name": "Obi",
     "city": "Kabupaten Halmahera Selatan",
     "province": "Maluku Utara",
@@ -895,13 +956,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "44c427a8-c555-5ddc-9c69-d3ad3946a748",
-    "port_id": "port_037",
+    "port_id": "port_038",
     "name": "Pulau Gebe",
     "city": "Kabupaten Halmahera Tengah",
     "province": "Maluku Utara",
@@ -920,13 +982,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "8b9e79c6-499a-5933-a3c5-23258e473285",
-    "port_id": "port_038",
+    "port_id": "port_039",
     "name": "Sanana",
     "city": "Kabupaten Kepulauan Sula",
     "province": "Maluku Utara",
@@ -945,13 +1008,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "b3812506-f07d-5798-860b-4b17a389e169",
-    "port_id": "port_039",
+    "port_id": "port_040",
     "name": "Tidore",
     "city": "Kota Tidore Kepulauan",
     "province": "Maluku Utara",
@@ -970,13 +1034,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "5147488a-1a4e-506a-af53-e7952622a32a",
-    "port_id": "port_040",
+    "port_id": "port_041",
     "name": "Tobelo",
     "city": "Kabupaten Halmahera Utara",
     "province": "Maluku Utara",
@@ -995,13 +1060,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "3056d814-05c6-5b11-a2d6-03cb4a6e7719",
-    "port_id": "port_041",
+    "port_id": "port_042",
     "name": "Dobo",
     "city": "Kabupaten Kepulauan Aru",
     "province": "Maluku",
@@ -1020,13 +1086,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "61b791bd-e007-53d6-86d0-bcf80282d727",
-    "port_id": "port_042",
+    "port_id": "port_043",
     "name": "Kisar (Wonreli)",
     "city": "Kabupaten Maluku Barat Daya",
     "province": "Maluku",
@@ -1045,13 +1112,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "4448cabd-2f64-5eae-80d3-74e6a98f294e",
-    "port_id": "port_043",
+    "port_id": "port_044",
     "name": "Moa",
     "city": "Kabupaten Maluku Barat Daya",
     "province": "Maluku",
@@ -1070,13 +1138,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "506fe3dd-c835-5e71-abfb-2c58abd9727d",
-    "port_id": "port_044",
+    "port_id": "port_045",
     "name": "Namlea",
     "city": "Kabupaten Buru",
     "province": "Maluku",
@@ -1095,13 +1164,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "92d64983-b4cc-56c3-8d62-ff29a401fbd6",
-    "port_id": "port_045",
+    "port_id": "port_046",
     "name": "Namrole",
     "city": "Kabupaten Buru Selatan",
     "province": "Maluku",
@@ -1120,13 +1190,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "678de520-3f4d-58c1-89a7-582d0abfb0ca",
-    "port_id": "port_046",
+    "port_id": "port_047",
     "name": "Saumlaki",
     "city": "Kabupaten Kepulauan Tanimbar",
     "province": "Maluku",
@@ -1145,13 +1216,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "98d8cc3d-d932-54ca-9df6-e22c5e7709c4",
-    "port_id": "port_047",
+    "port_id": "port_048",
     "name": "Adonara (Terong)",
     "city": "Kabupaten Flores Timur",
     "province": "Nusa Tenggara Timur",
@@ -1170,13 +1242,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "04f0117e-8c63-549e-b639-678d8ec146a7",
-    "port_id": "port_048",
+    "port_id": "port_049",
     "name": "Kalabahi",
     "city": "Kabupaten Alor",
     "province": "Nusa Tenggara Timur",
@@ -1195,13 +1268,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "0bb9f281-857e-584a-8955-930e5f107439",
-    "port_id": "port_049",
+    "port_id": "port_050",
     "name": "Larantuka",
     "city": "Kabupaten Flores Timur",
     "province": "Nusa Tenggara Timur",
@@ -1220,13 +1294,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "9d11a008-6cdd-514e-838a-0189887669ef",
-    "port_id": "port_050",
+    "port_id": "port_051",
     "name": "Lewoleba",
     "city": "Kabupaten Lembata",
     "province": "Nusa Tenggara Timur",
@@ -1245,13 +1320,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "6dad2996-9f37-51f9-9068-ed317c35a0ab",
-    "port_id": "port_051",
+    "port_id": "port_052",
     "name": "Maumere",
     "city": "Kabupaten Sikka",
     "province": "Nusa Tenggara Timur",
@@ -1270,13 +1346,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "10bd9be2-2ea9-5ecb-a768-2ceaa676841f",
-    "port_id": "port_052",
+    "port_id": "port_053",
     "name": "Rote",
     "city": "Kabupaten Rote Ndao",
     "province": "Nusa Tenggara Timur",
@@ -1295,13 +1372,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "ad043dd3-cde0-51bc-a539-497bb0be0539",
-    "port_id": "port_053",
+    "port_id": "port_054",
     "name": "Sabu",
     "city": "Kabupaten Sabu Raijua",
     "province": "Nusa Tenggara Timur",
@@ -1320,13 +1398,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "a3659899-fd8e-5737-9e7a-c7c0d04c2dff",
-    "port_id": "port_054",
+    "port_id": "port_055",
     "name": "Waingapu",
     "city": "Kabupaten Sumba Timur",
     "province": "Nusa Tenggara Timur",
@@ -1345,13 +1424,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "36dbd361-6991-50bd-ac33-d3a132c60380",
-    "port_id": "port_055",
+    "port_id": "port_056",
     "name": "Calabai (Dompu)",
     "city": "Kabupaten Dompu",
     "province": "Nusa Tenggara Barat",
@@ -1370,13 +1450,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "a07b9c47-0b9f-5175-9159-77312639f91b",
-    "port_id": "port_056",
+    "port_id": "port_057",
     "name": "Fakfak",
     "city": "Kabupaten Fakfak",
     "province": "Papua Barat",
@@ -1395,13 +1476,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "f235c68e-e450-51c6-a7f6-9fb8ee339240",
-    "port_id": "port_057",
+    "port_id": "port_058",
     "name": "Kaimana",
     "city": "Kabupaten Kaimana",
     "province": "Papua Barat",
@@ -1420,13 +1502,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "00ce1b30-687d-573e-8c0b-1cc6c206bb28",
-    "port_id": "port_058",
+    "port_id": "port_059",
     "name": "Manokwari",
     "city": "Kabupaten Manokwari",
     "province": "Papua Barat",
@@ -1445,13 +1528,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
-    "port_id": "port_059",
+    "port_id": "port_060",
     "name": "Oransbari",
     "city": "Kabupaten Manokwari Selatan",
     "province": "Papua Barat",
@@ -1470,13 +1554,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
-    "port_id": "port_060",
+    "port_id": "port_061",
     "name": "Wasior",
     "city": "Kabupaten Teluk Wondama",
     "province": "Papua Barat",
@@ -1495,13 +1580,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "6af72ec2-5c07-510a-a3c9-a65271c5ea16",
-    "port_id": "port_061",
+    "port_id": "port_062",
     "name": "Agats",
     "city": "Kabupaten Asmat",
     "province": "Papua Selatan",
@@ -1520,13 +1606,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "b416f3c8-7309-5b06-8da7-cbfb60d46632",
-    "port_id": "port_062",
+    "port_id": "port_063",
     "name": "Biak",
     "city": "Kabupaten Biak Numfor",
     "province": "Papua",
@@ -1545,13 +1632,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "011813d6-612c-5dfd-bc5e-b8658c08aae4",
-    "port_id": "port_063",
+    "port_id": "port_064",
     "name": "Merauke",
     "city": "Kabupaten Merauke",
     "province": "Papua Selatan",
@@ -1570,13 +1658,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "eadc1124-cee7-5836-be4e-0aa30f98cc74",
-    "port_id": "port_064",
+    "port_id": "port_065",
     "name": "Nabire",
     "city": "Kabupaten Nabire",
     "province": "Papua Tengah",
@@ -1595,13 +1684,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "b0610b75-d74e-5f59-bb72-0006f59c5b8c",
-    "port_id": "port_065",
+    "port_id": "port_066",
     "name": "Sarmi",
     "city": "Kabupaten Sarmi",
     "province": "Papua",
@@ -1620,13 +1710,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "5446e086-0f1c-5c9e-9610-9f6b5cd9656f",
-    "port_id": "port_066",
+    "port_id": "port_067",
     "name": "Serui",
     "city": "Kabupaten Kepulauan Yapen",
     "province": "Papua",
@@ -1645,13 +1736,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "28d28777-9405-5855-959b-d05b46a2800c",
-    "port_id": "port_067",
+    "port_id": "port_068",
     "name": "Teba",
     "city": "Kabupaten Mamberamo Raya",
     "province": "Papua",
@@ -1670,13 +1762,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "7be2aaf4-b5fa-5f9c-bfe7-227a36e3d4ac",
-    "port_id": "port_068",
+    "port_id": "port_069",
     "name": "Timika",
     "city": "Kabupaten Mimika",
     "province": "Papua Tengah",
@@ -1695,13 +1788,14 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   },
   {
     "id": "bb4d8a8c-1689-5206-a4aa-4a548bb031e8",
-    "port_id": "port_069",
+    "port_id": "port_070",
     "name": "Waren",
     "city": "Kabupaten Waropen",
     "province": "Papua",
@@ -1720,8 +1814,9 @@
       "weekday": "07:00-17:00",
       "weekend": "07:00-14:00"
     },
-    "source_verified": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
-    "enrichment_notes": "Facilities, operating_hours, port_type, max_vessel_tonnage, and tol_laut_role are estimated enrichments.",
-    "created_at": "2026-07-27T05:49:01Z"
+    "source": "SK Jaringan Trayek Tol Laut 2022 / Permenhub PM 29 Tahun 2018",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:ports"
   }
 ]
