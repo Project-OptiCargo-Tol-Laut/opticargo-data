@@ -9,19 +9,11 @@
     "year": 2024,
     "document_number": "PM 5 Tahun 2024",
     "effective_date": "2024-02-29",
-    "topics": [
-      "PSO",
-      "Tol Laut",
-      "Angkutan Barang",
-      "Subsidi",
-      "Kewajiban Pelayanan Publik"
-    ],
+    "topics": ["PSO", "Tol Laut", "Angkutan Barang", "Subsidi", "Kewajiban Pelayanan Publik"],
     "replaces": "PM 4 Tahun 2018 dan PM 65 Tahun 2018",
     "relevance_to_opticargo": "Dasar hukum tarif subsidi, mekanisme PSO, dan aturan operator Tol Laut. Digunakan sebagai business rules oleh RAG Assistant untuk menjawab pertanyaan soal tarif dan regulasi terkini.",
     "source_url": "https://jdih.dephub.go.id",
-    "rag_priority": "high",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "high"
   },
   {
     "id": "reg_002",
@@ -33,21 +25,11 @@
     "year": 2018,
     "document_number": "PM 29 Tahun 2018",
     "effective_date": "2018-01-01",
-    "topics": [
-      "Tarif",
-      "PSO",
-      "Angkutan Barang",
-      "Tol Laut",
-      "Dry Container",
-      "Reefer Container",
-      "General Cargo"
-    ],
+    "topics": ["Tarif", "PSO", "Angkutan Barang", "Tol Laut", "Dry Container", "Reefer Container", "General Cargo"],
     "replaces": null,
     "relevance_to_opticargo": "Lampiran berisi 445 baris tabel tarif (Dry/Reefer/General Cargo) per pasangan pelabuhan asal-tujuan. Menjadi basis data tarif routes.json dan referensi perhitungan biaya angkut.",
     "source_url": "https://jdih.dephub.go.id",
-    "rag_priority": "high",
-    "status": "aktif",
-    "max_pages": 6
+    "rag_priority": "high"
   },
   {
     "id": "reg_003",
@@ -59,20 +41,11 @@
     "year": 2018,
     "document_number": "PM 121 Tahun 2018",
     "effective_date": "2018-01-01",
-    "topics": [
-      "Tarif",
-      "Jasa Kepelabuhanan",
-      "Terminal Handling Charge",
-      "Dermaga",
-      "Gudang",
-      "Pelabuhan"
-    ],
+    "topics": ["Tarif", "Jasa Kepelabuhanan", "Terminal Handling Charge", "Dermaga", "Gudang", "Pelabuhan"],
     "replaces": null,
     "relevance_to_opticargo": "Berisi tarif jasa pelabuhan (THC, biaya dermaga, gudang). Digunakan untuk menghitung total biaya logistik per singgahan dalam optimasi rute.",
     "source_url": "https://jdih.dephub.go.id",
-    "rag_priority": "high",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "high"
   },
   {
     "id": "reg_004",
@@ -84,19 +57,11 @@
     "year": 2021,
     "document_number": "PM 59 Tahun 2021",
     "effective_date": "2021-01-01",
-    "topics": [
-      "Usaha Jasa",
-      "Angkutan Perairan",
-      "Operator Kapal",
-      "Perizinan",
-      "Niaga"
-    ],
+    "topics": ["Usaha Jasa", "Angkutan Perairan", "Operator Kapal", "Perizinan", "Niaga"],
     "replaces": null,
     "relevance_to_opticargo": "Mengatur syarat dan mekanisme operasional perusahaan angkutan laut. Relevan untuk validasi legalitas operator kapal yang didaftarkan ke platform.",
     "source_url": "https://jdih.dephub.go.id",
-    "rag_priority": "medium",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "medium"
   },
   {
     "id": "reg_005",
@@ -108,20 +73,11 @@
     "year": 2022,
     "document_number": "SK Jaringan Trayek 2022",
     "effective_date": "2022-01-01",
-    "topics": [
-      "Trayek",
-      "Tol Laut",
-      "Pelabuhan Singgah",
-      "Jadwal Pelayaran",
-      "Kapal",
-      "Rute"
-    ],
+    "topics": ["Trayek", "Tol Laut", "Pelabuhan Singgah", "Jadwal Pelayaran", "Kapal", "Rute"],
     "replaces": null,
     "relevance_to_opticargo": "Sumber utama data jaringan trayek (ports.json dan routes.json). Memuat kode trayek T-1 s.d. T-x, daftar pelabuhan pangkal dan singgah, serta alokasi kapal per trayek.",
     "source_url": "https://hubla.dephub.go.id",
-    "rag_priority": "high",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "high"
   },
   {
     "id": "reg_006",
@@ -133,22 +89,11 @@
     "year": 2019,
     "document_number": "UU 21 Tahun 2019",
     "effective_date": "2019-01-01",
-    "topics": [
-      "Karantina",
-      "Komoditas",
-      "Hewan",
-      "Ikan",
-      "Tumbuhan",
-      "Ekspor",
-      "Impor",
-      "Persyaratan Kargo"
-    ],
+    "topics": ["Karantina", "Komoditas", "Hewan", "Ikan", "Tumbuhan", "Ekspor", "Impor", "Persyaratan Kargo"],
     "replaces": null,
     "relevance_to_opticargo": "Menentukan persyaratan karantina untuk komoditas perikanan, ternak, dan pertanian yang diangkut via Tol Laut. Relevan untuk validasi kargo dalam proses matching.",
     "source_url": "https://peraturan.go.id",
-    "rag_priority": "medium",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "medium"
   },
   {
     "id": "reg_007",
@@ -160,19 +105,11 @@
     "year": 2018,
     "document_number": "HK.103/1/6/DJPL-18",
     "effective_date": "2018-01-01",
-    "topics": [
-      "Angkutan Laut",
-      "Operasional",
-      "Prosedur",
-      "Pengawasan",
-      "Dirjen Hubla"
-    ],
+    "topics": ["Angkutan Laut", "Operasional", "Prosedur", "Pengawasan", "Dirjen Hubla"],
     "replaces": null,
     "relevance_to_opticargo": "Instruksi teknis operasional angkutan laut. Versi bilingual (Bahasa Indonesia & Inggris) berguna untuk konteks internasional dan referensi teknis operator.",
     "source_url": "https://hubla.dephub.go.id",
-    "rag_priority": "low",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "low"
   },
   {
     "id": "reg_008",
@@ -184,21 +121,11 @@
     "year": 2020,
     "document_number": "SOP UPP Babang",
     "effective_date": "2020-01-01",
-    "topics": [
-      "SOP",
-      "Bongkar Muat",
-      "Stuffing",
-      "Stripping",
-      "Pelabuhan",
-      "Operasional",
-      "Kontainer"
-    ],
+    "topics": ["SOP", "Bongkar Muat", "Stuffing", "Stripping", "Pelabuhan", "Operasional", "Kontainer"],
     "replaces": null,
     "relevance_to_opticargo": "Prosedur standar bongkar muat di pelabuhan kecil/feeder. Digunakan sebagai referensi estimasi waktu handling (port turnaround time) dalam kalkulasi jadwal voyage.",
     "source_url": "https://hubla.dephub.go.id",
-    "rag_priority": "medium",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "medium"
   },
   {
     "id": "reg_009",
@@ -210,20 +137,10 @@
     "year": 2015,
     "document_number": "Buku Tol Laut Bappenas 2015",
     "effective_date": "2015-01-01",
-    "topics": [
-      "Tol Laut",
-      "RPJMN",
-      "Konektivitas Maritim",
-      "Disparitas Harga",
-      "Pelabuhan Hub",
-      "PSO",
-      "Strategi Nasional"
-    ],
+    "topics": ["Tol Laut", "RPJMN", "Konektivitas Maritim", "Disparitas Harga", "Pelabuhan Hub", "PSO", "Strategi Nasional"],
     "replaces": null,
     "relevance_to_opticargo": "Dokumen strategis foundational program Tol Laut: definisi konsep, 24 pelabuhan strategis, target disparitas harga, dan roadmap implementasi. Kunci untuk RAG Assistant menjawab pertanyaan latar belakang dan tujuan Tol Laut.",
     "source_url": "https://bappenas.go.id",
-    "rag_priority": "high",
-    "status": "aktif",
-    "max_pages": null
+    "rag_priority": "high"
   }
 ]
