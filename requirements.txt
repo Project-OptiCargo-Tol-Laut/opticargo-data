@@ -1,7 +1,5 @@
-# opticargo-data/requirements.txt
-psycopg2-binary==2.9.9   # Driver untuk PostgreSQL
-neo4j==5.21.0            # Driver untuk Neo4j
-qdrant-client==1.9.1     # Client untuk Qdrant vector database
-python-dotenv==1.0.1     # Untuk membaca file .env
-fastembed
-pdfplumber
+./vendor/opticargo_shared-1.0.0-py3-none-any.whl
+psycopg[binary]>=3.2,<4
+argon2-cffi>=23.1,<24
+bcrypt>=4.1,<5
+boto3>=1.34,<2
