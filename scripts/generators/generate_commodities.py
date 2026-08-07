@@ -8,6 +8,7 @@ Menggunakan UUID5 deterministik berbasis nama komoditas.
 import json
 import uuid
 from datetime import datetime, timezone
+import os
 from pathlib import Path
 
 COMMODITIES_NAMESPACE = uuid.UUID("c0000000-0000-4000-8000-000000000000")
@@ -15,7 +16,7 @@ COMMODITIES_NAMESPACE = uuid.UUID("c0000000-0000-4000-8000-000000000000")
 def make_commodity_uuid(name: str) -> str:
     return str(uuid.uuid5(COMMODITIES_NAMESPACE, name.lower().strip()))
 
-now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+now = os.getenv("OPTICARGO_DATASET_TIMESTAMP", "2026-07-26T00:00:00Z")
 
 RAW_COMMODITIES = [
     # MUATAN BERANGKAT (Dari Hub ke Feeder)
@@ -57,7 +58,9 @@ if __name__ == "__main__":
             "is_perishable": c["perishable"],
             "max_stack_height": 4 if c["perishable"] else 10,
             "certifications_required": c["certs"],
-            "created_at": now
+            "created_at": now,
+            "is_synthetic": True,
+            "provenance": "opticargo-data:synthetic:commodities"
         })
 
     out = Path(__file__).parent.parent.parent / 'dataset' / "commodities" / "commodities.json"
