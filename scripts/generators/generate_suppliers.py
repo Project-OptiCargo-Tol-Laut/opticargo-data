@@ -11,19 +11,20 @@ import json
 import uuid
 import random
 from datetime import datetime, timezone
+import os
 from pathlib import Path
 
-SUPPLIERS_NAMESPACE = uuid.UUID("e0000000-0000-4000-8000-000000000000")
+SUPPLIERS_NAMESPACE = uuid.UUID("8d4d9f20-c2e4-4b6e-9b3b-e6ad93f1ed51")
 
-def make_supplier_uuid(name: str, port_id: str) -> str:
-    key = f"{name.lower().strip()}|{port_id}"
-    return str(uuid.uuid5(SUPPLIERS_NAMESPACE, key))
+def make_supplier_uuid(name: str, port_id: str, sequence: int) -> str:
+    stable_key = f"{name}|{port_id}|{sequence:03d}"
+    return str(uuid.uuid5(SUPPLIERS_NAMESPACE, f"supplier:{stable_key}"))
 
-def make_user_uuid(name: str, port_id: str) -> str:
-    key = f"{name.lower().strip()}|{port_id}.user"
-    return str(uuid.uuid5(uuid.NAMESPACE_DNS, key))
+def make_user_uuid(name: str, port_id: str, sequence: int) -> str:
+    stable_key = f"{name}|{port_id}|{sequence:03d}"
+    return str(uuid.uuid5(SUPPLIERS_NAMESPACE, f"user:supplier|{stable_key}"))
 
-now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+now = os.getenv("OPTICARGO_DATASET_TIMESTAMP", "2026-07-26T00:00:00Z")
 
 PREFIXES = ["PT.", "CV.", "UD."]
 HUB_NAMES = ["Sejahtera", "Makmur", "Logistik", "Pangan", "Sentosa", "Bina", "Jaya", "Maju", "Agro", "Industri"]
@@ -63,8 +64,8 @@ if __name__ == "__main__":
         assigned_comms = random.sample(target_comms, num_comms)
         
         result.append({
-            "id": make_supplier_uuid(business_name, f"{port['id']}_{i}"),
-            "user_id": make_user_uuid(business_name, f"{port['id']}_{i}"),
+            "id": make_supplier_uuid(business_name, port["id"], i),
+            "user_id": make_user_uuid(business_name, port["id"], i),
             "business_name": business_name,
             "port_id": port["id"],
             "commodity_ids": assigned_comms,
@@ -72,7 +73,9 @@ if __name__ == "__main__":
             "rating": round(random.uniform(3.5, 5.0), 1),
             "verified": random.random() < 0.8,
             "address": f"Jl. Pelabuhan {port['name']} No. {random.randint(1, 100)}, {port['city']}",
-            "created_at": now
+            "created_at": now,
+            "is_synthetic": True,
+            "provenance": "opticargo-data:competition:supplier-generator-v2"
         })
         
     out = base / "suppliers" / "suppliers.json"
