@@ -15,7 +15,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bad35b89-ad67-5d02-a7fb-14e28d20c947",
@@ -33,7 +35,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c3f63622-4b68-59d6-8f1f-6fed20c2ae5a",
@@ -53,7 +57,9 @@
     "tarif_dry_container_idr": 3464000,
     "tarif_reefer_container_idr": 5196000,
     "tarif_general_cargo_idr": 286000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4859391a-9fc6-53dc-a869-ffd52e7f0f22",
@@ -71,7 +77,9 @@
     "tarif_dry_container_idr": 2630000,
     "tarif_reefer_container_idr": 3945000,
     "tarif_general_cargo_idr": 248000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "add6d8d9-b239-5c62-a5d9-c4903ed9b25b",
@@ -91,7 +99,9 @@
     "tarif_dry_container_idr": 6463000,
     "tarif_reefer_container_idr": 9695000,
     "tarif_general_cargo_idr": 423000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "18244106-f6ac-5034-9863-9b401e0222f9",
@@ -109,7 +119,9 @@
     "tarif_dry_container_idr": 3960000,
     "tarif_reefer_container_idr": 5940000,
     "tarif_general_cargo_idr": 309000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f8aab4e3-7a57-5e9d-9c28-503456c65cd1",
@@ -127,7 +139,9 @@
     "tarif_dry_container_idr": 3306000,
     "tarif_reefer_container_idr": 4959000,
     "tarif_general_cargo_idr": 279000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ea5a1692-0601-5313-9b05-4e63991327bd",
@@ -147,7 +161,9 @@
     "tarif_dry_container_idr": 3065000,
     "tarif_reefer_container_idr": 4598000,
     "tarif_general_cargo_idr": 268000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c9147dbf-2775-5472-919b-77bd4d12a28f",
@@ -167,7 +183,9 @@
     "tarif_dry_container_idr": 3089000,
     "tarif_reefer_container_idr": 4634000,
     "tarif_general_cargo_idr": 269000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "92378e92-d442-5c32-9355-727998691f27",
@@ -188,7 +206,9 @@
     "tarif_dry_container_idr": 3767000,
     "tarif_reefer_container_idr": 5651000,
     "tarif_general_cargo_idr": 300000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7672388b-e884-57e1-8be6-0986bf2ac713",
@@ -206,7 +226,9 @@
     "tarif_dry_container_idr": 2196000,
     "tarif_reefer_container_idr": 3294000,
     "tarif_general_cargo_idr": 229000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1b0899db-8ad8-5358-bb3d-7d1a588899d8",
@@ -227,7 +249,9 @@
     "tarif_dry_container_idr": 5151000,
     "tarif_reefer_container_idr": 7727000,
     "tarif_general_cargo_idr": 363000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f5c6bc81-5600-5b4e-b0ad-e3e8d43148fe",
@@ -249,7 +273,9 @@
     "tarif_dry_container_idr": 5722000,
     "tarif_reefer_container_idr": 8583000,
     "tarif_general_cargo_idr": 389000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1c8278e8-c667-500c-8198-034f7cdf1856",
@@ -267,7 +293,9 @@
     "tarif_dry_container_idr": 1816000,
     "tarif_reefer_container_idr": 2724000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c1017a2c-c899-5181-a2c2-e5995733ccd5",
@@ -287,7 +315,9 @@
     "tarif_dry_container_idr": 2419000,
     "tarif_reefer_container_idr": 3629000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b494682a-9818-5669-a90e-1d4d32786092",
@@ -308,7 +338,9 @@
     "tarif_dry_container_idr": 3228000,
     "tarif_reefer_container_idr": 4842000,
     "tarif_general_cargo_idr": 275000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "14da1a69-71d8-51b2-a2fc-43ea64818479",
@@ -330,7 +362,9 @@
     "tarif_dry_container_idr": 3774000,
     "tarif_reefer_container_idr": 5661000,
     "tarif_general_cargo_idr": 300000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c6a09129-0f5d-5bb6-850b-e2f64e03d6d2",
@@ -353,7 +387,9 @@
     "tarif_dry_container_idr": 5323000,
     "tarif_reefer_container_idr": 7985000,
     "tarif_general_cargo_idr": 371000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6c792f2c-e95c-56eb-9733-57c0cfd32448",
@@ -375,7 +411,9 @@
     "tarif_dry_container_idr": 2858000,
     "tarif_reefer_container_idr": 4287000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3d24cf17-99bb-5f41-91dc-4758d4a578d4",
@@ -395,7 +433,9 @@
     "tarif_dry_container_idr": 2232000,
     "tarif_reefer_container_idr": 3348000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "26a4599c-87b0-50ef-a52e-447b906ee4da",
@@ -413,7 +453,9 @@
     "tarif_dry_container_idr": 1881000,
     "tarif_reefer_container_idr": 2822000,
     "tarif_general_cargo_idr": 214000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2e6253be-a4bd-56c2-954a-d5705b810fef",
@@ -435,7 +477,9 @@
     "tarif_dry_container_idr": 2696000,
     "tarif_reefer_container_idr": 4044000,
     "tarif_general_cargo_idr": 251000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e75a0505-2742-5368-800a-2cbbaa2e5dd2",
@@ -453,7 +497,9 @@
     "tarif_dry_container_idr": 1917000,
     "tarif_reefer_container_idr": 2876000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "89a0a1cc-24f5-50e5-92bb-1614012b9376",
@@ -476,7 +522,9 @@
     "tarif_dry_container_idr": 6398000,
     "tarif_reefer_container_idr": 9597000,
     "tarif_general_cargo_idr": 420000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "274a4ff2-c1d9-53c4-b3d1-7b1f12c2a8a4",
@@ -494,7 +542,9 @@
     "tarif_dry_container_idr": 5386000,
     "tarif_reefer_container_idr": 8079000,
     "tarif_general_cargo_idr": 374000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "74c454d4-edad-5f91-ae32-d0e60efb032c",
@@ -515,7 +565,9 @@
     "tarif_dry_container_idr": 2284000,
     "tarif_reefer_container_idr": 3426000,
     "tarif_general_cargo_idr": 233000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b6426a00-f4a8-5ba1-b9e4-240384a02a4f",
@@ -535,7 +587,9 @@
     "tarif_dry_container_idr": 1953000,
     "tarif_reefer_container_idr": 2930000,
     "tarif_general_cargo_idr": 217000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7180c68c-8bef-5ffe-ac59-4e407ef3a1f9",
@@ -556,7 +610,9 @@
     "tarif_dry_container_idr": 2534000,
     "tarif_reefer_container_idr": 3801000,
     "tarif_general_cargo_idr": 244000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fe19844a-3f24-5c32-9481-41ffc3ed64ff",
@@ -577,7 +633,9 @@
     "tarif_dry_container_idr": 2170000,
     "tarif_reefer_container_idr": 3255000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5b769682-8b5c-5c31-b9fc-73b66910c82a",
@@ -595,7 +653,9 @@
     "tarif_dry_container_idr": 1995000,
     "tarif_reefer_container_idr": 2993000,
     "tarif_general_cargo_idr": 219000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a5f1c636-1dcf-5435-beee-02004347b349",
@@ -618,7 +678,9 @@
     "tarif_dry_container_idr": 2573000,
     "tarif_reefer_container_idr": 3860000,
     "tarif_general_cargo_idr": 246000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "57eb3e20-eac6-5920-8681-2f814c0fdac9",
@@ -638,7 +700,9 @@
     "tarif_dry_container_idr": 2008000,
     "tarif_reefer_container_idr": 3012000,
     "tarif_general_cargo_idr": 220000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b228aa48-8448-5738-9a62-765872e3006c",
@@ -660,7 +724,9 @@
     "tarif_dry_container_idr": 2350000,
     "tarif_reefer_container_idr": 3525000,
     "tarif_general_cargo_idr": 236000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4115bda6-5a17-5272-87d9-0ebde96991ce",
@@ -684,7 +750,9 @@
     "tarif_dry_container_idr": 2771000,
     "tarif_reefer_container_idr": 4157000,
     "tarif_general_cargo_idr": 255000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5a85b0f6-aaf9-5c6a-ab47-efc6a2335e9b",
@@ -705,7 +773,9 @@
     "tarif_dry_container_idr": 3041000,
     "tarif_reefer_container_idr": 4562000,
     "tarif_general_cargo_idr": 267000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ba7df48b-5268-5f4e-8890-aaa152bf1c4b",
@@ -725,7 +795,9 @@
     "tarif_dry_container_idr": 2897000,
     "tarif_reefer_container_idr": 4346000,
     "tarif_general_cargo_idr": 260000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "27c6c01a-0c52-5c65-839c-b25ec8385128",
@@ -747,7 +819,9 @@
     "tarif_dry_container_idr": 3264000,
     "tarif_reefer_container_idr": 4896000,
     "tarif_general_cargo_idr": 277000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "610a3156-27a5-54d0-8c75-e2117d5e6997",
@@ -770,7 +844,9 @@
     "tarif_dry_container_idr": 4515000,
     "tarif_reefer_container_idr": 6773000,
     "tarif_general_cargo_idr": 334000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3c68e51d-0fda-5896-967e-72280dc91af6",
@@ -788,7 +864,9 @@
     "tarif_dry_container_idr": 2446000,
     "tarif_reefer_container_idr": 3669000,
     "tarif_general_cargo_idr": 240000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f19db669-6cee-5089-85df-ec8a929351ff",
@@ -808,7 +886,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "881f5038-5a6f-5457-9772-6095e69851fa",
@@ -831,7 +911,9 @@
     "tarif_dry_container_idr": 2289000,
     "tarif_reefer_container_idr": 3434000,
     "tarif_general_cargo_idr": 233000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a775c03c-2cb6-521d-93dc-b4f4de826cb4",
@@ -852,7 +934,9 @@
     "tarif_dry_container_idr": 2134000,
     "tarif_reefer_container_idr": 3201000,
     "tarif_general_cargo_idr": 226000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "501d0bbb-506b-58b1-ba3d-3d4a62d002f6",
@@ -877,7 +961,9 @@
     "tarif_dry_container_idr": 2691000,
     "tarif_reefer_container_idr": 4037000,
     "tarif_general_cargo_idr": 251000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "167bc7ed-9b17-5b23-be8f-62359b948d0a",
@@ -899,7 +985,9 @@
     "tarif_dry_container_idr": 2147000,
     "tarif_reefer_container_idr": 3221000,
     "tarif_general_cargo_idr": 226000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1076c133-35b4-54e0-92e9-91874a63db58",
@@ -923,7 +1011,9 @@
     "tarif_dry_container_idr": 2468000,
     "tarif_reefer_container_idr": 3702000,
     "tarif_general_cargo_idr": 241000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a9bd2f96-309f-5870-8847-4df31be2ffa5",
@@ -941,7 +1031,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "33617e7e-7659-5127-978f-d1441d3a21dd",
@@ -967,7 +1059,9 @@
     "tarif_dry_container_idr": 2884000,
     "tarif_reefer_container_idr": 4326000,
     "tarif_general_cargo_idr": 260000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "44569a38-a029-5837-a20c-91915485c8d9",
@@ -987,7 +1081,9 @@
     "tarif_dry_container_idr": 2655000,
     "tarif_reefer_container_idr": 3983000,
     "tarif_general_cargo_idr": 249000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a688346c-e2b5-5651-b4fc-84e4d379f449",
@@ -1008,7 +1104,9 @@
     "tarif_dry_container_idr": 2742000,
     "tarif_reefer_container_idr": 4113000,
     "tarif_general_cargo_idr": 253000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4a0ab753-f0d9-5a63-9d9f-9f8527dd7ed6",
@@ -1026,7 +1124,9 @@
     "tarif_dry_container_idr": 2432000,
     "tarif_reefer_container_idr": 3648000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2bccc8b3-7e93-5ae0-bcca-e3e366fb9062",
@@ -1048,7 +1148,9 @@
     "tarif_dry_container_idr": 3141000,
     "tarif_reefer_container_idr": 4712000,
     "tarif_general_cargo_idr": 272000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3262390d-72b4-5449-8d7e-7a3b1288efe1",
@@ -1071,7 +1173,9 @@
     "tarif_dry_container_idr": 3346000,
     "tarif_reefer_container_idr": 5019000,
     "tarif_general_cargo_idr": 281000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "70e361ea-9984-523f-a7cd-aef07420555b",
@@ -1089,7 +1193,9 @@
     "tarif_dry_container_idr": 2501000,
     "tarif_reefer_container_idr": 3752000,
     "tarif_general_cargo_idr": 242000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "10918f3c-24fd-579b-a323-86fd23a8cf8e",
@@ -1113,7 +1219,9 @@
     "tarif_dry_container_idr": 3644000,
     "tarif_reefer_container_idr": 5466000,
     "tarif_general_cargo_idr": 294000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5ba20027-4f34-54b2-8d3e-4e0be758c72d",
@@ -1131,7 +1239,9 @@
     "tarif_dry_container_idr": 3015000,
     "tarif_reefer_container_idr": 4523000,
     "tarif_general_cargo_idr": 266000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5cc7b3bc-42e5-57c6-8d82-2697568c5bbf",
@@ -1149,7 +1259,9 @@
     "tarif_dry_container_idr": 2287000,
     "tarif_reefer_container_idr": 3431000,
     "tarif_general_cargo_idr": 233000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e174df60-ed41-585f-b64c-d449009e0f8e",
@@ -1169,7 +1281,9 @@
     "tarif_dry_container_idr": 4904000,
     "tarif_reefer_container_idr": 7356000,
     "tarif_general_cargo_idr": 352000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3a72308a-b1e2-537b-80ba-16c89c972ed4",
@@ -1187,7 +1301,9 @@
     "tarif_dry_container_idr": 4904000,
     "tarif_reefer_container_idr": 7356000,
     "tarif_general_cargo_idr": 352000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5135c723-8be8-5681-b8d3-758961415529",
@@ -1205,7 +1321,9 @@
     "tarif_dry_container_idr": 1816000,
     "tarif_reefer_container_idr": 2724000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "20f932d5-e1f3-5074-9e55-448525606550",
@@ -1223,7 +1341,9 @@
     "tarif_dry_container_idr": 2562000,
     "tarif_reefer_container_idr": 3843000,
     "tarif_general_cargo_idr": 245000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "12044ae8-129b-54c5-804f-4c0d89b6df1d",
@@ -1241,7 +1361,9 @@
     "tarif_dry_container_idr": 2173000,
     "tarif_reefer_container_idr": 3260000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ab316cc3-79cb-5ed7-8b8d-e8c1f506fcdf",
@@ -1261,7 +1383,9 @@
     "tarif_dry_container_idr": 2994000,
     "tarif_reefer_container_idr": 4491000,
     "tarif_general_cargo_idr": 265000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d16670e3-4e58-56e9-9ce0-db63477e1503",
@@ -1279,7 +1403,9 @@
     "tarif_dry_container_idr": 2413000,
     "tarif_reefer_container_idr": 3620000,
     "tarif_general_cargo_idr": 238000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "743a7fae-5f17-50bf-b467-d4dc7c60c495",
@@ -1300,7 +1426,9 @@
     "tarif_dry_container_idr": 3554000,
     "tarif_reefer_container_idr": 5331000,
     "tarif_general_cargo_idr": 290000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5f7f1ba9-b2ae-5907-a415-123eeb087742",
@@ -1318,7 +1446,9 @@
     "tarif_dry_container_idr": 2118000,
     "tarif_reefer_container_idr": 3177000,
     "tarif_general_cargo_idr": 225000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b60565ca-4b87-5359-9a5b-f9b4e0e8a71c",
@@ -1336,7 +1466,9 @@
     "tarif_dry_container_idr": 2027000,
     "tarif_reefer_container_idr": 3041000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "62264837-9f15-5b15-b046-33f959b46954",
@@ -1354,7 +1486,9 @@
     "tarif_dry_container_idr": 4853000,
     "tarif_reefer_container_idr": 7280000,
     "tarif_general_cargo_idr": 349000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1b2d87a6-4e49-5cfe-aa2b-a4d59e7dfc79",
@@ -1374,7 +1508,9 @@
     "tarif_dry_container_idr": 5284000,
     "tarif_reefer_container_idr": 7926000,
     "tarif_general_cargo_idr": 369000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9cbc22c0-48d1-5783-be91-a361d6f10a58",
@@ -1394,7 +1530,9 @@
     "tarif_dry_container_idr": 2718000,
     "tarif_reefer_container_idr": 4077000,
     "tarif_general_cargo_idr": 252000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "85a62d9f-2994-5421-848c-51a246a5fc77",
@@ -1415,7 +1553,9 @@
     "tarif_dry_container_idr": 1764000,
     "tarif_reefer_container_idr": 2646000,
     "tarif_general_cargo_idr": 209000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b72ebfbd-b873-5435-bbbd-bdbf6fff23dd",
@@ -1433,7 +1573,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "023ccf03-4e54-55b0-b5fd-1f887f121cba",
@@ -1457,7 +1599,9 @@
     "tarif_dry_container_idr": 2372000,
     "tarif_reefer_container_idr": 3558000,
     "tarif_general_cargo_idr": 237000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c68b6b4b-cd82-5712-bc79-0d9e1a9aeced",
@@ -1479,7 +1623,9 @@
     "tarif_dry_container_idr": 2223000,
     "tarif_reefer_container_idr": 3335000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a3ac143a-4ec6-5d76-9815-64619bd84620",
@@ -1505,7 +1651,9 @@
     "tarif_dry_container_idr": 2771000,
     "tarif_reefer_container_idr": 4157000,
     "tarif_general_cargo_idr": 255000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "eb13d847-57c3-5be1-a341-ebb590582fa1",
@@ -1528,7 +1676,9 @@
     "tarif_dry_container_idr": 2771000,
     "tarif_reefer_container_idr": 4157000,
     "tarif_general_cargo_idr": 255000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b5355e97-27f9-5438-9ca2-bc1cda5bae5f",
@@ -1553,7 +1703,9 @@
     "tarif_dry_container_idr": 2551000,
     "tarif_reefer_container_idr": 3827000,
     "tarif_general_cargo_idr": 245000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "10e4f164-574a-5555-bd13-859d46760e4c",
@@ -1573,7 +1725,9 @@
     "tarif_dry_container_idr": 1699000,
     "tarif_reefer_container_idr": 2549000,
     "tarif_general_cargo_idr": 206000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "427c8b99-4ec4-508a-8186-b9ec8168a6c1",
@@ -1600,7 +1754,9 @@
     "tarif_dry_container_idr": 2963000,
     "tarif_reefer_container_idr": 4445000,
     "tarif_general_cargo_idr": 263000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "14855c26-4272-545d-bbb1-345bfd4f2822",
@@ -1620,7 +1776,9 @@
     "tarif_dry_container_idr": 2001000,
     "tarif_reefer_container_idr": 3002000,
     "tarif_general_cargo_idr": 220000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c76756b3-0e46-52b2-83cf-65aba1048708",
@@ -1638,7 +1796,9 @@
     "tarif_dry_container_idr": 1738000,
     "tarif_reefer_container_idr": 2607000,
     "tarif_general_cargo_idr": 208000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c3740936-8ae3-5b27-8e4a-392e3db65681",
@@ -1659,7 +1819,9 @@
     "tarif_dry_container_idr": 2229000,
     "tarif_reefer_container_idr": 3344000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "11920b00-7b63-5c20-b1fd-e6aca4b89c11",
@@ -1677,7 +1839,9 @@
     "tarif_dry_container_idr": 2118000,
     "tarif_reefer_container_idr": 3177000,
     "tarif_general_cargo_idr": 225000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d79fff35-a2e7-5d0c-9348-dbfaaca626dd",
@@ -1697,7 +1861,9 @@
     "tarif_dry_container_idr": 5240000,
     "tarif_reefer_container_idr": 7860000,
     "tarif_general_cargo_idr": 367000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "83e9dd76-6cb0-5ac8-8e09-3e52ee649e3b",
@@ -1715,7 +1881,9 @@
     "tarif_dry_container_idr": 4957000,
     "tarif_reefer_container_idr": 7436000,
     "tarif_general_cargo_idr": 354000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3cc04ce9-776a-5681-bf22-8a324a93d246",
@@ -1733,7 +1901,9 @@
     "tarif_dry_container_idr": 2218000,
     "tarif_reefer_container_idr": 3327000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f4888381-4e1f-5cfc-8140-c8517aae72ae",
@@ -1751,7 +1921,9 @@
     "tarif_dry_container_idr": 2265000,
     "tarif_reefer_container_idr": 3398000,
     "tarif_general_cargo_idr": 232000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "42818d2e-dba4-5917-b1b3-ee5fa5779e37",
@@ -1771,7 +1943,9 @@
     "tarif_dry_container_idr": 3215000,
     "tarif_reefer_container_idr": 4823000,
     "tarif_general_cargo_idr": 275000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "dead561f-4f4c-5233-8132-424cfa190c61",
@@ -1792,7 +1966,9 @@
     "tarif_dry_container_idr": 3416000,
     "tarif_reefer_container_idr": 5124000,
     "tarif_general_cargo_idr": 284000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a37191db-f903-59c0-a0da-3d759e960f12",
@@ -1812,7 +1988,9 @@
     "tarif_dry_container_idr": 2873000,
     "tarif_reefer_container_idr": 4310000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d98af115-6d48-5ede-9e4b-d06cfc2d78ff",
@@ -1830,7 +2008,9 @@
     "tarif_dry_container_idr": 3579000,
     "tarif_reefer_container_idr": 5369000,
     "tarif_general_cargo_idr": 291000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "cc887b0d-9aac-551b-9f5a-9c3b97057cd2",
@@ -1848,7 +2028,9 @@
     "tarif_dry_container_idr": 2474000,
     "tarif_reefer_container_idr": 3711000,
     "tarif_general_cargo_idr": 241000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a1775652-464d-5847-a288-678caacf1235",
@@ -1866,7 +2048,9 @@
     "tarif_dry_container_idr": 3967000,
     "tarif_reefer_container_idr": 5951000,
     "tarif_general_cargo_idr": 309000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ed9326cc-3d79-54ff-a167-659e4c7ef87e",
@@ -1884,7 +2068,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "67f489e7-8178-579b-8b22-c7a24ac38f0a",
@@ -1904,7 +2090,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3a3c8354-883b-5fb2-99f7-8ae920c284d2",
@@ -1925,7 +2113,9 @@
     "tarif_dry_container_idr": 3514000,
     "tarif_reefer_container_idr": 5271000,
     "tarif_general_cargo_idr": 289000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ac8278c1-1aef-555a-b7eb-5868bb6adcc7",
@@ -1945,7 +2135,9 @@
     "tarif_dry_container_idr": 2655000,
     "tarif_reefer_container_idr": 3983000,
     "tarif_general_cargo_idr": 249000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1e03d95a-d906-57db-a53c-f17c2e43505d",
@@ -1963,7 +2155,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "aa7d2292-38ba-5490-b468-4d67535c231f",
@@ -1981,7 +2175,9 @@
     "tarif_dry_container_idr": 1790000,
     "tarif_reefer_container_idr": 2685000,
     "tarif_general_cargo_idr": 210000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6ec98368-41ba-5e5d-b1d8-77b69562e2a8",
@@ -2001,7 +2197,9 @@
     "tarif_dry_container_idr": 2125000,
     "tarif_reefer_container_idr": 3188000,
     "tarif_general_cargo_idr": 225000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "dcd67495-b2c0-5d87-8db7-22130fdc89cd",
@@ -2022,7 +2220,9 @@
     "tarif_dry_container_idr": 2353000,
     "tarif_reefer_container_idr": 3530000,
     "tarif_general_cargo_idr": 236000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5f627d90-29f2-55f3-8808-11e0918a7102",
@@ -2043,7 +2243,9 @@
     "tarif_dry_container_idr": 3481000,
     "tarif_reefer_container_idr": 5222000,
     "tarif_general_cargo_idr": 287000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "23933924-e1e8-5ed3-9f06-4b63c75fa94f",
@@ -2065,7 +2267,9 @@
     "tarif_dry_container_idr": 2680000,
     "tarif_reefer_container_idr": 4020000,
     "tarif_general_cargo_idr": 251000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d9ae28d2-5deb-50d0-9839-6c978dc333e3",
@@ -2083,7 +2287,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "744a0265-8466-57ff-b820-b2895ae8735b",
@@ -2104,7 +2310,9 @@
     "tarif_dry_container_idr": 2742000,
     "tarif_reefer_container_idr": 4113000,
     "tarif_general_cargo_idr": 253000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "946bd97c-0259-5ace-a935-d2d51150e70c",
@@ -2122,7 +2330,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b70cc4b6-48f0-5b7c-90ee-45640253effc",
@@ -2142,7 +2352,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "201ddd4a-e6a5-5606-9652-1654ef7b33a6",
@@ -2162,7 +2374,9 @@
     "tarif_dry_container_idr": 1894000,
     "tarif_reefer_container_idr": 2841000,
     "tarif_general_cargo_idr": 215000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "17e2b4ef-ad24-56b9-939a-f4cddc10a13a",
@@ -2180,7 +2394,9 @@
     "tarif_dry_container_idr": 2021000,
     "tarif_reefer_container_idr": 3032000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ebffadc6-e0c4-51d4-b82e-b18c38fb17b7",
@@ -2200,7 +2416,9 @@
     "tarif_dry_container_idr": 2265000,
     "tarif_reefer_container_idr": 3398000,
     "tarif_general_cargo_idr": 232000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "03894e4c-25df-514d-9be8-1961213566ac",
@@ -2222,7 +2440,9 @@
     "tarif_dry_container_idr": 3561000,
     "tarif_reefer_container_idr": 5342000,
     "tarif_general_cargo_idr": 291000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4f96508d-7e89-5cad-b95a-5f2c6a1800d2",
@@ -2240,7 +2460,9 @@
     "tarif_dry_container_idr": 3439000,
     "tarif_reefer_container_idr": 5159000,
     "tarif_general_cargo_idr": 285000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f9958e18-1174-590d-9391-48f8fd3b4a08",
@@ -2261,7 +2483,9 @@
     "tarif_dry_container_idr": 2592000,
     "tarif_reefer_container_idr": 3888000,
     "tarif_general_cargo_idr": 247000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0fd16a0d-ca43-5601-a213-e45e9bc4e867",
@@ -2281,7 +2505,9 @@
     "tarif_dry_container_idr": 1702000,
     "tarif_reefer_container_idr": 2553000,
     "tarif_general_cargo_idr": 206000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "21df228d-85db-55c7-8b24-8aeb2e05479d",
@@ -2301,7 +2527,9 @@
     "tarif_dry_container_idr": 3940000,
     "tarif_reefer_container_idr": 5910000,
     "tarif_general_cargo_idr": 308000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "25302082-c89a-538a-87cd-a6e2c9a4023d",
@@ -2323,7 +2551,9 @@
     "tarif_dry_container_idr": 2177000,
     "tarif_reefer_container_idr": 3266000,
     "tarif_general_cargo_idr": 228000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "47e7e35f-c49b-5c59-aaca-c9fd7f9b56c5",
@@ -2341,7 +2571,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "53ba99af-c995-5363-8975-2e2ea1a8f356",
@@ -2362,7 +2594,9 @@
     "tarif_dry_container_idr": 1914000,
     "tarif_reefer_container_idr": 2871000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fce98be0-39f2-5d75-be17-6646af2c6242",
@@ -2380,7 +2614,9 @@
     "tarif_dry_container_idr": 2021000,
     "tarif_reefer_container_idr": 3032000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "41a2568e-d79a-5215-963a-ea4721183f2e",
@@ -2398,7 +2634,9 @@
     "tarif_dry_container_idr": 1865000,
     "tarif_reefer_container_idr": 2798000,
     "tarif_general_cargo_idr": 213000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b6c53c95-ad95-5098-b837-98226020b7f3",
@@ -2421,7 +2659,9 @@
     "tarif_dry_container_idr": 2377000,
     "tarif_reefer_container_idr": 3566000,
     "tarif_general_cargo_idr": 237000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f0287035-90dd-50bf-be01-89357425e046",
@@ -2441,7 +2681,9 @@
     "tarif_dry_container_idr": 4577000,
     "tarif_reefer_container_idr": 6866000,
     "tarif_general_cargo_idr": 337000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "84e81213-91b6-5367-b32b-0e06cd44a004",
@@ -2463,7 +2705,9 @@
     "tarif_dry_container_idr": 4711000,
     "tarif_reefer_container_idr": 7067000,
     "tarif_general_cargo_idr": 343000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "90627e8b-26aa-5434-8399-3991e52b91b0",
@@ -2483,7 +2727,9 @@
     "tarif_dry_container_idr": 1901000,
     "tarif_reefer_container_idr": 2852000,
     "tarif_general_cargo_idr": 215000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "37d8de44-40d7-578b-b7a8-5170c64c577d",
@@ -2501,7 +2747,9 @@
     "tarif_dry_container_idr": 1806000,
     "tarif_reefer_container_idr": 2709000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0a579648-14ee-53e3-a41b-7972fb857bdc",
@@ -2521,7 +2769,9 @@
     "tarif_dry_container_idr": 2306000,
     "tarif_reefer_container_idr": 3459000,
     "tarif_general_cargo_idr": 234000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "854fbc95-901e-5f06-980c-af5fef38c172",
@@ -2542,7 +2792,9 @@
     "tarif_dry_container_idr": 2562000,
     "tarif_reefer_container_idr": 3843000,
     "tarif_general_cargo_idr": 245000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "84797c67-8f64-5def-a8c9-d445adeea95a",
@@ -2564,7 +2816,9 @@
     "tarif_dry_container_idr": 3496000,
     "tarif_reefer_container_idr": 5244000,
     "tarif_general_cargo_idr": 288000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d250f022-6b6c-5f41-a955-abc47dc06f0e",
@@ -2584,7 +2838,9 @@
     "tarif_dry_container_idr": 4932000,
     "tarif_reefer_container_idr": 7398000,
     "tarif_general_cargo_idr": 353000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ab8fcf18-0b2d-52de-a09a-9d518e1bd254",
@@ -2605,7 +2861,9 @@
     "tarif_dry_container_idr": 2430000,
     "tarif_reefer_container_idr": 3645000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d00d716c-8004-5184-9f00-eb33d9224703",
@@ -2625,7 +2883,9 @@
     "tarif_dry_container_idr": 1988000,
     "tarif_reefer_container_idr": 2982000,
     "tarif_general_cargo_idr": 219000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "137212f7-3aea-5d94-886b-f8c7e7a84210",
@@ -2648,7 +2908,9 @@
     "tarif_dry_container_idr": 5323000,
     "tarif_reefer_container_idr": 7985000,
     "tarif_general_cargo_idr": 371000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ddc8030f-172a-5a49-8ac3-ae1e9ef969c0",
@@ -2668,7 +2930,9 @@
     "tarif_dry_container_idr": 3940000,
     "tarif_reefer_container_idr": 5910000,
     "tarif_general_cargo_idr": 308000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e73b2b99-21b9-5754-a732-e2c63da567da",
@@ -2690,7 +2954,9 @@
     "tarif_dry_container_idr": 4711000,
     "tarif_reefer_container_idr": 7067000,
     "tarif_general_cargo_idr": 343000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5ebe59fc-b038-5c92-ac4a-ec13575f5822",
@@ -2708,7 +2974,9 @@
     "tarif_dry_container_idr": 4367000,
     "tarif_reefer_container_idr": 6551000,
     "tarif_general_cargo_idr": 327000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "56069c53-afda-5365-9fcd-225d1d230ee1",
@@ -2729,7 +2997,9 @@
     "tarif_dry_container_idr": 4467000,
     "tarif_reefer_container_idr": 6701000,
     "tarif_general_cargo_idr": 332000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "865608bb-867e-5ccf-b4c5-97757c35e4ca",
@@ -2750,7 +3020,9 @@
     "tarif_dry_container_idr": 4277000,
     "tarif_reefer_container_idr": 6416000,
     "tarif_general_cargo_idr": 323000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9fc8ef0d-cb62-5ec3-8b8d-7104bee4f003",
@@ -2771,7 +3043,9 @@
     "tarif_dry_container_idr": 4855000,
     "tarif_reefer_container_idr": 7283000,
     "tarif_general_cargo_idr": 350000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "98b75d53-db16-53d0-950a-b48c3319110d",
@@ -2794,7 +3068,9 @@
     "tarif_dry_container_idr": 4894000,
     "tarif_reefer_container_idr": 7341000,
     "tarif_general_cargo_idr": 351000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "53d11938-4704-5b7f-83f6-54ebd9e637b0",
@@ -2816,7 +3092,9 @@
     "tarif_dry_container_idr": 5068000,
     "tarif_reefer_container_idr": 7602000,
     "tarif_general_cargo_idr": 359000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2dee79ab-1df1-587a-ac16-cef454b263b0",
@@ -2834,7 +3112,9 @@
     "tarif_dry_container_idr": 3701000,
     "tarif_reefer_container_idr": 5552000,
     "tarif_general_cargo_idr": 297000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "eeb2a962-ecb5-5374-9496-d35da98a56a3",
@@ -2852,7 +3132,9 @@
     "tarif_dry_container_idr": 4084000,
     "tarif_reefer_container_idr": 6126000,
     "tarif_general_cargo_idr": 314000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9ccbab31-ab7e-5b82-a165-f101aa3f8e8e",
@@ -2872,7 +3154,9 @@
     "tarif_dry_container_idr": 4409000,
     "tarif_reefer_container_idr": 6614000,
     "tarif_general_cargo_idr": 329000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f9032d58-ddfc-5ee8-b3fe-5de993672318",
@@ -2890,7 +3174,9 @@
     "tarif_dry_container_idr": 4098000,
     "tarif_reefer_container_idr": 6147000,
     "tarif_general_cargo_idr": 315000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "36ba88a2-6728-57ef-b5a5-7507f9bbca96",
@@ -2910,7 +3196,9 @@
     "tarif_dry_container_idr": 6625000,
     "tarif_reefer_container_idr": 9938000,
     "tarif_general_cargo_idr": 430000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "044f04c4-74bb-594e-9b88-8153500b17fb",
@@ -2931,7 +3219,9 @@
     "tarif_dry_container_idr": 6211000,
     "tarif_reefer_container_idr": 9317000,
     "tarif_general_cargo_idr": 411000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7cb56994-92aa-5bb9-bf7b-643f129a8c22",
@@ -2951,7 +3241,9 @@
     "tarif_dry_container_idr": 4622000,
     "tarif_reefer_container_idr": 6933000,
     "tarif_general_cargo_idr": 339000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "804a95fa-f669-52df-a65b-fc1923403f58",
@@ -2969,7 +3261,9 @@
     "tarif_dry_container_idr": 3960000,
     "tarif_reefer_container_idr": 5940000,
     "tarif_general_cargo_idr": 309000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "416f787d-6ee7-5631-bd30-2d6ef97d2027",
@@ -2991,7 +3285,9 @@
     "tarif_dry_container_idr": 2858000,
     "tarif_reefer_container_idr": 4287000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b41b10c1-7072-5c72-a924-bb4b5f291f56",
@@ -3009,7 +3305,9 @@
     "tarif_dry_container_idr": 4367000,
     "tarif_reefer_container_idr": 6551000,
     "tarif_general_cargo_idr": 327000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "95ef8ae1-4367-53e2-9b68-4723bb168c02",
@@ -3029,7 +3327,9 @@
     "tarif_dry_container_idr": 2259000,
     "tarif_reefer_container_idr": 3389000,
     "tarif_general_cargo_idr": 231000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e9a4ceef-8d7e-56b2-85aa-bc910bef2d99",
@@ -3050,7 +3350,9 @@
     "tarif_dry_container_idr": 2534000,
     "tarif_reefer_container_idr": 3801000,
     "tarif_general_cargo_idr": 244000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7e3238f5-a1af-5c8c-8bec-151590eea744",
@@ -3070,7 +3372,9 @@
     "tarif_dry_container_idr": 5295000,
     "tarif_reefer_container_idr": 7943000,
     "tarif_general_cargo_idr": 370000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "89d3676c-6c54-57fb-acd0-67b6cd90e4e3",
@@ -3088,7 +3392,9 @@
     "tarif_dry_container_idr": 5442000,
     "tarif_reefer_container_idr": 8163000,
     "tarif_general_cargo_idr": 376000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b3f4f8fb-850e-53c0-b9d7-7f5364a7049d",
@@ -3106,7 +3412,9 @@
     "tarif_dry_container_idr": 1917000,
     "tarif_reefer_container_idr": 2876000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f79cc184-8971-576b-84cf-d81a2eaf0a10",
@@ -3124,7 +3432,9 @@
     "tarif_dry_container_idr": 1764000,
     "tarif_reefer_container_idr": 2646000,
     "tarif_general_cargo_idr": 209000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "94892f6e-38df-5dea-baaa-9437fcc89a32",
@@ -3142,7 +3452,9 @@
     "tarif_dry_container_idr": 2432000,
     "tarif_reefer_container_idr": 3648000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "67c1725b-2743-5558-9cf3-78c644c6daf3",
@@ -3160,7 +3472,9 @@
     "tarif_dry_container_idr": 1790000,
     "tarif_reefer_container_idr": 2685000,
     "tarif_general_cargo_idr": 210000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "359e3709-8e3d-55da-a28e-9d575d6c6c41",
@@ -3180,7 +3494,9 @@
     "tarif_dry_container_idr": 1894000,
     "tarif_reefer_container_idr": 2841000,
     "tarif_general_cargo_idr": 215000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d3fe2a86-a441-5145-b79f-9ec6578ef664",
@@ -3201,7 +3517,9 @@
     "tarif_dry_container_idr": 2355000,
     "tarif_reefer_container_idr": 3533000,
     "tarif_general_cargo_idr": 236000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3ca18c75-7c25-5cbe-b042-77b1bf473dc8",
@@ -3223,7 +3541,9 @@
     "tarif_dry_container_idr": 2575000,
     "tarif_reefer_container_idr": 3863000,
     "tarif_general_cargo_idr": 246000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "703b5147-1946-5b27-a947-5761832a33b3",
@@ -3243,7 +3563,9 @@
     "tarif_dry_container_idr": 3279000,
     "tarif_reefer_container_idr": 4919000,
     "tarif_general_cargo_idr": 278000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7dd7f9fa-c6a6-549f-bc56-a69b20603520",
@@ -3266,7 +3588,9 @@
     "tarif_dry_container_idr": 2894000,
     "tarif_reefer_container_idr": 4341000,
     "tarif_general_cargo_idr": 260000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9fb988f0-84af-5770-a72d-2b9dd5e06ed2",
@@ -3286,7 +3610,9 @@
     "tarif_dry_container_idr": 2419000,
     "tarif_reefer_container_idr": 3629000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "60ad4c77-0724-51bf-b755-c9055ddb09b6",
@@ -3304,7 +3630,9 @@
     "tarif_dry_container_idr": 2562000,
     "tarif_reefer_container_idr": 3843000,
     "tarif_general_cargo_idr": 245000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fd1f2313-2f38-57ad-936d-c91bd4dfeeca",
@@ -3322,7 +3650,9 @@
     "tarif_dry_container_idr": 2173000,
     "tarif_reefer_container_idr": 3260000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "42c0da08-2141-50bd-b06e-495dadf233c3",
@@ -3340,7 +3670,9 @@
     "tarif_dry_container_idr": 2460000,
     "tarif_reefer_container_idr": 3690000,
     "tarif_general_cargo_idr": 241000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2484c96b-03f4-5f23-9bde-39168055299c",
@@ -3360,7 +3692,9 @@
     "tarif_dry_container_idr": 3316000,
     "tarif_reefer_container_idr": 4974000,
     "tarif_general_cargo_idr": 280000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "756d9c53-f816-55e4-a3c0-7617e9c986a5",
@@ -3378,7 +3712,9 @@
     "tarif_dry_container_idr": 1878000,
     "tarif_reefer_container_idr": 2817000,
     "tarif_general_cargo_idr": 214000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2377cfc2-c1e0-563e-bb01-739ea84ffaba",
@@ -3398,7 +3734,9 @@
     "tarif_dry_container_idr": 3047000,
     "tarif_reefer_container_idr": 4571000,
     "tarif_general_cargo_idr": 267000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1db00f7a-84ae-5876-982e-b97f54a869b3",
@@ -3416,7 +3754,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3e1e0354-07a3-5f12-82f8-c5cabfa5ca5e",
@@ -3437,7 +3777,9 @@
     "tarif_dry_container_idr": 2164000,
     "tarif_reefer_container_idr": 3246000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "69dbbc87-3459-5546-bb54-899b439cebc8",
@@ -3457,7 +3799,9 @@
     "tarif_dry_container_idr": 1901000,
     "tarif_reefer_container_idr": 2852000,
     "tarif_general_cargo_idr": 215000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a9a0300c-ea0d-5a19-bc7a-de74861dfe52",
@@ -3479,7 +3823,9 @@
     "tarif_dry_container_idr": 2366000,
     "tarif_reefer_container_idr": 3549000,
     "tarif_general_cargo_idr": 236000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "03fe9963-d901-57a3-ab0e-da2dcefd95d6",
@@ -3497,7 +3843,9 @@
     "tarif_dry_container_idr": 3015000,
     "tarif_reefer_container_idr": 4523000,
     "tarif_general_cargo_idr": 266000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d5bd8304-f4e6-503d-b8ce-27fdcf0e9ce2",
@@ -3517,7 +3865,9 @@
     "tarif_dry_container_idr": 3626000,
     "tarif_reefer_container_idr": 5439000,
     "tarif_general_cargo_idr": 294000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4765f31d-3295-5c96-863c-5d2058ae89ff",
@@ -3538,7 +3888,9 @@
     "tarif_dry_container_idr": 5988000,
     "tarif_reefer_container_idr": 8982000,
     "tarif_general_cargo_idr": 401000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6764dc46-1e6d-506d-a102-dacfe94adfc7",
@@ -3556,7 +3908,9 @@
     "tarif_dry_container_idr": 5688000,
     "tarif_reefer_container_idr": 8532000,
     "tarif_general_cargo_idr": 387000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6c38d1b0-a0ec-5262-9769-3f6aeb3973f2",
@@ -3574,7 +3928,9 @@
     "tarif_dry_container_idr": 1790000,
     "tarif_reefer_container_idr": 2685000,
     "tarif_general_cargo_idr": 210000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e507ed56-e0f8-59a7-a58a-5947e5c8c6eb",
@@ -3594,7 +3950,9 @@
     "tarif_dry_container_idr": 2027000,
     "tarif_reefer_container_idr": 3041000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1cc33a8e-05d9-5ecf-910b-22ec2f6d804a",
@@ -3612,7 +3970,9 @@
     "tarif_dry_container_idr": 1803000,
     "tarif_reefer_container_idr": 2705000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bf5720a6-89fc-5d64-b8e5-7ed5ce3f06df",
@@ -3632,7 +3992,9 @@
     "tarif_dry_container_idr": 3321000,
     "tarif_reefer_container_idr": 4982000,
     "tarif_general_cargo_idr": 280000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6639b8f8-cdab-5150-be30-4b9566f70df3",
@@ -3650,7 +4012,9 @@
     "tarif_dry_container_idr": 2265000,
     "tarif_reefer_container_idr": 3398000,
     "tarif_general_cargo_idr": 232000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "88d6478c-7e28-5331-968e-9e7e77b138e2",
@@ -3668,7 +4032,9 @@
     "tarif_dry_container_idr": 2600000,
     "tarif_reefer_container_idr": 3900000,
     "tarif_general_cargo_idr": 247000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "32088837-5f9b-5ed4-a096-a806644b61e1",
@@ -3688,7 +4054,9 @@
     "tarif_dry_container_idr": 2816000,
     "tarif_reefer_container_idr": 4224000,
     "tarif_general_cargo_idr": 257000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f525b0a9-ba1d-5d93-ac6b-d2bb43741322",
@@ -3706,7 +4074,9 @@
     "tarif_dry_container_idr": 2243000,
     "tarif_reefer_container_idr": 3365000,
     "tarif_general_cargo_idr": 231000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "43be03b4-0359-5794-9ac5-5634f036fe42",
@@ -3726,7 +4096,9 @@
     "tarif_dry_container_idr": 4118000,
     "tarif_reefer_container_idr": 6177000,
     "tarif_general_cargo_idr": 316000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ddbd37ff-e3d2-5e7a-a489-8bbc7c5279bb",
@@ -3744,7 +4116,9 @@
     "tarif_dry_container_idr": 2021000,
     "tarif_reefer_container_idr": 3032000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "11068cd9-fb42-590b-835f-4e228b563d84",
@@ -3762,7 +4136,9 @@
     "tarif_dry_container_idr": 1901000,
     "tarif_reefer_container_idr": 2852000,
     "tarif_general_cargo_idr": 215000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2672bf27-c0e4-5fbd-80d7-6dcf2cbb57a8",
@@ -3783,7 +4159,9 @@
     "tarif_dry_container_idr": 4467000,
     "tarif_reefer_container_idr": 6701000,
     "tarif_general_cargo_idr": 332000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bc5def31-477a-5130-b1b8-33e0156efbe7",
@@ -3803,7 +4181,9 @@
     "tarif_dry_container_idr": 2179000,
     "tarif_reefer_container_idr": 3269000,
     "tarif_general_cargo_idr": 228000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fd23c2e0-e91b-5c7f-9c16-dc303b6d3d5d",
@@ -3823,7 +4203,9 @@
     "tarif_dry_container_idr": 2331000,
     "tarif_reefer_container_idr": 3497000,
     "tarif_general_cargo_idr": 235000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4ff27e99-7389-5e92-9a97-4de92e6da194",
@@ -3844,7 +4226,9 @@
     "tarif_dry_container_idr": 4900000,
     "tarif_reefer_container_idr": 7350000,
     "tarif_general_cargo_idr": 352000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "46784198-76de-54b1-b02b-6f2e21668e43",
@@ -3865,7 +4249,9 @@
     "tarif_dry_container_idr": 5176000,
     "tarif_reefer_container_idr": 7764000,
     "tarif_general_cargo_idr": 364000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b9eeb177-8cb0-56e9-8cf8-baaf682a7980",
@@ -3885,7 +4271,9 @@
     "tarif_dry_container_idr": 4751000,
     "tarif_reefer_container_idr": 7127000,
     "tarif_general_cargo_idr": 345000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5cadc1a5-1f88-5090-8b1f-aee12cea9569",
@@ -3905,7 +4293,9 @@
     "tarif_dry_container_idr": 2102000,
     "tarif_reefer_container_idr": 3153000,
     "tarif_general_cargo_idr": 224000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5af4892d-9ca5-5546-af11-1762db35bdb0",
@@ -3923,7 +4313,9 @@
     "tarif_dry_container_idr": 2037000,
     "tarif_reefer_container_idr": 3056000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f377139d-968a-52fd-8332-bd3bc3d95f3a",
@@ -3941,7 +4333,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "97027930-19be-5f18-8f10-e67c81673699",
@@ -3961,7 +4355,9 @@
     "tarif_dry_container_idr": 2232000,
     "tarif_reefer_container_idr": 3348000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "db2f55d4-6eb4-5376-9cb2-502eff83b877",
@@ -3982,7 +4378,9 @@
     "tarif_dry_container_idr": 4855000,
     "tarif_reefer_container_idr": 7283000,
     "tarif_general_cargo_idr": 350000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3970fb65-bc3d-5a57-a4e6-c86909fc90f3",
@@ -4002,7 +4400,9 @@
     "tarif_dry_container_idr": 2259000,
     "tarif_reefer_container_idr": 3389000,
     "tarif_general_cargo_idr": 231000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "93a69455-b50b-5581-9c87-74abca5215f3",
@@ -4020,7 +4420,9 @@
     "tarif_dry_container_idr": 1803000,
     "tarif_reefer_container_idr": 2705000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "caacac38-13bf-5a43-a0d4-5fc4c1dd4599",
@@ -4038,7 +4440,9 @@
     "tarif_dry_container_idr": 1852000,
     "tarif_reefer_container_idr": 2778000,
     "tarif_general_cargo_idr": 213000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "edbd47e9-3eea-5c0a-885a-21a283d4e6e6",
@@ -4059,7 +4463,9 @@
     "tarif_dry_container_idr": 5930000,
     "tarif_reefer_container_idr": 8895000,
     "tarif_general_cargo_idr": 399000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "24a195dd-7dc6-5701-9308-5be097021676",
@@ -4080,7 +4486,9 @@
     "tarif_dry_container_idr": 5830000,
     "tarif_reefer_container_idr": 8745000,
     "tarif_general_cargo_idr": 394000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ef886e2e-4da9-50b4-811b-da005ad42a77",
@@ -4098,7 +4506,9 @@
     "tarif_dry_container_idr": 1884000,
     "tarif_reefer_container_idr": 2826000,
     "tarif_general_cargo_idr": 214000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4100de28-4fd0-51b7-b916-301e980161f3",
@@ -4118,7 +4528,9 @@
     "tarif_dry_container_idr": 2232000,
     "tarif_reefer_container_idr": 3348000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bea2f7ca-395f-594e-b459-a3d71485a823",
@@ -4136,7 +4548,9 @@
     "tarif_dry_container_idr": 4165000,
     "tarif_reefer_container_idr": 6248000,
     "tarif_general_cargo_idr": 318000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "554064ca-b7e1-52ce-9c4e-c4bb04ff2024",
@@ -4156,7 +4570,9 @@
     "tarif_dry_container_idr": 4179000,
     "tarif_reefer_container_idr": 6269000,
     "tarif_general_cargo_idr": 319000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e4dc09c6-5ca2-5ac2-8262-cbddc5aea83d",
@@ -4174,7 +4590,9 @@
     "tarif_dry_container_idr": 2424000,
     "tarif_reefer_container_idr": 3636000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5c294c79-b8f6-5d62-bd1a-a2a99692628f",
@@ -4192,7 +4610,9 @@
     "tarif_dry_container_idr": 2474000,
     "tarif_reefer_container_idr": 3711000,
     "tarif_general_cargo_idr": 241000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "61cd6267-4306-51ec-b015-519a40bb839a",
@@ -4212,7 +4632,9 @@
     "tarif_dry_container_idr": 4634000,
     "tarif_reefer_container_idr": 6951000,
     "tarif_general_cargo_idr": 340000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e6a0dab7-82db-56ba-9c8f-c4e4c9d7af9a",
@@ -4230,7 +4652,9 @@
     "tarif_dry_container_idr": 1706000,
     "tarif_reefer_container_idr": 2559000,
     "tarif_general_cargo_idr": 206000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "61d37d0f-6e13-5430-9ee5-9e35d431a087",
@@ -4250,7 +4674,9 @@
     "tarif_dry_container_idr": 1982000,
     "tarif_reefer_container_idr": 2973000,
     "tarif_general_cargo_idr": 219000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "342526bf-e42b-5c15-b384-4301442c1307",
@@ -4268,7 +4694,9 @@
     "tarif_dry_container_idr": 3220000,
     "tarif_reefer_container_idr": 4830000,
     "tarif_general_cargo_idr": 275000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8dead214-65d3-59e8-9509-4eafcf241cf0",
@@ -4288,7 +4716,9 @@
     "tarif_dry_container_idr": 3276000,
     "tarif_reefer_container_idr": 4914000,
     "tarif_general_cargo_idr": 278000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c2c9ecc7-2edf-5249-a52a-6f0a1000fe08",
@@ -4306,7 +4736,9 @@
     "tarif_dry_container_idr": 1949000,
     "tarif_reefer_container_idr": 2924000,
     "tarif_general_cargo_idr": 217000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8f8c7f51-20b9-5550-84c4-e3f2b29fcdad",
@@ -4327,7 +4759,9 @@
     "tarif_dry_container_idr": 3459000,
     "tarif_reefer_container_idr": 5189000,
     "tarif_general_cargo_idr": 286000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1955c751-5633-56e8-b90c-88d124f38dc1",
@@ -4348,7 +4782,9 @@
     "tarif_dry_container_idr": 3228000,
     "tarif_reefer_container_idr": 4842000,
     "tarif_general_cargo_idr": 275000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f5c724d5-51a5-583b-b5f8-709ed7f3a595",
@@ -4366,7 +4802,9 @@
     "tarif_dry_container_idr": 2460000,
     "tarif_reefer_container_idr": 3690000,
     "tarif_general_cargo_idr": 241000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "42365a58-2822-5b5a-ab3b-fdecb6f2a73f",
@@ -4386,7 +4824,9 @@
     "tarif_dry_container_idr": 2994000,
     "tarif_reefer_container_idr": 4491000,
     "tarif_general_cargo_idr": 265000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8cd20562-d416-5037-94e7-5d44c15664be",
@@ -4404,7 +4844,9 @@
     "tarif_dry_container_idr": 2229000,
     "tarif_reefer_container_idr": 3344000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e56a409e-851c-5c8a-9a6a-fbcdbeccec42",
@@ -4422,7 +4864,9 @@
     "tarif_dry_container_idr": 2391000,
     "tarif_reefer_container_idr": 3587000,
     "tarif_general_cargo_idr": 237000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "eef6720b-4049-58f7-ab48-713b7b82ba9f",
@@ -4442,7 +4886,9 @@
     "tarif_dry_container_idr": 4598000,
     "tarif_reefer_container_idr": 6897000,
     "tarif_general_cargo_idr": 338000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e970293e-e091-543c-9bdc-0509a96590b9",
@@ -4460,7 +4906,9 @@
     "tarif_dry_container_idr": 1829000,
     "tarif_reefer_container_idr": 2744000,
     "tarif_general_cargo_idr": 212000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0ac31e8d-679d-5572-ab81-e6e28eaba076",
@@ -4480,7 +4928,9 @@
     "tarif_dry_container_idr": 2860000,
     "tarif_reefer_container_idr": 4290000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "94a82c4f-f7fa-5304-b9fe-67f3b7052cc8",
@@ -4498,7 +4948,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5df60776-bd8e-502c-bc33-09b9a2220956",
@@ -4518,7 +4970,9 @@
     "tarif_dry_container_idr": 1949000,
     "tarif_reefer_container_idr": 2924000,
     "tarif_general_cargo_idr": 217000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e619dce8-1db2-5ca5-a663-27f6d8408bdd",
@@ -4539,7 +4993,9 @@
     "tarif_dry_container_idr": 2397000,
     "tarif_reefer_container_idr": 3596000,
     "tarif_general_cargo_idr": 238000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ce132933-a85d-5c22-9c8e-3ebb5f5a323a",
@@ -4561,7 +5017,9 @@
     "tarif_dry_container_idr": 3070000,
     "tarif_reefer_container_idr": 4605000,
     "tarif_general_cargo_idr": 268000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c1d2d738-c2ef-5e1d-85c3-c86eacaf1560",
@@ -4581,7 +5039,9 @@
     "tarif_dry_container_idr": 2879000,
     "tarif_reefer_container_idr": 4319000,
     "tarif_general_cargo_idr": 260000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "175ebaf0-0ef0-5e10-922f-528a608a5eb4",
@@ -4602,7 +5062,9 @@
     "tarif_dry_container_idr": 4299000,
     "tarif_reefer_container_idr": 6449000,
     "tarif_general_cargo_idr": 324000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8df20860-6519-5575-a1df-38b87d790b49",
@@ -4620,7 +5082,9 @@
     "tarif_dry_container_idr": 2526000,
     "tarif_reefer_container_idr": 3789000,
     "tarif_general_cargo_idr": 244000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "24473176-b685-5941-b3b7-54a1aecd5d50",
@@ -4638,7 +5102,9 @@
     "tarif_dry_container_idr": 3996000,
     "tarif_reefer_container_idr": 5994000,
     "tarif_general_cargo_idr": 310000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "87d9db34-bbe4-5297-86ce-6b3b65cb8ff0",
@@ -4656,7 +5122,9 @@
     "tarif_dry_container_idr": 1806000,
     "tarif_reefer_container_idr": 2709000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "717186be-6959-5ef6-9863-4162e5694c79",
@@ -4679,7 +5147,9 @@
     "tarif_dry_container_idr": 4894000,
     "tarif_reefer_container_idr": 7341000,
     "tarif_general_cargo_idr": 351000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7fae286d-7d69-5c37-b92f-057d411a4268",
@@ -4699,7 +5169,9 @@
     "tarif_dry_container_idr": 2179000,
     "tarif_reefer_container_idr": 3269000,
     "tarif_general_cargo_idr": 228000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "18938e24-966e-5a80-95af-a23dacd48573",
@@ -4717,7 +5189,9 @@
     "tarif_dry_container_idr": 2050000,
     "tarif_reefer_container_idr": 3075000,
     "tarif_general_cargo_idr": 222000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "69ed8d46-47d6-5a52-b8a1-47ab0632badc",
@@ -4737,7 +5211,9 @@
     "tarif_dry_container_idr": 2325000,
     "tarif_reefer_container_idr": 3488000,
     "tarif_general_cargo_idr": 234000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5b1dc869-2973-5946-b659-c197153f33e0",
@@ -4755,7 +5231,9 @@
     "tarif_dry_container_idr": 4749000,
     "tarif_reefer_container_idr": 7124000,
     "tarif_general_cargo_idr": 345000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e57fc054-1fe7-5f23-b7b3-e843d404444e",
@@ -4777,7 +5255,9 @@
     "tarif_dry_container_idr": 2666000,
     "tarif_reefer_container_idr": 3999000,
     "tarif_general_cargo_idr": 250000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0165e602-318f-57bb-9ccb-8800237f39cc",
@@ -4798,7 +5278,9 @@
     "tarif_dry_container_idr": 2254000,
     "tarif_reefer_container_idr": 3381000,
     "tarif_general_cargo_idr": 231000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1fd9b617-3844-5b71-99f5-09f2e2f3f7bc",
@@ -4819,7 +5301,9 @@
     "tarif_dry_container_idr": 3281000,
     "tarif_reefer_container_idr": 4922000,
     "tarif_general_cargo_idr": 278000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4ae70875-3505-50c1-b351-dff10eebcb23",
@@ -4841,7 +5325,9 @@
     "tarif_dry_container_idr": 3141000,
     "tarif_reefer_container_idr": 4712000,
     "tarif_general_cargo_idr": 272000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8f153c4b-39e8-5486-83e4-05df47e56c88",
@@ -4861,7 +5347,9 @@
     "tarif_dry_container_idr": 2125000,
     "tarif_reefer_container_idr": 3188000,
     "tarif_general_cargo_idr": 225000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fbe76ec7-a3f7-5263-92df-86de776bca03",
@@ -4879,7 +5367,9 @@
     "tarif_dry_container_idr": 2021000,
     "tarif_reefer_container_idr": 3032000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fb5f5a91-2398-5e14-b9ee-e2a185f53e10",
@@ -4900,7 +5390,9 @@
     "tarif_dry_container_idr": 2355000,
     "tarif_reefer_container_idr": 3533000,
     "tarif_general_cargo_idr": 236000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bab6e208-cfbb-51f2-87cb-58d34368ca6e",
@@ -4918,7 +5410,9 @@
     "tarif_dry_container_idr": 1787000,
     "tarif_reefer_container_idr": 2681000,
     "tarif_general_cargo_idr": 210000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8577a7e4-778f-5604-9b16-77ef91c5f7ce",
@@ -4939,7 +5433,9 @@
     "tarif_dry_container_idr": 4874000,
     "tarif_reefer_container_idr": 7311000,
     "tarif_general_cargo_idr": 350000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "048f85fd-118d-58e6-bbe9-137d40fb2d17",
@@ -4962,7 +5458,9 @@
     "tarif_dry_container_idr": 3922000,
     "tarif_reefer_container_idr": 5883000,
     "tarif_general_cargo_idr": 307000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4a14c849-0fbe-5529-9d43-e1c95e107834",
@@ -4982,7 +5480,9 @@
     "tarif_dry_container_idr": 2173000,
     "tarif_reefer_container_idr": 3260000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "64beb89a-e9b7-5683-8d3f-af6b96bef913",
@@ -5005,7 +5505,9 @@
     "tarif_dry_container_idr": 3346000,
     "tarif_reefer_container_idr": 5019000,
     "tarif_general_cargo_idr": 281000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "66b903d9-cbf9-5822-905a-dc4f63a00eed",
@@ -5026,7 +5528,9 @@
     "tarif_dry_container_idr": 3416000,
     "tarif_reefer_container_idr": 5124000,
     "tarif_general_cargo_idr": 284000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b93e32b3-b409-5e43-89c8-0bd1318158f0",
@@ -5047,7 +5551,9 @@
     "tarif_dry_container_idr": 2353000,
     "tarif_reefer_container_idr": 3530000,
     "tarif_general_cargo_idr": 236000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9b7d06a2-cdfc-5b45-9c4c-70ba9eb5c254",
@@ -5067,7 +5573,9 @@
     "tarif_dry_container_idr": 2265000,
     "tarif_reefer_container_idr": 3398000,
     "tarif_general_cargo_idr": 232000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7755973e-4aec-5fa3-a0ce-09f87d49b01f",
@@ -5089,7 +5597,9 @@
     "tarif_dry_container_idr": 2575000,
     "tarif_reefer_container_idr": 3863000,
     "tarif_general_cargo_idr": 246000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "67f1ad55-7be4-505b-b8b5-e7559337397d",
@@ -5109,7 +5619,9 @@
     "tarif_dry_container_idr": 2816000,
     "tarif_reefer_container_idr": 4224000,
     "tarif_general_cargo_idr": 257000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b5abd5ad-ec19-59d2-aaee-55b3bced00fa",
@@ -5127,7 +5639,9 @@
     "tarif_dry_container_idr": 1787000,
     "tarif_reefer_container_idr": 2681000,
     "tarif_general_cargo_idr": 210000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "aad01730-995e-5630-a93b-cdb8ad718c45",
@@ -5151,7 +5665,9 @@
     "tarif_dry_container_idr": 4102000,
     "tarif_reefer_container_idr": 6153000,
     "tarif_general_cargo_idr": 315000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f3ad9509-d80d-546e-b4b1-44a21a0362e8",
@@ -5173,7 +5689,9 @@
     "tarif_dry_container_idr": 5044000,
     "tarif_reefer_container_idr": 7566000,
     "tarif_general_cargo_idr": 358000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "138c206b-80b2-547e-b494-e2122cc45ced",
@@ -5191,7 +5709,9 @@
     "tarif_dry_container_idr": 1914000,
     "tarif_reefer_container_idr": 2871000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2fcf8f0a-0331-5685-8cf6-d948b5a9d975",
@@ -5209,7 +5729,9 @@
     "tarif_dry_container_idr": 2611000,
     "tarif_reefer_container_idr": 3917000,
     "tarif_general_cargo_idr": 247000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "aaca6891-8a1f-50a5-9b34-9dc4af27bd9a",
@@ -5227,7 +5749,9 @@
     "tarif_dry_container_idr": 2512000,
     "tarif_reefer_container_idr": 3768000,
     "tarif_general_cargo_idr": 243000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c8eb9b55-cb08-5a50-94a3-42644ec51c47",
@@ -5245,7 +5769,9 @@
     "tarif_dry_container_idr": 2537000,
     "tarif_reefer_container_idr": 3806000,
     "tarif_general_cargo_idr": 244000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "270f8168-615f-528b-9181-c49852ef900f",
@@ -5265,7 +5791,9 @@
     "tarif_dry_container_idr": 3251000,
     "tarif_reefer_container_idr": 4877000,
     "tarif_general_cargo_idr": 277000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ddc2d41a-48f2-5228-ba55-91b6e4a1554e",
@@ -5285,7 +5813,9 @@
     "tarif_dry_container_idr": 4711000,
     "tarif_reefer_container_idr": 7067000,
     "tarif_general_cargo_idr": 343000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "04d9c354-72fc-5120-8da6-45e1d9ae039e",
@@ -5306,13 +5836,15 @@
     "tarif_dry_container_idr": 5282000,
     "tarif_reefer_container_idr": 7923000,
     "tarif_general_cargo_idr": 369000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
-    "id": "dd48dc56-4590-5c2d-99e7-84e41f9d60c8",
+    "id": "691d9f0e-f719-5e27-a1cb-a8908349d612",
     "route_id": "route_267",
-    "origin_port_id": "b0610b75-d74e-5f59-bb72-0006f59c5b8c",
-    "origin_port_name": "Sarmi",
+    "origin_port_id": "7c4f05fe-f420-5fb7-87ab-9bf0ef89f23f",
+    "origin_port_name": "Sanni",
     "destination_port_id": "b416f3c8-7309-5b06-8da7-cbfb60d46632",
     "destination_port_name": "Biak",
     "via_ports": [],
@@ -5324,7 +5856,9 @@
     "tarif_dry_container_idr": 2317000,
     "tarif_reefer_container_idr": 3476000,
     "tarif_general_cargo_idr": 234000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "66a77efe-3e62-51f3-9163-1c71bd99f784",
@@ -5342,7 +5876,9 @@
     "tarif_dry_container_idr": 2287000,
     "tarif_reefer_container_idr": 3431000,
     "tarif_general_cargo_idr": 233000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "cfd86437-6d71-55e8-ac49-7c6f8cb98660",
@@ -5362,7 +5898,9 @@
     "tarif_dry_container_idr": 2873000,
     "tarif_reefer_container_idr": 4310000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c4d3d216-9918-581c-842c-292f2192efc0",
@@ -5382,7 +5920,9 @@
     "tarif_dry_container_idr": 3626000,
     "tarif_reefer_container_idr": 5439000,
     "tarif_general_cargo_idr": 294000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "07a6aeb0-47aa-5f31-bdc3-0f99083095d5",
@@ -5400,7 +5940,9 @@
     "tarif_dry_container_idr": 2243000,
     "tarif_reefer_container_idr": 3365000,
     "tarif_general_cargo_idr": 231000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "251d3a17-948b-5388-9056-c59a63f669f0",
@@ -5421,7 +5963,9 @@
     "tarif_dry_container_idr": 4598000,
     "tarif_reefer_container_idr": 6897000,
     "tarif_general_cargo_idr": 338000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3171094b-0646-5deb-80fa-c233bfc8b4ec",
@@ -5439,7 +5983,9 @@
     "tarif_dry_container_idr": 4588000,
     "tarif_reefer_container_idr": 6882000,
     "tarif_general_cargo_idr": 337000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4de26b34-81e8-5958-9fcd-3cd06131e385",
@@ -5459,7 +6005,9 @@
     "tarif_dry_container_idr": 7415000,
     "tarif_reefer_container_idr": 11123000,
     "tarif_general_cargo_idr": 466000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3cf382ea-8d58-5567-89e1-fb45d7c3927a",
@@ -5477,7 +6025,9 @@
     "tarif_dry_container_idr": 3102000,
     "tarif_reefer_container_idr": 4653000,
     "tarif_general_cargo_idr": 270000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d41a963a-dafc-5b27-9a21-3aef4d982eda",
@@ -5495,7 +6045,9 @@
     "tarif_dry_container_idr": 1917000,
     "tarif_reefer_container_idr": 2876000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d9ae8e5c-29d9-55b1-914e-8a0661a53a28",
@@ -5517,7 +6069,9 @@
     "tarif_dry_container_idr": 5089000,
     "tarif_reefer_container_idr": 7634000,
     "tarif_general_cargo_idr": 360000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "65300dbb-8739-53fc-bf9a-f201772e1683",
@@ -5538,7 +6092,9 @@
     "tarif_dry_container_idr": 2534000,
     "tarif_reefer_container_idr": 3801000,
     "tarif_general_cargo_idr": 244000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d7073f96-5088-5e4f-8a87-4841f0f7150e",
@@ -5556,7 +6112,9 @@
     "tarif_dry_container_idr": 1852000,
     "tarif_reefer_container_idr": 2778000,
     "tarif_general_cargo_idr": 213000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "daea10f9-f179-52bd-b300-e59112c06c35",
@@ -5578,7 +6136,9 @@
     "tarif_dry_container_idr": 6143000,
     "tarif_reefer_container_idr": 9215000,
     "tarif_general_cargo_idr": 408000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fa075d76-f2d1-5172-a818-62a57d2b977d",
@@ -5598,7 +6158,9 @@
     "tarif_dry_container_idr": 5650000,
     "tarif_reefer_container_idr": 8475000,
     "tarif_general_cargo_idr": 386000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a4f99f61-b6d4-5696-a4cc-dd154ffef1e6",
@@ -5618,7 +6180,9 @@
     "tarif_dry_container_idr": 2204000,
     "tarif_reefer_container_idr": 3306000,
     "tarif_general_cargo_idr": 229000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "541e6e81-6492-5235-a42a-00d734519b89",
@@ -5636,7 +6200,9 @@
     "tarif_dry_container_idr": 1966000,
     "tarif_reefer_container_idr": 2949000,
     "tarif_general_cargo_idr": 218000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6d70c565-6779-5b3a-a96c-420b225aa6a4",
@@ -5654,7 +6220,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f0d6f61a-5253-54c9-bb12-c1bd82e3f108",
@@ -5676,7 +6244,9 @@
     "tarif_dry_container_idr": 2226000,
     "tarif_reefer_container_idr": 3339000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2b2d0ff7-67ae-518f-98c8-594854bf2443",
@@ -5696,7 +6266,9 @@
     "tarif_dry_container_idr": 2060000,
     "tarif_reefer_container_idr": 3090000,
     "tarif_general_cargo_idr": 222000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8c899b12-53cd-58ce-84fe-ced6a22d254c",
@@ -5720,7 +6292,9 @@
     "tarif_dry_container_idr": 2628000,
     "tarif_reefer_container_idr": 3942000,
     "tarif_general_cargo_idr": 248000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a69c0656-dfa3-5206-9f6b-a7e90abb2570",
@@ -5741,7 +6315,9 @@
     "tarif_dry_container_idr": 2073000,
     "tarif_reefer_container_idr": 3110000,
     "tarif_general_cargo_idr": 223000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2a84da40-693d-5d30-bc3b-59190f2a6c02",
@@ -5764,7 +6340,9 @@
     "tarif_dry_container_idr": 2405000,
     "tarif_reefer_container_idr": 3608000,
     "tarif_general_cargo_idr": 238000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9f28ffbf-4e67-59ca-a790-b2bf1f0d53b5",
@@ -5789,7 +6367,9 @@
     "tarif_dry_container_idr": 2824000,
     "tarif_reefer_container_idr": 4236000,
     "tarif_general_cargo_idr": 257000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9ba3eec8-4de4-5bfa-9a84-62a8172c1ca9",
@@ -5807,7 +6387,9 @@
     "tarif_dry_container_idr": 2115000,
     "tarif_reefer_container_idr": 3173000,
     "tarif_general_cargo_idr": 225000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2305e8da-770c-5a02-875b-322aef75e2eb",
@@ -5829,7 +6411,9 @@
     "tarif_dry_container_idr": 1852000,
     "tarif_reefer_container_idr": 2778000,
     "tarif_general_cargo_idr": 213000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "abb03aed-e044-5352-9c98-b3c53ffc4960",
@@ -5849,7 +6433,9 @@
     "tarif_dry_container_idr": 1712000,
     "tarif_reefer_container_idr": 2568000,
     "tarif_general_cargo_idr": 206000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "71d6038f-0da9-5c91-8007-6ba2effbe28b",
@@ -5867,7 +6453,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "93109ca8-6eb3-598a-a763-820dd0d4cd83",
@@ -5892,7 +6480,9 @@
     "tarif_dry_container_idr": 2446000,
     "tarif_reefer_container_idr": 3669000,
     "tarif_general_cargo_idr": 240000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1e99b610-5e52-556e-ae77-b68216e300a4",
@@ -5910,7 +6500,9 @@
     "tarif_dry_container_idr": 1865000,
     "tarif_reefer_container_idr": 2798000,
     "tarif_general_cargo_idr": 213000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e61fec35-a3c6-52f9-a965-2567f6c1c96e",
@@ -5933,7 +6525,9 @@
     "tarif_dry_container_idr": 2298000,
     "tarif_reefer_container_idr": 3447000,
     "tarif_general_cargo_idr": 233000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "09416b06-5951-53ac-86ea-0f666e64e45c",
@@ -5951,7 +6545,9 @@
     "tarif_dry_container_idr": 3701000,
     "tarif_reefer_container_idr": 5552000,
     "tarif_general_cargo_idr": 297000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "82f215c2-b4e4-5770-9f37-d967f133d258",
@@ -5978,7 +6574,9 @@
     "tarif_dry_container_idr": 2842000,
     "tarif_reefer_container_idr": 4263000,
     "tarif_general_cargo_idr": 258000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "94e167e9-63fc-5a49-80e7-df505b985697",
@@ -6002,7 +6600,9 @@
     "tarif_dry_container_idr": 2309000,
     "tarif_reefer_container_idr": 3464000,
     "tarif_general_cargo_idr": 234000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a441ea2b-a532-5c6b-8feb-a764facbe063",
@@ -6028,7 +6628,9 @@
     "tarif_dry_container_idr": 2298000,
     "tarif_reefer_container_idr": 3447000,
     "tarif_general_cargo_idr": 233000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8044a426-cef4-5ea9-b5ad-d3897702b7e9",
@@ -6048,7 +6650,9 @@
     "tarif_dry_container_idr": 2331000,
     "tarif_reefer_container_idr": 3497000,
     "tarif_general_cargo_idr": 235000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "73643408-1e0c-5d40-a160-c0208c3c7c2a",
@@ -6069,7 +6673,9 @@
     "tarif_dry_container_idr": 1787000,
     "tarif_reefer_container_idr": 2681000,
     "tarif_general_cargo_idr": 210000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "41e6d75b-c0be-5959-a9e7-2029c1ecbeac",
@@ -6087,7 +6693,9 @@
     "tarif_dry_container_idr": 4356000,
     "tarif_reefer_container_idr": 6534000,
     "tarif_general_cargo_idr": 327000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "27e1912e-3b18-5738-a182-62fd2d7e1bb1",
@@ -6105,7 +6713,9 @@
     "tarif_dry_container_idr": 2040000,
     "tarif_reefer_container_idr": 3060000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3f88cb97-db6b-520b-881a-e670a4803b5c",
@@ -6127,7 +6737,9 @@
     "tarif_dry_container_idr": 3446000,
     "tarif_reefer_container_idr": 5169000,
     "tarif_general_cargo_idr": 285000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bdfc3e9b-bb8d-5399-9998-97a1b25cf3a9",
@@ -6148,7 +6760,9 @@
     "tarif_dry_container_idr": 3309000,
     "tarif_reefer_container_idr": 4964000,
     "tarif_general_cargo_idr": 279000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d8ee7dc3-c432-56f0-a7cc-60903735f092",
@@ -6171,7 +6785,9 @@
     "tarif_dry_container_idr": 3659000,
     "tarif_reefer_container_idr": 5489000,
     "tarif_general_cargo_idr": 295000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8773479f-83b5-5db1-9a68-fc41cbf85b2a",
@@ -6195,7 +6811,9 @@
     "tarif_dry_container_idr": 4851000,
     "tarif_reefer_container_idr": 7277000,
     "tarif_general_cargo_idr": 349000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "33bc3d6b-e06e-5233-bceb-540dfb612e38",
@@ -6215,7 +6833,9 @@
     "tarif_dry_container_idr": 2873000,
     "tarif_reefer_container_idr": 4310000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "558f2919-a1d1-5ada-8d09-66ba77f77b93",
@@ -6236,7 +6856,9 @@
     "tarif_dry_container_idr": 3133000,
     "tarif_reefer_container_idr": 4700000,
     "tarif_general_cargo_idr": 271000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "38b27397-4284-536c-baff-be14347fc14c",
@@ -6254,7 +6876,9 @@
     "tarif_dry_container_idr": 1842000,
     "tarif_reefer_container_idr": 2763000,
     "tarif_general_cargo_idr": 212000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7cba4cbd-7485-557d-a790-07b5fc212350",
@@ -6276,7 +6900,9 @@
     "tarif_dry_container_idr": 4505000,
     "tarif_reefer_container_idr": 6758000,
     "tarif_general_cargo_idr": 334000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "35678584-614e-5ef6-83d6-6f32fac01aec",
@@ -6296,7 +6922,9 @@
     "tarif_dry_container_idr": 2790000,
     "tarif_reefer_container_idr": 4185000,
     "tarif_general_cargo_idr": 256000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a0f9891f-51c2-5151-858d-42448830302f",
@@ -6316,7 +6944,9 @@
     "tarif_dry_container_idr": 3481000,
     "tarif_reefer_container_idr": 5222000,
     "tarif_general_cargo_idr": 287000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b2b81896-58da-5546-91cd-9f989dadcce2",
@@ -6336,7 +6966,9 @@
     "tarif_dry_container_idr": 5469000,
     "tarif_reefer_container_idr": 8204000,
     "tarif_general_cargo_idr": 378000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "50e11826-7485-5d34-ba1c-0698fb485369",
@@ -6354,7 +6986,9 @@
     "tarif_dry_container_idr": 3306000,
     "tarif_reefer_container_idr": 4959000,
     "tarif_general_cargo_idr": 279000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b217b459-05f6-59c9-bb92-a40a8d9e5598",
@@ -6372,7 +7006,9 @@
     "tarif_dry_container_idr": 2813000,
     "tarif_reefer_container_idr": 4220000,
     "tarif_general_cargo_idr": 257000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2f79a9d9-0988-5ecf-90b9-2d5090d51175",
@@ -6395,7 +7031,9 @@
     "tarif_dry_container_idr": 6398000,
     "tarif_reefer_container_idr": 9597000,
     "tarif_general_cargo_idr": 420000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0c707cb6-392f-5696-8b5b-2bbde8076317",
@@ -6413,7 +7051,9 @@
     "tarif_dry_container_idr": 5386000,
     "tarif_reefer_container_idr": 8079000,
     "tarif_general_cargo_idr": 374000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1d1a18f1-f45e-57e7-ae53-7847648bff04",
@@ -6431,7 +7071,9 @@
     "tarif_dry_container_idr": 2501000,
     "tarif_reefer_container_idr": 3752000,
     "tarif_general_cargo_idr": 242000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "06fd93f4-c4b6-5e7e-bfaf-cf00fca37529",
@@ -6451,7 +7093,9 @@
     "tarif_dry_container_idr": 4904000,
     "tarif_reefer_container_idr": 7356000,
     "tarif_general_cargo_idr": 352000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "feb4a1a4-7f78-5156-a51d-6954b042c7c4",
@@ -6471,7 +7115,9 @@
     "tarif_dry_container_idr": 5010000,
     "tarif_reefer_container_idr": 7515000,
     "tarif_general_cargo_idr": 357000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d714bc46-9185-538e-9f53-3ac61c94da01",
@@ -6489,7 +7135,9 @@
     "tarif_dry_container_idr": 4853000,
     "tarif_reefer_container_idr": 7280000,
     "tarif_general_cargo_idr": 349000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "39d4c239-67ae-5eca-97f0-9472aea4da5f",
@@ -6507,7 +7155,9 @@
     "tarif_dry_container_idr": 4711000,
     "tarif_reefer_container_idr": 7067000,
     "tarif_general_cargo_idr": 343000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3bdb5211-cedf-5cf0-908b-ed1b7ec15b8f",
@@ -6527,7 +7177,9 @@
     "tarif_dry_container_idr": 5240000,
     "tarif_reefer_container_idr": 7860000,
     "tarif_general_cargo_idr": 367000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "013c665f-3584-525f-8451-92333602bf10",
@@ -6547,7 +7199,9 @@
     "tarif_dry_container_idr": 5038000,
     "tarif_reefer_container_idr": 7557000,
     "tarif_general_cargo_idr": 358000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9f14df7b-eaab-5f7b-b45f-6357b74181e9",
@@ -6565,7 +7219,9 @@
     "tarif_dry_container_idr": 3579000,
     "tarif_reefer_container_idr": 5369000,
     "tarif_general_cargo_idr": 291000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "946a3ef7-8341-5cab-8561-60adfd6bda24",
@@ -6583,7 +7239,9 @@
     "tarif_dry_container_idr": 3967000,
     "tarif_reefer_container_idr": 5951000,
     "tarif_general_cargo_idr": 309000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2cafe5e6-3c35-5b9f-bdfe-90e00be36b77",
@@ -6604,7 +7262,9 @@
     "tarif_dry_container_idr": 3514000,
     "tarif_reefer_container_idr": 5271000,
     "tarif_general_cargo_idr": 289000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "aeee0068-6133-58a4-a96d-6c7af6e7010f",
@@ -6625,7 +7285,9 @@
     "tarif_dry_container_idr": 3481000,
     "tarif_reefer_container_idr": 5222000,
     "tarif_general_cargo_idr": 287000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f4980c19-d9fa-5fde-b3b9-e8b75202a0f6",
@@ -6647,7 +7309,9 @@
     "tarif_dry_container_idr": 3561000,
     "tarif_reefer_container_idr": 5342000,
     "tarif_general_cargo_idr": 291000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "83412be5-f6cc-556f-b507-4b0915f2c73b",
@@ -6665,7 +7329,9 @@
     "tarif_dry_container_idr": 3439000,
     "tarif_reefer_container_idr": 5159000,
     "tarif_general_cargo_idr": 285000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "03c022a7-056d-5eb0-a047-03d36bf8a5fd",
@@ -6685,7 +7351,9 @@
     "tarif_dry_container_idr": 4577000,
     "tarif_reefer_container_idr": 6866000,
     "tarif_general_cargo_idr": 337000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0bc86839-7b32-55e6-bbc7-1488dff040f0",
@@ -6707,7 +7375,9 @@
     "tarif_dry_container_idr": 5223000,
     "tarif_reefer_container_idr": 7835000,
     "tarif_general_cargo_idr": 366000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bb07d40a-9210-586e-80ee-15a0c0daf80a",
@@ -6725,7 +7395,9 @@
     "tarif_dry_container_idr": 2816000,
     "tarif_reefer_container_idr": 4224000,
     "tarif_general_cargo_idr": 257000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ce4f3033-1c66-5da8-a5b8-e31e6d7a3979",
@@ -6743,7 +7415,9 @@
     "tarif_dry_container_idr": 5442000,
     "tarif_reefer_container_idr": 8163000,
     "tarif_general_cargo_idr": 376000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "099f051c-5a3b-5081-9a8a-fcbab77aeb3d",
@@ -6763,7 +7437,9 @@
     "tarif_dry_container_idr": 5295000,
     "tarif_reefer_container_idr": 7943000,
     "tarif_general_cargo_idr": 370000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "23bfdc98-2d52-5d99-8134-662624155c3c",
@@ -6783,7 +7459,9 @@
     "tarif_dry_container_idr": 3279000,
     "tarif_reefer_container_idr": 4919000,
     "tarif_general_cargo_idr": 278000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f7388ff7-c59b-59ac-ae37-c4cc40773772",
@@ -6804,7 +7482,9 @@
     "tarif_dry_container_idr": 5988000,
     "tarif_reefer_container_idr": 8982000,
     "tarif_general_cargo_idr": 401000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "608564ff-0eee-5c7d-afa4-dc62bc188df7",
@@ -6825,7 +7505,9 @@
     "tarif_dry_container_idr": 6245000,
     "tarif_reefer_container_idr": 9368000,
     "tarif_general_cargo_idr": 413000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ebd271c3-9eae-5c34-b6c2-3ccfe1440e07",
@@ -6845,7 +7527,9 @@
     "tarif_dry_container_idr": 4118000,
     "tarif_reefer_container_idr": 6177000,
     "tarif_general_cargo_idr": 316000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fb2fb23b-18c2-5e6a-be7e-6f2e07eafd87",
@@ -6866,7 +7550,9 @@
     "tarif_dry_container_idr": 4900000,
     "tarif_reefer_container_idr": 7350000,
     "tarif_general_cargo_idr": 352000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3314b980-e4a4-5d16-8be5-9258cbe4e557",
@@ -6887,7 +7573,9 @@
     "tarif_dry_container_idr": 4978000,
     "tarif_reefer_container_idr": 7467000,
     "tarif_general_cargo_idr": 355000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7893d1f6-cbdb-5150-a4df-f18e9663cae3",
@@ -6907,7 +7595,9 @@
     "tarif_dry_container_idr": 4751000,
     "tarif_reefer_container_idr": 7127000,
     "tarif_general_cargo_idr": 345000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d63ffed1-893f-5f77-b69c-750ff005ddae",
@@ -6928,7 +7618,9 @@
     "tarif_dry_container_idr": 5930000,
     "tarif_reefer_container_idr": 8895000,
     "tarif_general_cargo_idr": 399000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "06883a16-bf16-5985-9bcf-b12ebee1ea12",
@@ -6946,7 +7638,9 @@
     "tarif_dry_container_idr": 5425000,
     "tarif_reefer_container_idr": 8138000,
     "tarif_general_cargo_idr": 376000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "49636be1-aa7e-537a-8f40-119ce084fab8",
@@ -6966,7 +7660,9 @@
     "tarif_dry_container_idr": 4179000,
     "tarif_reefer_container_idr": 6269000,
     "tarif_general_cargo_idr": 319000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "96243894-5028-52d3-9ac5-e92734851c7c",
@@ -6986,7 +7682,9 @@
     "tarif_dry_container_idr": 4634000,
     "tarif_reefer_container_idr": 6951000,
     "tarif_general_cargo_idr": 340000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f710b783-6827-5618-8e1b-b1b562a48cd7",
@@ -7007,7 +7705,9 @@
     "tarif_dry_container_idr": 4116000,
     "tarif_reefer_container_idr": 6174000,
     "tarif_general_cargo_idr": 316000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "13d0d740-f156-5542-aa6c-73dd9421b955",
@@ -7028,7 +7728,9 @@
     "tarif_dry_container_idr": 4711000,
     "tarif_reefer_container_idr": 7067000,
     "tarif_general_cargo_idr": 343000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3c89e8dc-54ea-5daa-8f65-c61ad080fcd7",
@@ -7050,7 +7752,9 @@
     "tarif_dry_container_idr": 4711000,
     "tarif_reefer_container_idr": 7067000,
     "tarif_general_cargo_idr": 343000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bfe0b6c7-49d5-5887-b5a7-5e8c303cd0bb",
@@ -7073,7 +7777,9 @@
     "tarif_dry_container_idr": 5405000,
     "tarif_reefer_container_idr": 8108000,
     "tarif_general_cargo_idr": 375000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3b2a8028-f987-509d-87bf-4e1426cfdaf5",
@@ -7096,7 +7802,9 @@
     "tarif_dry_container_idr": 3922000,
     "tarif_reefer_container_idr": 5883000,
     "tarif_general_cargo_idr": 307000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c18459f4-220d-56ec-8365-19e175fcce9f",
@@ -7117,7 +7825,9 @@
     "tarif_dry_container_idr": 4874000,
     "tarif_reefer_container_idr": 7311000,
     "tarif_general_cargo_idr": 350000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ac73991f-2682-58d4-a990-a8f5de6a05a9",
@@ -7141,7 +7851,9 @@
     "tarif_dry_container_idr": 4102000,
     "tarif_reefer_container_idr": 6153000,
     "tarif_general_cargo_idr": 315000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bcf5b52d-e104-516e-8209-8d400ce96986",
@@ -7163,7 +7875,9 @@
     "tarif_dry_container_idr": 5044000,
     "tarif_reefer_container_idr": 7566000,
     "tarif_general_cargo_idr": 358000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3834c1d3-db10-5fb4-822e-6d3352978bd5",
@@ -7183,7 +7897,9 @@
     "tarif_dry_container_idr": 3351000,
     "tarif_reefer_container_idr": 5027000,
     "tarif_general_cargo_idr": 281000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8e7c693b-7458-5344-8b90-fe92d899e420",
@@ -7201,7 +7917,9 @@
     "tarif_dry_container_idr": 4588000,
     "tarif_reefer_container_idr": 6882000,
     "tarif_general_cargo_idr": 337000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f4af012c-4f2a-50a2-85aa-384fb8559bd5",
@@ -7219,7 +7937,9 @@
     "tarif_dry_container_idr": 4501000,
     "tarif_reefer_container_idr": 6752000,
     "tarif_general_cargo_idr": 333000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4a12f8cc-e029-5b70-a8f0-fde38fb392d1",
@@ -7240,7 +7960,9 @@
     "tarif_dry_container_idr": 4598000,
     "tarif_reefer_container_idr": 6897000,
     "tarif_general_cargo_idr": 338000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "73d283dd-ab64-5300-9d23-00282cb88451",
@@ -7262,7 +7984,9 @@
     "tarif_dry_container_idr": 6143000,
     "tarif_reefer_container_idr": 9215000,
     "tarif_general_cargo_idr": 408000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ef1d19c9-d94f-53fc-9572-766907ca90e9",
@@ -7282,7 +8006,9 @@
     "tarif_dry_container_idr": 5605000,
     "tarif_reefer_container_idr": 8408000,
     "tarif_general_cargo_idr": 384000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b22c6bfe-af3d-5aa1-9f63-4dc86c628d44",
@@ -7300,7 +8026,9 @@
     "tarif_dry_container_idr": 4356000,
     "tarif_reefer_container_idr": 6534000,
     "tarif_general_cargo_idr": 327000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "061bb93b-55cf-5951-84f6-6851244f29a6",
@@ -7320,7 +8048,9 @@
     "tarif_dry_container_idr": 4656000,
     "tarif_reefer_container_idr": 6984000,
     "tarif_general_cargo_idr": 340000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "49a9c0b9-da3c-5301-ab7c-fece726e17f2",
@@ -7340,7 +8070,9 @@
     "tarif_dry_container_idr": 5025000,
     "tarif_reefer_container_idr": 7538000,
     "tarif_general_cargo_idr": 357000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d7628353-b4fe-58c4-b7bf-329647fbb08a",
@@ -7358,7 +8090,9 @@
     "tarif_dry_container_idr": 4418000,
     "tarif_reefer_container_idr": 6627000,
     "tarif_general_cargo_idr": 330000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5448532c-9fbd-576d-953b-d50de7db2d70",
@@ -7379,7 +8113,9 @@
     "tarif_dry_container_idr": 5696000,
     "tarif_reefer_container_idr": 8544000,
     "tarif_general_cargo_idr": 388000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0d394e06-c798-5bbd-867d-a353bc36c07b",
@@ -7397,7 +8133,9 @@
     "tarif_dry_container_idr": 5289000,
     "tarif_reefer_container_idr": 7934000,
     "tarif_general_cargo_idr": 369000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "beaa3ce8-e7b2-5f31-931c-9f37955a4e67",
@@ -7417,7 +8155,9 @@
     "tarif_dry_container_idr": 4921000,
     "tarif_reefer_container_idr": 7382000,
     "tarif_general_cargo_idr": 353000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0d7f321d-4245-5f17-add8-77b5f4d2fa67",
@@ -7437,7 +8177,9 @@
     "tarif_dry_container_idr": 5025000,
     "tarif_reefer_container_idr": 7538000,
     "tarif_general_cargo_idr": 357000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ef5949f6-cc44-5fd0-b064-0cad0eed49c8",
@@ -7462,7 +8204,9 @@
     "tarif_dry_container_idr": 4360000,
     "tarif_reefer_container_idr": 6540000,
     "tarif_general_cargo_idr": 327000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2349110e-fefc-54e1-ac04-aa6eaa7d2f86",
@@ -7480,7 +8224,9 @@
     "tarif_dry_container_idr": 3501000,
     "tarif_reefer_container_idr": 5252000,
     "tarif_general_cargo_idr": 288000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d6c78679-1011-56f7-9fc2-2a217fc05bcf",
@@ -7500,7 +8246,9 @@
     "tarif_dry_container_idr": 5696000,
     "tarif_reefer_container_idr": 8544000,
     "tarif_general_cargo_idr": 388000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "bfea1fb9-c73e-52ed-97e3-b076af321e10",
@@ -7521,7 +8269,9 @@
     "tarif_dry_container_idr": 5892000,
     "tarif_reefer_container_idr": 8838000,
     "tarif_general_cargo_idr": 397000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "92881dac-5caf-5cca-9c10-98fe2a725387",
@@ -7541,7 +8291,9 @@
     "tarif_dry_container_idr": 2603000,
     "tarif_reefer_container_idr": 3905000,
     "tarif_general_cargo_idr": 247000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "568bfd85-404f-587b-b7c3-63a40d35b2ae",
@@ -7559,7 +8311,9 @@
     "tarif_dry_container_idr": 2413000,
     "tarif_reefer_container_idr": 3620000,
     "tarif_general_cargo_idr": 238000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "08559bd9-c2b0-5fcd-b5a4-17fddcd72de3",
@@ -7579,7 +8333,9 @@
     "tarif_dry_container_idr": 3316000,
     "tarif_reefer_container_idr": 4974000,
     "tarif_general_cargo_idr": 280000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ecb8d137-fbf5-58e9-a991-3069ae5dc518",
@@ -7602,7 +8358,9 @@
     "tarif_dry_container_idr": 3920000,
     "tarif_reefer_container_idr": 5880000,
     "tarif_general_cargo_idr": 307000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "08108da8-435f-5040-99dd-ba4e4d1d311d",
@@ -7622,7 +8380,9 @@
     "tarif_dry_container_idr": 3276000,
     "tarif_reefer_container_idr": 4914000,
     "tarif_general_cargo_idr": 278000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4da96722-0ebf-5f20-923f-6a87d4b78808",
@@ -7644,7 +8404,9 @@
     "tarif_dry_container_idr": 3796000,
     "tarif_reefer_container_idr": 5694000,
     "tarif_general_cargo_idr": 301000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4086298e-6250-5600-8514-ed65f802cd29",
@@ -7666,7 +8428,9 @@
     "tarif_dry_container_idr": 3679000,
     "tarif_reefer_container_idr": 5519000,
     "tarif_general_cargo_idr": 296000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4923ef28-54e3-51b5-8c66-cb13f07afb53",
@@ -7686,7 +8450,9 @@
     "tarif_dry_container_idr": 2490000,
     "tarif_reefer_container_idr": 3735000,
     "tarif_general_cargo_idr": 242000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ee26e6dd-8261-57f0-9bf8-916fef2b51fb",
@@ -7710,7 +8476,9 @@
     "tarif_dry_container_idr": 4111000,
     "tarif_reefer_container_idr": 6167000,
     "tarif_general_cargo_idr": 316000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6b5ace37-cf1d-50b3-ab8e-61afff277c72",
@@ -7728,7 +8496,9 @@
     "tarif_dry_container_idr": 2167000,
     "tarif_reefer_container_idr": 3251000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c4eca5a5-eccd-5b2b-8a28-7feb10313807",
@@ -7746,7 +8516,9 @@
     "tarif_dry_container_idr": 2223000,
     "tarif_reefer_container_idr": 3335000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ee693072-fffa-5a34-987e-7476ee036670",
@@ -7764,7 +8536,9 @@
     "tarif_dry_container_idr": 3173000,
     "tarif_reefer_container_idr": 4760000,
     "tarif_general_cargo_idr": 273000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "41b12a7f-89fb-5e12-a0b5-c29047e6442f",
@@ -7785,7 +8559,9 @@
     "tarif_dry_container_idr": 3354000,
     "tarif_reefer_container_idr": 5031000,
     "tarif_general_cargo_idr": 281000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0b147a08-a70a-5298-bb77-b1d6861b3921",
@@ -7806,7 +8582,9 @@
     "tarif_dry_container_idr": 3384000,
     "tarif_reefer_container_idr": 5076000,
     "tarif_general_cargo_idr": 283000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b1ca1f92-4966-54d7-bc64-29d23a767915",
@@ -7826,7 +8604,9 @@
     "tarif_dry_container_idr": 2237000,
     "tarif_reefer_container_idr": 3356000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "00d40fbc-e0eb-5c4a-95f3-d881cf4e49ed",
@@ -7844,7 +8624,9 @@
     "tarif_dry_container_idr": 1949000,
     "tarif_reefer_container_idr": 2924000,
     "tarif_general_cargo_idr": 217000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1e36e559-8dfc-57ca-b1e4-87592dde006d",
@@ -7865,7 +8647,9 @@
     "tarif_dry_container_idr": 2471000,
     "tarif_reefer_container_idr": 3707000,
     "tarif_general_cargo_idr": 241000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d3414c88-9ef7-5b8f-9805-0de3613b5982",
@@ -7883,7 +8667,9 @@
     "tarif_dry_container_idr": 3173000,
     "tarif_reefer_container_idr": 4760000,
     "tarif_general_cargo_idr": 273000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d51e5cba-152c-5f58-bf69-35f0cf8380e5",
@@ -7903,7 +8689,9 @@
     "tarif_dry_container_idr": 3546000,
     "tarif_reefer_container_idr": 5319000,
     "tarif_general_cargo_idr": 290000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "19055b01-bc05-516f-a2e0-9d3052540c1a",
@@ -7925,7 +8713,9 @@
     "tarif_dry_container_idr": 3864000,
     "tarif_reefer_container_idr": 5796000,
     "tarif_general_cargo_idr": 304000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6da68499-cbe0-56f1-bc03-7d496dcff354",
@@ -7945,7 +8735,9 @@
     "tarif_dry_container_idr": 2729000,
     "tarif_reefer_container_idr": 4094000,
     "tarif_general_cargo_idr": 253000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3618f22f-efd4-52c6-be67-e24546227ffe",
@@ -7963,7 +8755,9 @@
     "tarif_dry_container_idr": 2014000,
     "tarif_reefer_container_idr": 3021000,
     "tarif_general_cargo_idr": 220000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8d26e1f7-1489-5585-a470-cd624434ca9b",
@@ -7985,7 +8779,9 @@
     "tarif_dry_container_idr": 3774000,
     "tarif_reefer_container_idr": 5661000,
     "tarif_general_cargo_idr": 300000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1107d110-b360-53aa-968e-5830231075a5",
@@ -8005,7 +8801,9 @@
     "tarif_dry_container_idr": 3047000,
     "tarif_reefer_container_idr": 4571000,
     "tarif_general_cargo_idr": 267000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "23e1ba7c-be5f-58a2-ba79-edfc09df0fc0",
@@ -8023,7 +8821,9 @@
     "tarif_dry_container_idr": 2229000,
     "tarif_reefer_container_idr": 3344000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7ac41ba3-07c7-5c34-8ff9-905d8f5fad5c",
@@ -8044,7 +8844,9 @@
     "tarif_dry_container_idr": 3554000,
     "tarif_reefer_container_idr": 5331000,
     "tarif_general_cargo_idr": 290000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "cab8309c-4a48-5061-9a72-7b5cc1e1c652",
@@ -8065,7 +8867,9 @@
     "tarif_dry_container_idr": 2430000,
     "tarif_reefer_container_idr": 3645000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f9c67490-d8cf-5a7a-b7c1-5c276c4a85e1",
@@ -8083,7 +8887,9 @@
     "tarif_dry_container_idr": 4084000,
     "tarif_reefer_container_idr": 6126000,
     "tarif_general_cargo_idr": 314000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d38f7661-1ab2-5fde-ad37-bf59dfac85a1",
@@ -8103,7 +8909,9 @@
     "tarif_dry_container_idr": 2102000,
     "tarif_reefer_container_idr": 3153000,
     "tarif_general_cargo_idr": 224000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8215b16a-99c0-5141-83b4-d273fe486fde",
@@ -8121,7 +8929,9 @@
     "tarif_dry_container_idr": 2037000,
     "tarif_reefer_container_idr": 3056000,
     "tarif_general_cargo_idr": 221000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7a146160-4c01-5a3c-b9cd-ddc6cb22799f",
@@ -8143,7 +8953,9 @@
     "tarif_dry_container_idr": 2666000,
     "tarif_reefer_container_idr": 3999000,
     "tarif_general_cargo_idr": 250000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7e00c997-265b-55aa-97f9-da2f9b9f59ce",
@@ -8166,7 +8978,9 @@
     "tarif_dry_container_idr": 5552000,
     "tarif_reefer_container_idr": 8328000,
     "tarif_general_cargo_idr": 381000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "20e24832-ac8a-5848-9a09-6de9b7b4cd84",
@@ -8186,7 +9000,9 @@
     "tarif_dry_container_idr": 5023000,
     "tarif_reefer_container_idr": 7535000,
     "tarif_general_cargo_idr": 357000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "27c51c19-ad40-5398-8459-f9b22bda33ee",
@@ -8204,7 +9020,9 @@
     "tarif_dry_container_idr": 2014000,
     "tarif_reefer_container_idr": 3021000,
     "tarif_general_cargo_idr": 220000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "9cb9754a-ed96-5807-a2b5-410fd62d14e0",
@@ -8222,7 +9040,9 @@
     "tarif_dry_container_idr": 1803000,
     "tarif_reefer_container_idr": 2705000,
     "tarif_general_cargo_idr": 211000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d56c9caf-1f95-5a9f-bf7c-539358f9cbb1",
@@ -8242,7 +9062,9 @@
     "tarif_dry_container_idr": 2718000,
     "tarif_reefer_container_idr": 4077000,
     "tarif_general_cargo_idr": 252000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "827e9d58-106e-577d-bd11-f035233c2012",
@@ -8260,7 +9082,9 @@
     "tarif_dry_container_idr": 2218000,
     "tarif_reefer_container_idr": 3327000,
     "tarif_general_cargo_idr": 230000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3974ecc7-471f-57d4-96e8-3eeb2a188ec9",
@@ -8280,7 +9104,9 @@
     "tarif_dry_container_idr": 2858000,
     "tarif_reefer_container_idr": 4287000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c651b781-b836-5f32-8aa0-ef41f2da4984",
@@ -8301,7 +9127,9 @@
     "tarif_dry_container_idr": 6644000,
     "tarif_reefer_container_idr": 9966000,
     "tarif_general_cargo_idr": 431000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "07862271-64ac-55a8-ba4b-8206314a6fdc",
@@ -8322,7 +9150,9 @@
     "tarif_dry_container_idr": 5696000,
     "tarif_reefer_container_idr": 8544000,
     "tarif_general_cargo_idr": 388000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "f6a0f485-79b3-5868-98ea-f0fc3a2c467c",
@@ -8342,7 +9172,9 @@
     "tarif_dry_container_idr": 1988000,
     "tarif_reefer_container_idr": 2982000,
     "tarif_general_cargo_idr": 219000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "2da59a28-7dcd-5a80-a63f-863d3829ad3d",
@@ -8360,7 +9192,9 @@
     "tarif_dry_container_idr": 1894000,
     "tarif_reefer_container_idr": 2841000,
     "tarif_general_cargo_idr": 215000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8d61d7ac-0698-554e-abd9-f66f2c5bd78f",
@@ -8380,7 +9214,9 @@
     "tarif_dry_container_idr": 4409000,
     "tarif_reefer_container_idr": 6614000,
     "tarif_general_cargo_idr": 329000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "0ab14b99-a7d3-5a11-b693-17b702faea0e",
@@ -8398,7 +9234,9 @@
     "tarif_dry_container_idr": 1689000,
     "tarif_reefer_container_idr": 2534000,
     "tarif_general_cargo_idr": 205000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1c264856-8556-5501-b9b4-96990b8d6c58",
@@ -8419,7 +9257,9 @@
     "tarif_dry_container_idr": 2617000,
     "tarif_reefer_container_idr": 3926000,
     "tarif_general_cargo_idr": 248000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "c47943a8-cb22-5911-ba13-6c5e88a891eb",
@@ -8440,7 +9280,9 @@
     "tarif_dry_container_idr": 2254000,
     "tarif_reefer_container_idr": 3381000,
     "tarif_general_cargo_idr": 231000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "a8c22d08-3e6e-5fe3-ad68-c91488b11cb5",
@@ -8460,7 +9302,9 @@
     "tarif_dry_container_idr": 2173000,
     "tarif_reefer_container_idr": 3260000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ee07187a-022d-56b8-a211-0ef547eb3148",
@@ -8482,7 +9326,9 @@
     "tarif_dry_container_idr": 2866000,
     "tarif_reefer_container_idr": 4299000,
     "tarif_general_cargo_idr": 259000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5b191582-c999-5c51-aab0-050d15d7767c",
@@ -8504,7 +9350,9 @@
     "tarif_dry_container_idr": 5233000,
     "tarif_reefer_container_idr": 7850000,
     "tarif_general_cargo_idr": 367000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1c5d98d8-3917-5b96-8c94-f3fb2fa447e5",
@@ -8522,7 +9370,9 @@
     "tarif_dry_container_idr": 4598000,
     "tarif_reefer_container_idr": 6897000,
     "tarif_general_cargo_idr": 338000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "d2c23722-d034-563d-a0d3-484eb6c0eee5",
@@ -8540,7 +9390,9 @@
     "tarif_dry_container_idr": 2014000,
     "tarif_reefer_container_idr": 3021000,
     "tarif_general_cargo_idr": 220000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "44f2bb04-ffd4-5cec-b893-cf52086632f6",
@@ -8564,7 +9416,9 @@
     "tarif_dry_container_idr": 3644000,
     "tarif_reefer_container_idr": 5466000,
     "tarif_general_cargo_idr": 294000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "457088cb-0ecf-58a2-881e-af438c2f744e",
@@ -8586,7 +9440,9 @@
     "tarif_dry_container_idr": 2680000,
     "tarif_reefer_container_idr": 4020000,
     "tarif_general_cargo_idr": 251000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "3a26e181-9007-544a-8f21-8be3cdf59d75",
@@ -8607,7 +9463,9 @@
     "tarif_dry_container_idr": 2592000,
     "tarif_reefer_container_idr": 3888000,
     "tarif_general_cargo_idr": 247000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "5879aabf-b81e-5275-9f4f-d8cd91317d6f",
@@ -8630,7 +9488,9 @@
     "tarif_dry_container_idr": 2894000,
     "tarif_reefer_container_idr": 4341000,
     "tarif_general_cargo_idr": 260000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "347c135d-2934-5927-b8eb-109cf56bf8d6",
@@ -8650,7 +9510,9 @@
     "tarif_dry_container_idr": 2173000,
     "tarif_reefer_container_idr": 3260000,
     "tarif_general_cargo_idr": 227000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ad968364-3660-5a5d-90e4-0234bf086ce1",
@@ -8668,7 +9530,9 @@
     "tarif_dry_container_idr": 1914000,
     "tarif_reefer_container_idr": 2871000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "1eb49d16-e30b-56ef-b6a9-c4c6dc0eb32f",
@@ -8693,7 +9557,9 @@
     "tarif_dry_container_idr": 4360000,
     "tarif_reefer_container_idr": 6540000,
     "tarif_general_cargo_idr": 327000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "ebcfc618-bb6e-53fd-a2a6-28197626c9f4",
@@ -8711,7 +9577,9 @@
     "tarif_dry_container_idr": 2424000,
     "tarif_reefer_container_idr": 3636000,
     "tarif_general_cargo_idr": 239000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "65c776ff-2917-5303-8f01-6c80ea5d6bc8",
@@ -8731,7 +9599,9 @@
     "tarif_dry_container_idr": 3501000,
     "tarif_reefer_container_idr": 5252000,
     "tarif_general_cargo_idr": 288000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "86dd7f5f-60a8-5c62-ad88-3f43afccc621",
@@ -8752,7 +9622,9 @@
     "tarif_dry_container_idr": 3013000,
     "tarif_reefer_container_idr": 4520000,
     "tarif_general_cargo_idr": 266000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "4adff8bb-8a5c-561b-a21a-17e46dd0eaaa",
@@ -8772,7 +9644,9 @@
     "tarif_dry_container_idr": 2336000,
     "tarif_reefer_container_idr": 3504000,
     "tarif_general_cargo_idr": 235000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "e18395d2-0aee-5b19-89ed-7bf14c8fff25",
@@ -8790,7 +9664,9 @@
     "tarif_dry_container_idr": 1878000,
     "tarif_reefer_container_idr": 2817000,
     "tarif_general_cargo_idr": 214000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "6c2fbe5a-9941-5673-ad76-c9109eb5c9a6",
@@ -8811,7 +9687,9 @@
     "tarif_dry_container_idr": 2534000,
     "tarif_reefer_container_idr": 3801000,
     "tarif_general_cargo_idr": 244000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "37f1448d-3cf9-56ba-b4b7-c974370fdf2b",
@@ -8831,7 +9709,9 @@
     "tarif_dry_container_idr": 4622000,
     "tarif_reefer_container_idr": 6933000,
     "tarif_general_cargo_idr": 339000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "b3a37e44-09e1-5d08-861a-b02ae25d9bc0",
@@ -8849,7 +9729,9 @@
     "tarif_dry_container_idr": 1917000,
     "tarif_reefer_container_idr": 2876000,
     "tarif_general_cargo_idr": 216000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "7f796e2e-e1d6-58ef-beba-ac7082e5b777",
@@ -8867,7 +9749,9 @@
     "tarif_dry_container_idr": 1884000,
     "tarif_reefer_container_idr": 2826000,
     "tarif_general_cargo_idr": 214000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "fada2fd3-363d-5ced-b9ee-9700c496e7a4",
@@ -8887,7 +9771,9 @@
     "tarif_dry_container_idr": 2204000,
     "tarif_reefer_container_idr": 3306000,
     "tarif_general_cargo_idr": 229000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "21ee06a5-44ea-56ae-9808-61ab78a9cf60",
@@ -8907,7 +9793,9 @@
     "tarif_dry_container_idr": 5696000,
     "tarif_reefer_container_idr": 8544000,
     "tarif_general_cargo_idr": 388000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   },
   {
     "id": "8cdde7f9-95cb-5e7f-89f4-815636fa05fa",
@@ -8925,6 +9813,8 @@
     "tarif_dry_container_idr": 5363000,
     "tarif_reefer_container_idr": 8045000,
     "tarif_general_cargo_idr": 373000,
-    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf"
+    "source": "PM_29_2018_Tarif_PSO_Angkutan_Barang_Laut.pdf",
+    "is_synthetic": false,
+    "provenance": "opticargo-data:curated:routes"
   }
 ]
