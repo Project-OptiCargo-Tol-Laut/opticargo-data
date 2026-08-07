@@ -1,535 +1,638 @@
 [
   {
-    "id": "32e4c05b-d939-4917-9287-3d9b20e9c228",
+    "id": "778db6b1-696e-5254-9280-97d321213520",
     "ship_id": "6690ed48-7601-5607-b86c-c8e7ad2e624c",
-    "route_id": "3a72308a-b1e2-537b-80ba-16c89c972ed4",
-    "departure_date": "2026-08-01T07:03:15.958621Z",
-    "arrival_date": "2026-08-07T07:03:15.958621Z",
-    "total_capacity_ton": 4534.7,
-    "used_capacity_ton": 1514.26,
-    "remaining_capacity_ton": 3020.44,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "e3c353d6-b60b-49b0-ba98-4771f5dad8dd",
-    "ship_id": "6690ed48-7601-5607-b86c-c8e7ad2e624c",
-    "route_id": "f5c6bc81-5600-5b4e-b0ad-e3e8d43148fe",
-    "departure_date": "2026-07-28T07:03:15.958621Z",
-    "arrival_date": "2026-08-04T07:03:15.958621Z",
-    "total_capacity_ton": 4534.7,
-    "used_capacity_ton": 2748.12,
-    "remaining_capacity_ton": 1786.58,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "63c354ce-c3f8-41a9-a662-eb51c182cc35",
-    "ship_id": "6690ed48-7601-5607-b86c-c8e7ad2e624c",
-    "route_id": "08108da8-435f-5040-99dd-ba4e4d1d311d",
-    "departure_date": "2026-07-27T07:03:15.958621Z",
-    "arrival_date": "2026-07-30T07:03:15.958621Z",
-    "total_capacity_ton": 4534.7,
-    "used_capacity_ton": 2513.56,
-    "remaining_capacity_ton": 2021.14,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "5271f350-d94c-43e9-9012-ef7f05d6b41d",
-    "ship_id": "6690ed48-7601-5607-b86c-c8e7ad2e624c",
-    "route_id": "eeb2a962-ecb5-5374-9496-d35da98a56a3",
-    "departure_date": "2026-07-26T07:03:15.958621Z",
-    "arrival_date": "2026-07-30T07:03:15.958621Z",
-    "total_capacity_ton": 4534.7,
-    "used_capacity_ton": 988.01,
-    "remaining_capacity_ton": 3546.69,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "b5f4c919-c91e-4560-b3e9-25d645cbea05",
-    "ship_id": "0bda3541-3ac2-5be4-a4cf-c9fdf34ef9de",
-    "route_id": "b6c53c95-ad95-5098-b837-98226020b7f3",
-    "departure_date": "2026-07-25T07:03:15.958621Z",
-    "arrival_date": "2026-07-27T07:03:15.958621Z",
-    "total_capacity_ton": 4779.7,
-    "used_capacity_ton": 2565.49,
-    "remaining_capacity_ton": 2214.21,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "5c440d0a-8936-4856-9f4b-22a5d3deff7d",
-    "ship_id": "0bda3541-3ac2-5be4-a4cf-c9fdf34ef9de",
-    "route_id": "f3ad9509-d80d-546e-b4b1-44a21a0362e8",
-    "departure_date": "2026-08-07T07:03:15.958621Z",
-    "arrival_date": "2026-08-13T07:03:15.958621Z",
-    "total_capacity_ton": 4779.7,
-    "used_capacity_ton": 1588.12,
-    "remaining_capacity_ton": 3191.58,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "303e7bb3-33eb-4e62-aeac-14f035cee3a6",
-    "ship_id": "f4e36277-e955-5785-ab07-a1597227d074",
-    "route_id": "f9032d58-ddfc-5ee8-b3fe-5de993672318",
-    "departure_date": "2026-07-30T07:03:15.958621Z",
-    "arrival_date": "2026-08-03T07:03:15.958621Z",
-    "total_capacity_ton": 3535.7,
-    "used_capacity_ton": 2188.19,
-    "remaining_capacity_ton": 1347.51,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "3e7a5f38-1573-44d5-ad57-23e41759be2e",
-    "ship_id": "f4e36277-e955-5785-ab07-a1597227d074",
-    "route_id": "07862271-64ac-55a8-ba4b-8206314a6fdc",
-    "departure_date": "2026-08-04T07:03:15.958621Z",
-    "arrival_date": "2026-08-11T07:03:15.958621Z",
-    "total_capacity_ton": 3535.7,
-    "used_capacity_ton": 1296.62,
-    "remaining_capacity_ton": 2239.08,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "6c27633d-76d5-4f64-957b-d33a15c0f45b",
-    "ship_id": "f4e36277-e955-5785-ab07-a1597227d074",
-    "route_id": "4859391a-9fc6-53dc-a869-ffd52e7f0f22",
-    "departure_date": "2026-07-31T07:03:15.958621Z",
-    "arrival_date": "2026-08-02T07:03:15.958621Z",
-    "total_capacity_ton": 3535.7,
-    "used_capacity_ton": 2737.79,
-    "remaining_capacity_ton": 797.91,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "c41674a5-8dbd-478d-bb45-e2c61fc2634a",
-    "ship_id": "f4e36277-e955-5785-ab07-a1597227d074",
-    "route_id": "0b147a08-a70a-5298-bb77-b1d6861b3921",
-    "departure_date": "2026-08-04T07:03:15.958621Z",
-    "arrival_date": "2026-08-07T07:03:15.958621Z",
-    "total_capacity_ton": 3535.7,
-    "used_capacity_ton": 923.97,
-    "remaining_capacity_ton": 2611.73,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "28dc7295-300e-4323-a0c1-e42f7590df3d",
-    "ship_id": "746f98e1-cac7-51bf-ac4a-410f8c8ff9f7",
-    "route_id": "4a0ab753-f0d9-5a63-9d9f-9f8527dd7ed6",
-    "departure_date": "2026-08-05T07:03:15.958621Z",
-    "arrival_date": "2026-08-07T07:03:15.958621Z",
-    "total_capacity_ton": 3246.0,
-    "used_capacity_ton": 1825.02,
-    "remaining_capacity_ton": 1420.98,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "884f757e-719d-484a-b876-0fca2e366c1b",
-    "ship_id": "746f98e1-cac7-51bf-ac4a-410f8c8ff9f7",
-    "route_id": "32088837-5f9b-5ed4-a096-a806644b61e1",
-    "departure_date": "2026-07-26T07:03:15.958621Z",
-    "arrival_date": "2026-07-28T07:03:15.958621Z",
-    "total_capacity_ton": 3246.0,
-    "used_capacity_ton": 2070.43,
-    "remaining_capacity_ton": 1175.57,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "6e2982d4-4a37-4add-afbd-361aaa284344",
-    "ship_id": "746f98e1-cac7-51bf-ac4a-410f8c8ff9f7",
-    "route_id": "ebcfc618-bb6e-53fd-a2a6-28197626c9f4",
-    "departure_date": "2026-07-28T07:03:15.958621Z",
-    "arrival_date": "2026-07-30T07:03:15.958621Z",
-    "total_capacity_ton": 3246.0,
-    "used_capacity_ton": 2544.44,
-    "remaining_capacity_ton": 701.56,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "18b35b49-f57e-4730-aa86-72473074aef5",
-    "ship_id": "bce2f6f8-e282-5543-aab3-e0a2d2973af1",
-    "route_id": "881f5038-5a6f-5457-9772-6095e69851fa",
-    "departure_date": "2026-08-05T07:03:15.958621Z",
-    "arrival_date": "2026-08-06T07:03:15.958621Z",
-    "total_capacity_ton": 5141.3,
-    "used_capacity_ton": 2809.26,
-    "remaining_capacity_ton": 2332.04,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "ad2a14d0-fabb-49ed-9760-a6af32d5a26e",
-    "ship_id": "bce2f6f8-e282-5543-aab3-e0a2d2973af1",
-    "route_id": "541e6e81-6492-5235-a42a-00d734519b89",
-    "departure_date": "2026-07-27T07:03:15.958621Z",
-    "arrival_date": "2026-07-28T07:03:15.958621Z",
-    "total_capacity_ton": 5141.3,
-    "used_capacity_ton": 1169.62,
-    "remaining_capacity_ton": 3971.68,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "5aef5830-f4ee-4e38-addf-2dfec7b901d4",
-    "ship_id": "bce2f6f8-e282-5543-aab3-e0a2d2973af1",
-    "route_id": "e9a4ceef-8d7e-56b2-85aa-bc910bef2d99",
-    "departure_date": "2026-08-01T07:03:15.958621Z",
-    "arrival_date": "2026-08-03T07:03:15.958621Z",
-    "total_capacity_ton": 5141.3,
-    "used_capacity_ton": 3413.01,
-    "remaining_capacity_ton": 1728.29,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "316f82e9-c8d5-42d7-871f-b85d72576acf",
-    "ship_id": "a497fc0d-67ce-50a4-ab28-5baf5ec1c31c",
-    "route_id": "e18395d2-0aee-5b19-89ed-7bf14c8fff25",
-    "departure_date": "2026-07-28T07:03:15.958621Z",
-    "arrival_date": "2026-07-29T07:03:15.958621Z",
-    "total_capacity_ton": 4417.2,
-    "used_capacity_ton": 1890.9,
-    "remaining_capacity_ton": 2526.3,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "39731a65-48d1-4a17-8594-3d46afebf179",
-    "ship_id": "a497fc0d-67ce-50a4-ab28-5baf5ec1c31c",
-    "route_id": "b6c53c95-ad95-5098-b837-98226020b7f3",
-    "departure_date": "2026-08-08T07:03:15.958621Z",
-    "arrival_date": "2026-08-10T07:03:15.958621Z",
-    "total_capacity_ton": 4417.2,
-    "used_capacity_ton": 2568.21,
-    "remaining_capacity_ton": 1848.99,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "ebf48672-697a-45f6-b899-b55c67422a94",
-    "ship_id": "bf671a89-c1dd-5471-ae96-f9b7818388a6",
-    "route_id": "83e9dd76-6cb0-5ac8-8e09-3e52ee649e3b",
-    "departure_date": "2026-07-31T07:03:15.958621Z",
-    "arrival_date": "2026-08-06T07:03:15.958621Z",
-    "total_capacity_ton": 1132.8,
-    "used_capacity_ton": 682.06,
-    "remaining_capacity_ton": 450.74,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "8e159f7d-e417-48b7-8f20-e43ad8f7b48c",
-    "ship_id": "bf671a89-c1dd-5471-ae96-f9b7818388a6",
-    "route_id": "bc5def31-477a-5130-b1b8-33e0156efbe7",
-    "departure_date": "2026-07-27T07:03:15.958621Z",
-    "arrival_date": "2026-07-28T07:03:15.958621Z",
-    "total_capacity_ton": 1132.8,
-    "used_capacity_ton": 640.57,
-    "remaining_capacity_ton": 492.23,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "a15710f9-151f-4e09-a983-d7aab9c5ae38",
-    "ship_id": "bf671a89-c1dd-5471-ae96-f9b7818388a6",
-    "route_id": "6639b8f8-cdab-5150-be30-4b9566f70df3",
-    "departure_date": "2026-07-30T07:03:15.958621Z",
-    "arrival_date": "2026-07-31T07:03:15.958621Z",
-    "total_capacity_ton": 1132.8,
-    "used_capacity_ton": 589.6,
-    "remaining_capacity_ton": 543.2,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "09c339b5-da2d-4d1e-aaad-9769c97290a2",
-    "ship_id": "5920dfa5-f45e-5fdf-a988-4950a6eef009",
-    "route_id": "83e9dd76-6cb0-5ac8-8e09-3e52ee649e3b",
-    "departure_date": "2026-08-06T07:03:15.958621Z",
-    "arrival_date": "2026-08-12T07:03:15.958621Z",
-    "total_capacity_ton": 1356.0,
-    "used_capacity_ton": 490.83,
-    "remaining_capacity_ton": 865.17,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "dbbce722-74dc-4360-923d-c9873d084872",
-    "ship_id": "5920dfa5-f45e-5fdf-a988-4950a6eef009",
-    "route_id": "18938e24-966e-5a80-95af-a23dacd48573",
-    "departure_date": "2026-08-01T07:03:15.958621Z",
-    "arrival_date": "2026-08-02T07:03:15.958621Z",
-    "total_capacity_ton": 1356.0,
-    "used_capacity_ton": 828.2,
-    "remaining_capacity_ton": 527.8,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "21d90c17-97c6-4724-b0dd-9a257bdd20a1",
-    "ship_id": "6d4c48af-30d5-59e2-be80-4778a244c26a",
-    "route_id": "fce98be0-39f2-5d75-be17-6646af2c6242",
-    "departure_date": "2026-07-26T07:03:15.958621Z",
-    "arrival_date": "2026-07-27T07:03:15.958621Z",
-    "total_capacity_ton": 1129.2,
-    "used_capacity_ton": 771.27,
-    "remaining_capacity_ton": 357.93,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "a347d0c5-4cab-4a9d-b9cb-2d6c953f9be0",
-    "ship_id": "6d4c48af-30d5-59e2-be80-4778a244c26a",
-    "route_id": "c47943a8-cb22-5911-ba13-6c5e88a891eb",
-    "departure_date": "2026-08-06T07:03:15.958621Z",
-    "arrival_date": "2026-08-07T07:03:15.958621Z",
-    "total_capacity_ton": 1129.2,
-    "used_capacity_ton": 407.24,
-    "remaining_capacity_ton": 721.96,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "6f465ead-2b8f-4472-808e-8c96c3734549",
-    "ship_id": "47681bc7-98a6-5b54-ab8c-e5e386ccf182",
-    "route_id": "9ba3eec8-4de4-5bfa-9a84-62a8172c1ca9",
-    "departure_date": "2026-08-04T07:03:15.958621Z",
-    "arrival_date": "2026-08-05T07:03:15.958621Z",
-    "total_capacity_ton": 1887.6,
-    "used_capacity_ton": 618.33,
-    "remaining_capacity_ton": 1269.27,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "1b32991e-ff17-43fa-a7e1-6c2ef80fc1d5",
-    "ship_id": "47681bc7-98a6-5b54-ab8c-e5e386ccf182",
-    "route_id": "5448532c-9fbd-576d-953b-d50de7db2d70",
-    "departure_date": "2026-08-09T07:03:15.958621Z",
-    "arrival_date": "2026-08-16T07:03:15.958621Z",
-    "total_capacity_ton": 1887.6,
-    "used_capacity_ton": 825.6,
-    "remaining_capacity_ton": 1062.0,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "4d94ecf8-7790-4eda-a45a-d235a5c249a7",
-    "ship_id": "22b31b58-2d63-5c2a-9a21-ea79d7a1df19",
-    "route_id": "717186be-6959-5ef6-9863-4162e5694c79",
-    "departure_date": "2026-08-01T07:03:15.958621Z",
-    "arrival_date": "2026-08-07T07:03:15.958621Z",
-    "total_capacity_ton": 1699.4,
-    "used_capacity_ton": 1099.5,
-    "remaining_capacity_ton": 599.9,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "ba817e2c-bf20-4a98-8377-4fdd07fbc06a",
-    "ship_id": "22b31b58-2d63-5c2a-9a21-ea79d7a1df19",
-    "route_id": "a3ac143a-4ec6-5d76-9815-64619bd84620",
-    "departure_date": "2026-08-02T07:03:15.958621Z",
-    "arrival_date": "2026-08-04T07:03:15.958621Z",
-    "total_capacity_ton": 1699.4,
-    "used_capacity_ton": 1101.57,
-    "remaining_capacity_ton": 597.83,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "b292ab84-dbb3-4c3b-bf1d-0c7e9d8070bb",
-    "ship_id": "22b31b58-2d63-5c2a-9a21-ea79d7a1df19",
-    "route_id": "865608bb-867e-5ccf-b4c5-97757c35e4ca",
-    "departure_date": "2026-08-07T07:03:15.958621Z",
-    "arrival_date": "2026-08-11T07:03:15.958621Z",
-    "total_capacity_ton": 1699.4,
-    "used_capacity_ton": 1255.34,
-    "remaining_capacity_ton": 444.06,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "26b014b3-c967-4573-b32c-93316aa4be66",
-    "ship_id": "22b31b58-2d63-5c2a-9a21-ea79d7a1df19",
-    "route_id": "023ccf03-4e54-55b0-b5fd-1f887f121cba",
-    "departure_date": "2026-08-06T07:03:15.958621Z",
-    "arrival_date": "2026-08-08T07:03:15.958621Z",
-    "total_capacity_ton": 1699.4,
-    "used_capacity_ton": 708.99,
-    "remaining_capacity_ton": 990.41,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "659a812e-a0a0-4a77-8f46-2e1a6a4e1410",
-    "ship_id": "6c53ae02-f465-5c36-8645-9bfee6779607",
-    "route_id": "2fcf8f0a-0331-5685-8cf6-d948b5a9d975",
-    "departure_date": "2026-07-27T07:03:15.958621Z",
-    "arrival_date": "2026-07-29T07:03:15.958621Z",
-    "total_capacity_ton": 1594.1,
-    "used_capacity_ton": 1041.7,
-    "remaining_capacity_ton": 552.4,
-    "status": "in_transit",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "dd704529-b23a-4e42-b361-15fb6c886acd",
-    "ship_id": "6c53ae02-f465-5c36-8645-9bfee6779607",
-    "route_id": "b93e32b3-b409-5e43-89c8-0bd1318158f0",
-    "departure_date": "2026-07-28T07:03:15.958621Z",
-    "arrival_date": "2026-07-29T07:03:15.958621Z",
-    "total_capacity_ton": 1594.1,
-    "used_capacity_ton": 465.01,
-    "remaining_capacity_ton": 1129.09,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "9d48a609-b53a-474e-97f9-9f50eff49943",
-    "ship_id": "76dde7fd-c84f-5843-b479-9be6c6a4b4d0",
-    "route_id": "7a146160-4c01-5a3c-b9cd-ddc6cb22799f",
-    "departure_date": "2026-08-07T07:03:15.958621Z",
-    "arrival_date": "2026-08-09T07:03:15.958621Z",
-    "total_capacity_ton": 1990.3,
-    "used_capacity_ton": 1110.28,
-    "remaining_capacity_ton": 880.02,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "bd0313d5-2eba-4c77-a7c2-b57e19a6a988",
-    "ship_id": "76dde7fd-c84f-5843-b479-9be6c6a4b4d0",
-    "route_id": "96243894-5028-52d3-9ac5-e92734851c7c",
-    "departure_date": "2026-08-06T07:03:15.958621Z",
-    "arrival_date": "2026-08-11T07:03:15.958621Z",
-    "total_capacity_ton": 1990.3,
-    "used_capacity_ton": 853.78,
-    "remaining_capacity_ton": 1136.52,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "f78a23a3-80a9-47f5-b7b1-9ac71f331459",
-    "ship_id": "902202aa-35c8-53b5-b43e-7f6bbb3a2208",
-    "route_id": "07a6aeb0-47aa-5f31-bdc3-0f99083095d5",
-    "departure_date": "2026-07-25T07:03:15.958621Z",
-    "arrival_date": "2026-07-26T07:03:15.958621Z",
-    "total_capacity_ton": 1934.7,
-    "used_capacity_ton": 1176.63,
-    "remaining_capacity_ton": 758.07,
+    "route_id": "a6dbefdf-1eda-5541-951e-4b26a74d960e",
+    "departure_date": "2026-08-10T02:00:00Z",
+    "arrival_date": "2026-08-11T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "216.0",
+    "remaining_capacity_ton": "984.0",
     "status": "completed",
     "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
   },
   {
-    "id": "395a1dfa-50d4-4e7c-a63d-ecfdd3c62d07",
+    "id": "dbede59c-a407-5dc7-86a8-9283665907fd",
+    "ship_id": "0bda3541-3ac2-5be4-a4cf-c9fdf34ef9de",
+    "route_id": "1c8278e8-c667-500c-8198-034f7cdf1856",
+    "departure_date": "2026-08-12T02:00:00Z",
+    "arrival_date": "2026-08-13T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "258.0",
+    "remaining_capacity_ton": "942.0",
+    "status": "completed",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "df10d525-ef7e-531b-a5ab-99c3ffce9415",
+    "ship_id": "f4e36277-e955-5785-ab07-a1597227d074",
+    "route_id": "b6426a00-f4a8-5ba1-b9e4-240384a02a4f",
+    "departure_date": "2026-08-14T02:00:00Z",
+    "arrival_date": "2026-08-15T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "300.0",
+    "remaining_capacity_ton": "900.0",
+    "status": "completed",
+    "waypoints": [
+      {
+        "port_id": "Oransbari",
+        "eta": "2026-08-15T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "38a858c6-90c7-5160-a43a-0d4c0eb6c611",
+    "ship_id": "746f98e1-cac7-51bf-ac4a-410f8c8ff9f7",
+    "route_id": "f19db669-6cee-5089-85df-ec8a929351ff",
+    "departure_date": "2026-08-16T02:00:00Z",
+    "arrival_date": "2026-08-17T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "342.0",
+    "remaining_capacity_ton": "858.0",
+    "status": "in_transit",
+    "waypoints": [
+      {
+        "port_id": "Tagulandang",
+        "eta": "2026-08-17T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "cad33618-b1b0-5074-8397-fa74cff1c5dd",
+    "ship_id": "bce2f6f8-e282-5543-aab3-e0a2d2973af1",
+    "route_id": "70e361ea-9984-523f-a7cd-aef07420555b",
+    "departure_date": "2026-08-18T02:00:00Z",
+    "arrival_date": "2026-08-20T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "384.0",
+    "remaining_capacity_ton": "816.0",
+    "status": "in_transit",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "544f2037-3fcf-5c6e-b11a-8b68df3c3cd9",
+    "ship_id": "a497fc0d-67ce-50a4-ab28-5baf5ec1c31c",
+    "route_id": "b60565ca-4b87-5359-9a5b-f9b4e0e8a71c",
+    "departure_date": "2026-08-20T02:00:00Z",
+    "arrival_date": "2026-08-21T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "426.0",
+    "remaining_capacity_ton": "774.0",
+    "status": "in_transit",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "3dfd2602-4e41-59a0-9dc1-4f73b8e31730",
+    "ship_id": "bf671a89-c1dd-5471-ae96-f9b7818388a6",
+    "route_id": "14855c26-4272-545d-bbb1-345bfd4f2822",
+    "departure_date": "2026-08-22T02:00:00Z",
+    "arrival_date": "2026-08-23T06:00:00Z",
+    "total_capacity_ton": "623.0",
+    "used_capacity_ton": "243.0",
+    "remaining_capacity_ton": "380.0",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Miangas",
+        "eta": "2026-08-23T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "7291a201-9c42-5be9-99c1-3e6c6fcd3813",
+    "ship_id": "5920dfa5-f45e-5fdf-a988-4950a6eef009",
+    "route_id": "a1775652-464d-5847-a288-678caacf1235",
+    "departure_date": "2026-08-24T02:00:00Z",
+    "arrival_date": "2026-08-28T06:00:00Z",
+    "total_capacity_ton": "745.8",
+    "used_capacity_ton": "134.2",
+    "remaining_capacity_ton": "611.6",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "058579db-0f4b-59eb-bdb1-69b5e6dc3d86",
+    "ship_id": "6d4c48af-30d5-59e2-be80-4778a244c26a",
+    "route_id": "946bd97c-0259-5ace-a935-d2d51150e70c",
+    "departure_date": "2026-08-26T02:00:00Z",
+    "arrival_date": "2026-08-27T06:00:00Z",
+    "total_capacity_ton": "621.1",
+    "used_capacity_ton": "133.5",
+    "remaining_capacity_ton": "487.6",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "acdc16d9-9cfe-503b-a8f3-b81a280b0a10",
+    "ship_id": "47681bc7-98a6-5b54-ab8c-e5e386ccf182",
+    "route_id": "fce98be0-39f2-5d75-be17-6646af2c6242",
+    "departure_date": "2026-08-28T02:00:00Z",
+    "arrival_date": "2026-08-29T06:00:00Z",
+    "total_capacity_ton": "1038.2",
+    "used_capacity_ton": "259.6",
+    "remaining_capacity_ton": "778.6",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "28acf5e4-808a-5973-ba96-f94528ccde19",
+    "ship_id": "22b31b58-2d63-5c2a-9a21-ea79d7a1df19",
+    "route_id": "137212f7-3aea-5d94-886b-f8c7e7a84210",
+    "departure_date": "2026-08-30T02:00:00Z",
+    "arrival_date": "2026-09-05T06:00:00Z",
+    "total_capacity_ton": "934.7",
+    "used_capacity_ton": "266.4",
+    "remaining_capacity_ton": "668.3",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Manokwari",
+        "eta": "2026-08-31T02:00:00Z"
+      },
+      {
+        "port_id": "Wasior",
+        "eta": "2026-09-01T02:00:00Z"
+      },
+      {
+        "port_id": "Nabire",
+        "eta": "2026-09-02T02:00:00Z"
+      },
+      {
+        "port_id": "Serui",
+        "eta": "2026-09-03T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "81863785-0466-5ec7-b02a-c0ae68232d6f",
+    "ship_id": "6c53ae02-f465-5c36-8645-9bfee6779607",
+    "route_id": "36ba88a2-6728-57ef-b5a5-7507f9bbca96",
+    "departure_date": "2026-09-01T02:00:00Z",
+    "arrival_date": "2026-09-10T06:00:00Z",
+    "total_capacity_ton": "876.8",
+    "used_capacity_ton": "280.6",
+    "remaining_capacity_ton": "596.2",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Tobelo",
+        "eta": "2026-09-02T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "e238f6e2-0c26-50d6-ba08-5c7e676669e5",
+    "ship_id": "76dde7fd-c84f-5843-b479-9be6c6a4b4d0",
+    "route_id": "67c1725b-2743-5558-9cf3-78c644c6daf3",
+    "departure_date": "2026-09-03T02:00:00Z",
+    "arrival_date": "2026-09-04T06:00:00Z",
+    "total_capacity_ton": "1094.7",
+    "used_capacity_ton": "388.6",
+    "remaining_capacity_ton": "706.1",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "16be672f-f786-52da-851c-f9953bca327a",
     "ship_id": "902202aa-35c8-53b5-b43e-7f6bbb3a2208",
-    "route_id": "ab8fcf18-0b2d-52de-a09a-9d518e1bd254",
-    "departure_date": "2026-07-28T07:03:15.958621Z",
-    "arrival_date": "2026-07-30T07:03:15.958621Z",
-    "total_capacity_ton": 1934.7,
-    "used_capacity_ton": 1178.28,
-    "remaining_capacity_ton": 756.42,
+    "route_id": "1db00f7a-84ae-5876-982e-b97f54a869b3",
+    "departure_date": "2026-09-05T02:00:00Z",
+    "arrival_date": "2026-09-06T06:00:00Z",
+    "total_capacity_ton": "1064.1",
+    "used_capacity_ton": "415.0",
+    "remaining_capacity_ton": "649.1",
     "status": "scheduled",
     "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
   },
   {
-    "id": "949353e0-a511-4716-bc84-3a39d7ca1f4c",
+    "id": "04e31c67-083b-52bb-8633-ec58f3f870b0",
+    "ship_id": "5252d3e1-e19f-5fdf-bcd0-7d75ff2a66d9",
+    "route_id": "88d6478c-7e28-5331-968e-9e7e77b138e2",
+    "departure_date": "2026-09-07T02:00:00Z",
+    "arrival_date": "2026-09-09T06:00:00Z",
+    "total_capacity_ton": "1027.3",
+    "used_capacity_ton": "184.9",
+    "remaining_capacity_ton": "842.4",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "2edf835b-4d76-5eb8-b012-894c0a97949e",
+    "ship_id": "6690ed48-7601-5607-b86c-c8e7ad2e624c",
+    "route_id": "5af4892d-9ca5-5546-af11-1762db35bdb0",
+    "departure_date": "2026-09-09T02:00:00Z",
+    "arrival_date": "2026-09-10T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "258.0",
+    "remaining_capacity_ton": "942.0",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "6e700de8-4daf-5db0-b377-24895b9113ea",
+    "ship_id": "0bda3541-3ac2-5be4-a4cf-c9fdf34ef9de",
+    "route_id": "e4dc09c6-5ca2-5ac2-8262-cbddc5aea83d",
+    "departure_date": "2026-09-11T02:00:00Z",
+    "arrival_date": "2026-09-13T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "300.0",
+    "remaining_capacity_ton": "900.0",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "7f29eeac-6ea3-51e7-91ac-f5f6d8fdfff5",
+    "ship_id": "f4e36277-e955-5785-ab07-a1597227d074",
+    "route_id": "e56a409e-851c-5c8a-9a6a-fbcdbeccec42",
+    "departure_date": "2026-09-13T02:00:00Z",
+    "arrival_date": "2026-09-15T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "342.0",
+    "remaining_capacity_ton": "858.0",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "a8b9d4bf-3e73-5a29-b69f-1a99e2346bc2",
+    "ship_id": "746f98e1-cac7-51bf-ac4a-410f8c8ff9f7",
+    "route_id": "717186be-6959-5ef6-9863-4162e5694c79",
+    "departure_date": "2026-09-15T02:00:00Z",
+    "arrival_date": "2026-09-21T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "384.0",
+    "remaining_capacity_ton": "816.0",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Maba",
+        "eta": "2026-09-16T02:00:00Z"
+      },
+      {
+        "port_id": "Morotai",
+        "eta": "2026-09-17T02:00:00Z"
+      },
+      {
+        "port_id": "Tobelo",
+        "eta": "2026-09-18T02:00:00Z"
+      },
+      {
+        "port_id": "Tidore",
+        "eta": "2026-09-19T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "93a70bb4-013c-5588-9ea3-6b91ab82eec3",
+    "ship_id": "bce2f6f8-e282-5543-aab3-e0a2d2973af1",
+    "route_id": "8577a7e4-778f-5604-9b16-77ef91c5f7ce",
+    "departure_date": "2026-09-17T02:00:00Z",
+    "arrival_date": "2026-09-22T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "426.0",
+    "remaining_capacity_ton": "774.0",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Moa",
+        "eta": "2026-09-18T02:00:00Z"
+      },
+      {
+        "port_id": "Kalabahi",
+        "eta": "2026-09-19T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "3cc0dac2-941a-5251-be73-69b90c5ad988",
+    "ship_id": "a497fc0d-67ce-50a4-ab28-5baf5ec1c31c",
+    "route_id": "2fcf8f0a-0331-5685-8cf6-d948b5a9d975",
+    "departure_date": "2026-09-19T02:00:00Z",
+    "arrival_date": "2026-09-21T06:00:00Z",
+    "total_capacity_ton": "1200.0",
+    "used_capacity_ton": "468.0",
+    "remaining_capacity_ton": "732.0",
+    "status": "scheduled",
+    "waypoints": [],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "295cc8bd-eacf-5fae-aeef-45cab88223c4",
+    "ship_id": "bf671a89-c1dd-5471-ae96-f9b7818388a6",
+    "route_id": "4de26b34-81e8-5958-9fcd-3cd06131e385",
+    "departure_date": "2026-09-21T02:00:00Z",
+    "arrival_date": "2026-10-01T06:00:00Z",
+    "total_capacity_ton": "623.0",
+    "used_capacity_ton": "112.1",
+    "remaining_capacity_ton": "510.9",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Dobo",
+        "eta": "2026-09-22T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "71401c5c-d1bc-594b-8769-37e80c1ed16c",
+    "ship_id": "5920dfa5-f45e-5fdf-a988-4950a6eef009",
+    "route_id": "8c899b12-53cd-58ce-84fe-ced6a22d254c",
+    "departure_date": "2026-09-23T02:00:00Z",
+    "arrival_date": "2026-09-25T06:00:00Z",
+    "total_capacity_ton": "745.8",
+    "used_capacity_ton": "160.3",
+    "remaining_capacity_ton": "585.5",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Biaro",
+        "eta": "2026-09-24T02:00:00Z"
+      },
+      {
+        "port_id": "Lirung",
+        "eta": "2026-09-25T02:00:00Z"
+      },
+      {
+        "port_id": "Melangoane",
+        "eta": "2026-09-26T02:00:00Z"
+      },
+      {
+        "port_id": "Kakorotan",
+        "eta": "2026-09-27T02:00:00Z"
+      },
+      {
+        "port_id": "Miangas",
+        "eta": "2026-09-28T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "c17e13a7-64f0-593f-90ae-4a03de36edb1",
+    "ship_id": "6d4c48af-30d5-59e2-be80-4778a244c26a",
+    "route_id": "94e167e9-63fc-5a49-80e7-df505b985697",
+    "departure_date": "2026-09-25T02:00:00Z",
+    "arrival_date": "2026-09-26T06:00:00Z",
+    "total_capacity_ton": "621.1",
+    "used_capacity_ton": "155.3",
+    "remaining_capacity_ton": "465.8",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Kahakitang",
+        "eta": "2026-09-26T02:00:00Z"
+      },
+      {
+        "port_id": "Buhias",
+        "eta": "2026-09-27T02:00:00Z"
+      },
+      {
+        "port_id": "Tagulandang",
+        "eta": "2026-09-28T02:00:00Z"
+      },
+      {
+        "port_id": "Biaro",
+        "eta": "2026-09-29T02:00:00Z"
+      },
+      {
+        "port_id": "Lirung",
+        "eta": "2026-09-30T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "571cbffa-16df-5750-92f3-a72b19dc53c7",
+    "ship_id": "47681bc7-98a6-5b54-ab8c-e5e386ccf182",
+    "route_id": "7cba4cbd-7485-557d-a790-07b5fc212350",
+    "departure_date": "2026-09-27T02:00:00Z",
+    "arrival_date": "2026-10-02T06:00:00Z",
+    "total_capacity_ton": "1038.2",
+    "used_capacity_ton": "295.9",
+    "remaining_capacity_ton": "742.3",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Pangkal Balam",
+        "eta": "2026-09-28T02:00:00Z"
+      },
+      {
+        "port_id": "Tarempa",
+        "eta": "2026-09-29T02:00:00Z"
+      },
+      {
+        "port_id": "Natuna",
+        "eta": "2026-09-30T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "933b749c-9fa0-5f54-8afe-efba428b4c0c",
+    "ship_id": "22b31b58-2d63-5c2a-9a21-ea79d7a1df19",
+    "route_id": "3bdb5211-cedf-5cf0-908b-ed1b7ec15b8f",
+    "departure_date": "2026-09-29T02:00:00Z",
+    "arrival_date": "2026-10-05T06:00:00Z",
+    "total_capacity_ton": "934.7",
+    "used_capacity_ton": "299.1",
+    "remaining_capacity_ton": "635.6",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Fakfak",
+        "eta": "2026-09-30T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "75ab70d0-4e5f-5a5d-a642-61f9dd50efa8",
+    "ship_id": "6c53ae02-f465-5c36-8645-9bfee6779607",
+    "route_id": "23bfdc98-2d52-5d99-8134-662624155c3c",
+    "departure_date": "2026-10-01T02:00:00Z",
+    "arrival_date": "2026-10-04T06:00:00Z",
+    "total_capacity_ton": "876.8",
+    "used_capacity_ton": "311.3",
+    "remaining_capacity_ton": "565.5",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Calabai (Dompu)",
+        "eta": "2026-10-02T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "0ae8a6b7-f5ba-5957-b108-98e47a7c6547",
+    "ship_id": "76dde7fd-c84f-5843-b479-9be6c6a4b4d0",
+    "route_id": "3c89e8dc-54ea-5daa-8f65-c61ad080fcd7",
+    "departure_date": "2026-10-03T02:00:00Z",
+    "arrival_date": "2026-10-08T06:00:00Z",
+    "total_capacity_ton": "1094.7",
+    "used_capacity_ton": "426.9",
+    "remaining_capacity_ton": "667.8",
+    "status": "scheduled",
+    "waypoints": [
+      {
+        "port_id": "Belang Belang",
+        "eta": "2026-10-04T02:00:00Z"
+      },
+      {
+        "port_id": "Sangatta",
+        "eta": "2026-10-05T02:00:00Z"
+      },
+      {
+        "port_id": "Nunukan",
+        "eta": "2026-10-06T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
+  },
+  {
+    "id": "acf4ee5f-933c-51a8-86d4-27ddbcb67c88",
     "ship_id": "902202aa-35c8-53b5-b43e-7f6bbb3a2208",
-    "route_id": "6d70c565-6779-5b3a-a96c-420b225aa6a4",
-    "departure_date": "2026-08-02T07:03:15.958621Z",
-    "arrival_date": "2026-08-03T07:03:15.958621Z",
-    "total_capacity_ton": 1934.7,
-    "used_capacity_ton": 1279.14,
-    "remaining_capacity_ton": 655.56,
+    "route_id": "061bb93b-55cf-5951-84f6-6851244f29a6",
+    "departure_date": "2026-10-05T02:00:00Z",
+    "arrival_date": "2026-10-10T06:00:00Z",
+    "total_capacity_ton": "1064.1",
+    "used_capacity_ton": "191.5",
+    "remaining_capacity_ton": "872.6",
     "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
+    "waypoints": [
+      {
+        "port_id": "Makassar",
+        "eta": "2026-10-06T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
   },
   {
-    "id": "96a6c9a2-a22c-47af-9abd-ea96780981f4",
+    "id": "71356bb1-f35b-5ea0-b347-4c806f0a420a",
     "ship_id": "5252d3e1-e19f-5fdf-bcd0-7d75ff2a66d9",
-    "route_id": "3a72308a-b1e2-537b-80ba-16c89c972ed4",
-    "departure_date": "2026-07-30T07:03:15.958621Z",
-    "arrival_date": "2026-08-05T07:03:15.958621Z",
-    "total_capacity_ton": 1867.9,
-    "used_capacity_ton": 882.09,
-    "remaining_capacity_ton": 985.81,
+    "route_id": "08559bd9-c2b0-5fcd-b5a4-17fddcd72de3",
+    "departure_date": "2026-10-07T02:00:00Z",
+    "arrival_date": "2026-10-10T06:00:00Z",
+    "total_capacity_ton": "1027.3",
+    "used_capacity_ton": "220.9",
+    "remaining_capacity_ton": "806.4",
     "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "72d8a09f-af55-443e-8d55-12f366e35f83",
-    "ship_id": "5252d3e1-e19f-5fdf-bcd0-7d75ff2a66d9",
-    "route_id": "e9a4ceef-8d7e-56b2-85aa-bc910bef2d99",
-    "departure_date": "2026-08-02T07:03:15.958621Z",
-    "arrival_date": "2026-08-04T07:03:15.958621Z",
-    "total_capacity_ton": 1867.9,
-    "used_capacity_ton": 1462.81,
-    "remaining_capacity_ton": 405.09,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
-  },
-  {
-    "id": "d2f39061-c03f-4d9a-9e18-4a9d097a7b52",
-    "ship_id": "5252d3e1-e19f-5fdf-bcd0-7d75ff2a66d9",
-    "route_id": "eef6720b-4049-58f7-ab48-713b7b82ba9f",
-    "departure_date": "2026-07-30T07:03:15.958621Z",
-    "arrival_date": "2026-08-04T07:03:15.958621Z",
-    "total_capacity_ton": 1867.9,
-    "used_capacity_ton": 942.56,
-    "remaining_capacity_ton": 925.34,
-    "status": "scheduled",
-    "waypoints": [],
-    "created_at": "2026-07-27T07:03:15.958621Z"
+    "waypoints": [
+      {
+        "port_id": "Enggano",
+        "eta": "2026-10-08T02:00:00Z"
+      }
+    ],
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:voyage-v1",
+    "created_at": "2026-07-26T00:00:00Z",
+    "updated_at": "2026-07-26T00:00:00Z"
   }
 ]
