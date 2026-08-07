@@ -1,7 +1,7 @@
 [
   {
-    "id": "e985241d-877b-5d9d-8b03-206133bb304e",
-    "user_id": "89fd4989-022b-5ceb-8354-957ea70f555b",
+    "id": "2ca6a287-a7d1-5fc9-85c7-a0e3aa114a25",
+    "user_id": "c4951038-a245-5033-a4c0-356fd740ab90",
     "business_name": "UD. Utara Samudera",
     "port_id": "7b2881fa-4aa1-5817-a3f7-832828132db0",
     "commodity_ids": [
@@ -11,11 +11,13 @@
     "rating": 3.7,
     "verified": true,
     "address": "Jl. Pelabuhan Enggano No. 70, Kabupaten Bengkulu Utara",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "51d1f9eb-fcb1-5e44-9816-a4905f0f538f",
-    "user_id": "5fa69cfc-f04d-5ec1-b0c0-b99e1377f38e",
+    "id": "595d8229-7949-5828-8c0e-502f25d728fe",
+    "user_id": "43eecb6f-02ee-559d-82bb-9f1545bd41d3",
     "business_name": "PT. Pangkalpinang Sejahtera",
     "port_id": "413853ba-9e5c-5d7d-9cef-4ce8f4dc26bd",
     "commodity_ids": [
@@ -25,13 +27,15 @@
     "rating": 4.4,
     "verified": true,
     "address": "Jl. Pelabuhan Pangkal Balam No. 92, Kota Pangkalpinang",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "47f19733-5b78-5a31-a494-1d305d789250",
-    "user_id": "0a9debb2-05fb-54d1-b005-bba41e72c203",
+    "id": "80764515-3fc6-5094-8042-5befb9b212d1",
+    "user_id": "e2bcaafe-a875-56ac-9ae8-4d39841b8b6f",
     "business_name": "CV. Daya Tani",
-    "port_id": "4448cabd-2f64-5eae-80d3-74e6a98f294e",
+    "port_id": "61b791bd-e007-53d6-86d0-bcf80282d727",
     "commodity_ids": [
       "10b18500-6410-526b-b5ee-b6a458a5e992",
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc"
@@ -39,12 +43,14 @@
     "avg_monthly_volume_ton": 82.8,
     "rating": 3.5,
     "verified": false,
-    "address": "Jl. Pelabuhan Moa No. 90, Kabupaten Maluku Barat Daya",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Kisar (Wonreli) No. 90, Kabupaten Maluku Barat Daya",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "d50918ab-dbc7-5a76-b9f2-d311832b211e",
-    "user_id": "fdf82596-582d-5f3a-b5f4-34299fc0b9c0",
+    "id": "50225451-0116-535b-b43d-e019cff9d36d",
+    "user_id": "2cbab766-8967-5ba5-94fc-d7d123c832d4",
     "business_name": "PT. Talaud Tani",
     "port_id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
     "commodity_ids": [
@@ -55,27 +61,31 @@
     "rating": 4.0,
     "verified": true,
     "address": "Jl. Pelabuhan Lirung No. 34, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "9aed6873-08b9-5921-8284-a30f9a1daa4a",
-    "user_id": "289729cb-9573-50c3-97d9-11694420b00c",
-    "business_name": "CV. Dompu Maluku",
-    "port_id": "36dbd361-6991-50bd-ac33-d3a132c60380",
+    "id": "a723cc8e-f93f-5de6-b661-aab6d917d493",
+    "user_id": "cdfdcae8-272b-5f20-8659-892c79d22c1c",
+    "business_name": "CV. Timur Maluku",
+    "port_id": "a3659899-fd8e-5737-9e7a-c7c0d04c2dff",
     "commodity_ids": [
       "6666f5d6-82a9-5d5b-bf4d-19c31757b988"
     ],
     "avg_monthly_volume_ton": 17.1,
     "rating": 3.9,
     "verified": true,
-    "address": "Jl. Pelabuhan Calabai (Dompu) No. 47, Kabupaten Dompu",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Waingapu No. 47, Kabupaten Sumba Timur",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "e7989843-79e7-5462-b51d-844616f642be",
-    "user_id": "ca3b6c8e-d849-5a1a-bdeb-17c1871978ae",
-    "business_name": "PT. Timur Hasil Bumi",
-    "port_id": "a3659899-fd8e-5737-9e7a-c7c0d04c2dff",
+    "id": "f2c533ca-0a62-5c60-bcbd-001ef68547d8",
+    "user_id": "ac46180c-fccf-526b-a3d4-999c8bcfd440",
+    "business_name": "PT. Raijua Hasil Bumi",
+    "port_id": "ad043dd3-cde0-51bc-a539-497bb0be0539",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7",
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc",
@@ -84,14 +94,16 @@
     "avg_monthly_volume_ton": 87.0,
     "rating": 4.8,
     "verified": true,
-    "address": "Jl. Pelabuhan Waingapu No. 59, Kabupaten Sumba Timur",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Sabu No. 59, Kabupaten Sabu Raijua",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "e4721b9d-a9dd-5f0f-86b4-5c393b7d2336",
-    "user_id": "2befc6f2-6526-51a2-9f2f-cb1d448d7596",
-    "business_name": "PT. Baubau Nusantara",
-    "port_id": "043c3644-4a70-5bfe-a486-c9751820c65f",
+    "id": "2582e799-77aa-5c04-b80c-3f1615aad9bc",
+    "user_id": "757ede48-53da-5301-95cd-a098abe1e7cc",
+    "business_name": "PT. Selayar Nusantara",
+    "port_id": "7c4f05fe-f420-5fb7-87ab-9bf0ef89f23f",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7",
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc"
@@ -99,12 +111,14 @@
     "avg_monthly_volume_ton": 73.2,
     "rating": 4.5,
     "verified": true,
-    "address": "Jl. Pelabuhan Bau Bau No. 82, Kota Baubau",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Sanni No. 82, Kabupaten Kepulauan Selayar",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "b447f35d-0ab5-5240-b696-ebefc3413d81",
-    "user_id": "4d5b6a98-ccf2-59a8-b6bf-bee3fd49183f",
+    "id": "e44a8846-b618-59bd-b4ab-e98ed09b9644",
+    "user_id": "04af2a03-4590-5216-9ed9-87e695a542ce",
     "business_name": "PT. Mamuju Maju",
     "port_id": "430d98f7-56b0-501b-9399-a624e98967d9",
     "commodity_ids": [
@@ -115,13 +129,15 @@
     "rating": 4.8,
     "verified": true,
     "address": "Jl. Pelabuhan Belang Belang No. 30, Kabupaten Mamuju",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "cef95083-b3ad-53c0-8ec4-f04b45bcb0ba",
-    "user_id": "8671aaab-7f2a-5f0f-bcc8-dd8b3812fe2a",
-    "business_name": "CV. Wondama Timur",
-    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
+    "id": "23c10a5c-f509-5349-a961-fddf6d96d687",
+    "user_id": "8cd15447-6762-54bb-a93f-d1bf471c2016",
+    "business_name": "CV. Selatan Timur",
+    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
     "commodity_ids": [
       "d641502d-275c-5bbe-b730-cf77f6bd912a",
       "331aba25-247f-55e6-a8d0-c11e69bb19a7"
@@ -129,28 +145,32 @@
     "avg_monthly_volume_ton": 92.2,
     "rating": 4.4,
     "verified": true,
-    "address": "Jl. Pelabuhan Wasior No. 28, Kabupaten Teluk Wondama",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Oransbari No. 28, Kabupaten Manokwari Selatan",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "eb2b8680-018a-5ee6-8229-972d77275d5b",
-    "user_id": "2ee67ae5-7705-5585-acf4-9408471f5408",
-    "business_name": "UD. Timur Papua",
-    "port_id": "b1f2e734-eab2-56df-a73d-6b5eb732b3ce",
+    "id": "348d52f1-a365-5bc6-9796-452d7932695a",
+    "user_id": "1d633584-1030-5888-905e-520a7811b3a0",
+    "business_name": "UD. Wakatobi Papua",
+    "port_id": "f78f4e54-73b1-5df0-a07e-6327013dee5d",
     "commodity_ids": [
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc"
     ],
     "avg_monthly_volume_ton": 22.6,
     "rating": 4.6,
     "verified": true,
-    "address": "Jl. Pelabuhan Maba No. 96, Kabupaten Halmahera Timur",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Wanci No. 96, Kabupaten Wakatobi",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "58a41e5a-0975-59a0-9cfa-ebc36f5658b9",
-    "user_id": "a6ceba9a-1320-5e49-a9f2-6c8de1e46e64",
-    "business_name": "UD. Yapen Timur",
-    "port_id": "5446e086-0f1c-5c9e-9610-9f6b5cd9656f",
+    "id": "b106e5a2-ef6e-5058-a19b-fdc5cb5a811c",
+    "user_id": "c4edfca8-b0cc-53c6-a0e4-b86c7b02584e",
+    "business_name": "UD. Sarmi Timur",
+    "port_id": "b0610b75-d74e-5f59-bb72-0006f59c5b8c",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7",
       "7271328c-f68a-545f-a91d-05220058b82f"
@@ -158,12 +178,14 @@
     "avg_monthly_volume_ton": 55.9,
     "rating": 3.6,
     "verified": true,
-    "address": "Jl. Pelabuhan Serui No. 15, Kabupaten Kepulauan Yapen",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Sarmi No. 15, Kabupaten Sarmi",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "0faa99fb-7323-5893-8f28-713cc894ac34",
-    "user_id": "1df9750a-9c0f-515e-ab13-30c63e5f4707",
+    "id": "5a114433-e1c0-5775-8054-71ad7ed20a31",
+    "user_id": "c6832840-a76f-504b-8819-d0da5b0cb8ff",
     "business_name": "UD. Makassar Jaya",
     "port_id": "0c1cc2e1-49c3-5850-a2ff-1efa9d5bd343",
     "commodity_ids": [
@@ -175,11 +197,13 @@
     "rating": 4.2,
     "verified": true,
     "address": "Jl. Pelabuhan Makassar No. 71, Kota Makassar",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "77bd9c7d-13f7-5dad-b7c5-f22ea329b850",
-    "user_id": "5fb4d2c8-0ae4-56ad-93ee-a0c41398bd48",
+    "id": "00a42d97-c555-5195-851a-8ea10e850a27",
+    "user_id": "0973eb0d-14fb-5a69-b520-7a20bc131248",
     "business_name": "UD. Mentawai Nelayan",
     "port_id": "7d6c98d0-b292-546c-a1a3-e03e00fe465e",
     "commodity_ids": [
@@ -191,11 +215,13 @@
     "rating": 4.2,
     "verified": true,
     "address": "Jl. Pelabuhan Mentawai No. 93, Kabupaten Kepulauan Mentawai",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "83627772-db37-547f-9156-de78adb9c905",
-    "user_id": "39f99512-8655-5131-bb03-f917d39fca24",
+    "id": "b188ffb1-e272-59c9-a8cc-c85ba5f51471",
+    "user_id": "b58aa7e0-c528-5874-810c-bd4f89135e1f",
     "business_name": "UD. Talaud Laut",
     "port_id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
     "commodity_ids": [
@@ -207,13 +233,15 @@
     "rating": 4.6,
     "verified": true,
     "address": "Jl. Pelabuhan Kakorotan No. 100, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "8587f946-35c5-5e03-be76-f5dad1ca5c38",
-    "user_id": "8056aee3-8b7c-52d9-a970-33f5660f6560",
-    "business_name": "PT. Raya Berkah",
-    "port_id": "28d28777-9405-5855-959b-d05b46a2800c",
+    "id": "dbc14974-13cd-5f73-be75-6de2238d440f",
+    "user_id": "456712c3-fe85-53cb-877b-3b0c92f171ac",
+    "business_name": "PT. Yapen Berkah",
+    "port_id": "5446e086-0f1c-5c9e-9610-9f6b5cd9656f",
     "commodity_ids": [
       "ad71db8d-90e4-5eb7-a7a4-d7a81ba4e7d3",
       "07e8516b-f6d9-551f-b6ed-a21aef871019"
@@ -221,12 +249,14 @@
     "avg_monthly_volume_ton": 20.1,
     "rating": 4.0,
     "verified": false,
-    "address": "Jl. Pelabuhan Teba No. 40, Kabupaten Mamberamo Raya",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Serui No. 40, Kabupaten Kepulauan Yapen",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "b5a741be-550f-5bd8-a1eb-b36385f5e1a5",
-    "user_id": "4a275c16-2ab3-55c7-b3da-3314a958b281",
+    "id": "7c7a7581-98af-5cb3-a1fe-67b1d2deb354",
+    "user_id": "10ca1c2d-94bf-5afb-aee8-c2da28f4e282",
     "business_name": "UD. Mamuju Makmur",
     "port_id": "430d98f7-56b0-501b-9399-a624e98967d9",
     "commodity_ids": [
@@ -236,11 +266,13 @@
     "rating": 5.0,
     "verified": true,
     "address": "Jl. Pelabuhan Belang Belang No. 17, Kabupaten Mamuju",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "24312ad8-00f2-5d33-afa4-f476f0616e0f",
-    "user_id": "aea33966-f8df-5db5-b897-fcd41212acf0",
+    "id": "ac30ab9e-a1e6-521a-9bbe-c77d0b15451f",
+    "user_id": "0bd927b1-ae4d-53bc-af52-a5dce90def12",
     "business_name": "UD. Natuna Logistik",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -251,11 +283,13 @@
     "rating": 4.9,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 89, Kabupaten Natuna",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "6d0a4c61-54b3-597f-bb6b-966e5e81a38f",
-    "user_id": "be8120b7-f1ca-52ce-8e80-c54ac8bab701",
+    "id": "e22dd49b-87d9-5170-a6e5-e25d9e32acb2",
+    "user_id": "46445f88-064f-525a-8ace-f55e44facfc2",
     "business_name": "CV. Padang Bina",
     "port_id": "ae316328-0ba6-5ea9-b0c5-4126bd0b895a",
     "commodity_ids": [
@@ -266,25 +300,29 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Teluk Bayur No. 76, Kota Padang",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "5f623e8f-6a4a-502c-b653-a5f5ef05b6bd",
-    "user_id": "c92e3317-950a-51f0-8464-fdaae6527e3f",
-    "business_name": "PT. Tanimbar Hasil Bumi",
-    "port_id": "678de520-3f4d-58c1-89a7-582d0abfb0ca",
+    "id": "87b6ffdf-e45c-54a2-9919-81065c41c3f4",
+    "user_id": "86726d90-c9a0-5820-bcd7-9c8655cff316",
+    "business_name": "PT. Selatan Hasil Bumi",
+    "port_id": "92d64983-b4cc-56c3-8d62-ff29a401fbd6",
     "commodity_ids": [
       "07e8516b-f6d9-551f-b6ed-a21aef871019"
     ],
     "avg_monthly_volume_ton": 30.6,
     "rating": 4.9,
     "verified": false,
-    "address": "Jl. Pelabuhan Saumlaki No. 10, Kabupaten Kepulauan Tanimbar",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Namrole No. 10, Kabupaten Buru Selatan",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "5df59bd8-65bd-5199-b9e4-2e7607254e0e",
-    "user_id": "e633b9f9-5485-5239-81f8-74842d722aa4",
+    "id": "9276ad0d-511f-5697-baf4-bbd368be0b51",
+    "user_id": "c4283113-b294-52a5-a67d-4336da3002b1",
     "business_name": "UD. Talaud Papua",
     "port_id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
     "commodity_ids": [
@@ -294,11 +332,13 @@
     "rating": 4.9,
     "verified": true,
     "address": "Jl. Pelabuhan Lirung No. 61, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "e3f9542b-990e-5ac8-a439-5919a3f9bd20",
-    "user_id": "851c7987-9fbf-524b-94a6-584a7914e6af",
+    "id": "a4d84798-512e-5b72-a3e4-8dc4f4652803",
+    "user_id": "998da461-b4c8-5cb7-a1ac-70e030c5c6df",
     "business_name": "CV. Natuna Pangan",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -308,11 +348,13 @@
     "rating": 4.0,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 94, Kabupaten Natuna",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "3cd153fc-f2b2-58f5-874c-4a3f82cd0101",
-    "user_id": "fe2d47c8-406c-584f-b7fb-4309a79a5db1",
+    "id": "5d299f9e-ce8f-529d-b4e7-fff8b63a5599",
+    "user_id": "ea8f477c-7b1d-5182-9f7a-746f896febe2",
     "business_name": "PT. Utara Jaya",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -324,11 +366,13 @@
     "rating": 4.3,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 24, Kota Jakarta Utara",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "43d7b157-6c32-5836-8a80-9e0b9aecfffa",
-    "user_id": "39d48920-99ca-5a61-99b9-a6be3cdd0334",
+    "id": "294e4027-ed77-5765-9859-b7bbd1741bdf",
+    "user_id": "d26425a6-c1f8-5ff7-beea-99dea3105ca3",
     "business_name": "PT. Mamuju Maju",
     "port_id": "430d98f7-56b0-501b-9399-a624e98967d9",
     "commodity_ids": [
@@ -340,11 +384,13 @@
     "rating": 4.8,
     "verified": false,
     "address": "Jl. Pelabuhan Belang Belang No. 97, Kabupaten Mamuju",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "6df22ebd-9847-5173-961a-d0ef04a7ca47",
-    "user_id": "f98e89c7-7964-5a1e-9501-e4f9dbc5490f",
+    "id": "0faa6d10-83c6-5c77-8f27-d36d2c92635b",
+    "user_id": "3a2e0bf2-6bd6-5031-b655-3c06bd92a3a3",
     "business_name": "CV. Nunukan Papua",
     "port_id": "ecd590a5-76a9-5134-acfe-36a66dc8871c",
     "commodity_ids": [
@@ -355,11 +401,13 @@
     "rating": 3.7,
     "verified": true,
     "address": "Jl. Pelabuhan P. Sebatik No. 50, Kabupaten Nunukan",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "b5644335-491e-5b68-98f2-e0a19b33d4bf",
-    "user_id": "20dbfd78-976b-53f2-87fc-ea48ce113834",
+    "id": "0c331b48-9d89-5c8d-aee9-741c4061c5af",
+    "user_id": "bb15fb2c-8270-5ac2-8596-7c1c52e9bf84",
     "business_name": "CV. Natuna Jaya",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -371,25 +419,29 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 95, Kabupaten Natuna",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "30eec3ca-7088-51d6-939d-53ca644d2426",
-    "user_id": "1a99d289-e915-5d95-8e49-82b50c804bf2",
-    "business_name": "CV. Fakfak Hasil Bumi",
-    "port_id": "a07b9c47-0b9f-5175-9159-77312639f91b",
+    "id": "677eaaae-0c37-59cc-ae11-cc87b6798a59",
+    "user_id": "65403356-760b-564d-b601-9280301cf5c4",
+    "business_name": "CV. Dompu Hasil Bumi",
+    "port_id": "36dbd361-6991-50bd-ac33-d3a132c60380",
     "commodity_ids": [
       "10b18500-6410-526b-b5ee-b6a458a5e992"
     ],
     "avg_monthly_volume_ton": 52.9,
     "rating": 4.9,
     "verified": true,
-    "address": "Jl. Pelabuhan Fakfak No. 8, Kabupaten Fakfak",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Calabai (Dompu) No. 8, Kabupaten Dompu",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "c1645d26-dd0f-5f74-9935-3b66b0c9c007",
-    "user_id": "16374890-2566-5852-9fc0-8638b587855d",
+    "id": "5830bf51-3e57-5d30-83e2-85520f20e8fc",
+    "user_id": "2a69960b-b533-5332-8cd6-34803b644849",
     "business_name": "PT. Natuna Nelayan",
     "port_id": "fd4b5bc3-32a1-5711-b6cb-baeca8d1267f",
     "commodity_ids": [
@@ -401,11 +453,13 @@
     "rating": 4.8,
     "verified": true,
     "address": "Jl. Pelabuhan Serasan No. 77, Kabupaten Natuna",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "80f3f88e-7fe5-57ae-9c95-d061c96e1824",
-    "user_id": "37f25c76-20a5-566d-8118-559c7ac2b126",
+    "id": "29f7e48e-c6e9-57a0-ac8e-68c6d81b18da",
+    "user_id": "e22f4f64-033e-5d1b-98a4-e0668c072749",
     "business_name": "CV. Utara Industri",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -417,11 +471,13 @@
     "rating": 4.6,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 51, Kota Jakarta Utara",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "02bf0199-8883-5e29-a0b8-661e4516a4e6",
-    "user_id": "a6a6a7ef-9a2e-51af-9d0e-109b334bc36a",
+    "id": "4eb632c5-33ce-5c24-a3cb-65f54a7cb545",
+    "user_id": "dc383b5f-705a-5633-8986-c3fdffe219f2",
     "business_name": "CV. Padang Bina",
     "port_id": "ae316328-0ba6-5ea9-b0c5-4126bd0b895a",
     "commodity_ids": [
@@ -431,13 +487,15 @@
     "rating": 5.0,
     "verified": false,
     "address": "Jl. Pelabuhan Teluk Bayur No. 10, Kota Padang",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "67e42092-26f3-516a-835a-35308a7b4b03",
-    "user_id": "1ea87ab6-7620-5016-85ad-1e38cd0bceb5",
-    "business_name": "CV. Aru Laut",
-    "port_id": "3056d814-05c6-5b11-a2d6-03cb4a6e7719",
+    "id": "a8eb67e3-0999-5530-b57e-6fc8ce86d714",
+    "user_id": "181d221b-8a9a-5583-80d4-95979839d87d",
+    "business_name": "CV. Utara Laut",
+    "port_id": "5147488a-1a4e-506a-af53-e7952622a32a",
     "commodity_ids": [
       "d641502d-275c-5bbe-b730-cf77f6bd912a",
       "331aba25-247f-55e6-a8d0-c11e69bb19a7"
@@ -445,26 +503,30 @@
     "avg_monthly_volume_ton": 43.3,
     "rating": 3.7,
     "verified": false,
-    "address": "Jl. Pelabuhan Dobo No. 91, Kabupaten Kepulauan Aru",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Tobelo No. 91, Kabupaten Halmahera Utara",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "4e9f130a-42db-5149-a00f-e99d16d4cbc5",
-    "user_id": "1c194283-a2b1-5e03-b4fd-0f6bb78fc1c2",
-    "business_name": "UD. Wondama Maluku",
-    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
+    "id": "8cb6d498-3e9a-5c95-987b-1a7d39220da6",
+    "user_id": "20eb4fd0-a5cf-5ed3-8466-4bccd5d4d1fc",
+    "business_name": "UD. Selatan Maluku",
+    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
     "commodity_ids": [
       "f3112d93-5db1-558e-a351-f21064c53bc2"
     ],
     "avg_monthly_volume_ton": 36.9,
     "rating": 4.5,
     "verified": false,
-    "address": "Jl. Pelabuhan Wasior No. 18, Kabupaten Teluk Wondama",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Oransbari No. 18, Kabupaten Manokwari Selatan",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "fac35ab5-d6db-58cc-b284-f1e328fe32d2",
-    "user_id": "d37178f4-2a31-543f-828f-a035c85b230f",
+    "id": "36703782-d07d-5efa-8ba3-9b295ea8002e",
+    "user_id": "79d5cb5e-8d5f-56f6-9aea-64b51e461e43",
     "business_name": "UD. Utara Agro",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -474,11 +536,13 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 88, Kota Jakarta Utara",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "a2a7f380-2d77-564e-a316-9b429f14eaa3",
-    "user_id": "06353088-0fd5-5325-bfb8-6f19ea4e757a",
+    "id": "5cc7b066-4184-5e70-b309-df7ba72867b7",
+    "user_id": "164be8d1-46cb-513b-bd6d-4c4b5a505fbe",
     "business_name": "UD. Talaud Papua",
     "port_id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
     "commodity_ids": [
@@ -489,13 +553,15 @@
     "rating": 4.7,
     "verified": true,
     "address": "Jl. Pelabuhan Kakorotan No. 43, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "bf38dad0-939e-523c-981f-c786c77e81ed",
-    "user_id": "a1eed94b-70cd-5f48-a9aa-ec0289fafff2",
-    "business_name": "CV. Timur Laut",
-    "port_id": "0bb9f281-857e-584a-8955-930e5f107439",
+    "id": "2ea060a2-c358-5bb3-bb5a-3fbff8cb8489",
+    "user_id": "a4cc81b4-b4de-56c1-ae46-26bf29620c42",
+    "business_name": "CV. Alor Laut",
+    "port_id": "04f0117e-8c63-549e-b639-678d8ec146a7",
     "commodity_ids": [
       "ad71db8d-90e4-5eb7-a7a4-d7a81ba4e7d3",
       "f3112d93-5db1-558e-a351-f21064c53bc2",
@@ -504,14 +570,16 @@
     "avg_monthly_volume_ton": 60.5,
     "rating": 3.7,
     "verified": false,
-    "address": "Jl. Pelabuhan Larantuka No. 89, Kabupaten Flores Timur",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Kalabahi No. 89, Kabupaten Alor",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "1a1a5fbe-744f-57a5-b2e5-46decf757ce4",
-    "user_id": "330a3744-b7f6-5db0-a212-72badb4034e5",
+    "id": "63eeb856-e437-52a4-92f9-e81c7b71f1d7",
+    "user_id": "6e88b32a-314d-55fb-a881-0af70041265b",
     "business_name": "PT. Daya Nusantara",
-    "port_id": "4448cabd-2f64-5eae-80d3-74e6a98f294e",
+    "port_id": "61b791bd-e007-53d6-86d0-bcf80282d727",
     "commodity_ids": [
       "f3112d93-5db1-558e-a351-f21064c53bc2",
       "7271328c-f68a-545f-a91d-05220058b82f",
@@ -520,12 +588,14 @@
     "avg_monthly_volume_ton": 21.5,
     "rating": 4.0,
     "verified": false,
-    "address": "Jl. Pelabuhan Moa No. 6, Kabupaten Maluku Barat Daya",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Kisar (Wonreli) No. 6, Kabupaten Maluku Barat Daya",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "90a1c0aa-8bd5-500e-b10e-9a20d009ebfa",
-    "user_id": "4cae8868-0e3c-5600-820c-9210b4df9e14",
+    "id": "07a3dea1-7e5e-5e84-a767-928ffcfd0f8a",
+    "user_id": "ce5e9006-e676-581d-8b4f-10439340535d",
     "business_name": "UD. Biaro Tani",
     "port_id": "9043b0f1-9493-5a3e-9371-8ca890d68d45",
     "commodity_ids": [
@@ -537,53 +607,61 @@
     "rating": 4.6,
     "verified": false,
     "address": "Jl. Pelabuhan Biaro No. 31, Kabupaten Kepulauan Siau Tagulandang Biaro",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "29ac63cb-94af-5f4d-a19c-e0341f9cb2ca",
-    "user_id": "38806d77-9e4c-5c40-85c7-9ec3e8bc7d4f",
-    "business_name": "PT. Wondama Timur",
-    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
+    "id": "795df237-10c4-541f-a0bd-e9fad589ec1b",
+    "user_id": "b62eab96-2d73-527c-a340-b1248818b476",
+    "business_name": "PT. Selatan Timur",
+    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
     "commodity_ids": [
       "7271328c-f68a-545f-a91d-05220058b82f"
     ],
     "avg_monthly_volume_ton": 76.3,
     "rating": 4.0,
     "verified": false,
-    "address": "Jl. Pelabuhan Wasior No. 86, Kabupaten Teluk Wondama",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Oransbari No. 86, Kabupaten Manokwari Selatan",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "a9836b6c-21e8-5584-9f7d-7e3abcb1a124",
-    "user_id": "f6e37c16-6329-502d-8011-f38015455a1f",
-    "business_name": "PT. Wondama Samudera",
-    "port_id": "a10e9ce1-d0f6-5a69-b6b6-1df3cce5135a",
+    "id": "ffd560f9-85ec-5e21-be3d-8942069a1d4e",
+    "user_id": "71fbd329-2f27-5537-803c-23a6e332b479",
+    "business_name": "PT. Selatan Samudera",
+    "port_id": "ecf3b2ee-142b-556f-94b1-9acf6411eb8b",
     "commodity_ids": [
       "d641502d-275c-5bbe-b730-cf77f6bd912a"
     ],
     "avg_monthly_volume_ton": 44.4,
     "rating": 3.6,
     "verified": true,
-    "address": "Jl. Pelabuhan Wasior No. 26, Kabupaten Teluk Wondama",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Oransbari No. 26, Kabupaten Manokwari Selatan",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "bd8d024b-cea8-5737-888a-c0be469b331d",
-    "user_id": "3f831629-e8a8-56aa-8df6-2d455a7c9772",
-    "business_name": "CV. Sula Samudera",
-    "port_id": "8b9e79c6-499a-5933-a3c5-23258e473285",
+    "id": "68124926-cd41-51fb-b947-03ae08f5549d",
+    "user_id": "90219ca7-ae2f-5274-8c14-bd06d6fdcd8a",
+    "business_name": "CV. Tengah Samudera",
+    "port_id": "44c427a8-c555-5ddc-9c69-d3ad3946a748",
     "commodity_ids": [
       "331aba25-247f-55e6-a8d0-c11e69bb19a7"
     ],
     "avg_monthly_volume_ton": 12.1,
     "rating": 3.8,
     "verified": true,
-    "address": "Jl. Pelabuhan Sanana No. 9, Kabupaten Kepulauan Sula",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Pulau Gebe No. 9, Kabupaten Halmahera Tengah",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "96ef3eb2-2b52-58db-9874-631e445fe45d",
-    "user_id": "b9a4b180-6fba-5d16-bc8c-473f7f74a1b7",
+    "id": "08508a22-4c44-52bc-a28d-70308c21b78f",
+    "user_id": "892f8db6-ea31-53be-9b74-4ff72027c2c0",
     "business_name": "CV. Talaud Maluku",
     "port_id": "e9e01da1-5232-5eb9-9bb1-003d8fdecdcf",
     "commodity_ids": [
@@ -594,11 +672,13 @@
     "rating": 3.7,
     "verified": false,
     "address": "Jl. Pelabuhan Lirung No. 23, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "c9f7e655-7379-5dad-9cd4-ca1c26e81346",
-    "user_id": "5ea5f272-4319-53e1-8e7c-32de87f55ee3",
+    "id": "2e09006d-7184-52db-9dee-6d289c96847a",
+    "user_id": "0ffbfb6d-8486-5d2b-993c-c7b93995dd0a",
     "business_name": "PT. Talaud Nelayan",
     "port_id": "316cf7eb-1444-5ff3-bf4a-c1e46f124108",
     "commodity_ids": [
@@ -610,11 +690,13 @@
     "rating": 5.0,
     "verified": true,
     "address": "Jl. Pelabuhan Kakorotan No. 74, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "3d81b386-2aef-58b3-8759-d20561099a6a",
-    "user_id": "33b54b87-e636-50d7-96b9-fa48f4a7a63e",
+    "id": "cc56e0d5-88c3-56fb-829c-092ebbd13c99",
+    "user_id": "d71227df-f3e1-50d1-8b7a-9e69a67e1099",
     "business_name": "UD. Surabaya Jaya",
     "port_id": "2eeeaa5b-850c-5d20-9f75-86d3133a33d1",
     "commodity_ids": [
@@ -624,11 +706,13 @@
     "rating": 4.3,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Perak No. 95, Kota Surabaya",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "1d315ef6-e7b0-5b1b-9492-15ad92180139",
-    "user_id": "8e34e97e-c75f-5624-b781-584a2b38c855",
+    "id": "4b3350d1-3b47-5fca-adcc-7c79dd09c8f1",
+    "user_id": "8bd75048-7fac-5765-bcd2-71f34ce0b218",
     "business_name": "CV. Selatan Timur",
     "port_id": "931e7fb5-9acf-5114-8042-579a70801444",
     "commodity_ids": [
@@ -638,13 +722,15 @@
     "rating": 4.5,
     "verified": true,
     "address": "Jl. Pelabuhan Amurang No. 39, Kabupaten Minahasa Selatan",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "3cc9f1ad-7cb1-5d0e-a7ed-fee88f52368b",
-    "user_id": "473a0ad7-4270-55e4-884c-36ffe5489a37",
-    "business_name": "CV. Sikka Nusantara",
-    "port_id": "6dad2996-9f37-51f9-9068-ed317c35a0ab",
+    "id": "8c3592f4-7725-5208-9022-71b4eebd1a0e",
+    "user_id": "66d8f63d-a52b-50a5-89c5-ebb4aec9fb8f",
+    "business_name": "CV. Lembata Nusantara",
+    "port_id": "9d11a008-6cdd-514e-838a-0189887669ef",
     "commodity_ids": [
       "5469bc2d-080a-5546-b9d4-b7ebf4dfe6dc",
       "f3112d93-5db1-558e-a351-f21064c53bc2"
@@ -652,12 +738,14 @@
     "avg_monthly_volume_ton": 21.5,
     "rating": 4.1,
     "verified": false,
-    "address": "Jl. Pelabuhan Maumere No. 87, Kabupaten Sikka",
-    "created_at": "2026-07-27T05:49:24Z"
+    "address": "Jl. Pelabuhan Lewoleba No. 87, Kabupaten Lembata",
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "cb2a6ad0-7b0a-5b76-88e1-2126813116a2",
-    "user_id": "e28c6b48-7773-5483-935f-61602197f2a0",
+    "id": "8e06f8dc-c8ef-551c-8507-3d336ef32db1",
+    "user_id": "9c6473e3-15b6-5ec1-ace3-d8d7db494ed7",
     "business_name": "UD. Timur Berkah",
     "port_id": "00728062-ca09-5e73-900d-20d5bd6cc24b",
     "commodity_ids": [
@@ -668,11 +756,13 @@
     "rating": 4.0,
     "verified": true,
     "address": "Jl. Pelabuhan Sangatta No. 75, Kabupaten Kutai Timur",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "8a09a298-bab3-5f76-8087-be9dfb967fce",
-    "user_id": "f00cb1de-9e75-58d6-a33d-01ef04971784",
+    "id": "08b03bd9-381c-57c9-bf73-221329ef4462",
+    "user_id": "a3357c5d-1b93-57c9-909e-cbad29681c9e",
     "business_name": "CV. Talaud Papua",
     "port_id": "78bfd18b-cec0-5b5d-bdf9-28f30a860688",
     "commodity_ids": [
@@ -683,11 +773,13 @@
     "rating": 4.9,
     "verified": true,
     "address": "Jl. Pelabuhan Miangas No. 22, Kabupaten Kepulauan Talaud",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "278c5b59-0da1-5ae9-9485-46a8619607a6",
-    "user_id": "ed12b329-a501-523d-8c38-690833e7c585",
+    "id": "7dced5c3-7a6f-5cd4-b068-91109df00cf9",
+    "user_id": "c3dad773-98a1-55cf-acd8-e88b4a825c06",
     "business_name": "UD. Sangihe Berkah",
     "port_id": "61a4aaec-ea9c-5f47-9677-c88320c62188",
     "commodity_ids": [
@@ -698,11 +790,13 @@
     "rating": 3.8,
     "verified": true,
     "address": "Jl. Pelabuhan Marore No. 4, Kabupaten Kepulauan Sangihe",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "1044405a-a3f5-56f0-8c83-314d8c6fd95c",
-    "user_id": "ebdbabcd-c120-5967-a331-e93eead12949",
+    "id": "2c7ab570-debc-5ba2-893b-662a62f6d045",
+    "user_id": "6b0b6556-2367-57f3-b268-c3080d8330a0",
     "business_name": "UD. Natuna Makmur",
     "port_id": "76f3059a-3d3f-56f9-8cae-6efea4d42bfe",
     "commodity_ids": [
@@ -713,11 +807,13 @@
     "rating": 4.1,
     "verified": true,
     "address": "Jl. Pelabuhan Natuna No. 19, Kabupaten Natuna",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "f2a7edb9-54db-515a-93fe-67a341286a09",
-    "user_id": "752a3c6e-bc99-5c4c-b31b-0a6875eac117",
+    "id": "183c8aa5-a2e5-5d3c-86dc-81518e78c5bb",
+    "user_id": "b15de69c-45eb-5c3e-bb7c-d972ce03cdb8",
     "business_name": "PT. Mentawai Timur",
     "port_id": "7d6c98d0-b292-546c-a1a3-e03e00fe465e",
     "commodity_ids": [
@@ -727,11 +823,13 @@
     "rating": 4.5,
     "verified": true,
     "address": "Jl. Pelabuhan Mentawai No. 72, Kabupaten Kepulauan Mentawai",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   },
   {
-    "id": "ee3b5056-cb8a-5915-9e54-161c332f2f0a",
-    "user_id": "a5dae6de-2a25-5566-ac40-13ce0f432cd1",
+    "id": "1453b331-28fb-5cf8-8de9-3bd5ee867f13",
+    "user_id": "47592810-7a30-5d14-807d-94ddc418e9ac",
     "business_name": "CV. Utara Logistik",
     "port_id": "5691889c-1195-59b4-8b50-915cc50c78e5",
     "commodity_ids": [
@@ -742,6 +840,8 @@
     "rating": 4.8,
     "verified": true,
     "address": "Jl. Pelabuhan Tanjung Priok No. 93, Kota Jakarta Utara",
-    "created_at": "2026-07-27T05:49:24Z"
+    "created_at": "2026-07-26T00:00:00Z",
+    "is_synthetic": true,
+    "provenance": "opticargo-data:competition:supplier-generator-v2"
   }
 ]
