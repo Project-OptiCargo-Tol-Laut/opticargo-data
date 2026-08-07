@@ -9,6 +9,7 @@ import json
 import uuid
 import random
 from datetime import datetime, timezone
+import os
 from pathlib import Path
 
 SHIPS_NAMESPACE = uuid.UUID("d0000000-0000-4000-8000-000000000000")
@@ -17,7 +18,7 @@ OPERATOR_ID = "87a9b0c1-d2e3-4f56-a7b8-c9d0e1f2a3b4" # dummy operator id
 def make_ship_uuid(name: str) -> str:
     return str(uuid.uuid5(SHIPS_NAMESPACE, name.lower().strip()))
 
-now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+now = os.getenv("OPTICARGO_DATASET_TIMESTAMP", "2026-07-26T00:00:00Z")
 
 SHIP_NAMES = [
     "KM Logistik Nusantara 1",
@@ -69,7 +70,9 @@ if __name__ == "__main__":
                 "pollution": "MARPOL"
             },
             "status": "active",
-            "created_at": now
+            "created_at": now,
+            "is_synthetic": True,
+            "provenance": "opticargo-data:synthetic:ships"
         })
 
     out = Path(__file__).parent.parent.parent / 'dataset' / "ships" / "ships.json"
