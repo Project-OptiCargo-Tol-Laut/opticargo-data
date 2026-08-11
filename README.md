@@ -137,22 +137,48 @@ docker compose `
 
 ### Akun demo lokal
 
-Seeder menyediakan akun aktif untuk sembilan role. Akun minimum untuk E2E:
+Seeder menyediakan **sembilan akun presentation deterministik**, satu untuk setiap role.
+Akun `umkm.demo` memakai user ID supplier-backed yang sebelumnya bernama
+`umkm.utara.samudera.01`, sehingga relasi supplier, cargo listing, dan booking seed
+tetap hidup dan dashboard UMKM langsung memiliki data saat demo.
 
-```text
-Admin    : admin.demo / admin@demo.opticargo.id
-Operator : operator.demo / operator@demo.opticargo.id
-UMKM     : umkm.*@demo.opticargo.id (50 supplier users)
-```
+| Role | Username | Email | Password default lokal |
+|---|---|---|---|
+| Admin | `admin.demo` | `admin@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Operator Kapal | `operator.demo` | `operator@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Distributor | `distributor.demo` | `distributor@demo.opticargo.id` | `OptiCargoDemo123!` |
+| UMKM | `umkm.demo` | `umkm@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Pengepul | `pengepul.demo` | `pengepul@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Koperasi | `koperasi.demo` | `koperasi@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Pelabuhan | `pelabuhan.demo` | `pelabuhan@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Pemerintah | `pemerintah.demo` | `pemerintah@demo.opticargo.id` | `OptiCargoDemo123!` |
+| Eksportir | `eksportir.demo` | `eksportir@demo.opticargo.id` | `OptiCargoDemo123!` |
 
-Password tidak disimpan sebagai hash/plaintext di JSON. Seeder membuat hash saat runtime dari:
+Password di tabel adalah **default development lokal**, bukan credential production.
+Seeder tidak menyimpan plaintext password pada `dataset/users/users.json`; seluruh akun
+menerima hash Argon2 yang dibuat saat seed dari:
 
 ```env
 OPTICARGO_DEMO_PASSWORD=OptiCargoDemo123!
 OPTICARGO_PASSWORD_SCHEME=argon2
 ```
 
-Nilai default password di atas hanya untuk **demo development lokal**, bukan secret production. Jika Gateway Anda menggunakan bcrypt, ubah `OPTICARGO_PASSWORD_SCHEME=bcrypt` di environment `data-seed`.
+Jika `OPTICARGO_DEMO_PASSWORD` dioverride di `.env`/Compose, seluruh akun demo memakai
+nilai override tersebut. Untuk melihat daftar akun tanpa password:
+
+```powershell
+python -m opticargo_data.seed --list-demo-accounts
+```
+
+Untuk secara eksplisit menampilkan password lokal yang **sedang ter-resolve**:
+
+```powershell
+python -m opticargo_data.seed --list-demo-accounts --show-demo-password
+```
+
+Jangan menjalankan opsi `--show-demo-password` pada CI/log publik atau screenshot
+presentasi. Gateway 1.0.0 menggunakan Argon2; `OPTICARGO_PASSWORD_SCHEME` selain
+`argon2` sengaja ditolak agar hash seeder selalu kompatibel dengan login Gateway.
 
 
 ### Kompatibilitas kolom persistence Gateway
@@ -261,3 +287,68 @@ python -m opticargo_data.seed --verify-demo-auth
 
 Expected result includes `admin_user_found True` and
 `admin_password_matches True`.
+
+## Load/performance seed v3.2.0
+
+Untuk menguji Frontend/Gateway dengan working set besar tanpa mengganti dataset JSON
+canonical, seeder menyediakan runtime augmentation deterministik:
+
+| `--load-profile` | User tambahan | Supplier tambahan | Voyage + capacity | Cargo listing tambahan | Booking tambahan |
+|---|---:|---:|---:|---:|---:|
+| `none` | 0 | 0 | 0 | 0 | 0 |
+| `small` | 250 | 200 | 200 | 2.000 | 5.000 |
+| `medium` | 1.000 | 800 | 800 | 8.000 | 25.000 |
+| `large` | 3.000 | 2.500 | 2.500 | 25.000 | 100.000 |
+
+Default runtime seed juga menambahkan lima listing `umkm.demo` yang route, availability
+window, volume, dan voyage-nya sengaja dibuat kompatibel. Ini memberi positive scenario
+untuk halaman **Rekomendasi Kapal**. Pada profile load, sekitar 20% listing tambahan
+juga dimiliki `umkm.demo`, sedangkan voyage load memakai armada existing yang dimiliki
+`operator.demo`; karena itu kedua role dapat langsung menguji pagination/filter/matching
+dengan volume besar.
+
+Validasi profile `medium` tanpa PostgreSQL:
+
+```powershell
+python -m opticargo_data.seed `
+  --profile competition `
+  --load-profile medium `
+  --validate-only
+```
+
+Seed profile `medium` melalui Infra saat ini:
+
+```powershell
+docker compose `
+  -p opticargo `
+  --env-file .env `
+  -f docker-compose.yml `
+  -f docker-compose.local.yml `
+  --profile core `
+  --profile gateway `
+  --profile ai `
+  --profile demo `
+  run --rm data-seed `
+  python -m opticargo_data.seed `
+  --profile competition `
+  --idempotent `
+  --load-profile medium
+```
+
+Seeder mencetak durasi dan throughput per tabel (`rows/s`) agar waktu materialisasi DB
+juga terlihat. Untuk benchmark read-only HTTP sesudah seed:
+
+```powershell
+python scripts/benchmark_gateway.py `
+  --username umkm.demo `
+  --requests 100 `
+  --concurrency 10
+```
+
+Script meminta password secara interaktif jika `OPTICARGO_BENCHMARK_PASSWORD` tidak
+diset, dan melaporkan RPS, average latency, p50, p95, serta p99. Dokumentasi lengkap:
+`docs/PERFORMANCE_LOAD_SEED.md`.
+
+Payment, recommendation, review, document, audit, outbox, dan session tidak diinsert
+langsung oleh load seed karena lifecycle/side-effect tabel tersebut dimiliki Gateway dan
+worker. Volume untuk domain tersebut harus dibuat melalui application flow yang sesuai.
