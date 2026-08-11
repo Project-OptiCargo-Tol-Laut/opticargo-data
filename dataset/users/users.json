@@ -105,14 +105,14 @@
   },
   {
     "id": "c4951038-a245-5033-a4c0-356fd740ab90",
-    "username": "umkm.utara.samudera.01",
-    "email": "umkm01@demo.opticargo.id",
+    "username": "umkm.demo",
+    "email": "umkm@demo.opticargo.id",
     "role": "umkm",
     "account_status": "active",
     "company_name": "UD. Utara Samudera",
     "phone": "+628121000001",
     "is_synthetic": true,
-    "provenance": "opticargo-data:competition:supplier-user-v1",
+    "provenance": "opticargo-data:competition:principal-user-v1",
     "created_at": "2026-07-26T00:00:00Z",
     "updated_at": "2026-07-26T00:00:00Z"
   },

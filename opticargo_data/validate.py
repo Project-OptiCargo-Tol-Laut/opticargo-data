@@ -6,6 +6,7 @@ from collections import Counter
 
 from .config import dataset_root
 from .contracts import SharedContractError, validate_all, validate_provenance, validate_shared_manifest
+from .demo_accounts import validate_demo_accounts
 from .io import FILES, load, manifest
 from .normalize import prepare_seed_rows
 
@@ -58,6 +59,10 @@ def validate_competition() -> dict[str, int]:
 
     _unique(data["users"], "username", "users")
     _unique(data["users"], "email", "users")
+    try:
+        validate_demo_accounts(data["users"])
+    except ValueError as exc:
+        raise DatasetValidationError(str(exc)) from exc
 
     port_ids = {r["id"] for r in data["ports"]}
     route_ids = {r["id"] for r in data["routes"]}
