@@ -86,7 +86,7 @@ def validate_provenance(rows: dict[str, list[dict[str, Any]]], *, fallback_times
                 {
                     "source": str(row.get("provenance") or f"opticargo-data:{table}"),
                     "collected_or_generated_at": created,
-                    "transformation_version": "opticargo-data-v3.2.0",
+                    "transformation_version": "opticargo-data-v3.2.1",
                     "is_synthetic": bool(row.get("is_synthetic", False)),
                     "generator_seed": 20260726 if row.get("is_synthetic") else None,
                     "original_external_identifier": None,

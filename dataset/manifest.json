@@ -1,7 +1,7 @@
 {
   "dataset_name": "opticargo-competition",
-  "dataset_version": "3.2.0-competition.1",
-  "generated_at": "2026-08-11T00:00:00Z",
+  "dataset_version": "3.2.1-competition.1",
+  "generated_at": "2026-08-15T00:00:00Z",
   "profile": "competition",
   "reproducible": true,
   "counts": {
@@ -22,6 +22,7 @@
     "Public entity seed contracts are validated with opticargo-shared==1.0.0.",
     "Gateway-only persistence fields such as optimistic-lock version, cargo listing certifications and booking ownership/reference are derived deterministically at seed time.",
     "Runtime presentation scenarios add five guaranteed-match UMKM listings without mutating the canonical JSON artifacts.",
+    "Distributor presentation scenario adds a deterministic supplier, five guaranteed-match listings, and five related booking states.",
     "Optional small/medium/large load profiles expand users, suppliers, voyages, capacities, cargo listings and bookings deterministically for local FE/API performance testing.",
     "Payments/recommendations/audit/outbox/session rows are intentionally not seeded directly; they are produced by Gateway/worker flows."
   ],

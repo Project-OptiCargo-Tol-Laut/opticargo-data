@@ -157,7 +157,8 @@ def print_load_plan(profile: str) -> int:
     print(f"additional_capacities    {plan.voyages}")
     print(f"additional_listings      {plan.cargo_listings}")
     print(f"additional_bookings      {plan.bookings}")
-    print("presentation_listings    5 (unless --no-presentation-scenarios)")
+    print("presentation_listings    5 UMKM + 5 Distributor (unless --no-presentation-scenarios)")
+    print("distributor_demo         supplier + 5 bookings across lifecycle states")
     return 0
 
 
@@ -261,6 +262,9 @@ def main(argv=None):
         for table in TABLE_ORDER:
             print(f"runtime_{table:16s} {len(rows[table])}")
         print(f"presentation_listings    {augmentation_stats['presentation_listings']}")
+        print(f"distributor_supplier     {augmentation_stats['distributor_presentation_supplier']}")
+        print(f"distributor_listings     {augmentation_stats['distributor_presentation_listings']}")
+        print(f"distributor_bookings     {augmentation_stats['distributor_presentation_bookings']}")
         print(f"load_listings            {augmentation_stats['load_listings']}")
         print(f"load_bookings             {augmentation_stats['load_bookings']}")
         print(f"routes_materialized      {normalize_stats['routes_materialized']}")
@@ -307,6 +311,9 @@ def main(argv=None):
     print(f"load_profile             {args.load_profile}")
     print(f"seed_anchor_date         {anchor.isoformat()}")
     print(f"presentation_listings    {augmentation['presentation_listings']}")
+    print(f"distributor_supplier     {augmentation['distributor_presentation_supplier']}")
+    print(f"distributor_listings     {augmentation['distributor_presentation_listings']}")
+    print(f"distributor_bookings     {augmentation['distributor_presentation_bookings']}")
     print(f"load_users               {augmentation['load_users']}")
     print(f"load_suppliers           {augmentation['load_suppliers']}")
     print(f"load_voyages             {augmentation['load_voyages']}")

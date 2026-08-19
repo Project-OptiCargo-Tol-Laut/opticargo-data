@@ -41,11 +41,11 @@ def test_small_load_profile_is_deterministic_and_shared_valid():
 
     plan = LOAD_PROFILES["small"]
     assert len(first["users"]) == len(base["users"]) + plan.users
-    assert len(first["suppliers"]) == len(base["suppliers"]) + plan.suppliers
+    assert len(first["suppliers"]) == len(base["suppliers"]) + 1 + plan.suppliers
     assert len(first["voyages"]) == len(base["voyages"]) + plan.voyages
     assert len(first["cargo_capacities"]) == len(base["cargo_capacities"]) + plan.voyages
-    assert len(first["cargo_listings"]) == len(base["cargo_listings"]) + 5 + plan.cargo_listings
-    assert len(first["bookings"]) == len(base["bookings"]) + plan.bookings
+    assert len(first["cargo_listings"]) == len(base["cargo_listings"]) + 10 + plan.cargo_listings
+    assert len(first["bookings"]) == len(base["bookings"]) + 5 + plan.bookings
 
     prepared, _ = prepare_seed_rows(first)
     validate_all(prepared)
@@ -89,3 +89,54 @@ def test_medium_profile_has_large_demo_owned_working_set():
     # 20% of 8k load listings + base/presentation rows.
     assert len(own) >= 1_600
     assert sum(row["status"] == "open" for row in own) >= 900
+
+
+
+def test_distributor_demo_gets_supplier_matching_listings_and_booking_states():
+    base = _base()
+    augmented, stats = build_augmented_rows(
+        base, load_profile="none", anchor_date=date(2026, 8, 11)
+    )
+
+    assert stats["distributor_presentation_supplier"] == 1
+    assert stats["distributor_presentation_listings"] == 5
+    assert stats["distributor_presentation_bookings"] == 5
+
+    distributor = next(row for row in augmented["users"] if row["username"] == "distributor.demo")
+    supplier = next(row for row in augmented["suppliers"] if row["user_id"] == distributor["id"])
+    assert supplier["verified"] is True
+
+    listings = [
+        row for row in augmented["cargo_listings"]
+        if row["supplier_id"] == supplier["id"]
+        and row.get("provenance") == "opticargo-data:presentation:distributor-guaranteed-voyage-match-v1"
+    ]
+    assert len(listings) == 5
+    assert all(row["status"] == "open" for row in listings)
+
+    listing_ids = {row["id"] for row in listings}
+    bookings = [row for row in augmented["bookings"] if row["cargo_listing_id"] in listing_ids]
+    assert len(bookings) == 5
+    assert {row["status"] for row in bookings} == {
+        "pending", "confirmed", "in_progress", "completed", "cancelled"
+    }
+
+    prepared, _ = prepare_seed_rows(augmented)
+    prepared_distributor = [
+        row for row in prepared["bookings"] if row["cargo_listing_id"] in listing_ids
+    ]
+    assert all(row["created_by"] == distributor["id"] for row in prepared_distributor)
+    assert all(row.get("booking_ref") for row in prepared_distributor)
+
+
+def test_medium_profile_has_large_distributor_demo_working_set():
+    base = _base()
+    augmented, _ = build_augmented_rows(
+        base, load_profile="medium", anchor_date=date(2026, 8, 11)
+    )
+    distributor = next(row for row in augmented["users"] if row["username"] == "distributor.demo")
+    supplier = next(row for row in augmented["suppliers"] if row["user_id"] == distributor["id"])
+    own = [row for row in augmented["cargo_listings"] if row["supplier_id"] == supplier["id"]]
+    # 10% of 8k load listings + five deterministic presentation rows.
+    assert len(own) >= 805
+    assert sum(row["status"] == "open" for row in own) >= 450

@@ -1,6 +1,6 @@
 # OptiCargo Deterministic Load Seed
 
-`opticargo-data` v3.2.0 menyediakan runtime load profile untuk pengujian pagination,
+`opticargo-data` v3.2.1 menyediakan runtime load profile untuk pengujian pagination,
 filter, object-scope, matching voyage, dashboard, dan performa Gateway/Frontend tanpa
 mengubah JSON canonical.
 
@@ -21,6 +21,7 @@ sengaja disejajarkan dengan route, tanggal, kapasitas, dan voyage `scheduled/del
 yang ada. Tujuannya agar halaman `Rekomendasi Kapal` selalu memiliki skenario positif.
 
 Pada load profile, sekitar 20% cargo listing tambahan dimiliki supplier `umkm.demo`.
+Sekitar 10% listing load tambahan juga dimiliki `distributor.demo`, yang mendapatkan supplier deterministik, lima listing guaranteed-match, dan lima booking lintas status untuk dashboard/tracking demo.
 Dengan profile `medium`, akun tersebut mendapat sekitar 1.600 listing load sehingga
 pagination/filter/recommendation dapat diuji langsung dari FE. Voyage load memakai kapal
 existing milik `operator.demo`, sehingga dashboard operator juga mendapat working set besar.

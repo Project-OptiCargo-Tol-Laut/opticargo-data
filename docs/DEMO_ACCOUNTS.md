@@ -53,3 +53,7 @@ Jangan gunakan `--show-demo-password` pada CI, log publik, atau screenshot.
 supplier, cargo listings, dan bookings yang sudah mengacu ke UUID tersebut tetap
 terhubung. Ini membuat dashboard UMKM langsung memiliki data demo tanpa duplikasi
 supplier/listing/booking.
+
+## Distributor presentation scenario
+
+`distributor.demo` mendapat supplier deterministik `PT Distribusi Nusantara Demo`, lima cargo listing `open` yang disejajarkan dengan voyage `scheduled/delayed`, dan lima booking lintas status (`pending`, `confirmed`, `in_progress`, `completed`, `cancelled`). Pada load profile, sekitar 10% listing tambahan diarahkan ke supplier Distributor tersebut agar pagination, pencarian voyage, booking, dan tracking role-scoped dapat diuji dari Frontend.

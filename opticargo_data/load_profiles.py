@@ -73,34 +73,11 @@ def _created_at(anchor: date) -> str:
     return datetime.combine(anchor, time.min, tzinfo=timezone.utc).isoformat().replace("+00:00", "Z")
 
 
-def add_presentation_scenarios(
+def _future_matching_candidates(
     source_rows: dict[str, list[dict[str, Any]]],
     *,
     anchor_date: date,
-    listing_count: int = 5,
-) -> dict[str, int]:
-    """Add deterministic, guaranteed-match UMKM listings for FE/E2E demos.
-
-    Existing source JSON remains unchanged. Runtime rows are added in memory and use
-    existing scheduled/delayed voyages so `/matching/voyage-options` has meaningful
-    candidates instead of relying on a coincidental synthetic route/date overlap.
-    """
-
-    if listing_count <= 0:
-        return {"presentation_listings": 0}
-
-    users = {row["username"]: row for row in source_rows["users"]}
-    umkm_user = users.get("umkm.demo")
-    if umkm_user is None:
-        raise ValueError("presentation scenario requires deterministic user umkm.demo")
-
-    supplier = next(
-        (row for row in source_rows["suppliers"] if row.get("user_id") == umkm_user["id"]),
-        None,
-    )
-    if supplier is None:
-        raise ValueError("presentation scenario requires supplier owned by umkm.demo")
-
+) -> list[tuple[datetime, dict[str, Any], dict[str, Any]]]:
     routes = {str(row["id"]): row for row in source_rows["routes"]}
     candidates: list[tuple[datetime, dict[str, Any], dict[str, Any]]] = []
     anchor_dt = datetime.combine(anchor_date, time.min, tzinfo=timezone.utc)
@@ -116,11 +93,64 @@ def add_presentation_scenarios(
         if Decimal(str(voyage.get("remaining_capacity_ton", "0"))) <= 5:
             continue
         candidates.append((departure, voyage, route))
-
     candidates.sort(key=lambda item: (item[0], str(item[1]["id"])))
     if not candidates:
         raise ValueError("presentation scenario requires at least one future scheduled/delayed voyage")
+    return candidates
 
+
+def _ensure_distributor_supplier(
+    source_rows: dict[str, list[dict[str, Any]]],
+    *,
+    anchor_date: date,
+) -> tuple[dict[str, Any], bool]:
+    distributor = next(
+        (row for row in source_rows["users"] if row.get("username") == "distributor.demo"),
+        None,
+    )
+    if distributor is None:
+        raise ValueError("presentation scenario requires deterministic user distributor.demo")
+
+    existing = next(
+        (row for row in source_rows["suppliers"] if row.get("user_id") == distributor["id"]),
+        None,
+    )
+    if existing is not None:
+        return existing, False
+
+    ports = source_rows["ports"]
+    commodities = source_rows["commodities"]
+    if not ports or not commodities:
+        raise ValueError("distributor presentation scenario requires ports and commodities")
+
+    supplier = {
+        "id": _uuid("presentation-distributor-supplier", 0),
+        "user_id": distributor["id"],
+        "business_name": distributor.get("company_name") or "PT Distribusi Nusantara Demo",
+        "port_id": ports[0]["id"],
+        "commodity_ids": [row["id"] for row in commodities[: min(4, len(commodities))]],
+        "avg_monthly_volume_ton": "420",
+        "rating": 4.7,
+        "verified": True,
+        "address": "Hub Distribusi Demo OptiCargo",
+        "is_synthetic": True,
+        "provenance": "opticargo-data:presentation:distributor-supplier-v1",
+        "created_at": _created_at(anchor_date),
+        "updated_at": _created_at(anchor_date),
+    }
+    source_rows["suppliers"].append(supplier)
+    return supplier, True
+
+
+def _add_matching_listings(
+    source_rows: dict[str, list[dict[str, Any]]],
+    *,
+    supplier: dict[str, Any],
+    candidates: list[tuple[datetime, dict[str, Any], dict[str, Any]]],
+    anchor_date: date,
+    role_key: str,
+    listing_count: int,
+) -> tuple[list[dict[str, Any]], int]:
     commodity_ids = list(supplier.get("commodity_ids") or [])
     if not commodity_ids:
         commodity_ids = [row["id"] for row in source_rows["commodities"]]
@@ -128,14 +158,20 @@ def add_presentation_scenarios(
         raise ValueError("presentation scenario requires at least one commodity")
 
     existing_ids = {str(row["id"]) for row in source_rows["cargo_listings"]}
+    listing_by_id = {str(row["id"]): row for row in source_rows["cargo_listings"]}
+    result: list[dict[str, Any]] = []
     added = 0
     for index in range(listing_count):
         departure, voyage, route = candidates[index % len(candidates)]
-        listing_id = _uuid("presentation-umkm-listing", index)
+        listing_id = _uuid(f"presentation-{role_key}-listing", index)
         if listing_id in existing_ids:
+            result.append(listing_by_id[listing_id])
             continue
         remaining = Decimal(str(voyage["remaining_capacity_ton"]))
-        volume = min(Decimal("5") + Decimal(index * 3), max(Decimal("1"), remaining * Decimal("0.08")))
+        volume = min(
+            Decimal("5") + Decimal(index * 3),
+            max(Decimal("1"), remaining * Decimal("0.08")),
+        )
         row = {
             "id": listing_id,
             "supplier_id": supplier["id"],
@@ -148,15 +184,123 @@ def add_presentation_scenarios(
             "asking_price_per_ton": str(2_100_000 + index * 175_000),
             "status": "open",
             "is_synthetic": True,
-            "provenance": "opticargo-data:presentation:guaranteed-voyage-match-v1",
+            "provenance": (
+                "opticargo-data:presentation:guaranteed-voyage-match-v1"
+                if role_key == "umkm"
+                else f"opticargo-data:presentation:{role_key}-guaranteed-voyage-match-v1"
+            ),
             "created_at": _created_at(anchor_date),
             "updated_at": _created_at(anchor_date),
         }
         source_rows["cargo_listings"].append(row)
         existing_ids.add(listing_id)
+        listing_by_id[listing_id] = row
+        result.append(row)
         added += 1
+    return result, added
 
-    return {"presentation_listings": added}
+
+def add_presentation_scenarios(
+    source_rows: dict[str, list[dict[str, Any]]],
+    *,
+    anchor_date: date,
+    listing_count: int = 5,
+) -> dict[str, int]:
+    """Add deterministic UMKM and Distributor FE/E2E presentation scenarios.
+
+    The canonical JSON artifacts stay unchanged. Runtime rows are aligned to real
+    scheduled/delayed voyages so voyage discovery has guaranteed positive cases.
+    Distributor also receives a deterministic supplier and related bookings so
+    dashboard, listing, booking, and tracking pages are populated immediately.
+    """
+
+    if listing_count <= 0:
+        return {
+            "presentation_listings": 0,
+            "distributor_presentation_supplier": 0,
+            "distributor_presentation_listings": 0,
+            "distributor_presentation_bookings": 0,
+        }
+
+    users = {row["username"]: row for row in source_rows["users"]}
+    umkm_user = users.get("umkm.demo")
+    if umkm_user is None:
+        raise ValueError("presentation scenario requires deterministic user umkm.demo")
+
+    umkm_supplier = next(
+        (row for row in source_rows["suppliers"] if row.get("user_id") == umkm_user["id"]),
+        None,
+    )
+    if umkm_supplier is None:
+        raise ValueError("presentation scenario requires supplier owned by umkm.demo")
+
+    candidates = _future_matching_candidates(source_rows, anchor_date=anchor_date)
+    _, umkm_added = _add_matching_listings(
+        source_rows,
+        supplier=umkm_supplier,
+        candidates=candidates,
+        anchor_date=anchor_date,
+        role_key="umkm",
+        listing_count=listing_count,
+    )
+
+    distributor_supplier, distributor_supplier_added = _ensure_distributor_supplier(
+        source_rows,
+        anchor_date=anchor_date,
+    )
+    distributor_listings, distributor_added = _add_matching_listings(
+        source_rows,
+        supplier=distributor_supplier,
+        candidates=candidates,
+        anchor_date=anchor_date,
+        role_key="distributor",
+        listing_count=listing_count,
+    )
+
+    existing_booking_ids = {str(row["id"]) for row in source_rows["bookings"]}
+    booking_statuses = ("pending", "confirmed", "in_progress", "completed", "cancelled")
+    distributor_bookings_added = 0
+    for index, listing in enumerate(distributor_listings):
+        booking_id = _uuid("presentation-distributor-booking", index)
+        if booking_id in existing_booking_ids:
+            continue
+        _, voyage, _ = candidates[index % len(candidates)]
+        booked = max(Decimal("0.5"), Decimal(str(listing["volume_ton"])) * Decimal("0.5"))
+        booked = booked.quantize(Decimal("0.1"))
+        booking_date = datetime.combine(anchor_date, time(8, 0), tzinfo=timezone.utc) + timedelta(
+            hours=index
+        )
+        status = booking_statuses[index % len(booking_statuses)]
+        confirmation_date = None
+        if status in {"confirmed", "in_progress", "completed"}:
+            confirmation_date = (booking_date + timedelta(hours=2)).isoformat().replace("+00:00", "Z")
+        source_rows["bookings"].append(
+            {
+                "id": booking_id,
+                "voyage_id": voyage["id"],
+                "cargo_listing_id": listing["id"],
+                "recommendation_id": None,
+                "booked_volume_ton": str(booked),
+                "agreed_price_per_ton": listing["asking_price_per_ton"],
+                "status": status,
+                "booking_date": booking_date.isoformat().replace("+00:00", "Z"),
+                "confirmation_date": confirmation_date,
+                "is_synthetic": True,
+                "provenance": "opticargo-data:presentation:distributor-booking-v1",
+                "created_at": booking_date.isoformat().replace("+00:00", "Z"),
+                "updated_at": (booking_date + timedelta(hours=1)).isoformat().replace("+00:00", "Z"),
+            }
+        )
+        existing_booking_ids.add(booking_id)
+        distributor_bookings_added += 1
+
+    return {
+        # Backward-compatible key used by v3.2.0 tests/output: UMKM guaranteed listings.
+        "presentation_listings": umkm_added,
+        "distributor_presentation_supplier": int(distributor_supplier_added),
+        "distributor_presentation_listings": distributor_added,
+        "distributor_presentation_bookings": distributor_bookings_added,
+    }
 
 
 def apply_load_profile(
@@ -197,6 +341,12 @@ def apply_load_profile(
     demo_umkm = next(row for row in source_rows["users"] if row.get("username") == "umkm.demo")
     demo_supplier = next(
         row for row in source_rows["suppliers"] if row.get("user_id") == demo_umkm["id"]
+    )
+    demo_distributor = next(
+        row for row in source_rows["users"] if row.get("username") == "distributor.demo"
+    )
+    distributor_supplier = next(
+        row for row in source_rows["suppliers"] if row.get("user_id") == demo_distributor["id"]
     )
 
     # Users backing generated suppliers are always UMKM. Remaining users cycle through
@@ -324,10 +474,12 @@ def apply_load_profile(
         voyage = bookable_voyages[index % len(bookable_voyages)]
         route = route_by_voyage[voyage["id"]]
         departure = datetime.fromisoformat(voyage["departure_date"].replace("Z", "+00:00"))
-        # 20% of load listings belong to umkm.demo so the role can exercise
-        # pagination/filtering/recommendation performance directly from the FE.
+        # Keep a large role-scoped working set for presentation accounts without
+        # consuming the whole synthetic population: 20% UMKM + 10% Distributor.
         if index % 5 == 0:
             supplier = demo_supplier
+        elif index % 10 == 1:
+            supplier = distributor_supplier
         else:
             supplier = generated_suppliers[index % len(generated_suppliers)]
         commodity = commodities[(index * 11 + 5) % len(commodities)]
@@ -413,6 +565,13 @@ def build_augmented_rows(
     if presentation_scenarios:
         stats.update(add_presentation_scenarios(rows, anchor_date=anchor_date))
     else:
-        stats["presentation_listings"] = 0
+        stats.update(
+            {
+                "presentation_listings": 0,
+                "distributor_presentation_supplier": 0,
+                "distributor_presentation_listings": 0,
+                "distributor_presentation_bookings": 0,
+            }
+        )
     stats.update(apply_load_profile(rows, profile=load_profile, anchor_date=anchor_date))
     return rows, stats
